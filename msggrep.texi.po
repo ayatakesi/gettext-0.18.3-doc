@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-03 22:20+0900\n"
-"PO-Revision-Date: 2015-09-03 23:31+0900\n"
+"PO-Revision-Date: 2016-08-12 19:05+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "msggrep"
 #: msggrep.texi.orig:2
 #, no-wrap
 msgid "@code{msggrep} program, usage"
-msgstr "@code{msggrep} program, 使い方"
+msgstr "@code{msggrep} program, usage"
 
 #. type: example
 #: msggrep.texi.orig:5
@@ -37,7 +37,7 @@ msgstr "msggrep [@var{option}] [@var{inputfile}]\n"
 #: msggrep.texi.orig:7
 #, no-wrap
 msgid "search messages in a catalog"
-msgstr "カタログの中のメッセージのサーチ"
+msgstr "search messages in a catalog"
 
 #. type: Plain text
 #: msggrep.texi.orig:10
@@ -52,7 +52,7 @@ msgstr ""
 #: msggrep.texi.orig:11
 #, no-wrap
 msgid "Input file location"
-msgstr "入力ファイルの指定"
+msgstr "Input file location"
 
 #. type: var{#1}
 #: msggrep.texi.orig:14
@@ -81,13 +81,13 @@ msgstr "--directory=@var{directory}"
 #: msggrep.texi.orig:19
 #, no-wrap
 msgid "-D@r{, @code{msggrep} option}"
-msgstr "-D@r{, @code{msggrep} オプション}"
+msgstr "-D@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:20
 #, no-wrap
 msgid "--directory@r{, @code{msggrep} option}"
-msgstr "--directory@r{, @code{msggrep} オプション}"
+msgstr "--directory@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:24
@@ -95,10 +95,7 @@ msgid ""
 "Add @var{directory} to the list of directories.  Source files are searched "
 "relative to this list of directories.  The resulting @file{.po} file will be "
 "written relative to the current directory, though."
-msgstr ""
-"ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よ"
-"りソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレ"
-"ントディレクトリーです。"
+msgstr "ディレクトリーのリストに@var{directory}を追加します。このディレクトリーのリストよりソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレントディレクトリーです。"
 
 #. type: Plain text
 #: msggrep.texi.orig:28
@@ -112,7 +109,7 @@ msgstr ""
 #: msggrep.texi.orig:29
 #, no-wrap
 msgid "Output file location"
-msgstr "出力ファイルの指定"
+msgstr "Output file location"
 
 #. type: item
 #: msggrep.texi.orig:32
@@ -130,13 +127,13 @@ msgstr "--output-file=@var{file}"
 #: msggrep.texi.orig:34
 #, no-wrap
 msgid "-o@r{, @code{msggrep} option}"
-msgstr "-o@r{, @code{msggrep} オプション}"
+msgstr "-o@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:35
 #, no-wrap
 msgid "--output-file@r{, @code{msggrep} option}"
-msgstr "--output-file@r{, @code{msggrep} オプション}"
+msgstr "--output-file@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:37
@@ -156,7 +153,7 @@ msgstr ""
 #: msggrep.texi.orig:43
 #, no-wrap
 msgid "Message selection"
-msgstr "メッセージの選択"
+msgstr "Message selection"
 
 #. type: example
 #: msggrep.texi.orig:49
@@ -280,13 +277,13 @@ msgstr "--location=@var{sourcefile}"
 #: msggrep.texi.orig:78
 #, no-wrap
 msgid "-N@r{, @code{msggrep} option}"
-msgstr "-N@r{, @code{msggrep} オプション}"
+msgstr "-N@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:79
 #, no-wrap
 msgid "--location@r{, @code{msggrep} option}"
-msgstr "--location@r{, @code{msggrep} オプション}"
+msgstr "--location@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:82
@@ -313,13 +310,13 @@ msgstr "--domain=@var{domainname}"
 #: msggrep.texi.orig:85
 #, no-wrap
 msgid "-M@r{, @code{msggrep} option}"
-msgstr "-M@r{, @code{msggrep} オプション}"
+msgstr "-M@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:86
 #, no-wrap
 msgid "--domain@r{, @code{msggrep} option}"
-msgstr "--domain@r{, @code{msggrep} オプション}"
+msgstr "--domain@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:88
@@ -342,13 +339,13 @@ msgstr "--msgctxt"
 #: msggrep.texi.orig:91
 #, no-wrap
 msgid "-J@r{, @code{msggrep} option}"
-msgstr "-J@r{, @code{msggrep} オプション}"
+msgstr "-J@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:92
 #, no-wrap
 msgid "--msgctxt@r{, @code{msggrep} option}"
-msgstr "--msgctxt@r{, @code{msggrep} オプション}"
+msgstr "--msgctxt@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:94
@@ -371,13 +368,13 @@ msgstr "--msgid"
 #: msggrep.texi.orig:97
 #, no-wrap
 msgid "-K@r{, @code{msggrep} option}"
-msgstr "-K@r{, @code{msggrep} オプション}"
+msgstr "-K@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:98
 #, no-wrap
 msgid "--msgid@r{, @code{msggrep} option}"
-msgstr "--msgid@r{, @code{msggrep} オプション}"
+msgstr "--msgid@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:100
@@ -400,13 +397,13 @@ msgstr "--msgstr"
 #: msggrep.texi.orig:103
 #, no-wrap
 msgid "-T@r{, @code{msggrep} option}"
-msgstr "-T@r{, @code{msggrep} オプション}"
+msgstr "-T@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:104
 #, no-wrap
 msgid "--msgstr@r{, @code{msggrep} option}"
-msgstr "--msgstr@r{, @code{msggrep} オプション}"
+msgstr "--msgstr@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:106
@@ -429,13 +426,13 @@ msgstr "--comment"
 #: msggrep.texi.orig:109
 #, no-wrap
 msgid "-C@r{, @code{msggrep} option}"
-msgstr "-C@r{, @code{msggrep} オプション}"
+msgstr "-C@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:110
 #, no-wrap
 msgid "--comment@r{, @code{msggrep} option}"
-msgstr "--comment@r{, @code{msggrep} オプション}"
+msgstr "--comment@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:112
@@ -458,13 +455,13 @@ msgstr "--extracted-comment"
 #: msggrep.texi.orig:115
 #, no-wrap
 msgid "-X@r{, @code{msggrep} option}"
-msgstr "-X@r{, @code{msggrep} オプション}"
+msgstr "-X@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:116
 #, no-wrap
 msgid "--extracted-comment@r{, @code{msggrep} option}"
-msgstr "--extracted-comment@r{, @code{msggrep} オプション}"
+msgstr "--extracted-comment@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:118
@@ -487,13 +484,13 @@ msgstr "--extended-regexp"
 #: msggrep.texi.orig:121
 #, no-wrap
 msgid "-E@r{, @code{msggrep} option}"
-msgstr "-E@r{, @code{msggrep} オプション}"
+msgstr "-E@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:122
 #, no-wrap
 msgid "--extended-regexp@r{, @code{msggrep} option}"
-msgstr "--extended-regexp@r{, @code{msggrep} オプション}"
+msgstr "--extended-regexp@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:124
@@ -516,13 +513,13 @@ msgstr "--fixed-strings"
 #: msggrep.texi.orig:127
 #, no-wrap
 msgid "-F@r{, @code{msggrep} option}"
-msgstr "-F@r{, @code{msggrep} オプション}"
+msgstr "-F@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:128
 #, no-wrap
 msgid "--fixed-strings@r{, @code{msggrep} option}"
-msgstr "--fixed-strings@r{, @code{msggrep} オプション}"
+msgstr "--fixed-strings@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:130
@@ -545,13 +542,13 @@ msgstr "--regexp=@var{pattern}"
 #: msggrep.texi.orig:133
 #, no-wrap
 msgid "-e@r{, @code{msggrep} option}"
-msgstr "-e@r{, @code{msggrep} オプション}"
+msgstr "-e@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:134
 #, no-wrap
 msgid "--regexp=@r{, @code{msggrep} option}"
-msgstr "--regexp=@r{, @code{msggrep} オプション}"
+msgstr "--regexp=@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:136
@@ -574,13 +571,13 @@ msgstr "--file=@var{file}"
 #: msggrep.texi.orig:139
 #, no-wrap
 msgid "-f@r{, @code{msggrep} option}"
-msgstr "-f@r{, @code{msggrep} オプション}"
+msgstr "-f@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:140
 #, no-wrap
 msgid "--file@r{, @code{msggrep} option}"
-msgstr "--file@r{, @code{msggrep} オプション}"
+msgstr "--file@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:142
@@ -603,13 +600,13 @@ msgstr "--ignore-case"
 #: msggrep.texi.orig:145
 #, no-wrap
 msgid "-i@r{, @code{msggrep} option}"
-msgstr "-i@r{, @code{msggrep} オプション}"
+msgstr "-i@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:146
 #, no-wrap
 msgid "--ignore-case@r{, @code{msggrep} option}"
-msgstr "--ignore-case@r{, @code{msggrep} オプション}"
+msgstr "--ignore-case@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:148
@@ -632,13 +629,13 @@ msgstr "--invert-match"
 #: msggrep.texi.orig:151
 #, no-wrap
 msgid "-v@r{, @code{msggrep} option}"
-msgstr "-v@r{, @code{msggrep} オプション}"
+msgstr "-v@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:152
 #, no-wrap
 msgid "--invert-match@r{, @code{msggrep} option}"
-msgstr "--invert-match@r{, @code{msggrep} オプション}"
+msgstr "--invert-match@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:155
@@ -652,7 +649,7 @@ msgstr ""
 #: msggrep.texi.orig:158
 #, no-wrap
 msgid "Input file syntax"
-msgstr "入力ファイルの構文指定"
+msgstr "Input file syntax"
 
 #. type: item
 #: msggrep.texi.orig:161
@@ -670,13 +667,13 @@ msgstr "--properties-input"
 #: msggrep.texi.orig:163
 #, no-wrap
 msgid "-P@r{, @code{msggrep} option}"
-msgstr "-P@r{, @code{msggrep} オプション}"
+msgstr "-P@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:164
 #, no-wrap
 msgid "--properties-input@r{, @code{msggrep} option}"
-msgstr "--properties-input@r{, @code{msggrep} オプション}"
+msgstr "--properties-input@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:167
@@ -697,7 +694,7 @@ msgstr "--stringtable-input"
 #: msggrep.texi.orig:169
 #, no-wrap
 msgid "--stringtable-input@r{, @code{msggrep} option}"
-msgstr "--stringtable-input@r{, @code{msggrep} オプション}"
+msgstr "--stringtable-input@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:172
@@ -712,7 +709,7 @@ msgstr ""
 #: msggrep.texi.orig:175
 #, no-wrap
 msgid "Output details"
-msgstr "出力の詳細"
+msgstr "Output details"
 
 #. type: item
 #: msggrep.texi.orig:180
@@ -730,7 +727,7 @@ msgstr "--color=@var{when}"
 #: msggrep.texi.orig:182
 #, no-wrap
 msgid "--color@r{, @code{msggrep} option}"
-msgstr "--color@r{, @code{msggrep} オプション}"
+msgstr "--color@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:185
@@ -751,7 +748,7 @@ msgstr "--style=@var{style_file}"
 #: msggrep.texi.orig:187
 #, no-wrap
 msgid "--style@r{, @code{msggrep} option}"
-msgstr "--style@r{, @code{msggrep} オプション}"
+msgstr "--style@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:190
@@ -772,7 +769,7 @@ msgstr "--force-po"
 #: msggrep.texi.orig:192
 #, no-wrap
 msgid "--force-po@r{, @code{msggrep} option}"
-msgstr "--force-po@r{, @code{msggrep} オプション}"
+msgstr "--force-po@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:194
@@ -790,7 +787,7 @@ msgstr "--indent"
 #: msggrep.texi.orig:196
 #, no-wrap
 msgid "--indent@r{, @code{msggrep} option}"
-msgstr "--indent@r{, @code{msggrep} オプション}"
+msgstr "--indent@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:198
@@ -807,7 +804,7 @@ msgstr "--no-location"
 #: msggrep.texi.orig:200
 #, no-wrap
 msgid "--no-location@r{, @code{msggrep} option}"
-msgstr "--no-location@r{, @code{msggrep} オプション}"
+msgstr "--no-location@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:202
@@ -824,7 +821,7 @@ msgstr "--add-location"
 #: msggrep.texi.orig:204
 #, no-wrap
 msgid "--add-location@r{, @code{msggrep} option}"
-msgstr "--add-location@r{, @code{msggrep} オプション}"
+msgstr "--add-location@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:206
@@ -841,7 +838,7 @@ msgstr "--strict"
 #: msggrep.texi.orig:208
 #, no-wrap
 msgid "--strict@r{, @code{msggrep} option}"
-msgstr "--strict@r{, @code{msggrep} オプション}"
+msgstr "--strict@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:212
@@ -868,13 +865,13 @@ msgstr "--properties-output"
 #: msggrep.texi.orig:215
 #, no-wrap
 msgid "-p@r{, @code{msggrep} option}"
-msgstr "-p@r{, @code{msggrep} オプション}"
+msgstr "-p@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:216
 #, no-wrap
 msgid "--properties-output@r{, @code{msggrep} option}"
-msgstr "--properties-output@r{, @code{msggrep} オプション}"
+msgstr "--properties-output@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:220
@@ -882,10 +879,7 @@ msgid ""
 "Write out a Java ResourceBundle in Java @code{.properties} syntax.  Note "
 "that this file format doesn't support plural forms and silently drops "
 "obsolete messages."
-msgstr ""
-"Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイ"
-"ル形式はplural formをサポートせず、廃止されたメッセージを暗黙で除去することに"
-"注意してください。"
+msgstr "Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイル形式はplural formをサポートせず、陳腐化したメッセージを暗黙で除去することに注意してください。"
 
 #. type: item
 #: msggrep.texi.orig:221
@@ -897,7 +891,7 @@ msgstr "--stringtable-output"
 #: msggrep.texi.orig:222
 #, no-wrap
 msgid "--stringtable-output@r{, @code{msggrep} option}"
-msgstr "--stringtable-output@r{, @code{msggrep} オプション}"
+msgstr "--stringtable-output@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:225
@@ -925,13 +919,13 @@ msgstr "--width=@var{number}"
 #: msggrep.texi.orig:228
 #, no-wrap
 msgid "-w@r{, @code{msggrep} option}"
-msgstr "-w@r{, @code{msggrep} オプション}"
+msgstr "-w@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:229
 #, no-wrap
 msgid "--width@r{, @code{msggrep} option}"
-msgstr "--width@r{, @code{msggrep} オプション}"
+msgstr "--width@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:233
@@ -954,7 +948,7 @@ msgstr "--no-wrap"
 #: msggrep.texi.orig:235
 #, no-wrap
 msgid "--no-wrap@r{, @code{msggrep} option}"
-msgstr "--no-wrap@r{, @code{msggrep} オプション}"
+msgstr "--no-wrap@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:239
@@ -977,7 +971,7 @@ msgstr "--sort-output"
 #: msggrep.texi.orig:241
 #, no-wrap
 msgid "--sort-output@r{, @code{msggrep} option}"
-msgstr "--sort-output@r{, @code{msggrep} オプション}"
+msgstr "--sort-output@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:244
@@ -999,7 +993,7 @@ msgstr "--sort-by-file"
 #: msggrep.texi.orig:246
 #, no-wrap
 msgid "--sort-by-file@r{, @code{msggrep} option}"
-msgstr "--sort-by-file@r{, @code{msggrep} オプション}"
+msgstr "--sort-by-file@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:248
@@ -1010,7 +1004,7 @@ msgstr "ファイルの場所により出力をソートします。"
 #: msggrep.texi.orig:251
 #, no-wrap
 msgid "Informative output"
-msgstr "情報を得るための出力"
+msgstr "Informative output"
 
 #. type: item
 #: msggrep.texi.orig:254
@@ -1028,13 +1022,13 @@ msgstr "--help"
 #: msggrep.texi.orig:256
 #, no-wrap
 msgid "-h@r{, @code{msggrep} option}"
-msgstr "-h@r{, @code{msggrep} オプション}"
+msgstr "-h@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:257
 #, no-wrap
 msgid "--help@r{, @code{msggrep} option}"
-msgstr "--help@r{, @code{msggrep} オプション}"
+msgstr "--help@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:259
@@ -1057,13 +1051,13 @@ msgstr "--version"
 #: msggrep.texi.orig:262
 #, no-wrap
 msgid "-V@r{, @code{msggrep} option}"
-msgstr "-V@r{, @code{msggrep} オプション}"
+msgstr "-V@r{, @code{msggrep} option}"
 
 #. type: opindex
 #: msggrep.texi.orig:263
 #, no-wrap
 msgid "--version@r{, @code{msggrep} option}"
-msgstr "--version@r{, @code{msggrep} オプション}"
+msgstr "--version@r{, @code{msggrep} option}"
 
 #. type: table
 #: msggrep.texi.orig:265
@@ -1074,7 +1068,7 @@ msgstr "バージョン情報を表示して終了します。"
 #: msggrep.texi.orig:268
 #, no-wrap
 msgid "Examples"
-msgstr "例"
+msgstr "Examples"
 
 #. type: Plain text
 #: msggrep.texi.orig:272
