@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-04 22:15+0900\n"
-"PO-Revision-Date: 2016-07-30 21:02+0900\n"
+"PO-Revision-Date: 2016-08-12 19:39+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "msguniq"
 #: msguniq.texi.orig:2
 #, no-wrap
 msgid "@code{msguniq} program, usage"
-msgstr "@code{msguniq} プログラム, 使い方"
+msgstr "@code{msguniq} program, usage"
 
 #. type: example
 #: msguniq.texi.orig:5
@@ -37,13 +37,13 @@ msgstr "msguniq [@var{option}] [@var{inputfile}]\n"
 #: msguniq.texi.orig:7
 #, no-wrap
 msgid "unify duplicate translations"
-msgstr "重複した翻訳を統一する"
+msgstr "unify duplicate translations"
 
 #. type: cindex
 #: msguniq.texi.orig:8
 #, no-wrap
 msgid "duplicate removal"
-msgstr "重複の削除"
+msgstr "duplicate removal"
 
 #. type: Plain text
 #: msguniq.texi.orig:19
@@ -57,7 +57,7 @@ msgid ""
 "comments will be cumulated, except that if @samp{--use-first} is specified, "
 "they will be taken from the first translation.  File positions will be "
 "cumulated.  When using the @samp{--unique} option, duplicates are discarded."
-msgstr "@code{msguniq}は翻訳カタログ内の重複した翻訳を統一するためのプログラムです。このプログラムは、同じメッセージIDにたいする、重複した翻訳を探します。このような重複したメッセージは、@code{msgfmt}、@code{msgmerge}、@code{msgcat}の入力としては無効です。デフォルトでは重複はマージされます。@samp{--repeated}オプションを指定すると、重複したメッセージだけが出力され、他のすべてのメッセージは破棄されます。コメント、および抽出されたコメントは累積されます。ただし@samp{--use-first}が指定された場合には、最初の翻訳のものが使用されます。@samp{--unique}オプションを使用すると、重複は破棄されます。"
+msgstr "@code{msguniq}は、翻訳カタログ内の重複した翻訳を統一するためのプログラムです。このプログラムは、同じメッセージIDにたいする、重複した翻訳を探します。このような重複したメッセージは、@code{msgfmt}、@code{msgmerge}、@code{msgcat}の入力としては無効です。デフォルトでは重複はマージされます。@samp{--repeated}オプションを指定すると、重複したメッセージだけが出力され、他のすべてのメッセージは破棄されます。コメント、および抽出されたコメントは累積されます。ただし@samp{--use-first}が指定された場合には、最初の翻訳のものが使用されます。@samp{--unique}オプションを使用すると、重複は破棄されます。"
 
 #. type: subsection
 #: msguniq.texi.orig:20
@@ -92,13 +92,13 @@ msgstr "--directory=@var{directory}"
 #: msguniq.texi.orig:28
 #, no-wrap
 msgid "-D@r{, @code{msguniq} option}"
-msgstr "-D@r{, @code{msguniq} オプション}"
+msgstr "-D@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:29
 #, no-wrap
 msgid "--directory@r{, @code{msguniq} option}"
-msgstr "--directory@r{, @code{msguniq} オプション}"
+msgstr "--directory@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:33
@@ -106,10 +106,7 @@ msgid ""
 "Add @var{directory} to the list of directories.  Source files are searched "
 "relative to this list of directories.  The resulting @file{.po} file will be "
 "written relative to the current directory, though."
-msgstr ""
-"ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よ"
-"りソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレ"
-"ントディレクトリーです。"
+msgstr "ディレクトリーのリストに@var{directory}を追加します。このディレクトリーのリストよりソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレントディレクトリーです。"
 
 #. type: Plain text
 #: msguniq.texi.orig:37
@@ -141,13 +138,13 @@ msgstr "--output-file=@var{file}"
 #: msguniq.texi.orig:43
 #, no-wrap
 msgid "-o@r{, @code{msguniq} option}"
-msgstr "-o@r{, @code{msguniq} オプション}"
+msgstr "-o@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:44
 #, no-wrap
 msgid "--output-file@r{, @code{msguniq} option}"
-msgstr "--output-file@r{, @code{msguniq} オプション}"
+msgstr "--output-file@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:46
@@ -185,13 +182,13 @@ msgstr "--repeated"
 #: msguniq.texi.orig:57
 #, no-wrap
 msgid "-d@r{, @code{msguniq} option}"
-msgstr "-d@r{, @code{msguniq} オプション}"
+msgstr "-d@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:58
 #, no-wrap
 msgid "--repeated@r{, @code{msguniq} option}"
-msgstr "--repeated@r{, @code{msguniq} オプション}"
+msgstr "--repeated@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:60
@@ -214,13 +211,13 @@ msgstr "--unique"
 #: msguniq.texi.orig:63
 #, no-wrap
 msgid "-u@r{, @code{msguniq} option}"
-msgstr "-u@r{, @code{msguniq} オプション}"
+msgstr "-u@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:64
 #, no-wrap
 msgid "--unique@r{, @code{msguniq} option}"
-msgstr "--unique@r{, @code{msguniq} オプション}"
+msgstr "--unique@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:66
@@ -249,13 +246,13 @@ msgstr "--properties-input"
 #: msguniq.texi.orig:74
 #, no-wrap
 msgid "-P@r{, @code{msguniq} option}"
-msgstr "-P@r{, @code{msguniq} オプション}"
+msgstr "-P@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:75
 #, no-wrap
 msgid "--properties-input@r{, @code{msguniq} option}"
-msgstr "--properties-input@r{, @code{msguniq} オプション}"
+msgstr "--properties-input@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:78
@@ -276,7 +273,7 @@ msgstr "--stringtable-input"
 #: msguniq.texi.orig:80
 #, no-wrap
 msgid "--stringtable-input@r{, @code{msguniq} option}"
-msgstr "--stringtable-input@r{, @code{msguniq} オプション}"
+msgstr "--stringtable-input@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:83
@@ -309,13 +306,13 @@ msgstr "--to-code=@var{name}"
 #: msguniq.texi.orig:93
 #, no-wrap
 msgid "-t@r{, @code{msguniq} option}"
-msgstr "-t@r{, @code{msguniq} オプション}"
+msgstr "-t@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:94
 #, no-wrap
 msgid "--to-code@r{, @code{msguniq} option}"
-msgstr "--to-code@r{, @code{msguniq} オプション}"
+msgstr "--to-code@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:96
@@ -332,7 +329,7 @@ msgstr "--use-first"
 #: msguniq.texi.orig:98
 #, no-wrap
 msgid "--use-first@r{, @code{msguniq} option}"
-msgstr "--use-first@r{, @code{msguniq} オプション}"
+msgstr "--use-first@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:101
@@ -359,7 +356,7 @@ msgstr "--color=@var{when}"
 #: msguniq.texi.orig:104
 #, no-wrap
 msgid "--color@r{, @code{msguniq} option}"
-msgstr "--color@r{, @code{msguniq} オプション}"
+msgstr "--color@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:107
@@ -380,7 +377,7 @@ msgstr "--style=@var{style_file}"
 #: msguniq.texi.orig:109
 #, no-wrap
 msgid "--style@r{, @code{msguniq} option}"
-msgstr "--style@r{, @code{msguniq} オプション}"
+msgstr "--style@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:112
@@ -399,7 +396,7 @@ msgstr "--force-po"
 #: msguniq.texi.orig:114
 #, no-wrap
 msgid "--force-po@r{, @code{msguniq} option}"
-msgstr "--force-po@r{, @code{msguniq} オプション}"
+msgstr "--force-po@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:116
@@ -423,13 +420,13 @@ msgstr "--indent"
 #: msguniq.texi.orig:119
 #, no-wrap
 msgid "-i@r{, @code{msguniq} option}"
-msgstr "-i@r{, @code{msguniq} オプション}"
+msgstr "-i@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:120
 #, no-wrap
 msgid "--indent@r{, @code{msguniq} option}"
-msgstr "--indent@r{, @code{msguniq} オプション}"
+msgstr "--indent@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:122
@@ -446,7 +443,7 @@ msgstr "--no-location"
 #: msguniq.texi.orig:124
 #, no-wrap
 msgid "--no-location@r{, @code{msguniq} option}"
-msgstr "--no-location@r{, @code{msguniq} オプション}"
+msgstr "--no-location@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:126
@@ -469,13 +466,13 @@ msgstr "--add-location"
 #: msguniq.texi.orig:129
 #, no-wrap
 msgid "-n@r{, @code{msguniq} option}"
-msgstr "-n@r{, @code{msguniq} オプション}"
+msgstr "-n@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:130
 #, no-wrap
 msgid "--add-location@r{, @code{msguniq} option}"
-msgstr "--add-location@r{, @code{msguniq} オプション}"
+msgstr "--add-location@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:132
@@ -492,7 +489,7 @@ msgstr "--strict"
 #: msguniq.texi.orig:134
 #, no-wrap
 msgid "--strict@r{, @code{msguniq} option}"
-msgstr "--strict@r{, @code{msguniq} オプション}"
+msgstr "--strict@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:138
@@ -519,13 +516,13 @@ msgstr "--properties-output"
 #: msguniq.texi.orig:141
 #, no-wrap
 msgid "-p@r{, @code{msguniq} option}"
-msgstr "-p@r{, @code{msguniq} オプション}"
+msgstr "-p@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:142
 #, no-wrap
 msgid "--properties-output@r{, @code{msguniq} option}"
-msgstr "--properties-output@r{, @code{msguniq} オプション}"
+msgstr "--properties-output@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:146
@@ -533,10 +530,7 @@ msgid ""
 "Write out a Java ResourceBundle in Java @code{.properties} syntax.  Note "
 "that this file format doesn't support plural forms and silently drops "
 "obsolete messages."
-msgstr ""
-"Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイ"
-"ル形式はplural formをサポートせず、廃止されたメッセージを暗黙で除去することに"
-"注意してください。"
+msgstr "Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイル形式はplural formをサポートせず、知能化したメッセージを暗黙で除去することに注意してください。"
 
 #. type: item
 #: msguniq.texi.orig:147
@@ -548,7 +542,7 @@ msgstr "--stringtable-output"
 #: msguniq.texi.orig:148
 #, no-wrap
 msgid "--stringtable-output@r{, @code{msguniq} option}"
-msgstr "--stringtable-output@r{, @code{msguniq} オプション}"
+msgstr "--stringtable-output@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:151
@@ -576,13 +570,13 @@ msgstr "--width=@var{number}"
 #: msguniq.texi.orig:154
 #, no-wrap
 msgid "-w@r{, @code{msguniq} option}"
-msgstr "-w@r{, @code{msguniq} オプション}"
+msgstr "-w@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:155
 #, no-wrap
 msgid "--width@r{, @code{msguniq} option}"
-msgstr "--width@r{, @code{msguniq} オプション}"
+msgstr "--width@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:159
@@ -602,7 +596,7 @@ msgstr "--no-wrap"
 #: msguniq.texi.orig:161
 #, no-wrap
 msgid "--no-wrap@r{, @code{msguniq} option}"
-msgstr "--no-wrap@r{, @code{msguniq} オプション}"
+msgstr "--no-wrap@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:165
@@ -631,13 +625,13 @@ msgstr "--sort-output"
 #: msguniq.texi.orig:168
 #, no-wrap
 msgid "-s@r{, @code{msguniq} option}"
-msgstr "-s@r{, @code{msguniq} オプション}"
+msgstr "-s@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:169
 #, no-wrap
 msgid "--sort-output@r{, @code{msguniq} option}"
-msgstr "--sort-output@r{, @code{msguniq} オプション}"
+msgstr "--sort-output@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:172
@@ -665,13 +659,13 @@ msgstr "--sort-by-file"
 #: msguniq.texi.orig:175
 #, no-wrap
 msgid "-F@r{, @code{msguniq} option}"
-msgstr "-F@r{, @code{msguniq} オプション}"
+msgstr "-F@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:176
 #, no-wrap
 msgid "--sort-by-file@r{, @code{msguniq} option}"
-msgstr "--sort-by-file@r{, @code{msguniq} オプション}"
+msgstr "--sort-by-file@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:178
@@ -700,13 +694,13 @@ msgstr "--help"
 #: msguniq.texi.orig:186
 #, no-wrap
 msgid "-h@r{, @code{msguniq} option}"
-msgstr "-h@r{, @code{msguniq} オプション}"
+msgstr "-h@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:187
 #, no-wrap
 msgid "--help@r{, @code{msguniq} option}"
-msgstr "--help@r{, @code{msguniq} オプション}"
+msgstr "--help@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:189
@@ -729,13 +723,13 @@ msgstr "--version"
 #: msguniq.texi.orig:192
 #, no-wrap
 msgid "-V@r{, @code{msguniq} option}"
-msgstr "-V@r{, @code{msguniq} オプション}"
+msgstr "-V@r{, @code{msguniq} option}"
 
 #. type: opindex
 #: msguniq.texi.orig:193
 #, no-wrap
 msgid "--version@r{, @code{msguniq} option}"
-msgstr "--version@r{, @code{msguniq} オプション}"
+msgstr "--version@r{, @code{msguniq} option}"
 
 #. type: table
 #: msguniq.texi.orig:195
