@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-07 23:54+0900\n"
-"PO-Revision-Date: 2016-07-30 21:10+0900\n"
+"PO-Revision-Date: 2016-08-12 20:12+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "msgexec"
 #: msgexec.texi.orig:2
 #, no-wrap
 msgid "@code{msgexec} program, usage"
-msgstr "@code{msgexec} プログラム, 使い方"
+msgstr "@code{msgexec} program, usage"
 
 #. type: example
 #: msgexec.texi.orig:5
@@ -37,7 +37,7 @@ msgstr "msgexec [@var{option}] @var{command} [@var{command-option}]\n"
 #: msgexec.texi.orig:7
 #, no-wrap
 msgid "apply command to all translations in a catalog"
-msgstr "カタログ内のすべての翻訳にコマンドを適用する"
+msgstr "apply command to all translations in a catalog"
 
 #. type: Plain text
 #: msgexec.texi.orig:14
@@ -53,7 +53,7 @@ msgstr "@code{msgexec}は、翻訳カタログ内のすべての翻訳に、コ�
 #: msgexec.texi.orig:15
 #, no-wrap
 msgid "@code{xargs}, and output from @code{msgexec}"
-msgstr "@code{xargs}, そして@code{msgexec}の出力"
+msgstr "@code{xargs}, and output from @code{msgexec}"
 
 #. type: Plain text
 #: msgexec.texi.orig:19
@@ -67,19 +67,19 @@ msgstr "@samp{0}という、特別なビルトインコマンドを呼び出す�
 #: msgexec.texi.orig:20
 #, no-wrap
 msgid "MSGEXEC_MSGCTXT@r{, environment variable}"
-msgstr "MSGEXEC_MSGCTXT@r{, 環境変数}"
+msgstr "MSGEXEC_MSGCTXT@r{, environment variable}"
 
 #. type: vindex
 #: msgexec.texi.orig:21
 #, no-wrap
 msgid "MSGEXEC_MSGID@r{, environment variable}"
-msgstr "MSGEXEC_MSGID@r{, 環境変数}"
+msgstr "MSGEXEC_MSGID@r{, environment variable}"
 
 #. type: vindex
 #: msgexec.texi.orig:22
 #, no-wrap
 msgid "MSGEXEC_LOCATION@r{, environment variable}"
-msgstr "MSGEXEC_LOCATION@r{, 環境変数}"
+msgstr "MSGEXEC_LOCATION@r{, environment variable}"
 
 #. type: Plain text
 #: msgexec.texi.orig:29
@@ -96,7 +96,7 @@ msgstr "それぞれの@var{command}呼び出しにおいて、環境変数の@c
 #: msgexec.texi.orig:30
 #, no-wrap
 msgid "catalog encoding and @code{msgexec} output"
-msgstr "カタログのエンコーディングと@code{msgexec}の出力"
+msgstr "catalog encoding and @code{msgexec} output"
 
 #. type: Plain text
 #: msgexec.texi.orig:40
@@ -134,13 +134,13 @@ msgstr "--input=@var{inputfile}"
 #: msgexec.texi.orig:46
 #, no-wrap
 msgid "-i@r{, @code{msgexec} option}"
-msgstr "-i@r{, @code{msgexec} オプション}"
+msgstr "-i@r{, @code{msgexec} option}"
 
 #. type: opindex
 #: msgexec.texi.orig:47
 #, no-wrap
 msgid "--input@r{, @code{msgexec} option}"
-msgstr "--input@r{, @code{msgexec} オプション}"
+msgstr "--input@r{, @code{msgexec} option}"
 
 #. type: table
 #: msgexec.texi.orig:49
@@ -163,13 +163,13 @@ msgstr "--directory=@var{directory}"
 #: msgexec.texi.orig:52
 #, no-wrap
 msgid "-D@r{, @code{msgexec} option}"
-msgstr "-D@r{, @code{msgexec} オプション}"
+msgstr "-D@r{, @code{msgexec} option}"
 
 #. type: opindex
 #: msgexec.texi.orig:53
 #, no-wrap
 msgid "--directory@r{, @code{msgexec} option}"
-msgstr "--directory@r{, @code{msgexec} オプション}"
+msgstr "--directory@r{, @code{msgexec} option}"
 
 #. type: table
 #: msgexec.texi.orig:57
@@ -177,10 +177,7 @@ msgid ""
 "Add @var{directory} to the list of directories.  Source files are searched "
 "relative to this list of directories.  The resulting @file{.po} file will be "
 "written relative to the current directory, though."
-msgstr ""
-"ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よ"
-"りソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレ"
-"ントディレクトリーです。"
+msgstr "ディレクトリーのリストに@var{directory}を追加します。このディレクトリーのリストよりソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレントディレクトリーです。"
 
 #. type: Plain text
 #: msgexec.texi.orig:61
@@ -212,13 +209,13 @@ msgstr "--properties-input"
 #: msgexec.texi.orig:67
 #, no-wrap
 msgid "-P@r{, @code{msgexec} option}"
-msgstr "-P@r{, @code{msgexec} オプション}"
+msgstr "-P@r{, @code{msgexec} option}"
 
 #. type: opindex
 #: msgexec.texi.orig:68
 #, no-wrap
 msgid "--properties-input@r{, @code{msgexec} option}"
-msgstr "--properties-input@r{, @code{msgexec} オプション}"
+msgstr "--properties-input@r{, @code{msgexec} option}"
 
 #. type: table
 #: msgexec.texi.orig:71
@@ -239,7 +236,7 @@ msgstr "--stringtable-input"
 #: msgexec.texi.orig:73
 #, no-wrap
 msgid "--stringtable-input@r{, @code{msgexec} option}"
-msgstr "--stringtable-input@r{, @code{msgexec} オプション}"
+msgstr "--stringtable-input@r{, @code{msgexec} option}"
 
 #. type: table
 #: msgexec.texi.orig:76
@@ -272,13 +269,13 @@ msgstr "--help"
 #: msgexec.texi.orig:84
 #, no-wrap
 msgid "-h@r{, @code{msgexec} option}"
-msgstr "-h@r{, @code{msgexec} オプション}"
+msgstr "-h@r{, @code{msgexec} option}"
 
 #. type: opindex
 #: msgexec.texi.orig:85
 #, no-wrap
 msgid "--help@r{, @code{msgexec} option}"
-msgstr "--help@r{, @code{msgexec} オプション}"
+msgstr "--help@r{, @code{msgexec} option}"
 
 #. type: table
 #: msgexec.texi.orig:87
@@ -301,13 +298,13 @@ msgstr "--version"
 #: msgexec.texi.orig:90
 #, no-wrap
 msgid "-V@r{, @code{msgexec} option}"
-msgstr "-V@r{, @code{msgexec} オプション}"
+msgstr "-V@r{, @code{msgexec} option}"
 
 #. type: opindex
 #: msgexec.texi.orig:91
 #, no-wrap
 msgid "--version@r{, @code{msgexec} option}"
-msgstr "--version@r{, @code{msgexec} オプション}"
+msgstr "--version@r{, @code{msgexec} option}"
 
 #. type: table
 #: msgexec.texi.orig:93
