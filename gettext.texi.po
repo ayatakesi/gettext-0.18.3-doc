@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-30 01:58+0900\n"
-"PO-Revision-Date: 2016-08-12 16:03+0900\n"
+"PO-Revision-Date: 2016-08-12 20:33+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -269,7 +269,8 @@ msgstr "このファイルはGNU @code{gettext}ユーティリティーのドキ
 #: gettext.texi.orig:83 gettext.texi.orig:118
 msgid "Copyright (C) 1995-1998, 2001-2012 Free Software Foundation, Inc."
 msgstr ""
-"@w{Copyright (C) 2015-2016 Ayanokoji Takesi <ayanokoji.takesi@@gmail.com>}@*\n"
+"@w{Copyright (C) 2013-2016 Ayanokoji Takesi <ayanokoji.takesi@@gmail.com>}@*\n"
+"@w{Copyright (C) 1997-2001 Rue. SATOH(佐藤竜一) / Koichi KIMURA(木村浩一)}@*\n"
 "@w{Copyright (C) 1995-1998, 2001-2012 Free Software Foundation, Inc.}"
 
 #. type: ifnothtml
@@ -323,7 +324,10 @@ msgstr "Edition @value{EDITION}, @value{UPDATED}"
 #: gettext.texi.orig:108
 #, no-wrap
 msgid "Ulrich Drepper"
-msgstr "Ulrich Drepper"
+msgstr ""
+" 日本語訳: Ayanokoji Takesi(綾小路剛志)\n"
+"@author 日本語訳: Rue. SATOH(佐藤竜一) / Koichi KIMURA(木村浩一)\n"
+"@author Ulrich Drepper"
 
 #. type: author
 #: gettext.texi.orig:109
@@ -11705,7 +11709,7 @@ msgid ""
 "current one (especially if the msgid is long and only few words in it have "
 "changed).  Finally, it's always welcome to highlight the different sections "
 "of a message in a PO file (comments, msgid, msgstr, etc.)."
-msgstr "普通、翻訳者はPOファイル中の未翻訳、およびfuzzyメッセージを見ることだけに関心を持っています。また、msgidが変更されたことによりメッセージにfuzzyがセットされたときに、以前のメッセージと現在のメッセージの差分を見たいと望みます(長いmsgidの中の数語が変更されたときは特に)。そして最後に、POファイル内のセクションのメッセージ(コメント、msgid、msgstrなど)の違いを強調するのは、いつでも歓迎します。"
+msgstr "翻訳者は通常、POファイル中の未翻訳、およびfuzzyメッセージを見ることだけに関心を持っています。また、msgidが変更されたことによりメッセージにfuzzyがセットされたときに、以前のメッセージと現在のメッセージの差分を見たいと望みます(長いmsgidの中の数語が変更されたときは特に)。そして最後に、POファイル内のセクションのメッセージ(コメント、msgid、msgstrなど)の違いを強調するのは、いつでも歓迎します。"
 
 #. type: Plain text
 #: gettext.texi.orig:4778
@@ -11724,7 +11728,7 @@ msgstr "The @code{--color} option"
 #: gettext.texi.orig:4790
 #, no-wrap
 msgid "--color@r{, @code{msgcat} option}"
-msgstr "--color@r{, @code{msgcat} オプション}"
+msgstr "--color@r{, @code{msgcat} option}"
 
 #. type: Plain text
 #: gettext.texi.orig:4794
@@ -11840,7 +11844,7 @@ msgstr "@code{--color}オプションにより生成される出力は、有効�
 #: gettext.texi.orig:4838
 #, no-wrap
 msgid "TERM@r{, environment variable}"
-msgstr "TERM@r{, 環境変数}"
+msgstr "TERM@r{, environment variable}"
 
 #. type: Plain text
 #: gettext.texi.orig:4843
@@ -11913,7 +11917,7 @@ msgstr "@code{TERM}を設定した後は、@samp{msgcat --color=test}により�
 #: gettext.texi.orig:4874
 #, no-wrap
 msgid "--style@r{, @code{msgcat} option}"
-msgstr "--style@r{, @code{msgcat} オプション}"
+msgstr "--style@r{, @code{msgcat} option}"
 
 #. type: Plain text
 #: gettext.texi.orig:4878
@@ -11927,7 +11931,7 @@ msgstr "@samp{--style=@var{style_file}}オプションで、着色時に使用�
 #: gettext.texi.orig:4879
 #, no-wrap
 msgid "PO_STYLE@r{, environment variable}"
-msgstr "PO_STYLE@r{, 環境変数}"
+msgstr "PO_STYLE@r{, environment variable}"
 
 #. type: Plain text
 #: gettext.texi.orig:4883
@@ -11942,7 +11946,7 @@ msgstr "@code{--style}オプションが指定されていないときは、環�
 msgid ""
 "The default style file is @file{$prefix/share/gettext/styles/po-default."
 "css}, where @code{$prefix} is the installation location."
-msgstr "デフォルトのスタイルファイルは@file{$prefix/share/gettext/styles/po-default.css}です。@code{$prefix}はインストールした場所です。"
+msgstr "デフォルトのスタイルファイルは、@file{$prefix/share/gettext/styles/po-default.css}です。@code{$prefix}はインストールした場所です。"
 
 #. type: Plain text
 #: gettext.texi.orig:4888
@@ -11970,7 +11974,7 @@ msgstr "po-emacs-x.css"
 #: gettext.texi.orig:4894
 msgid ""
 "This style imitates the look used by GNU Emacs 21 and 22 in an X11 window."
-msgstr "このスタイルはX11ウィンドウでのGNU Emacs 21、22の表示を模倣します。"
+msgstr "このスタイルは、X11ウィンドウでのGNU Emacs 21、22の表示を模倣します。"
 
 #. type: item
 #: gettext.texi.orig:4895
@@ -12034,7 +12038,7 @@ msgstr "HTML出力の場合、スタイルファイルはHTML出力中に埋め�
 #. type: itemize
 #: gettext.texi.orig:4928
 msgid "relative to the resulting HTML file, in the case of HTML output,"
-msgstr "HTML出力のときは、関係のある結果HTMLファイル"
+msgstr "HTML出力のときは関係のある結果HTMLファイル、"
 
 #. type: itemize
 #: gettext.texi.orig:4933
@@ -12042,14 +12046,14 @@ msgid ""
 "relative to the style sheet containing the @code{@@import}, in the case of "
 "text output.  (Actually, @code{@@import}s are not yet supported in this "
 "case, due to a limitation in @code{libcroco}.)"
-msgstr "テキスト出力のときは、@code{@@import}を含む、関係のあるスタイルシート(実際にこのようなケースでは、libcrocoの制限により@@importはまだサポートされていません)。"
+msgstr "テキスト出力のときは@code{@@import}を含む、関係のあるスタイルシート(実際にこのようなケースでは、libcrocoの制限により@@importはまだサポートされていません)。"
 
 #. type: Plain text
 #: gettext.texi.orig:4937
 msgid ""
 "CSS rules are built up from selectors and declarations.  The declarations "
 "specify graphical properties; the selectors specify specify when they apply."
-msgstr "CSS ルールはselectorとdeclarationにより構築されます。declarationにはグラフィカルなプロパティーを指定し、selectorにはそれをいつ適用するかを指定します。"
+msgstr "CSSルールはselectorとdeclarationにより構築されます。declarationにはグラフィカルなプロパティーを指定し、selectorにはそれをいつ適用するかを指定します。"
 
 #. type: Plain text
 #: gettext.texi.orig:4940
@@ -12122,7 +12126,7 @@ msgstr ".obsolete"
 msgid ""
 "This matches an obsolete message (i.e.@: a message that was translated but "
 "is not needed by the current POT file any more)."
-msgstr "廃止されたメッセージにマッチします(例: 現在のPOTファイルでは必要とされない翻訳済みのメッセージ)。"
+msgstr "陳腐化したメッセージにマッチします(例: 現在のPOTファイルでは必要とされない翻訳済みのメッセージ)。"
 
 #. type: itemize
 #: gettext.texi.orig:4967
