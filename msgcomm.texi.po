@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-04 22:56+0900\n"
-"PO-Revision-Date: 2016-07-30 21:03+0900\n"
+"PO-Revision-Date: 2016-08-12 19:44+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "msgcomm"
 #: msgcomm.texi.orig:2
 #, no-wrap
 msgid "@code{msgcomm} program, usage"
-msgstr "@code{msgcomm} プログラム, 使い方"
+msgstr "@code{msgcomm} program, usage"
 
 #. type: example
 #: msgcomm.texi.orig:5
@@ -37,7 +37,7 @@ msgstr "msgcomm [@var{option}] [@var{inputfile}]...\n"
 #: msgcomm.texi.orig:7
 #, no-wrap
 msgid "find common messages"
-msgstr "共通のメッセージを探す"
+msgstr "find common messages"
 
 #. type: Plain text
 #: msgcomm.texi.orig:17
@@ -85,13 +85,13 @@ msgstr "--files-from=@var{file}"
 #: msgcomm.texi.orig:26
 #, no-wrap
 msgid "-f@r{, @code{msgcomm} option}"
-msgstr "-f@r{, @code{msgcomm} オプション}"
+msgstr "-f@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:27
 #, no-wrap
 msgid "--files-from@r{, @code{msgcomm} option}"
-msgstr "--files-from@r{, @code{msgcomm} オプション}"
+msgstr "--files-from@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:30
@@ -118,13 +118,13 @@ msgstr "--directory=@var{directory}"
 #: msgcomm.texi.orig:33
 #, no-wrap
 msgid "-D@r{, @code{msgcomm} option}"
-msgstr "-D@r{, @code{msgcomm} オプション}"
+msgstr "-D@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:34
 #, no-wrap
 msgid "--directory@r{, @code{msgcomm} option}"
-msgstr "--directory@r{, @code{msgcomm} オプション}"
+msgstr "--directory@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:38
@@ -132,10 +132,7 @@ msgid ""
 "Add @var{directory} to the list of directories.  Source files are searched "
 "relative to this list of directories.  The resulting @file{.po} file will be "
 "written relative to the current directory, though."
-msgstr ""
-"ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よ"
-"りソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレ"
-"ントディレクトリーです。"
+msgstr "ディレクトリーのリストに@var{directory}を追加します。このディレクトリーのリストよりソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレントディレクトリーです。"
 
 #. type: Plain text
 #: msgcomm.texi.orig:42
@@ -165,13 +162,13 @@ msgstr "--output-file=@var{file}"
 #: msgcomm.texi.orig:48
 #, no-wrap
 msgid "-o@r{, @code{msgcomm} option}"
-msgstr "-o@r{, @code{msgcomm} オプション}"
+msgstr "-o@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:49
 #, no-wrap
 msgid "--output-file@r{, @code{msgcomm} option}"
-msgstr "--output-file@r{, @code{msgcomm} オプション}"
+msgstr "--output-file@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:51
@@ -209,13 +206,13 @@ msgstr "--less-than=@var{number}"
 #: msgcomm.texi.orig:62
 #, no-wrap
 msgid "-<@r{, @code{msgcomm} option}"
-msgstr "-<@r{, @code{msgcomm} オプション}"
+msgstr "-<@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:63
 #, no-wrap
 msgid "--less-than@r{, @code{msgcomm} option}"
-msgstr "--less-than@r{, @code{msgcomm} オプション}"
+msgstr "--less-than@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:66
@@ -242,13 +239,13 @@ msgstr "--more-than=@var{number}"
 #: msgcomm.texi.orig:69
 #, no-wrap
 msgid "->@r{, @code{msgcomm} option}"
-msgstr "->@r{, @code{msgcomm} オプション}"
+msgstr "->@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:70
 #, no-wrap
 msgid "--more-than@r{, @code{msgcomm} option}"
-msgstr "--more-than@r{, @code{msgcomm} オプション}"
+msgstr "--more-than@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:73
@@ -273,13 +270,13 @@ msgstr "--unique"
 #: msgcomm.texi.orig:76
 #, no-wrap
 msgid "-u@r{, @code{msgcomm} option}"
-msgstr "-u@r{, @code{msgcomm} オプション}"
+msgstr "-u@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:77
 #, no-wrap
 msgid "--unique@r{, @code{msgcomm} option}"
-msgstr "--unique@r{, @code{msgcomm} オプション}"
+msgstr "--unique@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:80
@@ -310,13 +307,13 @@ msgstr "--properties-input"
 #: msgcomm.texi.orig:88
 #, no-wrap
 msgid "-P@r{, @code{msgcomm} option}"
-msgstr "-P@r{, @code{msgcomm} オプション}"
+msgstr "-P@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:89
 #, no-wrap
 msgid "--properties-input@r{, @code{msgcomm} option}"
-msgstr "--properties-input@r{, @code{msgcomm} オプション}"
+msgstr "--properties-input@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:92
@@ -337,7 +334,7 @@ msgstr "--stringtable-input"
 #: msgcomm.texi.orig:94
 #, no-wrap
 msgid "--stringtable-input@r{, @code{msgcomm} option}"
-msgstr "--stringtable-input@r{, @code{msgcomm} オプション}"
+msgstr "--stringtable-input@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:97
@@ -370,7 +367,7 @@ msgstr "--color=@var{when}"
 #: msgcomm.texi.orig:107
 #, no-wrap
 msgid "--color@r{, @code{msgcomm} option}"
-msgstr "--color@r{, @code{msgcomm} オプション}"
+msgstr "--color@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:110
@@ -391,7 +388,7 @@ msgstr "--style=@var{style_file}"
 #: msgcomm.texi.orig:112
 #, no-wrap
 msgid "--style@r{, @code{msgcomm} option}"
-msgstr "--style@r{, @code{msgcomm} オプション}"
+msgstr "--style@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:115
@@ -412,7 +409,7 @@ msgstr "--force-po"
 #: msgcomm.texi.orig:117
 #, no-wrap
 msgid "--force-po@r{, @code{msgcomm} option}"
-msgstr "--force-po@r{, @code{msgcomm} オプション}"
+msgstr "--force-po@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:119
@@ -436,13 +433,13 @@ msgstr "--indent"
 #: msgcomm.texi.orig:122
 #, no-wrap
 msgid "-i@r{, @code{msgcomm} option}"
-msgstr "-i@r{, @code{msgcomm} オプション}"
+msgstr "-i@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:123
 #, no-wrap
 msgid "--indent@r{, @code{msgcomm} option}"
-msgstr "--indent@r{, @code{msgcomm} オプション}"
+msgstr "--indent@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:125
@@ -459,7 +456,7 @@ msgstr "--no-location"
 #: msgcomm.texi.orig:127
 #, no-wrap
 msgid "--no-location@r{, @code{msgcomm} option}"
-msgstr "--no-location@r{, @code{msgcomm} オプション}"
+msgstr "--no-location@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:129
@@ -482,13 +479,13 @@ msgstr "--add-location"
 #: msgcomm.texi.orig:132
 #, no-wrap
 msgid "-n@r{, @code{msgcomm} option}"
-msgstr "-n@r{, @code{msgcomm} オプション}"
+msgstr "-n@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:133
 #, no-wrap
 msgid "--add-location@r{, @code{msgcomm} option}"
-msgstr "--add-location@r{, @code{msgcomm} オプション}"
+msgstr "--add-location@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:135
@@ -505,7 +502,7 @@ msgstr "--strict"
 #: msgcomm.texi.orig:137
 #, no-wrap
 msgid "--strict@r{, @code{msgcomm} option}"
-msgstr "--strict@r{, @code{msgcomm} オプション}"
+msgstr "--strict@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:141
@@ -532,13 +529,13 @@ msgstr "--properties-output"
 #: msgcomm.texi.orig:144
 #, no-wrap
 msgid "-p@r{, @code{msgcomm} option}"
-msgstr "-p@r{, @code{msgcomm} オプション}"
+msgstr "-p@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:145
 #, no-wrap
 msgid "--properties-output@r{, @code{msgcomm} option}"
-msgstr "--properties-output@r{, @code{msgcomm} オプション}"
+msgstr "--properties-output@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:149
@@ -546,10 +543,7 @@ msgid ""
 "Write out a Java ResourceBundle in Java @code{.properties} syntax.  Note "
 "that this file format doesn't support plural forms and silently drops "
 "obsolete messages."
-msgstr ""
-"Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイ"
-"ル形式はplural formをサポートせず、廃止されたメッセージを暗黙で除去することに"
-"注意してください。"
+msgstr "Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイル形式はplural formをサポートせず、陳腐化したメッセージを暗黙で除去することに注意してください。"
 
 #. type: item
 #: msgcomm.texi.orig:150
@@ -561,7 +555,7 @@ msgstr "--stringtable-output"
 #: msgcomm.texi.orig:151
 #, no-wrap
 msgid "--stringtable-output@r{, @code{msgcomm} option}"
-msgstr "--stringtable-output@r{, @code{msgcomm} オプション}"
+msgstr "--stringtable-output@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:154
@@ -589,13 +583,13 @@ msgstr "--width=@var{number}"
 #: msgcomm.texi.orig:157
 #, no-wrap
 msgid "-w@r{, @code{msgcomm} option}"
-msgstr "-w@r{, @code{msgcomm} オプション}"
+msgstr "-w@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:158
 #, no-wrap
 msgid "--width@r{, @code{msgcomm} option}"
-msgstr "--width@r{, @code{msgcomm} オプション}"
+msgstr "--width@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:162
@@ -618,7 +612,7 @@ msgstr "--no-wrap"
 #: msgcomm.texi.orig:164
 #, no-wrap
 msgid "--no-wrap@r{, @code{msgcomm} option}"
-msgstr "--no-wrap@r{, @code{msgcomm} オプション}"
+msgstr "--no-wrap@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:168
@@ -647,13 +641,13 @@ msgstr "--sort-output"
 #: msgcomm.texi.orig:171
 #, no-wrap
 msgid "-s@r{, @code{msgcomm} option}"
-msgstr "-s@r{, @code{msgcomm} オプション}"
+msgstr "-s@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:172
 #, no-wrap
 msgid "--sort-output@r{, @code{msgcomm} option}"
-msgstr "--sort-output@r{, @code{msgcomm} オプション}"
+msgstr "--sort-output@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:175
@@ -681,13 +675,13 @@ msgstr "--sort-by-file"
 #: msgcomm.texi.orig:178
 #, no-wrap
 msgid "-F@r{, @code{msgcomm} option}"
-msgstr "-F@r{, @code{msgcomm} オプション}"
+msgstr "-F@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:179
 #, no-wrap
 msgid "--sort-by-file@r{, @code{msgcomm} option}"
-msgstr "--sort-by-file@r{, @code{msgcomm} オプション}"
+msgstr "--sort-by-file@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:181
@@ -704,7 +698,7 @@ msgstr "--omit-header"
 #: msgcomm.texi.orig:183
 #, no-wrap
 msgid "--omit-header@r{, @code{msgcomm} option}"
-msgstr "--omit-header@r{, @code{msgcomm} オプション}"
+msgstr "--omit-header@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:185
@@ -733,13 +727,13 @@ msgstr "--help"
 #: msgcomm.texi.orig:193
 #, no-wrap
 msgid "-h@r{, @code{msgcomm} option}"
-msgstr "-h@r{, @code{msgcomm} オプション}"
+msgstr "-h@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:194
 #, no-wrap
 msgid "--help@r{, @code{msgcomm} option}"
-msgstr "--help@r{, @code{msgcomm} オプション}"
+msgstr "--help@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:196
@@ -762,13 +756,13 @@ msgstr "--version"
 #: msgcomm.texi.orig:199
 #, no-wrap
 msgid "-V@r{, @code{msgcomm} option}"
-msgstr "-V@r{, @code{msgcomm} オプション}"
+msgstr "-V@r{, @code{msgcomm} option}"
 
 #. type: opindex
 #: msgcomm.texi.orig:200
 #, no-wrap
 msgid "--version@r{, @code{msgcomm} option}"
-msgstr "--version@r{, @code{msgcomm} オプション}"
+msgstr "--version@r{, @code{msgcomm} option}"
 
 #. type: table
 #: msgcomm.texi.orig:202
