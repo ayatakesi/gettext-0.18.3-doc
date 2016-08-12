@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-30 01:58+0900\n"
-"PO-Revision-Date: 2016-08-12 20:33+0900\n"
+"PO-Revision-Date: 2016-08-12 21:12+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -12917,13 +12917,13 @@ msgstr "msgunfmt.texi"
 #: gettext.texi.orig:5313
 #, no-wrap
 msgid "MO file's format"
-msgstr "MOファイルの書式"
+msgstr "MO file's format"
 
 #. type: cindex
 #: gettext.texi.orig:5314
 #, no-wrap
 msgid "file format, @file{.mo}"
-msgstr "ファイル書式, @file{.mo}"
+msgstr "file format, @file{.mo}"
 
 #. type: Plain text
 #: gettext.texi.orig:5318
@@ -12936,7 +12936,7 @@ msgstr "生成されたMOファイルの書式については、以下のよう�
 #: gettext.texi.orig:5319
 #, no-wrap
 msgid "magic signature of MO files"
-msgstr "MOファイルのmagic signature"
+msgstr "magic signature of MO files"
 
 #. type: Plain text
 #: gettext.texi.orig:5324
@@ -12945,7 +12945,7 @@ msgid ""
 "will always signal GNU MO files.  The number is stored in the byte order of "
 "the generating machine, so the magic number really is two numbers: "
 "@code{0x950412de} and @code{0xde120495}."
-msgstr "最初の2wordには、ファイルの識別が含まれます。magic number は常にGNU MOファイルを意味するnumberになります。numberは生成されたマシンのバイトオーダーにしたがって格納されます。つまり実際のmagic numberは、@code{0x950412de}と@code{0xde120495}のいずれかです。"
+msgstr "最初の2wordには、ファイルの識別が含まれます。magic numberは常にGNU MOファイルを意味するnumberになります。numberは生成されたマシンのバイトオーダーにしたがって格納されます。つまり実際のmagic numberは、@code{0x950412de}と@code{0xde120495}のいずれかです。"
 
 #. type: Plain text
 #: gettext.texi.orig:5335
@@ -12959,7 +12959,7 @@ msgid ""
 "reading the MO file entirely; whereas an unexpected minor revision number "
 "means that the file can be read but will not reveal its full contents, when "
 "parsed by a program that supports only smaller minor revision numbers."
-msgstr "2番目のwordは、ファイル書式の現在のrevisionを説明し、major、および minor revision numberから成り立ちます。revision numberにより、MOファイルの読み手は、古い書式と新しい書式を識別して、(可能なかぎり)内容を処理できます。いまのところmajor revisionは0か1で、minor revisionも0と1ですが、将来は追加されるかもしれません。想定外のmajor revision numberの場合、プログラムはMOファイル全体を読み込むのを中止する必要があります。想定外のminor revision numberは、ファイルは読み込めても、すべての内容は読み込めないことを意味します。プログラムが解析できるのは、より小さなminor revision numberのときだけです。"
+msgstr "2番目のwordは、ファイル書式の現在のrevisionを説明し、major revision number、およびminor revision numberから成り立ちます。revision numberにより、MOファイルの読み手は、古い書式と新しい書式を識別して、(可能なかぎり)内容を処理できます。いまのところmajor revisionは0か1で、minor revisionも0と1ですが、将来は追加されるかもしれません。想定外のmajor revision numberの場合、プログラムはMOファイル全体を読み込むのを中止する必要があります。想定外のminor revision numberは、ファイルは読み込めても、すべての内容は読み込めないことを意味します。プログラムが解析できるのは、より小さなminor revision numberのときだけです。"
 
 #. type: Plain text
 #: gettext.texi.orig:5340
@@ -13003,13 +13003,13 @@ msgid ""
 "particular MO file, and the empty string necessarily becomes the first in "
 "both the original and translated tables, making the system information very "
 "easy to find."
-msgstr "元文字列をソートして格納することにより、MOファイルにハッシュテーブルを含まれていなかったり、含まれていたとしても実際に使うことができないときにも、単純な二分探索が可能になります。これには他にも利点があります。GNU @code{gettext}は、POファイルの空の文字列にたいする翻訳文字列として、MOファイルに付加するシステム情報を割り当てます。この空文字列と翻訳のペアが、元文字列のテーブルと、翻訳文字列のテーブルの最初に配置されることにより、システム情報を簡単に見つけることができるのです。"
+msgstr "元の文字列をソートして格納することにより、MOファイルにハッシュテーブルを含まれていなかったり、含まれていたとしても実際に使うことができないときにも、単純な二分探索が可能になります。これには他にも利点があります。GNU @code{gettext}は、POファイルの空の文字列にたいする翻訳文字列として、MOファイルに付加するシステム情報を割り当てます。この空文字列と翻訳のペアが、元の文字列のテーブルと、翻訳文字列のテーブルの最初に配置されることにより、システム情報を簡単に見つけることができるのです。"
 
 #. type: cindex
 #: gettext.texi.orig:5367
 #, no-wrap
 msgid "hash table, inside MO files"
-msgstr "MOファイル内のハッシュテーブル"
+msgstr "hash table, inside MO files"
 
 #. type: Plain text
 #: gettext.texi.orig:5375
@@ -13039,7 +13039,7 @@ msgstr "ハッシュテーブルを参照して取得する文字列自体は@ke
 #: gettext.texi.orig:5384
 #, no-wrap
 msgid "context, in MO files"
-msgstr "context, MOファイル内"
+msgstr "context, in MO files"
 
 #. type: Plain text
 #: gettext.texi.orig:5387
@@ -13052,7 +13052,7 @@ msgstr "contextについては、元の文字列の代わりに、context文字�
 #: gettext.texi.orig:5388
 #, no-wrap
 msgid "plural forms, in MO files"
-msgstr "plural forms, MOファイル内"
+msgstr "plural forms, in MO files"
 
 #. type: Plain text
 #: gettext.texi.orig:5397
@@ -13078,7 +13078,7 @@ msgid ""
 "to have wide characters in MO files.  They would make the file unnecessarily "
 "large, and the @samp{wchar_t} type being platform dependent, MO files would "
 "be platform dependent as well.)"
-msgstr "MOファイル内の文字列に@key{NUL}が埋め込まれることを防ぐ方法はありません。しかし現在のプログラムのインターフェースは、文字列が@key{NUL}で終端されると仮定しているため、文字列の途中に@key{NUL}が埋め込まれている場合、何らかの不都合が起こり得ます。MOファイルの書式は、後から他のインターフェースを適用できるほどには一般的です。一例としては、意図しない@key{NUL}が出現するような箇所にwidecharacterを使用する方法などがあります(実際にはMOファイル中にwide characterを保持することはしません。wide characterを使用するとファイルの容量が不必要に大きくなります。また@samp{wchar_t}はプラットフォームに依存するため、MOファイルもプラットフォームに依存することになるからです)。"
+msgstr "MOファイル内の文字列に@key{NUL}が埋め込まれることを防ぐ方法はありません。しかし現在のプログラムのインターフェースは、文字列が@key{NUL}で終端されると仮定しているため、文字列の途中に@key{NUL}が埋め込まれている場合、何らかの不都合が起こり得ます。MOファイルの書式は、後から他のインターフェースを適用できるほどには一般的です。一例としては、意図しない@key{NUL}が出現するような箇所にwide characterを使用する方法などがあります(実際にはMOファイル中にwide characterを保持することはしません。wide characterを使用するとファイルの容量が不必要に大きくなります。また@samp{wchar_t}はプラットフォームに依存するため、MOファイルもプラットフォームに依存することになるからです)。"
 
 #. type: Plain text
 #: gettext.texi.orig:5416
@@ -13164,7 +13164,7 @@ msgstr "GNU @code{gettext}により提供される現在のメッセージカタ
 #: gettext.texi.orig:5496
 #, no-wrap
 msgid "@code{catgets}, X/Open specification"
-msgstr "@code{catgets}, X/Openの仕様"
+msgstr "@code{catgets}, X/Open specification"
 
 #. type: Plain text
 #: gettext.texi.orig:5505
