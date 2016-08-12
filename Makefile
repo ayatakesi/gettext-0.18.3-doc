@@ -93,7 +93,7 @@ html/index.html: $(TEXIS)
 	makeinfo -o html/ --html gettext.texi
 
 gettext183-ja.info: $(TEXIS)
-	makeinfo --no-split -o gettext183-ja.info emacs.texi
+	makeinfo --no-split -o gettext183-ja.info gettext.texi
 
 gettext.pdf: $(TEXIS)
 	TEX=ptex texi2dvi -c gettext.texi
