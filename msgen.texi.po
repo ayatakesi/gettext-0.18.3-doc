@@ -1,0 +1,637 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-09-07 23:36+0900\n"
+"PO-Revision-Date: 2016-07-30 21:10+0900\n"
+"Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
+"Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: pindex
+#: msgen.texi.orig:1
+#, no-wrap
+msgid "msgen"
+msgstr "msgen"
+
+#. type: cindex
+#: msgen.texi.orig:2
+#, no-wrap
+msgid "@code{msgen} program, usage"
+msgstr "@code{msgen} プログラム, 使い方"
+
+#. type: example
+#: msgen.texi.orig:5
+#, no-wrap
+msgid "msgen [@var{option}] @var{inputfile}\n"
+msgstr "msgen [@var{option}] @var{inputfile}\n"
+
+#. type: cindex
+#: msgen.texi.orig:7
+#, no-wrap
+msgid "generate translation catalog in English"
+msgstr "Englishによる翻訳カタログを生成する"
+
+#. type: Plain text
+#: msgen.texi.orig:12
+msgid ""
+"The @code{msgen} program creates an English translation catalog.  The input "
+"file is the last created English PO file, or a PO Template file (generally "
+"created by xgettext).  Untranslated entries are assigned a translation that "
+"is identical to the msgid."
+msgstr "@code{msgen}は、Englishの翻訳カタログを作成するプログラムです。最後に作成されたEnglishのPOファイル、またはPO Template(xgettext により生成されます)を入力とし、未翻訳エントリーの翻訳に、msgidと同じ文字列を割り当てます。"
+
+#. type: Plain text
+#: msgen.texi.orig:16
+msgid ""
+"Note: @samp{msginit --no-translator --locale=en} performs a very similar "
+"task.  The main difference is that @code{msginit} cares specially about the "
+"header entry, whereas @code{msgen} doesn't."
+msgstr "注意: @samp{msginit --no-translator --locale=en}でも、同じような処理を行うことができます。異なるのは、@code{msginit}はヘッダーエントリーにたいして特別な配慮を払いますが、@code{msgen}は違うという点です。"
+
+#. type: subsection
+#: msgen.texi.orig:17
+#, no-wrap
+msgid "Input file location"
+msgstr "Input file location"
+
+#. type: var{#1}
+#: msgen.texi.orig:20
+#, no-wrap
+msgid "inputfile"
+msgstr "inputfile"
+
+#. type: table
+#: msgen.texi.orig:22
+msgid "Input PO or POT file."
+msgstr "入力となるPOまたはPOTファイルです。"
+
+#. type: item
+#: msgen.texi.orig:23
+#, no-wrap
+msgid "-D @var{directory}"
+msgstr "-D @var{directory}"
+
+#. type: itemx
+#: msgen.texi.orig:24
+#, no-wrap
+msgid "--directory=@var{directory}"
+msgstr "--directory=@var{directory}"
+
+#. type: opindex
+#: msgen.texi.orig:25
+#, no-wrap
+msgid "-D@r{, @code{msgen} option}"
+msgstr "-D@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:26
+#, no-wrap
+msgid "--directory@r{, @code{msgen} option}"
+msgstr "--directory@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:30
+msgid ""
+"Add @var{directory} to the list of directories.  Source files are searched "
+"relative to this list of directories.  The resulting @file{.po} file will be "
+"written relative to the current directory, though."
+msgstr ""
+"ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よ"
+"りソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレ"
+"ントディレクトリーです。"
+
+#. type: Plain text
+#: msgen.texi.orig:34
+msgid "If @var{inputfile} is @samp{-}, standard input is read."
+msgstr ""
+"@var{inputfile}に@samp{-}が指定された場合は、標準入力から読み込みます。"
+
+#. type: subsection
+#: msgen.texi.orig:35
+#, no-wrap
+msgid "Output file location"
+msgstr "Output file location"
+
+#. type: item
+#: msgen.texi.orig:38
+#, no-wrap
+msgid "-o @var{file}"
+msgstr "-o @var{file}"
+
+#. type: itemx
+#: msgen.texi.orig:39
+#, no-wrap
+msgid "--output-file=@var{file}"
+msgstr "--output-file=@var{file}"
+
+#. type: opindex
+#: msgen.texi.orig:40
+#, no-wrap
+msgid "-o@r{, @code{msgen} option}"
+msgstr "-o@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:41
+#, no-wrap
+msgid "--output-file@r{, @code{msgen} option}"
+msgstr "--output-file@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:43
+msgid "Write output to specified file."
+msgstr "指定されたファイルに出力を書き込みます。"
+
+#. type: Plain text
+#: msgen.texi.orig:48
+msgid ""
+"The results are written to standard output if no output file is specified or "
+"if it is @samp{-}."
+msgstr ""
+"出力ファイルが指定されていない、または@samp{-}が指定された場合、結果は標準出"
+"力に出力されます。"
+
+#. type: subsection
+#: msgen.texi.orig:49
+#, no-wrap
+msgid "Input file syntax"
+msgstr "Input file syntax"
+
+#. type: item
+#: msgen.texi.orig:52
+#, no-wrap
+msgid "-P"
+msgstr "-P"
+
+#. type: itemx
+#: msgen.texi.orig:53
+#, no-wrap
+msgid "--properties-input"
+msgstr "--properties-input"
+
+#. type: opindex
+#: msgen.texi.orig:54
+#, no-wrap
+msgid "-P@r{, @code{msgen} option}"
+msgstr "-P@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:55
+#, no-wrap
+msgid "--properties-input@r{, @code{msgen} option}"
+msgstr "--properties-input@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:58
+msgid ""
+"Assume the input file is a Java ResourceBundle in Java @code{.properties} "
+"syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、Javaの@code{.properties}の構文にのっ"
+"とったJava ResourceBundleファイルだとみなします。"
+
+#. type: item
+#: msgen.texi.orig:59
+#, no-wrap
+msgid "--stringtable-input"
+msgstr "--stringtable-input"
+
+#. type: opindex
+#: msgen.texi.orig:60
+#, no-wrap
+msgid "--stringtable-input@r{, @code{msgen} option}"
+msgstr "--stringtable-input@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:63
+msgid ""
+"Assume the input file is a NeXTstep/GNUstep localized resource file in "
+"@code{.strings} syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、NeXTstep/GNUstepのlocalized resource"
+"の@code{.strings}の構文にのっとったファイルだとみなします。"
+
+#. type: subsection
+#: msgen.texi.orig:66
+#, no-wrap
+msgid "Output details"
+msgstr "Output details"
+
+#. type: item
+#: msgen.texi.orig:71
+#, no-wrap
+msgid "--lang=@var{catalogname}"
+msgstr "--lang=@var{catalogname}"
+
+#. type: opindex
+#: msgen.texi.orig:72
+#, no-wrap
+msgid "--lang@r{, @code{msgen} option}"
+msgstr "--lang@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:77
+msgid ""
+"Specify the @samp{Language} field to be used in the header entry.  See "
+"@ref{Header Entry} for the meaning of this field.  Note: The @samp{Language-"
+"Team} and @samp{Plural-Forms} fields are not set by this option."
+msgstr "ヘッダーエントリーで使用される、@samp{Language}フィールドを指定します。このフィールドの意味については、@ref{Header Entry}を参照してください。注意: このオプションでは、@samp{Language-Team}と@samp{Plural-Forms}はセットされません。"
+
+#. type: item
+#: msgen.texi.orig:78
+#, no-wrap
+msgid "--color"
+msgstr "--color"
+
+#. type: itemx
+#: msgen.texi.orig:79
+#, no-wrap
+msgid "--color=@var{when}"
+msgstr "--color=@var{when}"
+
+#. type: opindex
+#: msgen.texi.orig:80
+#, no-wrap
+msgid "--color@r{, @code{msgen} option}"
+msgstr "--color@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:83
+msgid ""
+"Specify whether or when to use colors and other text attributes.  See "
+"@ref{The --color option} for details."
+msgstr ""
+"色や色以外のテキスト属性を使うか、いつ使うかを指定します。詳細は@ref{The --"
+"color option}を参照してください。"
+
+#. type: item
+#: msgen.texi.orig:84
+#, no-wrap
+msgid "--style=@var{style_file}"
+msgstr "--style=@var{style_file}"
+
+#. type: opindex
+#: msgen.texi.orig:85
+#, no-wrap
+msgid "--style@r{, @code{msgen} option}"
+msgstr "--style@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:88
+msgid ""
+"Specify the CSS style rule file to use for @code{--color}.  See @ref{The --"
+"style option} for details."
+msgstr ""
+"@code{--color}にたいしてCSS style ruleファイルを使うかを指定します。詳細は"
+"@ref{The --style option}を参照してください。"
+
+#. type: item
+#: msgen.texi.orig:89
+#, no-wrap
+msgid "--force-po"
+msgstr "--force-po"
+
+#. type: opindex
+#: msgen.texi.orig:90
+#, no-wrap
+msgid "--force-po@r{, @code{msgen} option}"
+msgstr "--force-po@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:92
+msgid "Always write an output file even if it contains no message."
+msgstr ""
+"メッセージが何も含まれていない場合でも、常に出力ファイルに書き込みます。"
+
+#. type: item
+#: msgen.texi.orig:93
+#, no-wrap
+msgid "-i"
+msgstr "-i"
+
+#. type: itemx
+#: msgen.texi.orig:94
+#, no-wrap
+msgid "--indent"
+msgstr "--indent"
+
+#. type: opindex
+#: msgen.texi.orig:95
+#, no-wrap
+msgid "-i@r{, @code{msgen} option}"
+msgstr "-i@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:96
+#, no-wrap
+msgid "--indent@r{, @code{msgen} option}"
+msgstr "--indent@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:98
+msgid "Write the .po file using indented style."
+msgstr "インデントされた形式で.poファイルを書き込みます。"
+
+#. type: item
+#: msgen.texi.orig:99
+#, no-wrap
+msgid "--no-location"
+msgstr "--no-location"
+
+#. type: opindex
+#: msgen.texi.orig:100
+#, no-wrap
+msgid "--no-location@r{, @code{msgen} option}"
+msgstr "--no-location@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:102
+msgid "Do not write @samp{#: @var{filename}:@var{line}} lines."
+msgstr "@samp{#: @var{filename}:@var{line}}という行を書き込みません。"
+
+#. type: item
+#: msgen.texi.orig:103
+#, no-wrap
+msgid "--add-location"
+msgstr "--add-location"
+
+#. type: opindex
+#: msgen.texi.orig:104
+#, no-wrap
+msgid "--add-location@r{, @code{msgen} option}"
+msgstr "--add-location@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:106
+msgid "Generate @samp{#: @var{filename}:@var{line}} lines (default)."
+msgstr "@samp{#: @var{filename}:@var{line}}という行を生成します(デフォルト)。"
+
+#. type: item
+#: msgen.texi.orig:107
+#, no-wrap
+msgid "--strict"
+msgstr "--strict"
+
+#. type: opindex
+#: msgen.texi.orig:108
+#, no-wrap
+msgid "--strict@r{, @code{msgen} option}"
+msgstr "--strict@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:112
+msgid ""
+"Write out a strict Uniforum conforming PO file.  Note that this Uniforum "
+"format should be avoided because it doesn't support the GNU extensions."
+msgstr ""
+"Uniforumに厳密に準拠したPOファイルを出力します。このUniforum形式はGNUの拡張を"
+"サポートしないため避けたほうがよいでしょう。"
+
+#. type: item
+#: msgen.texi.orig:113
+#, no-wrap
+msgid "-p"
+msgstr "-p"
+
+#. type: itemx
+#: msgen.texi.orig:114
+#, no-wrap
+msgid "--properties-output"
+msgstr "--properties-output"
+
+#. type: opindex
+#: msgen.texi.orig:115
+#, no-wrap
+msgid "-p@r{, @code{msgen} option}"
+msgstr "-p@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:116
+#, no-wrap
+msgid "--properties-output@r{, @code{msgen} option}"
+msgstr "--properties-output@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:120
+msgid ""
+"Write out a Java ResourceBundle in Java @code{.properties} syntax.  Note "
+"that this file format doesn't support plural forms and silently drops "
+"obsolete messages."
+msgstr ""
+"Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイ"
+"ル形式はplural formをサポートせず、廃止されたメッセージを暗黙で除去することに"
+"注意してください。"
+
+#. type: item
+#: msgen.texi.orig:121
+#, no-wrap
+msgid "--stringtable-output"
+msgstr "--stringtable-output"
+
+#. type: opindex
+#: msgen.texi.orig:122
+#, no-wrap
+msgid "--stringtable-output@r{, @code{msgen} option}"
+msgstr "--stringtable-output@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:125
+msgid ""
+"Write out a NeXTstep/GNUstep localized resource file in @code{.strings} "
+"syntax.  Note that this file format doesn't support plural forms."
+msgstr ""
+"@code{.strings}の書式で、NeXTstep/GNUstepのローカライズされたリソースファイル"
+"を出力します。このファイル形式はplural formをサポートしないことに注意してくだ"
+"さい。"
+
+#. type: item
+#: msgen.texi.orig:126
+#, no-wrap
+msgid "-w @var{number}"
+msgstr "-w @var{number}"
+
+#. type: itemx
+#: msgen.texi.orig:127
+#, no-wrap
+msgid "--width=@var{number}"
+msgstr "--width=@var{number}"
+
+#. type: opindex
+#: msgen.texi.orig:128
+#, no-wrap
+msgid "-w@r{, @code{msgen} option}"
+msgstr "-w@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:129
+#, no-wrap
+msgid "--width@r{, @code{msgen} option}"
+msgstr "--width@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:133
+msgid ""
+"Set the output page width.  Long strings in the output files will be split "
+"across multiple lines in order to ensure that each line's width (= number of "
+"screen columns) is less or equal to the given @var{number}."
+msgstr ""
+"出力ページの幅をセットします。これにより出力ファイル中の長い文字列が指定した"
+"幅(例:スクリーンの列数)に収まるように、各行の長さが@var{number}以下のような複"
+"数の行に分割されます。"
+
+#. type: item
+#: msgen.texi.orig:134
+#, no-wrap
+msgid "--no-wrap"
+msgstr "--no-wrap"
+
+#. type: opindex
+#: msgen.texi.orig:135
+#, no-wrap
+msgid "--no-wrap@r{, @code{msgen} option}"
+msgstr "--no-wrap@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:139
+msgid ""
+"Do not break long message lines.  Message lines whose width exceeds the "
+"output page width will not be split into several lines.  Only file reference "
+"lines which are wider than the output page width will be split."
+msgstr ""
+"長いメッセージ行を分割しません。出力ページの幅を超えるようなメッセージ行も、"
+"複数行に分割されません。出力ページの幅を超えるファイル参照行だけが分割されま"
+"す。"
+
+#. type: item
+#: msgen.texi.orig:140
+#, no-wrap
+msgid "-s"
+msgstr "-s"
+
+#. type: itemx
+#: msgen.texi.orig:141
+#, no-wrap
+msgid "--sort-output"
+msgstr "--sort-output"
+
+#. type: opindex
+#: msgen.texi.orig:142
+#, no-wrap
+msgid "-s@r{, @code{msgen} option}"
+msgstr "-s@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:143
+#, no-wrap
+msgid "--sort-output@r{, @code{msgen} option}"
+msgstr "--sort-output@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:146
+msgid ""
+"Generate sorted output.  Note that using this option makes it much harder "
+"for the translator to understand each message's context."
+msgstr ""
+"ソートされた出力を生成します。このオプションを使用することにより翻訳者が、"
+"メッセージがどのようなコンテキストで使用されるかを理解するのが、困難になるこ"
+"とに注意してください。"
+
+#. type: item
+#: msgen.texi.orig:147
+#, no-wrap
+msgid "-F"
+msgstr "-F"
+
+#. type: itemx
+#: msgen.texi.orig:148
+#, no-wrap
+msgid "--sort-by-file"
+msgstr "--sort-by-file"
+
+#. type: opindex
+#: msgen.texi.orig:149
+#, no-wrap
+msgid "-F@r{, @code{msgen} option}"
+msgstr "-F@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:150
+#, no-wrap
+msgid "--sort-by-file@r{, @code{msgen} option}"
+msgstr "--sort-by-file@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:152
+msgid "Sort output by file location."
+msgstr "ファイルの場所により出力をソートします。"
+
+#. type: subsection
+#: msgen.texi.orig:155
+#, no-wrap
+msgid "Informative output"
+msgstr "Informative output"
+
+#. type: item
+#: msgen.texi.orig:158
+#, no-wrap
+msgid "-h"
+msgstr "-h"
+
+#. type: itemx
+#: msgen.texi.orig:159
+#, no-wrap
+msgid "--help"
+msgstr "--help"
+
+#. type: opindex
+#: msgen.texi.orig:160
+#, no-wrap
+msgid "-h@r{, @code{msgen} option}"
+msgstr "-h@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:161
+#, no-wrap
+msgid "--help@r{, @code{msgen} option}"
+msgstr "--help@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:163
+msgid "Display this help and exit."
+msgstr "このヘルプを表示して終了します。"
+
+#. type: item
+#: msgen.texi.orig:164
+#, no-wrap
+msgid "-V"
+msgstr "-V"
+
+#. type: itemx
+#: msgen.texi.orig:165
+#, no-wrap
+msgid "--version"
+msgstr "--version"
+
+#. type: opindex
+#: msgen.texi.orig:166
+#, no-wrap
+msgid "-V@r{, @code{msgen} option}"
+msgstr "-V@r{, @code{msgen} オプション}"
+
+#. type: opindex
+#: msgen.texi.orig:167
+#, no-wrap
+msgid "--version@r{, @code{msgen} option}"
+msgstr "--version@r{, @code{msgen} オプション}"
+
+#. type: table
+#: msgen.texi.orig:169
+msgid "Output version information and exit."
+msgstr "バージョン情報を表示して終了します。"

@@ -1,0 +1,315 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-09-07 23:54+0900\n"
+"PO-Revision-Date: 2016-07-30 21:10+0900\n"
+"Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
+"Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: pindex
+#: msgexec.texi.orig:1
+#, no-wrap
+msgid "msgexec"
+msgstr "msgexec"
+
+#. type: cindex
+#: msgexec.texi.orig:2
+#, no-wrap
+msgid "@code{msgexec} program, usage"
+msgstr "@code{msgexec} プログラム, 使い方"
+
+#. type: example
+#: msgexec.texi.orig:5
+#, no-wrap
+msgid "msgexec [@var{option}] @var{command} [@var{command-option}]\n"
+msgstr "msgexec [@var{option}] @var{command} [@var{command-option}]\n"
+
+#. type: cindex
+#: msgexec.texi.orig:7
+#, no-wrap
+msgid "apply command to all translations in a catalog"
+msgstr "カタログ内のすべての翻訳にコマンドを適用する"
+
+#. type: Plain text
+#: msgexec.texi.orig:14
+msgid ""
+"The @code{msgexec} program applies a command to all translations of a "
+"translation catalog.  The @var{command} can be any program that reads a "
+"translation from standard input.  It is invoked once for each translation.  "
+"Its output becomes msgexec's output.  @code{msgexec}'s return code is the "
+"maximum return code across all invocations."
+msgstr "@code{msgexec}は、翻訳カタログ内のすべての翻訳に、コマンドを適用するためのプログラムです。@var{command}には、標準入力から翻訳を読み込む任意のプログラムを指定できます。呼び出しは、それぞれの翻訳について1回行われます。コマンドの出力は、msgexecの出力となります。@code{msgexec}自体の戻り値は、すべての呼び出しにおける最大の戻り値となります。"
+
+#. type: cindex
+#: msgexec.texi.orig:15
+#, no-wrap
+msgid "@code{xargs}, and output from @code{msgexec}"
+msgstr "@code{xargs}, そして@code{msgexec}の出力"
+
+#. type: Plain text
+#: msgexec.texi.orig:19
+msgid ""
+"A special builtin command called @samp{0} outputs the translation, followed "
+"by a null byte.  The output of @samp{msgexec 0} is suitable as input for "
+"@samp{xargs -0}."
+msgstr "@samp{0}という、特別なビルトインコマンドを呼び出すと、NULL終端された翻訳が出力されます。@samp{msgexec 0}の出力は、@samp{xargs -0}の入力として適しています。"
+
+#. type: vindex
+#: msgexec.texi.orig:20
+#, no-wrap
+msgid "MSGEXEC_MSGCTXT@r{, environment variable}"
+msgstr "MSGEXEC_MSGCTXT@r{, 環境変数}"
+
+#. type: vindex
+#: msgexec.texi.orig:21
+#, no-wrap
+msgid "MSGEXEC_MSGID@r{, environment variable}"
+msgstr "MSGEXEC_MSGID@r{, 環境変数}"
+
+#. type: vindex
+#: msgexec.texi.orig:22
+#, no-wrap
+msgid "MSGEXEC_LOCATION@r{, environment variable}"
+msgstr "MSGEXEC_LOCATION@r{, 環境変数}"
+
+#. type: Plain text
+#: msgexec.texi.orig:29
+msgid ""
+"During each @var{command} invocation, the environment variable "
+"@code{MSGEXEC_MSGID} is bound to the message's msgid, and the environment "
+"variable @code{MSGEXEC_LOCATION} is bound to the location in the PO file of "
+"the message.  If the message has a context, the environment variable "
+"@code{MSGEXEC_MSGCTXT} is bound to the message's msgctxt, otherwise it is "
+"unbound."
+msgstr "それぞれの@var{command}呼び出しにおいて、環境変数の@code{MSGEXEC_MSGID}と@code{MSGEXEC_LOCATION}に、メッセージのmsgidとメッセージを含むPOファイルの場所がバインドされます。メッセージがコンテキストを保有する場合は、環境変数@code{MSGEXEC_MSGCTXT}がメッセージのコンテキストにバインドされます(コンテキストを保有していない場合にはバインドされません)。"
+
+#. type: cindex
+#: msgexec.texi.orig:30
+#, no-wrap
+msgid "catalog encoding and @code{msgexec} output"
+msgstr "カタログのエンコーディングと@code{msgexec}の出力"
+
+#. type: Plain text
+#: msgexec.texi.orig:40
+msgid ""
+"Note: It is your responsibility to ensure that the @var{command} can cope "
+"with input encoded in the translation catalog's encoding.  If the "
+"@var{command} wants input in a particular encoding, you can in a first step "
+"convert the translation catalog to that encoding using the @samp{msgconv} "
+"program, before invoking @samp{msgexec}.  If the @var{command} wants input "
+"in the locale's encoding, but you want to avoid the locale's encoding, then "
+"you can first convert the translation catalog to UTF-8 using the "
+"@samp{msgconv} program and then make @samp{msgexec} work in an UTF-8 locale, "
+"by using the @code{LC_ALL} environment variable."
+msgstr "注意: @var{command}が翻訳カタログ内の翻訳のエンコーディングに対処できるようにするのは、あなたの責任です。@var{command}が特定のエンコーディングを期待する場合、@samp{msgexec}を呼び出す前に、@samp{msgconv}プログラムで、翻訳カタログをそのエンコーディングに変換するのが最初のステップとなります。@var{command}がlocaleのエンコーディングを期待しているが、あなたはlocaleのエンコーディングを無視したいときには、最初に@samp{msgconv}で翻訳カタログをUTF-8に変換してから、環境変数@code{LC_ALL}を指定して、@samp{msgexec}がUTF-8を処理するようにできます。"
+
+#. type: subsection
+#: msgexec.texi.orig:41
+#, no-wrap
+msgid "Input file location"
+msgstr "Input file location"
+
+#. type: item
+#: msgexec.texi.orig:44
+#, no-wrap
+msgid "-i @var{inputfile}"
+msgstr "-i @var{inputfile}"
+
+#. type: itemx
+#: msgexec.texi.orig:45
+#, no-wrap
+msgid "--input=@var{inputfile}"
+msgstr "--input=@var{inputfile}"
+
+#. type: opindex
+#: msgexec.texi.orig:46
+#, no-wrap
+msgid "-i@r{, @code{msgexec} option}"
+msgstr "-i@r{, @code{msgexec} オプション}"
+
+#. type: opindex
+#: msgexec.texi.orig:47
+#, no-wrap
+msgid "--input@r{, @code{msgexec} option}"
+msgstr "--input@r{, @code{msgexec} オプション}"
+
+#. type: table
+#: msgexec.texi.orig:49
+msgid "Input PO file."
+msgstr "入力となるPOファイルです。"
+
+#. type: item
+#: msgexec.texi.orig:50
+#, no-wrap
+msgid "-D @var{directory}"
+msgstr "-D @var{directory}"
+
+#. type: itemx
+#: msgexec.texi.orig:51
+#, no-wrap
+msgid "--directory=@var{directory}"
+msgstr "--directory=@var{directory}"
+
+#. type: opindex
+#: msgexec.texi.orig:52
+#, no-wrap
+msgid "-D@r{, @code{msgexec} option}"
+msgstr "-D@r{, @code{msgexec} オプション}"
+
+#. type: opindex
+#: msgexec.texi.orig:53
+#, no-wrap
+msgid "--directory@r{, @code{msgexec} option}"
+msgstr "--directory@r{, @code{msgexec} オプション}"
+
+#. type: table
+#: msgexec.texi.orig:57
+msgid ""
+"Add @var{directory} to the list of directories.  Source files are searched "
+"relative to this list of directories.  The resulting @file{.po} file will be "
+"written relative to the current directory, though."
+msgstr ""
+"ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よ"
+"りソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレ"
+"ントディレクトリーです。"
+
+#. type: Plain text
+#: msgexec.texi.orig:61
+msgid ""
+"If no @var{inputfile} is given or if it is @samp{-}, standard input is read."
+msgstr ""
+"@var{inputfile}が指定されていないか、@samp{-}が指定された場合は、標準入力から"
+"読み込みます。"
+
+#. type: subsection
+#: msgexec.texi.orig:62
+#, no-wrap
+msgid "Input file syntax"
+msgstr "Input file syntax"
+
+#. type: item
+#: msgexec.texi.orig:65
+#, no-wrap
+msgid "-P"
+msgstr "-P"
+
+#. type: itemx
+#: msgexec.texi.orig:66
+#, no-wrap
+msgid "--properties-input"
+msgstr "--properties-input"
+
+#. type: opindex
+#: msgexec.texi.orig:67
+#, no-wrap
+msgid "-P@r{, @code{msgexec} option}"
+msgstr "-P@r{, @code{msgexec} オプション}"
+
+#. type: opindex
+#: msgexec.texi.orig:68
+#, no-wrap
+msgid "--properties-input@r{, @code{msgexec} option}"
+msgstr "--properties-input@r{, @code{msgexec} オプション}"
+
+#. type: table
+#: msgexec.texi.orig:71
+msgid ""
+"Assume the input file is a Java ResourceBundle in Java @code{.properties} "
+"syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、Javaの@code{.properties}の構文にのっ"
+"とったJava ResourceBundleファイルだとみなします。"
+
+#. type: item
+#: msgexec.texi.orig:72
+#, no-wrap
+msgid "--stringtable-input"
+msgstr "--stringtable-input"
+
+#. type: opindex
+#: msgexec.texi.orig:73
+#, no-wrap
+msgid "--stringtable-input@r{, @code{msgexec} option}"
+msgstr "--stringtable-input@r{, @code{msgexec} オプション}"
+
+#. type: table
+#: msgexec.texi.orig:76
+msgid ""
+"Assume the input file is a NeXTstep/GNUstep localized resource file in "
+"@code{.strings} syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、NeXTstep/GNUstepのlocalized resource"
+"の@code{.strings}の構文にのっとったファイルだとみなします。"
+
+#. type: subsection
+#: msgexec.texi.orig:79
+#, no-wrap
+msgid "Informative output"
+msgstr "Informative output"
+
+#. type: item
+#: msgexec.texi.orig:82
+#, no-wrap
+msgid "-h"
+msgstr "-h"
+
+#. type: itemx
+#: msgexec.texi.orig:83
+#, no-wrap
+msgid "--help"
+msgstr "--help"
+
+#. type: opindex
+#: msgexec.texi.orig:84
+#, no-wrap
+msgid "-h@r{, @code{msgexec} option}"
+msgstr "-h@r{, @code{msgexec} オプション}"
+
+#. type: opindex
+#: msgexec.texi.orig:85
+#, no-wrap
+msgid "--help@r{, @code{msgexec} option}"
+msgstr "--help@r{, @code{msgexec} オプション}"
+
+#. type: table
+#: msgexec.texi.orig:87
+msgid "Display this help and exit."
+msgstr "このヘルプを表示して終了します。"
+
+#. type: item
+#: msgexec.texi.orig:88
+#, no-wrap
+msgid "-V"
+msgstr "-V"
+
+#. type: itemx
+#: msgexec.texi.orig:89
+#, no-wrap
+msgid "--version"
+msgstr "--version"
+
+#. type: opindex
+#: msgexec.texi.orig:90
+#, no-wrap
+msgid "-V@r{, @code{msgexec} option}"
+msgstr "-V@r{, @code{msgexec} オプション}"
+
+#. type: opindex
+#: msgexec.texi.orig:91
+#, no-wrap
+msgid "--version@r{, @code{msgexec} option}"
+msgstr "--version@r{, @code{msgexec} オプション}"
+
+#. type: table
+#: msgexec.texi.orig:93
+msgid "Output version information and exit."
+msgstr "バージョン情報を表示して終了します。"

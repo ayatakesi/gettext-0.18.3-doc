@@ -1,0 +1,844 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-09-02 00:29+0900\n"
+"PO-Revision-Date: 2016-08-12 16:15+0900\n"
+"Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
+"Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: pindex
+#: msgcat.texi.orig:1
+#, no-wrap
+msgid "msgcat"
+msgstr "msgcat"
+
+#. type: cindex
+#: msgcat.texi.orig:2
+#, no-wrap
+msgid "@code{msgcat} program, usage"
+msgstr "@code{msgcat} program, usage"
+
+#. type: example
+#: msgcat.texi.orig:5
+#, no-wrap
+msgid "msgcat [@var{option}] [@var{inputfile}]...\n"
+msgstr "msgcat [@var{option}] [@var{inputfile}]...\n"
+
+#. type: cindex
+#: msgcat.texi.orig:7
+#, no-wrap
+msgid "concatenate PO files"
+msgstr "concatenate PO files"
+
+#. type: cindex
+#: msgcat.texi.orig:8
+#, no-wrap
+msgid "merge PO files"
+msgstr "merge PO files"
+
+#. type: Plain text
+#: msgcat.texi.orig:18
+msgid ""
+"The @code{msgcat} program concatenates and merges the specified PO files.  "
+"It finds messages which are common to two or more of the specified PO "
+"files.  By using the @code{--more-than} option, greater commonality may be "
+"requested before messages are printed.  Conversely, the @code{--less-than} "
+"option may be used to specify less commonality before messages are printed "
+"(i.e.@: @samp{--less-than=2} will only print the unique messages).  "
+"Translations, comments, extracted comments, and file positions will be "
+"cumulated, except that if @code{--use-first} is specified, they will be "
+"taken from the first PO file to define them."
+msgstr "@code{msgcat}プログラムは、指定されたPOファイルを結合・マージするプログラムです。プログラムは、指定された複数のPOファイルの中から、2つ以上のファイルで使用されている共通のメッセージを見つけます。@code{--more-than}オプションを使うと、指定したファイル数より多くのファイルで共通のメッセージを出力するか指定できます。反対に@code{--less-than}オプションでは、指定したファイル数より少ないファイルで共通のメッセージを出力するか指定できます(例@: @samp{--less-than=2} と指定すると一意なメッセージだけが出力されます)。翻訳やコメントは累積されますが、@code{--use-first}を指定した場合は、指定されたPOファイルのうちで最初のものを採用します。すべてのPOファイルの位置情報も累積されます。"
+
+#. type: subsection
+#: msgcat.texi.orig:19
+#, no-wrap
+msgid "Input file location"
+msgstr "Input file location"
+
+#. type: item
+#: msgcat.texi.orig:22
+#, no-wrap
+msgid "@var{inputfile} @dots{}"
+msgstr "@var{inputfile} @dots{}"
+
+#. type: table
+#: msgcat.texi.orig:24
+msgid "Input files."
+msgstr "入力ファイルです。"
+
+#. type: item
+#: msgcat.texi.orig:25
+#, no-wrap
+msgid "-f @var{file}"
+msgstr "-f @var{file}"
+
+#. type: itemx
+#: msgcat.texi.orig:26
+#, no-wrap
+msgid "--files-from=@var{file}"
+msgstr "--files-from=@var{file}"
+
+#. type: opindex
+#: msgcat.texi.orig:27
+#, no-wrap
+msgid "-f@r{, @code{msgcat} option}"
+msgstr "-f@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:28
+#, no-wrap
+msgid "--files-from@r{, @code{msgcat} option}"
+msgstr "--files-from@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:31
+msgid ""
+"Read the names of the input files from @var{file} instead of getting them "
+"from the command line."
+msgstr ""
+"入力ファイルの名前を、コマンドラインからではなく、@var{file}から読み込みま"
+"す。"
+
+#. type: item
+#: msgcat.texi.orig:32
+#, no-wrap
+msgid "-D @var{directory}"
+msgstr "-D @var{directory}"
+
+#. type: itemx
+#: msgcat.texi.orig:33
+#, no-wrap
+msgid "--directory=@var{directory}"
+msgstr "--directory=@var{directory}"
+
+#. type: opindex
+#: msgcat.texi.orig:34
+#, no-wrap
+msgid "-D@r{, @code{msgcat} option}"
+msgstr "-D@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:35
+#, no-wrap
+msgid "--directory@r{, @code{msgcat} option}"
+msgstr "--directory@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:39
+msgid ""
+"Add @var{directory} to the list of directories.  Source files are searched "
+"relative to this list of directories.  The resulting @file{.po} file will be "
+"written relative to the current directory, though."
+msgstr "ディレクトリーのリストに@var{directory}を追加します。このディレクトリーのリストよりソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレントディレクトリーです。"
+
+#. type: Plain text
+#: msgcat.texi.orig:43
+msgid "If @var{inputfile} is @samp{-}, standard input is read."
+msgstr ""
+"@var{inputfile}に@samp{-}が指定された場合は、標準入力から読み込みます。"
+
+#. type: subsection
+#: msgcat.texi.orig:44
+#, no-wrap
+msgid "Output file location"
+msgstr "Output file location"
+
+#. type: item
+#: msgcat.texi.orig:47
+#, no-wrap
+msgid "-o @var{file}"
+msgstr "-o @var{file}"
+
+#. type: itemx
+#: msgcat.texi.orig:48
+#, no-wrap
+msgid "--output-file=@var{file}"
+msgstr "--output-file=@var{file}"
+
+#. type: opindex
+#: msgcat.texi.orig:49
+#, no-wrap
+msgid "-o@r{, @code{msgcat} option}"
+msgstr "-o@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:50
+#, no-wrap
+msgid "--output-file@r{, @code{msgcat} option}"
+msgstr "--output-file@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:52
+msgid "Write output to specified file."
+msgstr "指定されたファイルに出力を書き込みます。"
+
+#. type: cindex
+#: msgcat.texi.orig:55
+#, no-wrap
+msgid "standard output, and @code{msgcat}"
+msgstr "standard output, and @code{msgcat}"
+
+#. type: Plain text
+#: msgcat.texi.orig:58
+msgid ""
+"The results are written to standard output if no output file is specified or "
+"if it is @samp{-}."
+msgstr ""
+"出力ファイルが指定されていない、または@samp{-}が指定された場合、結果は標準出"
+"力に出力されます。"
+
+#. type: subsection
+#: msgcat.texi.orig:59
+#, no-wrap
+msgid "Message selection"
+msgstr "Message selection"
+
+#. type: item
+#: msgcat.texi.orig:62
+#, no-wrap
+msgid "-< @var{number}"
+msgstr "-< @var{number}"
+
+#. type: itemx
+#: msgcat.texi.orig:63
+#, no-wrap
+msgid "--less-than=@var{number}"
+msgstr "--less-than=@var{number}"
+
+#. type: opindex
+#: msgcat.texi.orig:64
+#, no-wrap
+msgid "-<@r{, @code{msgcat} option}"
+msgstr "-<@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:65
+#, no-wrap
+msgid "--less-than@r{, @code{msgcat} option}"
+msgstr "--less-than@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:68
+msgid ""
+"Print messages with less than @var{number} definitions, defaults to infinite "
+"if not set."
+msgstr ""
+"@var{number}に指定した数より少ないメッセージを出力します。指定しなかった場合"
+"のデフォルトは無限大です。"
+
+#. type: item
+#: msgcat.texi.orig:69
+#, no-wrap
+msgid "-> @var{number}"
+msgstr "-> @var{number}"
+
+#. type: itemx
+#: msgcat.texi.orig:70
+#, no-wrap
+msgid "--more-than=@var{number}"
+msgstr "--more-than=@var{number}"
+
+#. type: opindex
+#: msgcat.texi.orig:71
+#, no-wrap
+msgid "->@r{, @code{msgcat} option}"
+msgstr "->@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:72
+#, no-wrap
+msgid "--more-than@r{, @code{msgcat} option}"
+msgstr "--more-than@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:75
+msgid ""
+"Print messages with more than @var{number} definitions, defaults to 0 if not "
+"set."
+msgstr ""
+"@var{number}に指定した数より大きいメッセージを出力します。指定しなかった場合"
+"のデフォルトは0です。"
+
+#. type: item
+#: msgcat.texi.orig:76
+#, no-wrap
+msgid "-u"
+msgstr "-u"
+
+#. type: itemx
+#: msgcat.texi.orig:77
+#, no-wrap
+msgid "--unique"
+msgstr "--unique"
+
+#. type: opindex
+#: msgcat.texi.orig:78
+#, no-wrap
+msgid "-u@r{, @code{msgcat} option}"
+msgstr "-u@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:79
+#, no-wrap
+msgid "--unique@r{, @code{msgcat} option}"
+msgstr "--unique@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:82
+msgid ""
+"Shorthand for @samp{--less-than=2}.  Requests that only unique messages be "
+"printed."
+msgstr "@samp{--less-than=2}の省略指定です。一意なメッセージだけを出力します。"
+
+#. type: subsection
+#: msgcat.texi.orig:85
+#, no-wrap
+msgid "Input file syntax"
+msgstr "Input file syntax"
+
+#. type: item
+#: msgcat.texi.orig:88
+#, no-wrap
+msgid "-P"
+msgstr "-P"
+
+#. type: itemx
+#: msgcat.texi.orig:89
+#, no-wrap
+msgid "--properties-input"
+msgstr "--properties-input"
+
+#. type: opindex
+#: msgcat.texi.orig:90
+#, no-wrap
+msgid "-P@r{, @code{msgcat} option}"
+msgstr "-P@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:91
+#, no-wrap
+msgid "--properties-input@r{, @code{msgcat} option}"
+msgstr "--properties-input@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:94
+msgid ""
+"Assume the input files are Java ResourceBundles in Java @code{.properties} "
+"syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、Javaの@code{.properties}の構文にのっ"
+"とったJava ResourceBundleファイルだとみなします。"
+
+#. type: item
+#: msgcat.texi.orig:95
+#, no-wrap
+msgid "--stringtable-input"
+msgstr "--stringtable-input"
+
+#. type: opindex
+#: msgcat.texi.orig:96
+#, no-wrap
+msgid "--stringtable-input@r{, @code{msgcat} option}"
+msgstr "--stringtable-input@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:99
+msgid ""
+"Assume the input files are NeXTstep/GNUstep localized resource files in "
+"@code{.strings} syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、NeXTstep/GNUstepのlocalized resource"
+"の@code{.strings}の構文にのっとったファイルだとみなします。"
+
+#. type: subsection
+#: msgcat.texi.orig:102
+#, no-wrap
+msgid "Output details"
+msgstr "Output details"
+
+#. type: item
+#: msgcat.texi.orig:107
+#, no-wrap
+msgid "-t"
+msgstr "-t"
+
+#. type: itemx
+#: msgcat.texi.orig:108
+#, no-wrap
+msgid "--to-code=@var{name}"
+msgstr "--to-code=@var{name}"
+
+#. type: opindex
+#: msgcat.texi.orig:109
+#, no-wrap
+msgid "-t@r{, @code{msgcat} option}"
+msgstr "-t@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:110
+#, no-wrap
+msgid "--to-code@r{, @code{msgcat} option}"
+msgstr "--to-code@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:112
+msgid "Specify encoding for output."
+msgstr "出力のエンコーディングを指定します。"
+
+#. type: item
+#: msgcat.texi.orig:113
+#, no-wrap
+msgid "--use-first"
+msgstr "--use-first"
+
+#. type: opindex
+#: msgcat.texi.orig:114
+#, no-wrap
+msgid "--use-first@r{, @code{msgcat} option}"
+msgstr "--use-first@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:117
+msgid ""
+"Use first available translation for each message.  Don't merge several "
+"translations into one."
+msgstr ""
+"各メッセージで利用可能な最初のメッセージを使用します。複数の翻訳を1つにマージ"
+"しません。"
+
+#. type: item
+#: msgcat.texi.orig:118
+#, no-wrap
+msgid "--lang=@var{catalogname}"
+msgstr "--lang=@var{catalogname}"
+
+#. type: opindex
+#: msgcat.texi.orig:119
+#, no-wrap
+msgid "--lang@r{, @code{msgcat} option}"
+msgstr "--lang@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:123
+msgid ""
+"Specify the @samp{Language} field to be used in the header entry.  See "
+"@ref{Header Entry} for the meaning of this field.  Note: The @samp{Language-"
+"Team} and @samp{Plural-Forms} fields are left unchanged."
+msgstr ""
+"ヘッダーのエントリーで使用される、@samp{Language}フィールドを指定します。この"
+"フィールドの意味については、@ref{Header Entry}を参照してください。"
+"@samp{Language-Team}と@samp{Plural-Forms}のフィールドは変更されないことに注意"
+"してください。"
+
+#. type: item
+#: msgcat.texi.orig:124
+#, no-wrap
+msgid "--color"
+msgstr "--color"
+
+#. type: itemx
+#: msgcat.texi.orig:125
+#, no-wrap
+msgid "--color=@var{when}"
+msgstr "--color=@var{when}"
+
+#. type: opindex
+#: msgcat.texi.orig:126
+#, no-wrap
+msgid "--color@r{, @code{msgcat} option}"
+msgstr "--color@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:129
+msgid ""
+"Specify whether or when to use colors and other text attributes.  See "
+"@ref{The --color option} for details."
+msgstr "色や色以外のテキスト属性を使うか、いつ使うかを指定します。詳細は@ref{The --color option}を参照してください。"
+
+#. type: item
+#: msgcat.texi.orig:130
+#, no-wrap
+msgid "--style=@var{style_file}"
+msgstr "--style=@var{style_file}"
+
+#. type: opindex
+#: msgcat.texi.orig:131
+#, no-wrap
+msgid "--style@r{, @code{msgcat} option}"
+msgstr "--style@r{, @code{msgcat} オプション}"
+
+#. type: table
+#: msgcat.texi.orig:134
+msgid ""
+"Specify the CSS style rule file to use for @code{--color}.  See @ref{The --"
+"style option} for details."
+msgstr "@code{--color}にたいしてCSS style ruleファイルを使うかを指定します。詳細は@ref{The --style option}を参照してください。"
+
+#. type: item
+#: msgcat.texi.orig:135
+#, no-wrap
+msgid "--force-po"
+msgstr "--force-po"
+
+#. type: opindex
+#: msgcat.texi.orig:136
+#, no-wrap
+msgid "--force-po@r{, @code{msgcat} option}"
+msgstr "--force-po@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:138
+msgid "Always write an output file even if it contains no message."
+msgstr ""
+"メッセージが何も含まれていない場合でも、常に出力ファイルに書き込みます。"
+
+#. type: item
+#: msgcat.texi.orig:139
+#, no-wrap
+msgid "-i"
+msgstr "-i"
+
+#. type: itemx
+#: msgcat.texi.orig:140
+#, no-wrap
+msgid "--indent"
+msgstr "--indent"
+
+#. type: opindex
+#: msgcat.texi.orig:141
+#, no-wrap
+msgid "-i@r{, @code{msgcat} option}"
+msgstr "-i@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:142
+#, no-wrap
+msgid "--indent@r{, @code{msgcat} option}"
+msgstr "--indent@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:144
+msgid "Write the .po file using indented style."
+msgstr "インデントされた形式で.poファイルを書き込みます。"
+
+#. type: item
+#: msgcat.texi.orig:145
+#, no-wrap
+msgid "--no-location"
+msgstr "--no-location"
+
+#. type: opindex
+#: msgcat.texi.orig:146
+#, no-wrap
+msgid "--no-location@r{, @code{msgcat} option}"
+msgstr "--no-location@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:148
+msgid "Do not write @samp{#: @var{filename}:@var{line}} lines."
+msgstr "@samp{#: @var{filename}:@var{line}}という行を書き込みません。"
+
+#. type: item
+#: msgcat.texi.orig:149
+#, no-wrap
+msgid "-n"
+msgstr "-n"
+
+#. type: itemx
+#: msgcat.texi.orig:150
+#, no-wrap
+msgid "--add-location"
+msgstr "--add-location"
+
+#. type: opindex
+#: msgcat.texi.orig:151
+#, no-wrap
+msgid "-n@r{, @code{msgcat} option}"
+msgstr "-n@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:152
+#, no-wrap
+msgid "--add-location@r{, @code{msgcat} option}"
+msgstr "--add-location@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:154
+msgid "Generate @samp{#: @var{filename}:@var{line}} lines (default)."
+msgstr "@samp{#: @var{filename}:@var{line}}という行を生成します(デフォルト)。"
+
+#. type: item
+#: msgcat.texi.orig:155
+#, no-wrap
+msgid "--strict"
+msgstr "--strict"
+
+#. type: opindex
+#: msgcat.texi.orig:156
+#, no-wrap
+msgid "--strict@r{, @code{msgcat} option}"
+msgstr "--strict@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:160
+msgid ""
+"Write out a strict Uniforum conforming PO file.  Note that this Uniforum "
+"format should be avoided because it doesn't support the GNU extensions."
+msgstr ""
+"Uniforumに厳密に準拠したPOファイルを出力します。このUniforum形式はGNUの拡張を"
+"サポートしないため避けたほうがよいでしょう。"
+
+#. type: item
+#: msgcat.texi.orig:161
+#, no-wrap
+msgid "-p"
+msgstr "-p"
+
+#. type: itemx
+#: msgcat.texi.orig:162
+#, no-wrap
+msgid "--properties-output"
+msgstr "--properties-output"
+
+#. type: opindex
+#: msgcat.texi.orig:163
+#, no-wrap
+msgid "-p@r{, @code{msgcat} option}"
+msgstr "-p@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:164
+#, no-wrap
+msgid "--properties-output@r{, @code{msgcat} option}"
+msgstr "--properties-output@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:168
+msgid ""
+"Write out a Java ResourceBundle in Java @code{.properties} syntax.  Note "
+"that this file format doesn't support plural forms and silently drops "
+"obsolete messages."
+msgstr "Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイル形式はplural formをサポートせず、陳腐化したメッセージを暗黙で除去することに注意してください。"
+
+#. type: item
+#: msgcat.texi.orig:169
+#, no-wrap
+msgid "--stringtable-output"
+msgstr "--stringtable-output"
+
+#. type: opindex
+#: msgcat.texi.orig:170
+#, no-wrap
+msgid "--stringtable-output@r{, @code{msgcat} option}"
+msgstr "--stringtable-output@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:173
+msgid ""
+"Write out a NeXTstep/GNUstep localized resource file in @code{.strings} "
+"syntax.  Note that this file format doesn't support plural forms."
+msgstr ""
+"@code{.strings}の書式で、NeXTstep/GNUstepのローカライズされたリソースファイル"
+"を出力します。このファイル形式はplural formをサポートしないことに注意してくだ"
+"さい。"
+
+#. type: item
+#: msgcat.texi.orig:174
+#, no-wrap
+msgid "-w @var{number}"
+msgstr "-w @var{number}"
+
+#. type: itemx
+#: msgcat.texi.orig:175
+#, no-wrap
+msgid "--width=@var{number}"
+msgstr "--width=@var{number}"
+
+#. type: opindex
+#: msgcat.texi.orig:176
+#, no-wrap
+msgid "-w@r{, @code{msgcat} option}"
+msgstr "-w@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:177
+#, no-wrap
+msgid "--width@r{, @code{msgcat} option}"
+msgstr "--width@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:181
+msgid ""
+"Set the output page width.  Long strings in the output files will be split "
+"across multiple lines in order to ensure that each line's width (= number of "
+"screen columns) is less or equal to the given @var{number}."
+msgstr ""
+"出力ページの幅をセットします。これにより出力ファイル中の長い文字列が指定した"
+"幅(例:スクリーンの列数)に収まるように、各行の長さが@var{number}以下のような複"
+"数の行に分割されます。"
+
+#. type: item
+#: msgcat.texi.orig:182
+#, no-wrap
+msgid "--no-wrap"
+msgstr "--no-wrap"
+
+#. type: opindex
+#: msgcat.texi.orig:183
+#, no-wrap
+msgid "--no-wrap@r{, @code{msgcat} option}"
+msgstr "--no-wrap@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:187
+msgid ""
+"Do not break long message lines.  Message lines whose width exceeds the "
+"output page width will not be split into several lines.  Only file reference "
+"lines which are wider than the output page width will be split."
+msgstr ""
+"長いメッセージ行を分割しません。出力ページの幅を超えるようなメッセージ行も、"
+"複数行に分割されません。出力ページの幅を超えるファイル参照行だけが分割されま"
+"す。"
+
+#. type: item
+#: msgcat.texi.orig:188
+#, no-wrap
+msgid "-s"
+msgstr "-s"
+
+#. type: itemx
+#: msgcat.texi.orig:189
+#, no-wrap
+msgid "--sort-output"
+msgstr "--sort-output"
+
+#. type: opindex
+#: msgcat.texi.orig:190
+#, no-wrap
+msgid "-s@r{, @code{msgcat} option}"
+msgstr "-s@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:191
+#, no-wrap
+msgid "--sort-output@r{, @code{msgcat} option}"
+msgstr "--sort-output@r{, @code{msgcat} option}"
+
+#. type: cindex
+#: msgcat.texi.orig:192
+#, no-wrap
+msgid "sorting @code{msgcat} output"
+msgstr "sorting @code{msgcat} output"
+
+#. type: table
+#: msgcat.texi.orig:195
+msgid ""
+"Generate sorted output.  Note that using this option makes it much harder "
+"for the translator to understand each message's context."
+msgstr ""
+"ソートされた出力を生成します。このオプションを使用することにより翻訳者が、"
+"メッセージがどのようなコンテキストで使用されるかを理解するのが、困難になるこ"
+"とに注意してください。"
+
+#. type: item
+#: msgcat.texi.orig:196
+#, no-wrap
+msgid "-F"
+msgstr "-F"
+
+#. type: itemx
+#: msgcat.texi.orig:197
+#, no-wrap
+msgid "--sort-by-file"
+msgstr "--sort-by-file"
+
+#. type: opindex
+#: msgcat.texi.orig:198
+#, no-wrap
+msgid "-F@r{, @code{msgcat} option}"
+msgstr "-F@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:199
+#, no-wrap
+msgid "--sort-by-file@r{, @code{msgcat} option}"
+msgstr "--sort-by-file@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:201
+msgid "Sort output by file location."
+msgstr "ファイルの場所により出力をソートします。"
+
+#. type: subsection
+#: msgcat.texi.orig:204
+#, no-wrap
+msgid "Informative output"
+msgstr "Informative output"
+
+#. type: item
+#: msgcat.texi.orig:207
+#, no-wrap
+msgid "-h"
+msgstr "-h"
+
+#. type: itemx
+#: msgcat.texi.orig:208
+#, no-wrap
+msgid "--help"
+msgstr "--help"
+
+#. type: opindex
+#: msgcat.texi.orig:209
+#, no-wrap
+msgid "-h@r{, @code{msgcat} option}"
+msgstr "-h@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:210
+#, no-wrap
+msgid "--help@r{, @code{msgcat} option}"
+msgstr "--help@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:212
+msgid "Display this help and exit."
+msgstr "このヘルプを表示して終了します。"
+
+#. type: item
+#: msgcat.texi.orig:213
+#, no-wrap
+msgid "-V"
+msgstr "-V"
+
+#. type: itemx
+#: msgcat.texi.orig:214
+#, no-wrap
+msgid "--version"
+msgstr "--version"
+
+#. type: opindex
+#: msgcat.texi.orig:215
+#, no-wrap
+msgid "-V@r{, @code{msgcat} option}"
+msgstr "-V@r{, @code{msgcat} option}"
+
+#. type: opindex
+#: msgcat.texi.orig:216
+#, no-wrap
+msgid "--version@r{, @code{msgcat} option}"
+msgstr "--version@r{, @code{msgcat} option}"
+
+#. type: table
+#: msgcat.texi.orig:218
+msgid "Output version information and exit."
+msgstr "バージョン情報を表示して終了します。"

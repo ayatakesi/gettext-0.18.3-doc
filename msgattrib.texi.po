@@ -1,0 +1,981 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-09-05 23:10+0900\n"
+"PO-Revision-Date: 2016-07-30 21:05+0900\n"
+"Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
+"Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: pindex
+#: msgattrib.texi.orig:1
+#, no-wrap
+msgid "msgattrib"
+msgstr "msgattrib"
+
+#. type: cindex
+#: msgattrib.texi.orig:2
+#, no-wrap
+msgid "@code{msgattrib} program, usage"
+msgstr "@code{msgattrib} プログラム, 使い方"
+
+#. type: example
+#: msgattrib.texi.orig:5
+#, no-wrap
+msgid "msgattrib [@var{option}] [@var{inputfile}]\n"
+msgstr "msgattrib [@var{option}] [@var{inputfile}]\n"
+
+#. type: cindex
+#: msgattrib.texi.orig:7
+#, no-wrap
+msgid "filter messages according to attributes"
+msgstr "属性の一致するメッセージをフィルターする"
+
+#. type: cindex
+#: msgattrib.texi.orig:8
+#, no-wrap
+msgid "attribute manipulation"
+msgstr "属性の操作"
+
+#. type: Plain text
+#: msgattrib.texi.orig:11
+msgid ""
+"The @code{msgattrib} program filters the messages of a translation catalog "
+"according to their attributes, and manipulates the attributes."
+msgstr "@code{msgattrib}プログラムは、翻訳カタログのメッセージの属性にしたがってフィルターを適用したり、属性を操作するためのプログラムです。"
+
+#. type: subsection
+#: msgattrib.texi.orig:12
+#, no-wrap
+msgid "Input file location"
+msgstr "Input file location"
+
+#. type: var{#1}
+#: msgattrib.texi.orig:15
+#, no-wrap
+msgid "inputfile"
+msgstr "inputfile"
+
+#. type: table
+#: msgattrib.texi.orig:17
+msgid "Input PO file."
+msgstr "入力となるPOファイルです。"
+
+#. type: item
+#: msgattrib.texi.orig:18
+#, no-wrap
+msgid "-D @var{directory}"
+msgstr "-D @var{directory}"
+
+#. type: itemx
+#: msgattrib.texi.orig:19
+#, no-wrap
+msgid "--directory=@var{directory}"
+msgstr "--directory=@var{directory}"
+
+#. type: opindex
+#: msgattrib.texi.orig:20
+#, no-wrap
+msgid "-D@r{, @code{msgattrib} option}"
+msgstr "-D@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:21
+#, no-wrap
+msgid "--directory@r{, @code{msgattrib} option}"
+msgstr "--directory@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:25
+msgid ""
+"Add @var{directory} to the list of directories.  Source files are searched "
+"relative to this list of directories.  The resulting @file{.po} file will be "
+"written relative to the current directory, though."
+msgstr ""
+"ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よ"
+"りソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレ"
+"ントディレクトリーです。"
+
+#. type: Plain text
+#: msgattrib.texi.orig:29
+msgid ""
+"If no @var{inputfile} is given or if it is @samp{-}, standard input is read."
+msgstr ""
+"@var{inputfile}が指定されていないか、@samp{-}が指定された場合は、標準入力から"
+"読み込みます。"
+
+#. type: subsection
+#: msgattrib.texi.orig:30
+#, no-wrap
+msgid "Output file location"
+msgstr "Output file location"
+
+#. type: item
+#: msgattrib.texi.orig:33
+#, no-wrap
+msgid "-o @var{file}"
+msgstr "-o @var{file}"
+
+#. type: itemx
+#: msgattrib.texi.orig:34
+#, no-wrap
+msgid "--output-file=@var{file}"
+msgstr "--output-file=@var{file}"
+
+#. type: opindex
+#: msgattrib.texi.orig:35
+#, no-wrap
+msgid "-o@r{, @code{msgattrib} option}"
+msgstr "-o@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:36
+#, no-wrap
+msgid "--output-file@r{, @code{msgattrib} option}"
+msgstr "--output-file@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:38
+msgid "Write output to specified file."
+msgstr "指定されたファイルに出力を書き込みます。"
+
+#. type: Plain text
+#: msgattrib.texi.orig:43
+msgid ""
+"The results are written to standard output if no output file is specified or "
+"if it is @samp{-}."
+msgstr ""
+"出力ファイルが指定されていない、または@samp{-}が指定された場合、結果は標準出"
+"力に出力されます。"
+
+#. type: subsection
+#: msgattrib.texi.orig:44
+#, no-wrap
+msgid "Message selection"
+msgstr "Message selection"
+
+#. type: item
+#: msgattrib.texi.orig:47
+#, no-wrap
+msgid "--translated"
+msgstr "--translated"
+
+#. type: opindex
+#: msgattrib.texi.orig:48
+#, no-wrap
+msgid "--translated@r{, @code{msgattrib} option}"
+msgstr "--translated@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:50
+msgid "Keep translated messages, remove untranslated messages."
+msgstr "翻訳されたメッセージを残して、未翻訳のメッセージは削除します。"
+
+#. type: item
+#: msgattrib.texi.orig:51
+#, no-wrap
+msgid "--untranslated"
+msgstr "--untranslated"
+
+#. type: opindex
+#: msgattrib.texi.orig:52
+#, no-wrap
+msgid "--untranslated@r{, @code{msgattrib} option}"
+msgstr "--untranslated@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:54
+msgid "Keep untranslated messages, remove translated messages."
+msgstr "未翻訳のメッセージを残して、翻訳済みのメッセージは削除します。"
+
+#. type: item
+#: msgattrib.texi.orig:55
+#, no-wrap
+msgid "--no-fuzzy"
+msgstr "--no-fuzzy"
+
+#. type: opindex
+#: msgattrib.texi.orig:56
+#, no-wrap
+msgid "--no-fuzzy@r{, @code{msgattrib} option}"
+msgstr "--no-fuzzy@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:58
+msgid "Remove"
+msgstr "削除: "
+
+#. type: ifhtml
+#: msgattrib.texi.orig:60 msgattrib.texi.orig:71 msgattrib.texi.orig:130
+#: msgattrib.texi.orig:156
+msgid "‘fuzzy’"
+msgstr "‘fuzzy’"
+
+#. type: ifnothtml
+#: msgattrib.texi.orig:63 msgattrib.texi.orig:74 msgattrib.texi.orig:133
+#: msgattrib.texi.orig:159
+msgid "`fuzzy'"
+msgstr "`fuzzy'"
+
+#. type: table
+#: msgattrib.texi.orig:65
+msgid "marked messages."
+msgstr "とマークされたメッセージを削除します。"
+
+#. type: item
+#: msgattrib.texi.orig:66
+#, no-wrap
+msgid "--only-fuzzy"
+msgstr "--only-fuzzy"
+
+#. type: opindex
+#: msgattrib.texi.orig:67
+#, no-wrap
+msgid "--only-fuzzy@r{, @code{msgattrib} option}"
+msgstr "--only-fuzzy@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:69
+msgid "Keep"
+msgstr "保持: "
+
+#. type: table
+#: msgattrib.texi.orig:76
+msgid "marked messages, remove all other messages."
+msgstr "とマークされたメッセージを残して、他のすべてのメッセージは削除します。"
+
+#. type: item
+#: msgattrib.texi.orig:77
+#, no-wrap
+msgid "--no-obsolete"
+msgstr "--no-obsolete"
+
+#. type: opindex
+#: msgattrib.texi.orig:78
+#, no-wrap
+msgid "--no-obsolete@r{, @code{msgattrib} option}"
+msgstr "--no-obsolete@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:80
+msgid "Remove obsolete #~ messages."
+msgstr "#~のついた廃止されたメッセージを削除します。"
+
+#. type: item
+#: msgattrib.texi.orig:81
+#, no-wrap
+msgid "--only-obsolete"
+msgstr "--only-obsolete"
+
+#. type: opindex
+#: msgattrib.texi.orig:82
+#, no-wrap
+msgid "--only-obsolete@r{, @code{msgattrib} option}"
+msgstr "--only-obsolete@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:84
+msgid "Keep obsolete #~ messages, remove all other messages."
+msgstr "#~のついた廃止されたメッセージを残して、他のすべてのメッセージは削除します。"
+
+#. type: subsection
+#: msgattrib.texi.orig:87
+#, no-wrap
+msgid "Attribute manipulation"
+msgstr "Attribute manipulation"
+
+#. type: cindex
+#: msgattrib.texi.orig:89
+#, no-wrap
+msgid "modify message attributes"
+msgstr "メッセージ属性修正"
+
+#. type: Plain text
+#: msgattrib.texi.orig:95
+msgid ""
+"Attributes are modified after the message selection/removal has been "
+"performed.  If the @samp{--only-file} or @samp{--ignore-file} option is "
+"specified, the attribute modification is applied only to those messages that "
+"are listed in the @var{only-file} and not listed in the @var{ignore-file}."
+msgstr "メッセージの選択・削除が実行された後に、属性は変更されます。@samp{--only-file}か@samp{--ignore-file}オプションを指定すると、@var{only-file}に記載されたメッセージ、もしくは@var{ignore-file}に記載されていないメッセージにだけ、変更が適用されます。"
+
+#. type: item
+#: msgattrib.texi.orig:97
+#, no-wrap
+msgid "--set-fuzzy"
+msgstr "--set-fuzzy"
+
+#. type: opindex
+#: msgattrib.texi.orig:98
+#, no-wrap
+msgid "--set-fuzzy@r{, @code{msgattrib} option}"
+msgstr "--set-fuzzy@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:100 msgattrib.texi.orig:110
+msgid "Set all messages"
+msgstr "すべてのメッセージにセットします。"
+
+#. type: ifhtml
+#: msgattrib.texi.orig:102
+msgid "‘fuzzy’."
+msgstr "‘fuzzy’と"
+
+#. type: ifnothtml
+#: msgattrib.texi.orig:105
+msgid "`fuzzy'."
+msgstr "`fuzzy'と"
+
+#. type: item
+#: msgattrib.texi.orig:107
+#, no-wrap
+msgid "--clear-fuzzy"
+msgstr "--clear-fuzzy"
+
+#. type: opindex
+#: msgattrib.texi.orig:108
+#, no-wrap
+msgid "--clear-fuzzy@r{, @code{msgattrib} option}"
+msgstr "--clear-fuzzy@r{, @code{msgattrib} オプション}"
+
+#. type: ifhtml
+#: msgattrib.texi.orig:112
+msgid "non-‘fuzzy’."
+msgstr "‘fuzzy’ではないと"
+
+#. type: ifnothtml
+#: msgattrib.texi.orig:115
+msgid "non-`fuzzy'."
+msgstr "`fuzzy'ではないと"
+
+#. type: item
+#: msgattrib.texi.orig:117
+#, no-wrap
+msgid "--set-obsolete"
+msgstr "--set-obsolete"
+
+#. type: opindex
+#: msgattrib.texi.orig:118
+#, no-wrap
+msgid "--set-obsolete@r{, @code{msgattrib} option}"
+msgstr "--set-obsolete@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:120
+msgid "Set all messages obsolete."
+msgstr "すべてのメッセージを、廃止されたメッセージにします。"
+
+#. type: item
+#: msgattrib.texi.orig:121
+#, no-wrap
+msgid "--clear-obsolete"
+msgstr "--clear-obsolete"
+
+#. type: opindex
+#: msgattrib.texi.orig:122
+#, no-wrap
+msgid "--clear-obsolete@r{, @code{msgattrib} option}"
+msgstr "--clear-obsolete@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:124
+msgid "Set all messages non-obsolete."
+msgstr "廃止されたメッセージを、廃止されていないメッセージにセットします。"
+
+#. type: item
+#: msgattrib.texi.orig:125
+#, no-wrap
+msgid "--previous"
+msgstr "--previous"
+
+#. type: opindex
+#: msgattrib.texi.orig:126
+#, no-wrap
+msgid "--previous@r{, @code{msgattrib} option}"
+msgstr "--previous@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:128
+msgid "When setting"
+msgstr "もし"
+
+#. type: table
+#: msgattrib.texi.orig:135
+msgid "mark, keep ``previous msgid'' of translated messages."
+msgstr "とマークされているとき、翻訳されたメッセージの``以前のmsgid''を残します。"
+
+#. type: item
+#: msgattrib.texi.orig:136
+#, no-wrap
+msgid "--clear-previous"
+msgstr "--clear-previous"
+
+#. type: opindex
+#: msgattrib.texi.orig:137
+#, no-wrap
+msgid "--clear-previous@r{, @code{msgattrib} option}"
+msgstr "--clear-previous@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:139
+msgid "Remove the ``previous msgid'' (@samp{#|}) comments from all messages."
+msgstr "すべてのメッセージから``以前のmsgid''であることを示すコメントマーク(@samp{#|})がついたものを削除します。"
+
+#. type: item
+#: msgattrib.texi.orig:140
+#, no-wrap
+msgid "--only-file=@var{file}"
+msgstr "--only-file=@var{file}"
+
+#. type: opindex
+#: msgattrib.texi.orig:141
+#, no-wrap
+msgid "--only-file@r{, @code{msgattrib} option}"
+msgstr "--only-file@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:144
+msgid ""
+"Limit the attribute changes to entries that are listed in @var{file}.  "
+"@var{file} should be a PO or POT file."
+msgstr "@var{file}に記載されたエントリーの属性だけを変更します。@var{file}にはPO、またはPOTファイルを指定します。"
+
+#. type: item
+#: msgattrib.texi.orig:145
+#, no-wrap
+msgid "--ignore-file=@var{file}"
+msgstr "--ignore-file=@var{file}"
+
+#. type: opindex
+#: msgattrib.texi.orig:146
+#, no-wrap
+msgid "--ignore-file@r{, @code{msgattrib} option}"
+msgstr "--ignore-file@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:149
+msgid ""
+"Limit the attribute changes to entries that are not listed in @var{file}.  "
+"@var{file} should be a PO or POT file."
+msgstr "@var{file}に記載されていないエントリーの属性だけを変更します。@var{file}にはPO、またはPOTファイルを指定します。"
+
+#. type: item
+#: msgattrib.texi.orig:150
+#, no-wrap
+msgid "--fuzzy"
+msgstr "--fuzzy"
+
+#. type: opindex
+#: msgattrib.texi.orig:151
+#, no-wrap
+msgid "--fuzzy@r{, @code{msgattrib} option}"
+msgstr "--fuzzy@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:154
+msgid ""
+"Synonym for @samp{--only-fuzzy --clear-fuzzy}: It keeps only the fuzzy "
+"messages and removes their"
+msgstr "@samp{--only-fuzzy --clear-fuzzy}の省略指定です。fuzzyメッセージだけを残すとともに、それらのメッセージの"
+
+#. type: table
+#: msgattrib.texi.orig:161
+msgid "mark."
+msgstr "マークを外します。"
+
+#. type: item
+#: msgattrib.texi.orig:162
+#, no-wrap
+msgid "--obsolete"
+msgstr "--obsolete"
+
+#. type: opindex
+#: msgattrib.texi.orig:163
+#, no-wrap
+msgid "--obsolete@r{, @code{msgattrib} option}"
+msgstr "--obsolete@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:166
+msgid ""
+"Synonym for @samp{--only-obsolete --clear-obsolete}: It keeps only the "
+"obsolete messages and makes them non-obsolete."
+msgstr "@samp{--only-obsolete --clear-obsolete}の省略指定です。廃止されたメッセージだけを残すとともに、それらのメッセージから廃止されたことを示すマークを外します。"
+
+#. type: subsection
+#: msgattrib.texi.orig:169
+#, no-wrap
+msgid "Input file syntax"
+msgstr "Input file syntax"
+
+#. type: item
+#: msgattrib.texi.orig:172
+#, no-wrap
+msgid "-P"
+msgstr "-P"
+
+#. type: itemx
+#: msgattrib.texi.orig:173
+#, no-wrap
+msgid "--properties-input"
+msgstr "--properties-input"
+
+#. type: opindex
+#: msgattrib.texi.orig:174
+#, no-wrap
+msgid "-P@r{, @code{msgattrib} option}"
+msgstr "-P@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:175
+#, no-wrap
+msgid "--properties-input@r{, @code{msgattrib} option}"
+msgstr "--properties-input@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:178
+msgid ""
+"Assume the input file is a Java ResourceBundle in Java @code{.properties} "
+"syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、Javaの@code{.properties}の構文にのっ"
+"とったJava ResourceBundleファイルだとみなします。"
+
+#. type: item
+#: msgattrib.texi.orig:179
+#, no-wrap
+msgid "--stringtable-input"
+msgstr "--stringtable-input"
+
+#. type: opindex
+#: msgattrib.texi.orig:180
+#, no-wrap
+msgid "--stringtable-input@r{, @code{msgattrib} option}"
+msgstr "--stringtable-input@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:183
+msgid ""
+"Assume the input file is a NeXTstep/GNUstep localized resource file in "
+"@code{.strings} syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、NeXTstep/GNUstepのlocalized resource"
+"の@code{.strings}の構文にのっとったファイルだとみなします。"
+
+#. type: subsection
+#: msgattrib.texi.orig:186
+#, no-wrap
+msgid "Output details"
+msgstr "Output details"
+
+#. type: item
+#: msgattrib.texi.orig:191
+#, no-wrap
+msgid "--color"
+msgstr "--color"
+
+#. type: itemx
+#: msgattrib.texi.orig:192
+#, no-wrap
+msgid "--color=@var{when}"
+msgstr "--color=@var{when}"
+
+#. type: opindex
+#: msgattrib.texi.orig:193
+#, no-wrap
+msgid "--color@r{, @code{msgattrib} option}"
+msgstr "--color@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:196
+msgid ""
+"Specify whether or when to use colors and other text attributes.  See "
+"@ref{The --color option} for details."
+msgstr ""
+"色や色以外のテキスト属性を使うか、いつ使うかを指定します。詳細は@ref{The --"
+"color option}を参照してください。"
+
+#. type: item
+#: msgattrib.texi.orig:197
+#, no-wrap
+msgid "--style=@var{style_file}"
+msgstr "--style=@var{style_file}"
+
+#. type: opindex
+#: msgattrib.texi.orig:198
+#, no-wrap
+msgid "--style@r{, @code{msgattrib} option}"
+msgstr "--style@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:201
+msgid ""
+"Specify the CSS style rule file to use for @code{--color}.  See @ref{The --"
+"style option} for details."
+msgstr ""
+"@code{--color}にたいしてCSS style ruleファイルを使うかを指定します。詳細は"
+"@ref{The --style option}を参照してください。"
+
+#. type: item
+#: msgattrib.texi.orig:202
+#, no-wrap
+msgid "--force-po"
+msgstr "--force-po"
+
+#. type: opindex
+#: msgattrib.texi.orig:203
+#, no-wrap
+msgid "--force-po@r{, @code{msgattrib} option}"
+msgstr "--force-po@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:205
+msgid "Always write an output file even if it contains no message."
+msgstr ""
+"メッセージが何も含まれていない場合でも、常に出力ファイルに書き込みます。"
+
+#. type: item
+#: msgattrib.texi.orig:206
+#, no-wrap
+msgid "-i"
+msgstr "-i"
+
+#. type: itemx
+#: msgattrib.texi.orig:207
+#, no-wrap
+msgid "--indent"
+msgstr "--indent"
+
+#. type: opindex
+#: msgattrib.texi.orig:208
+#, no-wrap
+msgid "-i@r{, @code{msgattrib} option}"
+msgstr "-i@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:209
+#, no-wrap
+msgid "--indent@r{, @code{msgattrib} option}"
+msgstr "--indent@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:211
+msgid "Write the .po file using indented style."
+msgstr "インデントされた形式で.poファイルを書き込みます。"
+
+#. type: item
+#: msgattrib.texi.orig:212
+#, no-wrap
+msgid "--no-location"
+msgstr "--no-location"
+
+#. type: opindex
+#: msgattrib.texi.orig:213
+#, no-wrap
+msgid "--no-location@r{, @code{msgattrib} option}"
+msgstr "--no-location@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:215
+msgid "Do not write @samp{#: @var{filename}:@var{line}} lines."
+msgstr "@samp{#: @var{filename}:@var{line}}という行を書き込みません。"
+
+#. type: item
+#: msgattrib.texi.orig:216
+#, no-wrap
+msgid "-n"
+msgstr "-n"
+
+#. type: itemx
+#: msgattrib.texi.orig:217
+#, no-wrap
+msgid "--add-location"
+msgstr "--add-location"
+
+#. type: opindex
+#: msgattrib.texi.orig:218
+#, no-wrap
+msgid "-n@r{, @code{msgattrib} option}"
+msgstr "-n@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:219
+#, no-wrap
+msgid "--add-location@r{, @code{msgattrib} option}"
+msgstr "--add-location@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:221
+msgid "Generate @samp{#: @var{filename}:@var{line}} lines (default)."
+msgstr "@samp{#: @var{filename}:@var{line}}という行を生成します(デフォルト)。"
+
+#. type: item
+#: msgattrib.texi.orig:222
+#, no-wrap
+msgid "--strict"
+msgstr "--strict"
+
+#. type: opindex
+#: msgattrib.texi.orig:223
+#, no-wrap
+msgid "--strict@r{, @code{msgattrib} option}"
+msgstr "--strict@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:227
+msgid ""
+"Write out a strict Uniforum conforming PO file.  Note that this Uniforum "
+"format should be avoided because it doesn't support the GNU extensions."
+msgstr ""
+"Uniforumに厳密に準拠したPOファイルを出力します。このUniforum形式はGNUの拡張を"
+"サポートしないため避けたほうがよいでしょう。"
+
+#. type: item
+#: msgattrib.texi.orig:228
+#, no-wrap
+msgid "-p"
+msgstr "-p"
+
+#. type: itemx
+#: msgattrib.texi.orig:229
+#, no-wrap
+msgid "--properties-output"
+msgstr "--properties-output"
+
+#. type: opindex
+#: msgattrib.texi.orig:230
+#, no-wrap
+msgid "-p@r{, @code{msgattrib} option}"
+msgstr "-p@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:231
+#, no-wrap
+msgid "--properties-output@r{, @code{msgattrib} option}"
+msgstr "--properties-output@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:235
+msgid ""
+"Write out a Java ResourceBundle in Java @code{.properties} syntax.  Note "
+"that this file format doesn't support plural forms and silently drops "
+"obsolete messages."
+msgstr ""
+"Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイ"
+"ル形式はplural formをサポートせず、廃止されたメッセージを暗黙で除去することに"
+"注意してください。"
+
+#. type: item
+#: msgattrib.texi.orig:236
+#, no-wrap
+msgid "--stringtable-output"
+msgstr "--stringtable-output"
+
+#. type: opindex
+#: msgattrib.texi.orig:237
+#, no-wrap
+msgid "--stringtable-output@r{, @code{msgattrib} option}"
+msgstr "--stringtable-output@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:240
+msgid ""
+"Write out a NeXTstep/GNUstep localized resource file in @code{.strings} "
+"syntax.  Note that this file format doesn't support plural forms."
+msgstr ""
+"@code{.strings}の書式で、NeXTstep/GNUstepのローカライズされたリソースファイル"
+"を出力します。このファイル形式はplural formをサポートしないことに注意してくだ"
+"さい。"
+
+#. type: item
+#: msgattrib.texi.orig:241
+#, no-wrap
+msgid "-w @var{number}"
+msgstr "-w @var{number}"
+
+#. type: itemx
+#: msgattrib.texi.orig:242
+#, no-wrap
+msgid "--width=@var{number}"
+msgstr "--width=@var{number}"
+
+#. type: opindex
+#: msgattrib.texi.orig:243
+#, no-wrap
+msgid "-w@r{, @code{msgattrib} option}"
+msgstr "-w@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:244
+#, no-wrap
+msgid "--width@r{, @code{msgattrib} option}"
+msgstr "--width@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:248
+msgid ""
+"Set the output page width.  Long strings in the output files will be split "
+"across multiple lines in order to ensure that each line's width (= number of "
+"screen columns) is less or equal to the given @var{number}."
+msgstr ""
+"出力ページの幅をセットします。これにより出力ファイル中の長い文字列が指定した"
+"幅(例:スクリーンの列数)に収まるように、各行の長さが@var{number}以下のような複"
+"数の行に分割されます。"
+
+#. type: item
+#: msgattrib.texi.orig:249
+#, no-wrap
+msgid "--no-wrap"
+msgstr "--no-wrap"
+
+#. type: opindex
+#: msgattrib.texi.orig:250
+#, no-wrap
+msgid "--no-wrap@r{, @code{msgattrib} option}"
+msgstr "--no-wrap@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:254
+msgid ""
+"Do not break long message lines.  Message lines whose width exceeds the "
+"output page width will not be split into several lines.  Only file reference "
+"lines which are wider than the output page width will be split."
+msgstr ""
+"長いメッセージ行を分割しません。出力ページの幅を超えるようなメッセージ行も、"
+"複数行に分割されません。出力ページの幅を超えるファイル参照行だけが分割されま"
+"す。"
+
+#. type: item
+#: msgattrib.texi.orig:255
+#, no-wrap
+msgid "-s"
+msgstr "-s"
+
+#. type: itemx
+#: msgattrib.texi.orig:256
+#, no-wrap
+msgid "--sort-output"
+msgstr "--sort-output"
+
+#. type: opindex
+#: msgattrib.texi.orig:257
+#, no-wrap
+msgid "-s@r{, @code{msgattrib} option}"
+msgstr "-s@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:258
+#, no-wrap
+msgid "--sort-output@r{, @code{msgattrib} option}"
+msgstr "--sort-output@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:261
+msgid ""
+"Generate sorted output.  Note that using this option makes it much harder "
+"for the translator to understand each message's context."
+msgstr ""
+"ソートされた出力を生成します。このオプションを使用することにより翻訳者が、"
+"メッセージがどのようなコンテキストで使用されるかを理解するのが、困難になるこ"
+"とに注意してください。"
+
+#. type: item
+#: msgattrib.texi.orig:262
+#, no-wrap
+msgid "-F"
+msgstr "-F"
+
+#. type: itemx
+#: msgattrib.texi.orig:263
+#, no-wrap
+msgid "--sort-by-file"
+msgstr "--sort-by-file"
+
+#. type: opindex
+#: msgattrib.texi.orig:264
+#, no-wrap
+msgid "-F@r{, @code{msgattrib} option}"
+msgstr "-F@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:265
+#, no-wrap
+msgid "--sort-by-file@r{, @code{msgattrib} option}"
+msgstr "--sort-by-file@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:267
+msgid "Sort output by file location."
+msgstr "ファイルの場所により出力をソートします。"
+
+#. type: subsection
+#: msgattrib.texi.orig:270
+#, no-wrap
+msgid "Informative output"
+msgstr "Informative output"
+
+#. type: item
+#: msgattrib.texi.orig:273
+#, no-wrap
+msgid "-h"
+msgstr "-h"
+
+#. type: itemx
+#: msgattrib.texi.orig:274
+#, no-wrap
+msgid "--help"
+msgstr "--help"
+
+#. type: opindex
+#: msgattrib.texi.orig:275
+#, no-wrap
+msgid "-h@r{, @code{msgattrib} option}"
+msgstr "-h@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:276
+#, no-wrap
+msgid "--help@r{, @code{msgattrib} option}"
+msgstr "--help@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:278
+msgid "Display this help and exit."
+msgstr "このヘルプを表示して終了します。"
+
+#. type: item
+#: msgattrib.texi.orig:279
+#, no-wrap
+msgid "-V"
+msgstr "-V"
+
+#. type: itemx
+#: msgattrib.texi.orig:280
+#, no-wrap
+msgid "--version"
+msgstr "--version"
+
+#. type: opindex
+#: msgattrib.texi.orig:281
+#, no-wrap
+msgid "-V@r{, @code{msgattrib} option}"
+msgstr "-V@r{, @code{msgattrib} オプション}"
+
+#. type: opindex
+#: msgattrib.texi.orig:282
+#, no-wrap
+msgid "--version@r{, @code{msgattrib} option}"
+msgstr "--version@r{, @code{msgattrib} オプション}"
+
+#. type: table
+#: msgattrib.texi.orig:284
+msgid "Output version information and exit."
+msgstr "バージョン情報を表示して終了します。"

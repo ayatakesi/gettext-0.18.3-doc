@@ -1,0 +1,956 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-09-08 22:01+0900\n"
+"PO-Revision-Date: 2016-07-30 21:08+0900\n"
+"Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
+"Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: pindex
+#: msgfmt.texi.orig:1
+#, no-wrap
+msgid "msgfmt"
+msgstr "msgfmt"
+
+#. type: cindex
+#: msgfmt.texi.orig:2
+#, no-wrap
+msgid "@code{msgfmt} program, usage"
+msgstr "@code{msgfmt} プログラム, 使い方"
+
+#. type: example
+#: msgfmt.texi.orig:5
+#, no-wrap
+msgid "msgfmt [@var{option}] @var{filename}.po @dots{}\n"
+msgstr "msgfmt [@var{option}] @var{filename}.po @dots{}\n"
+
+#. type: cindex
+#: msgfmt.texi.orig:7
+#, no-wrap
+msgid "generate binary message catalog from PO file"
+msgstr "POファイルからバイナリーのメッセージカタログを生成する"
+
+#. type: Plain text
+#: msgfmt.texi.orig:10
+msgid ""
+"The @code{msgfmt} programs generates a binary message catalog from a textual "
+"translation description."
+msgstr "@code{msgfmt}は、翻訳済みのテキストのメッセージから、バイナリーのメッセージカタログを生成するプログラムです。"
+
+#. type: subsection
+#: msgfmt.texi.orig:11
+#, no-wrap
+msgid "Input file location"
+msgstr "Input file location"
+
+#. type: item
+#: msgfmt.texi.orig:14
+#, no-wrap
+msgid "@var{filename}.po @dots{}"
+msgstr "@var{filename}.po @dots{}"
+
+#. type: item
+#: msgfmt.texi.orig:16
+#, no-wrap
+msgid "-D @var{directory}"
+msgstr "-D @var{directory}"
+
+#. type: itemx
+#: msgfmt.texi.orig:17
+#, no-wrap
+msgid "--directory=@var{directory}"
+msgstr "--directory=@var{directory}"
+
+#. type: opindex
+#: msgfmt.texi.orig:18
+#, no-wrap
+msgid "-D@r{, @code{msgfmt} option}"
+msgstr "-D@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:19
+#, no-wrap
+msgid "--directory@r{, @code{msgfmt} option}"
+msgstr "--directory@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:23
+msgid ""
+"Add @var{directory} to the list of directories.  Source files are searched "
+"relative to this list of directories.  The resulting binary file will be "
+"written relative to the current directory, though."
+msgstr "ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よりソースファイルを検索します。しかし、結果となるバイナリーファイルが出力されるのは、カレントディレクトリーです。"
+
+#. type: Plain text
+#: msgfmt.texi.orig:27
+msgid "If an input file is @samp{-}, standard input is read."
+msgstr "入力ファイルに@samp{-}が指定された場合は、標準入力から読み込みます。"
+
+#. type: subsection
+#: msgfmt.texi.orig:28
+#, no-wrap
+msgid "Operation mode"
+msgstr "Operation mode"
+
+#. type: item
+#: msgfmt.texi.orig:31
+#, no-wrap
+msgid "-j"
+msgstr "-j"
+
+#. type: itemx
+#: msgfmt.texi.orig:32
+#, no-wrap
+msgid "--java"
+msgstr "--java"
+
+#. type: opindex
+#: msgfmt.texi.orig:33
+#, no-wrap
+msgid "-j@r{, @code{msgfmt} option}"
+msgstr "-j@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:34
+#, no-wrap
+msgid "--java@r{, @code{msgfmt} option}"
+msgstr "--java@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:35
+#, no-wrap
+msgid "Java mode, and @code{msgfmt} program"
+msgstr "Javaモード, そして @code{msgfmt} プログラム"
+
+#. type: table
+#: msgfmt.texi.orig:37
+msgid "Java mode: generate a Java @code{ResourceBundle} class."
+msgstr "Javaモード: Javaの@code{ResourceBundle}クラスを生成します。"
+
+#. type: item
+#: msgfmt.texi.orig:38
+#, no-wrap
+msgid "--java2"
+msgstr "--java2"
+
+#. type: opindex
+#: msgfmt.texi.orig:39
+#, no-wrap
+msgid "--java2@r{, @code{msgfmt} option}"
+msgstr "--java2@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:41
+msgid "Like --java, and assume Java2 (JDK 1.2 or higher)."
+msgstr "--javaと同様ですがJava2(JDK 1.2以上)とみなします。"
+
+#. type: item
+#: msgfmt.texi.orig:42
+#, no-wrap
+msgid "--csharp"
+msgstr "--csharp"
+
+#. type: opindex
+#: msgfmt.texi.orig:43
+#, no-wrap
+msgid "--csharp@r{, @code{msgfmt} option}"
+msgstr "--csharp@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:44
+#, no-wrap
+msgid "C# mode, and @code{msgfmt} program"
+msgstr "C#モード, そして @code{msgfmt} プログラム"
+
+#. type: table
+#: msgfmt.texi.orig:47
+msgid ""
+"C# mode: generate a .NET .dll file containing a subclass of "
+"@code{GettextResourceSet}."
+msgstr "C#モード: @code{GettextResourceSet}のサブクラスを含んだ、.NETの.dllファイルを生成します。"
+
+#. type: item
+#: msgfmt.texi.orig:48
+#, no-wrap
+msgid "--csharp-resources"
+msgstr "--csharp-resources"
+
+#. type: opindex
+#: msgfmt.texi.orig:49
+#, no-wrap
+msgid "--csharp-resources@r{, @code{msgfmt} option}"
+msgstr "--csharp-resources@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:50
+#, no-wrap
+msgid "C# resources mode, and @code{msgfmt} program"
+msgstr "C# resourcesモード, そして @code{msgfmt} プログラム"
+
+#. type: table
+#: msgfmt.texi.orig:52
+msgid "C# resources mode: generate a .NET @file{.resources} file."
+msgstr "C# resourcesモード: .NETの@file{.resources}ファイルを生成します。"
+
+#. type: item
+#: msgfmt.texi.orig:53
+#, no-wrap
+msgid "--tcl"
+msgstr "--tcl"
+
+#. type: opindex
+#: msgfmt.texi.orig:54
+#, no-wrap
+msgid "--tcl@r{, @code{msgfmt} option}"
+msgstr "--tcl@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:55
+#, no-wrap
+msgid "Tcl mode, and @code{msgfmt} program"
+msgstr "Tclモード, そして @code{msgfmt} プログラム"
+
+#. type: table
+#: msgfmt.texi.orig:57
+msgid "Tcl mode: generate a tcl/msgcat @file{.msg} file."
+msgstr "Tclモード: tcl/msgcatの@file{.msg}ファイルを生成します。"
+
+#. type: item
+#: msgfmt.texi.orig:58
+#, no-wrap
+msgid "--qt"
+msgstr "--qt"
+
+#. type: opindex
+#: msgfmt.texi.orig:59
+#, no-wrap
+msgid "--qt@r{, @code{msgfmt} option}"
+msgstr "--qt@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:60
+#, no-wrap
+msgid "Qt mode, and @code{msgfmt} program"
+msgstr "Qtモード, そして @code{msgfmt} プログラム"
+
+#. type: table
+#: msgfmt.texi.orig:62
+msgid "Qt mode: generate a Qt @file{.qm} file."
+msgstr "Qtモード: Qtの@file{.qm}ファイルを生成します。"
+
+#. type: subsection
+#: msgfmt.texi.orig:65
+#, no-wrap
+msgid "Output file location"
+msgstr "Output file location"
+
+#. type: item
+#: msgfmt.texi.orig:68
+#, no-wrap
+msgid "-o @var{file}"
+msgstr "-o @var{file}"
+
+#. type: itemx
+#: msgfmt.texi.orig:69
+#, no-wrap
+msgid "--output-file=@var{file}"
+msgstr "--output-file=@var{file}"
+
+#. type: opindex
+#: msgfmt.texi.orig:70
+#, no-wrap
+msgid "-o@r{, @code{msgfmt} option}"
+msgstr "-o@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:71
+#, no-wrap
+msgid "--output-file@r{, @code{msgfmt} option}"
+msgstr "--output-file@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:73
+msgid "Write output to specified file."
+msgstr "指定されたファイルに出力を書き込みます。"
+
+#. type: item
+#: msgfmt.texi.orig:74
+#, no-wrap
+msgid "--strict"
+msgstr "--strict"
+
+#. type: opindex
+#: msgfmt.texi.orig:75
+#, no-wrap
+msgid "--strict@r{, @code{msgfmt} option}"
+msgstr "--strict@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:82
+msgid ""
+"Direct the program to work strictly following the Uniforum/Sun "
+"implementation.  Currently this only affects the naming of the output file.  "
+"If this option is not given the name of the output file is the same as the "
+"domain name.  If the strict Uniforum mode is enabled the suffix @file{.mo} "
+"is added to the file name if it is not already present."
+msgstr "プログラムがUniforum/Sun実装にしたがうように指定します。これは現時点では、出力ファイルの名前に影響を与えるだけです。オプションにファイル名を指定しなかった場合、出力ファイルは同じdomain 名になります。厳密なUniforumモードが有効でファイル名が与えられなかった場合には、ファイル名に@file{.mo}が付加されます。"
+
+#. type: table
+#: msgfmt.texi.orig:85
+msgid ""
+"We find this behaviour of Sun's implementation rather silly and so by "
+"default this mode is @emph{not} selected."
+msgstr "わたしたちはこのSun実装は意味がないと考え、デフォルトではこのモードは選択@emph{されません}。"
+
+#. type: Plain text
+#: msgfmt.texi.orig:89
+msgid ""
+"If the output @var{file} is @samp{-}, output is written to standard output."
+msgstr "出力となる@var{file}に@samp{-}が指定されたときは、出力は標準出力に書き込まれます。"
+
+#. type: subsection
+#: msgfmt.texi.orig:90
+#, no-wrap
+msgid "Output file location in Java mode"
+msgstr "Output file location in Java mode"
+
+#. type: item
+#: msgfmt.texi.orig:93 msgfmt.texi.orig:119
+#, no-wrap
+msgid "-r @var{resource}"
+msgstr "-r @var{resource}"
+
+#. type: itemx
+#: msgfmt.texi.orig:94 msgfmt.texi.orig:120
+#, no-wrap
+msgid "--resource=@var{resource}"
+msgstr "--resource=@var{resource}"
+
+#. type: opindex
+#: msgfmt.texi.orig:95 msgfmt.texi.orig:121
+#, no-wrap
+msgid "-r@r{, @code{msgfmt} option}"
+msgstr "-r@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:96 msgfmt.texi.orig:122
+#, no-wrap
+msgid "--resource@r{, @code{msgfmt} option}"
+msgstr "--resource@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:98 msgfmt.texi.orig:124
+msgid "Specify the resource name."
+msgstr "リソース名を指定します。"
+
+#. type: item
+#: msgfmt.texi.orig:99 msgfmt.texi.orig:125 msgfmt.texi.orig:145
+#, no-wrap
+msgid "-l @var{locale}"
+msgstr "-l @var{locale}"
+
+#. type: itemx
+#: msgfmt.texi.orig:100 msgfmt.texi.orig:126 msgfmt.texi.orig:146
+#, no-wrap
+msgid "--locale=@var{locale}"
+msgstr "--locale=@var{locale}"
+
+#. type: opindex
+#: msgfmt.texi.orig:101 msgfmt.texi.orig:127 msgfmt.texi.orig:147
+#, no-wrap
+msgid "-l@r{, @code{msgfmt} option}"
+msgstr "-l@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:102 msgfmt.texi.orig:128 msgfmt.texi.orig:148
+#, no-wrap
+msgid "--locale@r{, @code{msgfmt} option}"
+msgstr "--locale@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:105 msgfmt.texi.orig:131 msgfmt.texi.orig:151
+msgid ""
+"Specify the locale name, either a language specification of the form "
+"@var{ll} or a combined language and country specification of the form "
+"@var{ll_CC}."
+msgstr "locale名を指定します。@var{ll}形式による言語指定と、国と言語指定を組み合わせた@var{ll_CC}のどちらでも指定できます。"
+
+#. type: item
+#: msgfmt.texi.orig:106 msgfmt.texi.orig:132 msgfmt.texi.orig:152
+#, no-wrap
+msgid "-d @var{directory}"
+msgstr "-d @var{directory}"
+
+#. type: opindex
+#: msgfmt.texi.orig:107 msgfmt.texi.orig:133 msgfmt.texi.orig:153
+#, no-wrap
+msgid "-d@r{, @code{msgfmt} option}"
+msgstr "-d@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:109
+msgid "Specify the base directory of classes directory hierarchy."
+msgstr "classのディレクトリー階層のベースとなるディレクトリーを指定します。"
+
+#. type: Plain text
+#: msgfmt.texi.orig:115
+msgid ""
+"The class name is determined by appending the locale name to the resource "
+"name, separated with an underscore.  The @samp{-d} option is mandatory.  The "
+"class is written under the specified directory."
+msgstr "クラス名はリソース名の後ろに区切り文字のアンダースコアーとlocale名を付加して決定されます。@samp{-d}オプションは必須です。クラスは指定されたディレクトリーに出力されます。"
+
+#. type: subsection
+#: msgfmt.texi.orig:116
+#, no-wrap
+msgid "Output file location in C# mode"
+msgstr "Output file location in C# mode"
+
+#. type: table
+#: msgfmt.texi.orig:135
+msgid "Specify the base directory for locale dependent @file{.dll} files."
+msgstr "localeに依存する@file{.dll}ファイルを出力するベースディレクトリーを指定します。"
+
+#. type: Plain text
+#: msgfmt.texi.orig:141
+msgid ""
+"The @samp{-l} and @samp{-d} options are mandatory.  The @file{.dll} file is "
+"written in a subdirectory of the specified directory whose name depends on "
+"the locale."
+msgstr "\\@samp{-l}と@samp{-d}が必須オプションです。@file{.dll}ファイルは、localeに依存した名前の指定ディレクトリーのサブディレクトリーに出力されます。"
+
+#. type: subsection
+#: msgfmt.texi.orig:142
+#, no-wrap
+msgid "Output file location in Tcl mode"
+msgstr "Output file location in Tcl mode"
+
+#. type: table
+#: msgfmt.texi.orig:155
+msgid "Specify the base directory of @file{.msg} message catalogs."
+msgstr "メッセージカタログ@file{.msg}のベースディレクトリーを指定します。"
+
+#. type: Plain text
+#: msgfmt.texi.orig:160
+msgid ""
+"The @samp{-l} and @samp{-d} options are mandatory.  The @file{.msg} file is "
+"written in the specified directory."
+msgstr "@samp{-l}と@samp{-d}は必須オプションです。@file{.msg}は指定されたディレクトリーに出力されます。"
+
+#. type: subsection
+#: msgfmt.texi.orig:161
+#, no-wrap
+msgid "Input file syntax"
+msgstr "Input file syntax"
+
+#. type: item
+#: msgfmt.texi.orig:164
+#, no-wrap
+msgid "-P"
+msgstr "-P"
+
+#. type: itemx
+#: msgfmt.texi.orig:165
+#, no-wrap
+msgid "--properties-input"
+msgstr "--properties-input"
+
+#. type: opindex
+#: msgfmt.texi.orig:166
+#, no-wrap
+msgid "-P@r{, @code{msgfmt} option}"
+msgstr "-P@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:167
+#, no-wrap
+msgid "--properties-input@r{, @code{msgfmt} option}"
+msgstr "--properties-input@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:170
+msgid ""
+"Assume the input files are Java ResourceBundles in Java @code{.properties} "
+"syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、Javaの@code{.properties}の構文にのっ"
+"とったJava ResourceBundleファイルだとみなします。"
+
+#. type: item
+#: msgfmt.texi.orig:171
+#, no-wrap
+msgid "--stringtable-input"
+msgstr "--stringtable-input"
+
+#. type: opindex
+#: msgfmt.texi.orig:172
+#, no-wrap
+msgid "--stringtable-input@r{, @code{msgfmt} option}"
+msgstr "--stringtable-input@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:175
+msgid ""
+"Assume the input files are NeXTstep/GNUstep localized resource files in "
+"@code{.strings} syntax, not in PO file syntax."
+msgstr ""
+"入力ファイルがPOファイルの構文ではなく、NeXTstep/GNUstepのlocalized resource"
+"の@code{.strings}の構文にのっとったファイルだとみなします。"
+
+#. type: subsection
+#: msgfmt.texi.orig:178
+#, no-wrap
+msgid "Input file interpretation"
+msgstr "Input file interpretation"
+
+#. type: item
+#: msgfmt.texi.orig:181
+#, no-wrap
+msgid "-c"
+msgstr "-c"
+
+#. type: itemx
+#: msgfmt.texi.orig:182
+#, no-wrap
+msgid "--check"
+msgstr "--check"
+
+#. type: opindex
+#: msgfmt.texi.orig:183
+#, no-wrap
+msgid "-c@r{, @code{msgfmt} option}"
+msgstr "-c@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:184
+#, no-wrap
+msgid "--check@r{, @code{msgfmt} option}"
+msgstr "--check@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:187
+msgid ""
+"Perform all the checks implied by @code{--check-format}, @code{--check-"
+"header}, @code{--check-domain}."
+msgstr "@code{--check-format}、@code{--check-header}、@code{--check-domain}がすべて指定されたとみなしてチェックを行います。"
+
+#. type: item
+#: msgfmt.texi.orig:188
+#, no-wrap
+msgid "--check-format"
+msgstr "--check-format"
+
+#. type: opindex
+#: msgfmt.texi.orig:189
+#, no-wrap
+msgid "--check-format@r{, @code{msgfmt} option}"
+msgstr "--check-format@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:190
+#, no-wrap
+msgid "check format strings"
+msgstr "書式文字列のチェック"
+
+#. type: table
+#: msgfmt.texi.orig:192
+msgid "Check language dependent format strings."
+msgstr "languageに依存した書式文字列をチェックします。"
+
+#. type: table
+#: msgfmt.texi.orig:201
+msgid ""
+"If the string represents a format string used in a @code{printf}-like "
+"function both strings should have the same number of @samp{%} format "
+"specifiers, with matching types.  If the flag @code{c-format} or "
+"@code{possible-c-format} appears in the special comment @key{#,} for this "
+"entry a check is performed.  For example, the check will diagnose using "
+"@samp{%.*s} against @samp{%s}, or @samp{%d} against @samp{%s}, or @samp{%d} "
+"against @samp{%x}.  It can even handle positional parameters."
+msgstr "文字列が @code{printf}のような関数で使用される書式文字列の場合、書式指定子@samp{%}と、それらに対応する型の変数の個数は一致するはずです。エントリーにたいして@key{#,}コメントで@code{c-format}や@code{possible-c-format}フラグが指定されている場合は、チェックが行われます。たとえば、@samp{%s}が期待される箇所に@samp{%.*s}や@samp{%d}が使われていたり、@samp{%x}が期待される箇所に@samp{%d}が使われている場合、チェックは診断メッセージを出力します。このチェックは位置パラメーターを処理することさえできるのです。"
+
+#. type: table
+#: msgfmt.texi.orig:207
+msgid ""
+"Normally the @code{xgettext} program automatically decides whether a string "
+"is a format string or not.  This algorithm is not perfect, though.  It might "
+"regard a string as a format string though it is not used in a @code{printf}-"
+"like function and so @code{msgfmt} might report errors where there are none."
+msgstr "通常、@code{xgettext}プログラムは、ある文字列が書式文字列かどうかを、自動的に判定します。しかしこのアルゴリズムも完全ではありません。そのため @code{printf}のような関数で使用されていない文字列を書式文字列とみなしてしまい、エラーが存在しないにもかかわらず@code{msgfmt}がエラーを報告する場合があります。"
+
+#. type: table
+#: msgfmt.texi.orig:212
+msgid ""
+"To solve this problem the programmer can dictate the decision to the "
+"@code{xgettext} program (@pxref{c-format}).  The translator should not "
+"consider removing the flag from the @key{#,} line.  This \"fix\" would be "
+"reversed again as soon as @code{msgmerge} is called the next time."
+msgstr "プログラマーが@code{xgettext}に判定結果を指示することにより、この問題を解決することができます(@pxref{c-format})。翻訳者は@key{#,}行からフラグを削除しようと考える必要はありません。なぜならこの\"fix\"は、次に@code{msgmerge}を呼び出したときに元に戻されてしまうからです。"
+
+#. type: item
+#: msgfmt.texi.orig:213
+#, no-wrap
+msgid "--check-header"
+msgstr "--check-header"
+
+#. type: opindex
+#: msgfmt.texi.orig:214
+#, no-wrap
+msgid "--check-header@r{, @code{msgfmt} option}"
+msgstr "--check-header@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:217
+msgid ""
+"Verify presence and contents of the header entry.  @xref{Header Entry}, for "
+"a description of the various fields in the header entry."
+msgstr "ヘッダーエントリーの存在および内容をチェックします。ヘッダーエントリーのさまざまなフィールドの説明は、@xref{Header Entry}。"
+
+#. type: item
+#: msgfmt.texi.orig:218
+#, no-wrap
+msgid "--check-domain"
+msgstr "--check-domain"
+
+#. type: opindex
+#: msgfmt.texi.orig:219
+#, no-wrap
+msgid "--check-domain@r{, @code{msgfmt} option}"
+msgstr "--check-domain@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:222
+msgid ""
+"Check for conflicts between domain directives and the @code{--output-file} "
+"option"
+msgstr "domain指定と@code{--output-file}オプションの競合をチェックします。"
+
+#. type: item
+#: msgfmt.texi.orig:223
+#, no-wrap
+msgid "-C"
+msgstr "-C"
+
+#. type: itemx
+#: msgfmt.texi.orig:224
+#, no-wrap
+msgid "--check-compatibility"
+msgstr "--check-compatibility"
+
+#. type: opindex
+#: msgfmt.texi.orig:225
+#, no-wrap
+msgid "-C@r{, @code{msgfmt} option}"
+msgstr "-C@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:226
+#, no-wrap
+msgid "--check-compatibility@r{, @code{msgfmt} option}"
+msgstr "--check-compatibility@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:227
+#, no-wrap
+msgid "compatibility with X/Open @code{msgfmt}"
+msgstr "X/Open @code{msgfmt}との互換性"
+
+#. type: table
+#: msgfmt.texi.orig:230
+msgid ""
+"Check that GNU msgfmt behaves like X/Open msgfmt.  This will give an error "
+"when attempting to use the GNU extensions."
+msgstr "GNU msgfmtがX/Open msgfmtのように振る舞うかをチェックします。GNU拡張を使用しているとエラーになります。"
+
+#. type: item
+#: msgfmt.texi.orig:231
+#, no-wrap
+msgid "--check-accelerators[=@var{char}]"
+msgstr "--check-accelerators[=@var{char}]"
+
+#. type: opindex
+#: msgfmt.texi.orig:232
+#, no-wrap
+msgid "--check-accelerators@r{, @code{msgfmt} option}"
+msgstr "--check-accelerators@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:233
+#, no-wrap
+msgid "keyboard accelerator checking"
+msgstr "キーボードアクセラレーターのチェック"
+
+#. type: cindex
+#: msgfmt.texi.orig:234
+#, no-wrap
+msgid "menu, keyboard accelerator support"
+msgstr "メニュー、キーボードアクセラレーターのサポート"
+
+#. type: cindex
+#: msgfmt.texi.orig:235
+#, no-wrap
+msgid "mnemonics of menu entries"
+msgstr "メニューエントリーのニーモニック"
+
+#. type: table
+#: msgfmt.texi.orig:245
+msgid ""
+"Check presence of keyboard accelerators for menu items.  This is based on "
+"the convention used in some GUIs that a keyboard accelerator in a menu item "
+"string is designated by an immediately preceding @samp{&} character.  "
+"Sometimes a keyboard accelerator is also called \"keyboard mnemonic\".  This "
+"check verifies that if the untranslated string has exactly one @samp{&} "
+"character, the translated string has exactly one @samp{&} as well.  If this "
+"option is given with a @var{char} argument, this @var{char} should be a non-"
+"alphanumeric character and is used as keyboard accelerator mark instead of "
+"@samp{&}."
+msgstr "メニューアイテムにたいしてキーボードアクセラレーターの存在をチェックします。このチェックは、いくつかの GUI においてメニューアイテム文字列内のキーボードアクセラレーターが、@samp{&}のすぐ後ろに続く文字としてデザインされていることにもとづきます。キーボードアクセラレーターが\"keyboard mnemonic\"と呼ばれることもあります。このチェックは、未翻訳文字列に@samp{&}が1つあるとき、翻訳文字列にも1つの@samp{&}があるかをチェックします。このオプションの引数に@var{char}が与えらる場合、@var{char}には非英数文字を指定します。指定した文字は@samp{&}のかわりに、キーボードアクセラレーターのマークとして使用されます。"
+
+#. type: item
+#: msgfmt.texi.orig:246
+#, no-wrap
+msgid "-f"
+msgstr "-f"
+
+#. type: itemx
+#: msgfmt.texi.orig:247
+#, no-wrap
+msgid "--use-fuzzy"
+msgstr "--use-fuzzy"
+
+#. type: opindex
+#: msgfmt.texi.orig:248
+#, no-wrap
+msgid "-f@r{, @code{msgfmt} option}"
+msgstr "-f@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:249
+#, no-wrap
+msgid "--use-fuzzy@r{, @code{msgfmt} option}"
+msgstr "--use-fuzzy@r{, @code{msgfmt} オプション}"
+
+#. type: cindex
+#: msgfmt.texi.orig:250
+#, no-wrap
+msgid "force use of fuzzy entries"
+msgstr "fuzzyエントリーを強制的に使う"
+
+#. type: table
+#: msgfmt.texi.orig:254
+msgid ""
+"Use fuzzy entries in output.  Note that using this option is usually wrong, "
+"because fuzzy messages are exactly those which have not been validated by a "
+"human translator."
+msgstr "出力にfuzzyエントリーを使用します。これらのfuzzyメッセージは人間の翻訳者により検証されたものではないため、このオプションの使用は通常は正しくないことに注意してください。"
+
+#. type: subsection
+#: msgfmt.texi.orig:257
+#, no-wrap
+msgid "Output details"
+msgstr "Output details"
+
+#. type: item
+#: msgfmt.texi.orig:260
+#, no-wrap
+msgid "-a @var{number}"
+msgstr "-a @var{number}"
+
+#. type: itemx
+#: msgfmt.texi.orig:261
+#, no-wrap
+msgid "--alignment=@var{number}"
+msgstr "--alignment=@var{number}"
+
+#. type: opindex
+#: msgfmt.texi.orig:262
+#, no-wrap
+msgid "-a@r{, @code{msgfmt} option}"
+msgstr "-a@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:263
+#, no-wrap
+msgid "--alignment@r{, @code{msgfmt} option}"
+msgstr "--alignment@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:267
+msgid "Align strings to @var{number} bytes (default: 1)."
+msgstr "Align strings to @var{number} bytes (default: 1)."
+
+#. type: item
+#: msgfmt.texi.orig:268
+#, no-wrap
+msgid "--endianness=@var{byteorder}"
+msgstr "--endianness=@var{byteorder}"
+
+#. type: opindex
+#: msgfmt.texi.orig:269
+#, no-wrap
+msgid "--endianness@r{, @code{msgfmt} option}"
+msgstr "--endianness@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:273
+msgid ""
+"Write out 32-bit numbers in the given byte order.  The possible values are "
+"@code{big} and @code{little}.  The default depends on the platform, namely "
+"on the endianness of the CPU."
+msgstr "32ビットの数字を与えられたバイト順で書き出します。@code{big}と@code{little}を指定できます。デフォルトはプラットフォーム、正確に言うとCPUのインディアンに依存します。"
+
+#. type: table
+#: msgfmt.texi.orig:277
+msgid ""
+"MO files of any endianness can be used on any platform.  When a MO file has "
+"an endianness other than the platform's one, the 32-bit numbers from the MO "
+"file are swapped at runtime.  The performance impact is negligible."
+msgstr "任意のインディアンをもつMOファイルは、任意のプラットフォームで使用できます。MOファイルのインディアンがプラットフォームのものでない場合、32ビットの数値は実行時に交換されます。パフォーマンスに与える影響は無視できるものです。"
+
+#. type: table
+#: msgfmt.texi.orig:280
+msgid ""
+"This option can be useful to produce MO files that are independent of the "
+"platform."
+msgstr "このオプションはプラットフォームに束縛されずMOを作成するために便利です。"
+
+#. type: item
+#: msgfmt.texi.orig:281
+#, no-wrap
+msgid "--no-hash"
+msgstr "--no-hash"
+
+#. type: opindex
+#: msgfmt.texi.orig:282
+#, no-wrap
+msgid "--no-hash@r{, @code{msgfmt} option}"
+msgstr "--no-hash@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:285
+msgid ""
+"Don't include a hash table in the binary file.  Lookup will be more "
+"expensive at run time (binary search instead of hash table lookup)."
+msgstr "バイナリーファイルにハッシュテーブルを含めないようにします。(ハッシュテーブルを参照するかわりに、バイナリーサーチが行われるため)実行時の検索が、より高価な処理となります。"
+
+#. type: subsection
+#: msgfmt.texi.orig:288
+#, no-wrap
+msgid "Informative output"
+msgstr "Informative output"
+
+#. type: item
+#: msgfmt.texi.orig:291
+#, no-wrap
+msgid "-h"
+msgstr "-h"
+
+#. type: itemx
+#: msgfmt.texi.orig:292
+#, no-wrap
+msgid "--help"
+msgstr "--help"
+
+#. type: opindex
+#: msgfmt.texi.orig:293
+#, no-wrap
+msgid "-h@r{, @code{msgfmt} option}"
+msgstr "-h@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:294
+#, no-wrap
+msgid "--help@r{, @code{msgfmt} option}"
+msgstr "--help@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:296
+msgid "Display this help and exit."
+msgstr "このヘルプを表示して終了します。"
+
+#. type: item
+#: msgfmt.texi.orig:297
+#, no-wrap
+msgid "-V"
+msgstr "-V"
+
+#. type: itemx
+#: msgfmt.texi.orig:298
+#, no-wrap
+msgid "--version"
+msgstr "--version"
+
+#. type: opindex
+#: msgfmt.texi.orig:299
+#, no-wrap
+msgid "-V@r{, @code{msgfmt} option}"
+msgstr "-V@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:300
+#, no-wrap
+msgid "--version@r{, @code{msgfmt} option}"
+msgstr "--version@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:302
+msgid "Output version information and exit."
+msgstr "バージョン情報を表示して終了します。"
+
+#. type: item
+#: msgfmt.texi.orig:303
+#, no-wrap
+msgid "--statistics"
+msgstr "--statistics"
+
+#. type: opindex
+#: msgfmt.texi.orig:304
+#, no-wrap
+msgid "--statistics@r{, @code{msgfmt} option}"
+msgstr "--statistics@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:308
+msgid ""
+"Print statistics about translations.  When the option @code{--verbose} is "
+"used in combination with @code{--statistics}, the input file name is printed "
+"in front of the statistics line."
+msgstr "翻訳の統計情報を表示します。@code{--statistics}とともに@code{--verbose}オプションが指定された場合は、統計行の前に入力ファイルの名前が出力されます。"
+
+#. type: item
+#: msgfmt.texi.orig:309
+#, no-wrap
+msgid "-v"
+msgstr "-v"
+
+#. type: itemx
+#: msgfmt.texi.orig:310
+#, no-wrap
+msgid "--verbose"
+msgstr "--verbose"
+
+#. type: opindex
+#: msgfmt.texi.orig:311
+#, no-wrap
+msgid "-v@r{, @code{msgfmt} option}"
+msgstr "-v@r{, @code{msgfmt} オプション}"
+
+#. type: opindex
+#: msgfmt.texi.orig:312
+#, no-wrap
+msgid "--verbose@r{, @code{msgfmt} option}"
+msgstr "--verbose@r{, @code{msgfmt} オプション}"
+
+#. type: table
+#: msgfmt.texi.orig:314
+msgid "Increase verbosity level."
+msgstr "診断レベルを上げます。"
