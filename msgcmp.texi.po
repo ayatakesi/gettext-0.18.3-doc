@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-04 23:44+0900\n"
-"PO-Revision-Date: 2016-07-30 21:04+0900\n"
+"PO-Revision-Date: 2016-08-12 19:48+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "msgcmp"
 #: msgcmp.texi.orig:2
 #, no-wrap
 msgid "@code{msgcmp} program, usage"
-msgstr "@code{msgcmp} プログラム, 使い方"
+msgstr "@code{msgcmp} program, usage"
 
 #. type: example
 #: msgcmp.texi.orig:5
@@ -37,7 +37,7 @@ msgstr "msgcmp [@var{option}] @var{def}.po @var{ref}.pot\n"
 #: msgcmp.texi.orig:7
 #, no-wrap
 msgid "compare PO files"
-msgstr "POファイルの比較"
+msgstr "compare PO files"
 
 #. type: Plain text
 #: msgcmp.texi.orig:15
@@ -49,7 +49,7 @@ msgid ""
 "@code{xgettext}).  This is useful for checking that you have translated each "
 "and every message in your program.  Where an exact match cannot be found, "
 "fuzzy matching is used to produce better diagnostics."
-msgstr "@code{msgcmp}プログラムは、Uniforum形式の2つの.poファイルを比較して、同じmsgid文字列を含んでいるかチェックするプログラムです。@var{def}.poファイルは、翻訳を含んだ既存のPOファイルです。@var{ref}.potは、最後に作成したPOファイル、またはPO Templateファイル(通常@code{xgettext}により作成される)です。このプログラムは、プログラム内のメッセージが翻訳されているかチェックするときに便利です。完全に一致するエントリーが見つからない場合は、より良い診断メッセージを生成するためにファジーマッチングが行われます。"
+msgstr "@code{msgcmp}プログラムは、Uniforum形式の2つの.poファイルを比較して、同じmsgid文字列を含んでいるかチェックするプログラムです。@var{def}.poファイルは、翻訳を含んだ既存のPOファイルです。@var{ref}.potは、最後に作成したPOファイル、またはPO Templateファイル(通常@code{xgettext}により作成される)です。このプログラムは、プログラム内のメッセージが翻訳されているかチェックするときに便利です。完全に一致するエントリーが見つからない場合は、より良い診断メッセージを生成するためにfuzzyマッチングが行われます。"
 
 #. type: subsection
 #: msgcmp.texi.orig:16
@@ -95,20 +95,20 @@ msgstr "--directory=@var{directory}"
 #: msgcmp.texi.orig:27
 #, no-wrap
 msgid "-D@r{, @code{msgcmp} option}"
-msgstr "-D@r{, @code{msgcmp} オプション}"
+msgstr "-D@r{, @code{msgcmp} option}"
 
 #. type: opindex
 #: msgcmp.texi.orig:28
 #, no-wrap
 msgid "--directory@r{, @code{msgcmp} option}"
-msgstr "--directory@r{, @code{msgcmp} オプション}"
+msgstr "--directory@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:31
 msgid ""
 "Add @var{directory} to the list of directories.  Source files are searched "
 "relative to this list of directories."
-msgstr "ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よりソースファイルを検索します。"
+msgstr "ディレクトリーのリストに@var{directory}を追加します。このディレクトリーのリストよりソースファイルを検索します。"
 
 #. type: subsection
 #: msgcmp.texi.orig:34
@@ -132,13 +132,13 @@ msgstr "--multi-domain"
 #: msgcmp.texi.orig:39
 #, no-wrap
 msgid "-m@r{, @code{msgcmp} option}"
-msgstr "-m@r{, @code{msgcmp} オプション}"
+msgstr "-m@r{, @code{msgcmp} option}"
 
 #. type: opindex
 #: msgcmp.texi.orig:40
 #, no-wrap
 msgid "--multi-domain@r{, @code{msgcmp} option}"
-msgstr "--multi-domain@r{, @code{msgcmp} オプション}"
+msgstr "--multi-domain@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:42
@@ -161,13 +161,13 @@ msgstr "--no-fuzzy-matching"
 #: msgcmp.texi.orig:45
 #, no-wrap
 msgid "-N@r{, @code{msgcmp} option}"
-msgstr "-N@r{, @code{msgcmp} オプション}"
+msgstr "-N@r{, @code{msgcmp} option}"
 
 #. type: opindex
 #: msgcmp.texi.orig:46
 #, no-wrap
 msgid "--no-fuzzy-matching@r{, @code{msgcmp} option}"
-msgstr "--no-fuzzy-matching@r{, @code{msgcmp} オプション}"
+msgstr "--no-fuzzy-matching@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:49
@@ -188,7 +188,7 @@ msgstr "--use-fuzzy"
 #: msgcmp.texi.orig:51
 #, no-wrap
 msgid "--use-fuzzy@r{, @code{msgcmp} option}"
-msgstr "--use-fuzzy@r{, @code{msgcmp} オプション}"
+msgstr "--use-fuzzy@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:55
@@ -208,7 +208,7 @@ msgstr "--use-untranslated"
 #: msgcmp.texi.orig:57
 #, no-wrap
 msgid "--use-untranslated@r{, @code{msgcmp} option}"
-msgstr "--use-untranslated@r{, @code{msgcmp} オプション}"
+msgstr "--use-untranslated@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:60
@@ -239,13 +239,13 @@ msgstr "--properties-input"
 #: msgcmp.texi.orig:68
 #, no-wrap
 msgid "-P@r{, @code{msgcmp} option}"
-msgstr "-P@r{, @code{msgcmp} オプション}"
+msgstr "-P@r{, @code{msgcmp} option}"
 
 #. type: opindex
 #: msgcmp.texi.orig:69
 #, no-wrap
 msgid "--properties-input@r{, @code{msgcmp} option}"
-msgstr "--properties-input@r{, @code{msgcmp} オプション}"
+msgstr "--properties-input@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:72
@@ -266,7 +266,7 @@ msgstr "--stringtable-input"
 #: msgcmp.texi.orig:74
 #, no-wrap
 msgid "--stringtable-input@r{, @code{msgcmp} option}"
-msgstr "--stringtable-input@r{, @code{msgcmp} オプション}"
+msgstr "--stringtable-input@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:77
@@ -299,13 +299,13 @@ msgstr "--help"
 #: msgcmp.texi.orig:85
 #, no-wrap
 msgid "-h@r{, @code{msgcmp} option}"
-msgstr "-h@r{, @code{msgcmp} オプション}"
+msgstr "-h@r{, @code{msgcmp} option}"
 
 #. type: opindex
 #: msgcmp.texi.orig:86
 #, no-wrap
 msgid "--help@r{, @code{msgcmp} option}"
-msgstr "--help@r{, @code{msgcmp} オプション}"
+msgstr "--help@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:88
@@ -328,13 +328,13 @@ msgstr "--version"
 #: msgcmp.texi.orig:91
 #, no-wrap
 msgid "-V@r{, @code{msgcmp} option}"
-msgstr "-V@r{, @code{msgcmp} オプション}"
+msgstr "-V@r{, @code{msgcmp} option}"
 
 #. type: opindex
 #: msgcmp.texi.orig:92
 #, no-wrap
 msgid "--version@r{, @code{msgcmp} option}"
-msgstr "--version@r{, @code{msgcmp} オプション}"
+msgstr "--version@r{, @code{msgcmp} option}"
 
 #. type: table
 #: msgcmp.texi.orig:94
