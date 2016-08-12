@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-07 23:36+0900\n"
-"PO-Revision-Date: 2016-07-30 21:10+0900\n"
+"PO-Revision-Date: 2016-08-12 20:07+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "msgen"
 #: msgen.texi.orig:2
 #, no-wrap
 msgid "@code{msgen} program, usage"
-msgstr "@code{msgen} プログラム, 使い方"
+msgstr "@code{msgen} program, usage"
 
 #. type: example
 #: msgen.texi.orig:5
@@ -37,7 +37,7 @@ msgstr "msgen [@var{option}] @var{inputfile}\n"
 #: msgen.texi.orig:7
 #, no-wrap
 msgid "generate translation catalog in English"
-msgstr "Englishによる翻訳カタログを生成する"
+msgstr "generate translation catalog in English"
 
 #. type: Plain text
 #: msgen.texi.orig:12
@@ -54,7 +54,7 @@ msgid ""
 "Note: @samp{msginit --no-translator --locale=en} performs a very similar "
 "task.  The main difference is that @code{msginit} cares specially about the "
 "header entry, whereas @code{msgen} doesn't."
-msgstr "注意: @samp{msginit --no-translator --locale=en}でも、同じような処理を行うことができます。異なるのは、@code{msginit}はヘッダーエントリーにたいして特別な配慮を払いますが、@code{msgen}は違うという点です。"
+msgstr "注意: @samp{msginit --no-translator --locale=en}でも、同じような処理を行うことができます。異なるのは、@code{msginit}はヘッダーエントリーにたいして特別な配慮を払いますが、@code{msgen}は異なるという点です。"
 
 #. type: subsection
 #: msgen.texi.orig:17
@@ -89,13 +89,13 @@ msgstr "--directory=@var{directory}"
 #: msgen.texi.orig:25
 #, no-wrap
 msgid "-D@r{, @code{msgen} option}"
-msgstr "-D@r{, @code{msgen} オプション}"
+msgstr "-D@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:26
 #, no-wrap
 msgid "--directory@r{, @code{msgen} option}"
-msgstr "--directory@r{, @code{msgen} オプション}"
+msgstr "--directory@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:30
@@ -103,10 +103,7 @@ msgid ""
 "Add @var{directory} to the list of directories.  Source files are searched "
 "relative to this list of directories.  The resulting @file{.po} file will be "
 "written relative to the current directory, though."
-msgstr ""
-"ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よ"
-"りソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレ"
-"ントディレクトリーです。"
+msgstr "ディレクトリーのリストに@var{directory}を追加します。このディレクトリーのリストよりソースファイルを検索します。しかし@file{.po}ファイルが出力されるのは、カレントディレクトリーです。"
 
 #. type: Plain text
 #: msgen.texi.orig:34
@@ -136,13 +133,13 @@ msgstr "--output-file=@var{file}"
 #: msgen.texi.orig:40
 #, no-wrap
 msgid "-o@r{, @code{msgen} option}"
-msgstr "-o@r{, @code{msgen} オプション}"
+msgstr "-o@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:41
 #, no-wrap
 msgid "--output-file@r{, @code{msgen} option}"
-msgstr "--output-file@r{, @code{msgen} オプション}"
+msgstr "--output-file@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:43
@@ -180,13 +177,13 @@ msgstr "--properties-input"
 #: msgen.texi.orig:54
 #, no-wrap
 msgid "-P@r{, @code{msgen} option}"
-msgstr "-P@r{, @code{msgen} オプション}"
+msgstr "-P@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:55
 #, no-wrap
 msgid "--properties-input@r{, @code{msgen} option}"
-msgstr "--properties-input@r{, @code{msgen} オプション}"
+msgstr "--properties-input@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:58
@@ -207,7 +204,7 @@ msgstr "--stringtable-input"
 #: msgen.texi.orig:60
 #, no-wrap
 msgid "--stringtable-input@r{, @code{msgen} option}"
-msgstr "--stringtable-input@r{, @code{msgen} オプション}"
+msgstr "--stringtable-input@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:63
@@ -234,7 +231,7 @@ msgstr "--lang=@var{catalogname}"
 #: msgen.texi.orig:72
 #, no-wrap
 msgid "--lang@r{, @code{msgen} option}"
-msgstr "--lang@r{, @code{msgen} オプション}"
+msgstr "--lang@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:77
@@ -260,7 +257,7 @@ msgstr "--color=@var{when}"
 #: msgen.texi.orig:80
 #, no-wrap
 msgid "--color@r{, @code{msgen} option}"
-msgstr "--color@r{, @code{msgen} オプション}"
+msgstr "--color@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:83
@@ -281,7 +278,7 @@ msgstr "--style=@var{style_file}"
 #: msgen.texi.orig:85
 #, no-wrap
 msgid "--style@r{, @code{msgen} option}"
-msgstr "--style@r{, @code{msgen} オプション}"
+msgstr "--style@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:88
@@ -302,7 +299,7 @@ msgstr "--force-po"
 #: msgen.texi.orig:90
 #, no-wrap
 msgid "--force-po@r{, @code{msgen} option}"
-msgstr "--force-po@r{, @code{msgen} オプション}"
+msgstr "--force-po@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:92
@@ -326,13 +323,13 @@ msgstr "--indent"
 #: msgen.texi.orig:95
 #, no-wrap
 msgid "-i@r{, @code{msgen} option}"
-msgstr "-i@r{, @code{msgen} オプション}"
+msgstr "-i@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:96
 #, no-wrap
 msgid "--indent@r{, @code{msgen} option}"
-msgstr "--indent@r{, @code{msgen} オプション}"
+msgstr "--indent@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:98
@@ -349,7 +346,7 @@ msgstr "--no-location"
 #: msgen.texi.orig:100
 #, no-wrap
 msgid "--no-location@r{, @code{msgen} option}"
-msgstr "--no-location@r{, @code{msgen} オプション}"
+msgstr "--no-location@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:102
@@ -366,7 +363,7 @@ msgstr "--add-location"
 #: msgen.texi.orig:104
 #, no-wrap
 msgid "--add-location@r{, @code{msgen} option}"
-msgstr "--add-location@r{, @code{msgen} オプション}"
+msgstr "--add-location@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:106
@@ -383,7 +380,7 @@ msgstr "--strict"
 #: msgen.texi.orig:108
 #, no-wrap
 msgid "--strict@r{, @code{msgen} option}"
-msgstr "--strict@r{, @code{msgen} オプション}"
+msgstr "--strict@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:112
@@ -410,13 +407,13 @@ msgstr "--properties-output"
 #: msgen.texi.orig:115
 #, no-wrap
 msgid "-p@r{, @code{msgen} option}"
-msgstr "-p@r{, @code{msgen} オプション}"
+msgstr "-p@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:116
 #, no-wrap
 msgid "--properties-output@r{, @code{msgen} option}"
-msgstr "--properties-output@r{, @code{msgen} オプション}"
+msgstr "--properties-output@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:120
@@ -424,10 +421,7 @@ msgid ""
 "Write out a Java ResourceBundle in Java @code{.properties} syntax.  Note "
 "that this file format doesn't support plural forms and silently drops "
 "obsolete messages."
-msgstr ""
-"Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイ"
-"ル形式はplural formをサポートせず、廃止されたメッセージを暗黙で除去することに"
-"注意してください。"
+msgstr "Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイル形式はplural formをサポートせず、陳腐化したメッセージを暗黙で除去することに注意してください。"
 
 #. type: item
 #: msgen.texi.orig:121
@@ -439,7 +433,7 @@ msgstr "--stringtable-output"
 #: msgen.texi.orig:122
 #, no-wrap
 msgid "--stringtable-output@r{, @code{msgen} option}"
-msgstr "--stringtable-output@r{, @code{msgen} オプション}"
+msgstr "--stringtable-output@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:125
@@ -467,13 +461,13 @@ msgstr "--width=@var{number}"
 #: msgen.texi.orig:128
 #, no-wrap
 msgid "-w@r{, @code{msgen} option}"
-msgstr "-w@r{, @code{msgen} オプション}"
+msgstr "-w@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:129
 #, no-wrap
 msgid "--width@r{, @code{msgen} option}"
-msgstr "--width@r{, @code{msgen} オプション}"
+msgstr "--width@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:133
@@ -496,7 +490,7 @@ msgstr "--no-wrap"
 #: msgen.texi.orig:135
 #, no-wrap
 msgid "--no-wrap@r{, @code{msgen} option}"
-msgstr "--no-wrap@r{, @code{msgen} オプション}"
+msgstr "--no-wrap@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:139
@@ -525,13 +519,13 @@ msgstr "--sort-output"
 #: msgen.texi.orig:142
 #, no-wrap
 msgid "-s@r{, @code{msgen} option}"
-msgstr "-s@r{, @code{msgen} オプション}"
+msgstr "-s@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:143
 #, no-wrap
 msgid "--sort-output@r{, @code{msgen} option}"
-msgstr "--sort-output@r{, @code{msgen} オプション}"
+msgstr "--sort-output@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:146
@@ -559,13 +553,13 @@ msgstr "--sort-by-file"
 #: msgen.texi.orig:149
 #, no-wrap
 msgid "-F@r{, @code{msgen} option}"
-msgstr "-F@r{, @code{msgen} オプション}"
+msgstr "-F@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:150
 #, no-wrap
 msgid "--sort-by-file@r{, @code{msgen} option}"
-msgstr "--sort-by-file@r{, @code{msgen} オプション}"
+msgstr "--sort-by-file@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:152
@@ -594,13 +588,13 @@ msgstr "--help"
 #: msgen.texi.orig:160
 #, no-wrap
 msgid "-h@r{, @code{msgen} option}"
-msgstr "-h@r{, @code{msgen} オプション}"
+msgstr "-h@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:161
 #, no-wrap
 msgid "--help@r{, @code{msgen} option}"
-msgstr "--help@r{, @code{msgen} オプション}"
+msgstr "--help@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:163
@@ -623,13 +617,13 @@ msgstr "--version"
 #: msgen.texi.orig:166
 #, no-wrap
 msgid "-V@r{, @code{msgen} option}"
-msgstr "-V@r{, @code{msgen} オプション}"
+msgstr "-V@r{, @code{msgen} option}"
 
 #. type: opindex
 #: msgen.texi.orig:167
 #, no-wrap
 msgid "--version@r{, @code{msgen} option}"
-msgstr "--version@r{, @code{msgen} オプション}"
+msgstr "--version@r{, @code{msgen} option}"
 
 #. type: table
 #: msgen.texi.orig:169
