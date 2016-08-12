@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-09 22:44+0900\n"
-"PO-Revision-Date: 2016-07-30 21:11+0900\n"
+"PO-Revision-Date: 2016-08-12 21:04+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "msgunfmt"
 #: msgunfmt.texi.orig:2
 #, no-wrap
 msgid "@code{msgunfmt} program, usage"
-msgstr "@code{msgunfmt} プログラム, 使い方"
+msgstr "@code{msgunfmt} program, usage"
 
 #. type: example
 #: msgunfmt.texi.orig:5
@@ -37,7 +37,7 @@ msgstr "msgunfmt [@var{option}] [@var{file}]...\n"
 #: msgunfmt.texi.orig:7
 #, no-wrap
 msgid "convert binary message catalog into PO file"
-msgstr "バイナリーのメッセージカタログをPOファイルに変換する"
+msgstr "convert binary message catalog into PO file"
 
 #. type: Plain text
 #: msgunfmt.texi.orig:10
@@ -68,19 +68,19 @@ msgstr "--java"
 #: msgunfmt.texi.orig:16
 #, no-wrap
 msgid "-j@r{, @code{msgunfmt} option}"
-msgstr "-j@r{, @code{msgunfmt} オプション}"
+msgstr "-j@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:17
 #, no-wrap
 msgid "--java@r{, @code{msgunfmt} option}"
-msgstr "--java@r{, @code{msgunfmt} オプション}"
+msgstr "--java@r{, @code{msgunfmt} option}"
 
 #. type: cindex
 #: msgunfmt.texi.orig:18
 #, no-wrap
 msgid "Java mode, and @code{msgunfmt} program"
-msgstr "Javaモード, そして @code{msgunfmt} プログラム"
+msgstr "Java mode, and @code{msgunfmt} program"
 
 #. type: table
 #: msgunfmt.texi.orig:20
@@ -97,13 +97,13 @@ msgstr "--csharp"
 #: msgunfmt.texi.orig:22
 #, no-wrap
 msgid "--csharp@r{, @code{msgunfmt} option}"
-msgstr "--csharp@r{, @code{msgunfmt} オプション}"
+msgstr "--csharp@r{, @code{msgunfmt} option}"
 
 #. type: cindex
 #: msgunfmt.texi.orig:23
 #, no-wrap
 msgid "C# mode, and @code{msgunfmt} program"
-msgstr "C#モード, そして @code{msgunfmt} プログラム"
+msgstr "C# mode, and @code{msgunfmt} program"
 
 #. type: table
 #: msgunfmt.texi.orig:26
@@ -122,13 +122,13 @@ msgstr "--csharp-resources"
 #: msgunfmt.texi.orig:28
 #, no-wrap
 msgid "--csharp-resources@r{, @code{msgunfmt} option}"
-msgstr "--csharp-resources@r{, @code{msgunfmt} オプション}"
+msgstr "--csharp-resources@r{, @code{msgunfmt} option}"
 
 #. type: cindex
 #: msgunfmt.texi.orig:29
 #, no-wrap
 msgid "C# resources mode, and @code{msgunfmt} program"
-msgstr "C# resourcesモード, そして @code{msgunfmt} プログラム"
+msgstr "C# resources mode, and @code{msgunfmt} program"
 
 #. type: table
 #: msgunfmt.texi.orig:31
@@ -145,13 +145,13 @@ msgstr "--tcl"
 #: msgunfmt.texi.orig:33
 #, no-wrap
 msgid "--tcl@r{, @code{msgunfmt} option}"
-msgstr "--tcl@r{, @code{msgunfmt} オプション}"
+msgstr "--tcl@r{, @code{msgunfmt} option}"
 
 #. type: cindex
 #: msgunfmt.texi.orig:34
 #, no-wrap
 msgid "Tcl mode, and @code{msgunfmt} program"
-msgstr "Tclモード, そして @code{msgunfmt} プログラム"
+msgstr "Tcl mode, and @code{msgunfmt} program"
 
 #. type: table
 #: msgunfmt.texi.orig:36
@@ -203,13 +203,13 @@ msgstr "--resource=@var{resource}"
 #: msgunfmt.texi.orig:54 msgunfmt.texi.orig:75
 #, no-wrap
 msgid "-r@r{, @code{msgunfmt} option}"
-msgstr "-r@r{, @code{msgunfmt} オプション}"
+msgstr "-r@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:55 msgunfmt.texi.orig:76
 #, no-wrap
 msgid "--resource@r{, @code{msgunfmt} option}"
-msgstr "--resource@r{, @code{msgunfmt} オプション}"
+msgstr "--resource@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:57 msgunfmt.texi.orig:78
@@ -232,13 +232,13 @@ msgstr "--locale=@var{locale}"
 #: msgunfmt.texi.orig:60 msgunfmt.texi.orig:81 msgunfmt.texi.orig:101
 #, no-wrap
 msgid "-l@r{, @code{msgunfmt} option}"
-msgstr "-l@r{, @code{msgunfmt} オプション}"
+msgstr "-l@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:61 msgunfmt.texi.orig:82 msgunfmt.texi.orig:102
 #, no-wrap
 msgid "--locale@r{, @code{msgunfmt} option}"
-msgstr "--locale@r{, @code{msgunfmt} オプション}"
+msgstr "--locale@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:64 msgunfmt.texi.orig:85 msgunfmt.texi.orig:105
@@ -274,7 +274,7 @@ msgstr "-d @var{directory}"
 #: msgunfmt.texi.orig:87 msgunfmt.texi.orig:107
 #, no-wrap
 msgid "-d@r{, @code{msgunfmt} option}"
-msgstr "-d@r{, @code{msgunfmt} オプション}"
+msgstr "-d@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:89
@@ -331,13 +331,13 @@ msgstr "--output-file=@var{file}"
 #: msgunfmt.texi.orig:120
 #, no-wrap
 msgid "-o@r{, @code{msgunfmt} option}"
-msgstr "-o@r{, @code{msgunfmt} オプション}"
+msgstr "-o@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:121
 #, no-wrap
 msgid "--output-file@r{, @code{msgunfmt} option}"
-msgstr "--output-file@r{, @code{msgunfmt} オプション}"
+msgstr "--output-file@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:123
@@ -375,7 +375,7 @@ msgstr "--color=@var{when}"
 #: msgunfmt.texi.orig:136
 #, no-wrap
 msgid "--color@r{, @code{msgunfmt} option}"
-msgstr "--color@r{, @code{msgunfmt} オプション}"
+msgstr "--color@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:139
@@ -396,7 +396,7 @@ msgstr "--style=@var{style_file}"
 #: msgunfmt.texi.orig:141
 #, no-wrap
 msgid "--style@r{, @code{msgunfmt} option}"
-msgstr "--style@r{, @code{msgunfmt} オプション}"
+msgstr "--style@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:144
@@ -417,7 +417,7 @@ msgstr "--force-po"
 #: msgunfmt.texi.orig:146
 #, no-wrap
 msgid "--force-po@r{, @code{msgunfmt} option}"
-msgstr "--force-po@r{, @code{msgunfmt} オプション}"
+msgstr "--force-po@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:148
@@ -441,13 +441,13 @@ msgstr "--indent"
 #: msgunfmt.texi.orig:151
 #, no-wrap
 msgid "-i@r{, @code{msgunfmt} option}"
-msgstr "-i@r{, @code{msgunfmt} オプション}"
+msgstr "-i@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:152
 #, no-wrap
 msgid "--indent@r{, @code{msgunfmt} option}"
-msgstr "--indent@r{, @code{msgunfmt} オプション}"
+msgstr "--indent@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:154
@@ -464,7 +464,7 @@ msgstr "--strict"
 #: msgunfmt.texi.orig:156
 #, no-wrap
 msgid "--strict@r{, @code{msgunfmt} option}"
-msgstr "--strict@r{, @code{msgunfmt} オプション}"
+msgstr "--strict@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:160
@@ -491,13 +491,13 @@ msgstr "--properties-output"
 #: msgunfmt.texi.orig:163
 #, no-wrap
 msgid "-p@r{, @code{msgunfmt} option}"
-msgstr "-p@r{, @code{msgunfmt} オプション}"
+msgstr "-p@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:164
 #, no-wrap
 msgid "--properties-output@r{, @code{msgunfmt} option}"
-msgstr "--properties-output@r{, @code{msgunfmt} オプション}"
+msgstr "--properties-output@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:168
@@ -505,10 +505,7 @@ msgid ""
 "Write out a Java ResourceBundle in Java @code{.properties} syntax.  Note "
 "that this file format doesn't support plural forms and silently drops "
 "obsolete messages."
-msgstr ""
-"Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイ"
-"ル形式はplural formをサポートせず、廃止されたメッセージを暗黙で除去することに"
-"注意してください。"
+msgstr "Javaの@code{.properties}の書式で、Java ResourceBundleを出力します。このファイル形式はplural formをサポートせず、陳腐化したメッセージを暗黙で除去することに注意してください。"
 
 #. type: item
 #: msgunfmt.texi.orig:169
@@ -520,17 +517,14 @@ msgstr "--stringtable-output"
 #: msgunfmt.texi.orig:170
 #, no-wrap
 msgid "--stringtable-output@r{, @code{msgunfmt} option}"
-msgstr "--stringtable-output@r{, @code{msgunfmt} オプション}"
+msgstr "--stringtable-output@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:173
 msgid ""
 "Write out a NeXTstep/GNUstep localized resource file in @code{.strings} "
 "syntax.  Note that this file format doesn't support plural forms."
-msgstr ""
-"@code{.strings}の書式で、NeXTstep/GNUstepのローカライズされたリソースファイル"
-"を出力します。このファイル形式はplural formをサポートしないことに注意してくだ"
-"さい。"
+msgstr "@code{.strings}の書式で、NeXTstep/GNUstepのローカライズされたリソースファイルを出力します。このファイル形式はplural formをサポートしないことに注意してください。"
 
 #. type: item
 #: msgunfmt.texi.orig:174
@@ -548,13 +542,13 @@ msgstr "--width=@var{number}"
 #: msgunfmt.texi.orig:176
 #, no-wrap
 msgid "-w@r{, @code{msgunfmt} option}"
-msgstr "-w@r{, @code{msgunfmt} オプション}"
+msgstr "-w@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:177
 #, no-wrap
 msgid "--width@r{, @code{msgunfmt} option}"
-msgstr "--width@r{, @code{msgunfmt} オプション}"
+msgstr "--width@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:181
@@ -562,10 +556,7 @@ msgid ""
 "Set the output page width.  Long strings in the output files will be split "
 "across multiple lines in order to ensure that each line's width (= number of "
 "screen columns) is less or equal to the given @var{number}."
-msgstr ""
-"出力ページの幅をセットします。これにより出力ファイル中の長い文字列が指定した"
-"幅(例:スクリーンの列数)に収まるように、各行の長さが@var{number}以下のような複"
-"数の行に分割されます。"
+msgstr "出力ページの幅をセットします。これにより出力ファイル中の長い文字列が指定した幅(例:スクリーンの列数)に収まるように、各行の長さが@var{number}以下のような複数の行に分割されます。"
 
 #. type: item
 #: msgunfmt.texi.orig:182
@@ -577,7 +568,7 @@ msgstr "--no-wrap"
 #: msgunfmt.texi.orig:183
 #, no-wrap
 msgid "--no-wrap@r{, @code{msgunfmt} option}"
-msgstr "--no-wrap@r{, @code{msgunfmt} オプション}"
+msgstr "--no-wrap@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:187
@@ -606,13 +597,13 @@ msgstr "--sort-output"
 #: msgunfmt.texi.orig:190
 #, no-wrap
 msgid "-s@r{, @code{msgunfmt} option}"
-msgstr "-s@r{, @code{msgunfmt} オプション}"
+msgstr "-s@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:191
 #, no-wrap
 msgid "--sort-output@r{, @code{msgunfmt} option}"
-msgstr "--sort-output@r{, @code{msgunfmt} オプション}"
+msgstr "--sort-output@r{, @code{msgunfmt} option}"
 
 #. type: cindex
 #: msgunfmt.texi.orig:192
@@ -652,13 +643,13 @@ msgstr "--help"
 #: msgunfmt.texi.orig:203
 #, no-wrap
 msgid "-h@r{, @code{msgunfmt} option}"
-msgstr "-h@r{, @code{msgunfmt} オプション}"
+msgstr "-h@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:204
 #, no-wrap
 msgid "--help@r{, @code{msgunfmt} option}"
-msgstr "--help@r{, @code{msgunfmt} オプション}"
+msgstr "--help@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:206
@@ -681,13 +672,13 @@ msgstr "--version"
 #: msgunfmt.texi.orig:209
 #, no-wrap
 msgid "-V@r{, @code{msgunfmt} option}"
-msgstr "-V@r{, @code{msgunfmt} オプション}"
+msgstr "-V@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:210
 #, no-wrap
 msgid "--version@r{, @code{msgunfmt} option}"
-msgstr "--version@r{, @code{msgunfmt} オプション}"
+msgstr "--version@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:212
@@ -710,13 +701,13 @@ msgstr "--verbose"
 #: msgunfmt.texi.orig:215
 #, no-wrap
 msgid "-v@r{, @code{msgunfmt} option}"
-msgstr "-v@r{, @code{msgunfmt} オプション}"
+msgstr "-v@r{, @code{msgunfmt} option}"
 
 #. type: opindex
 #: msgunfmt.texi.orig:216
 #, no-wrap
 msgid "--verbose@r{, @code{msgunfmt} option}"
-msgstr "--verbose@r{, @code{msgunfmt} オプション}"
+msgstr "--verbose@r{, @code{msgunfmt} option}"
 
 #. type: table
 #: msgunfmt.texi.orig:218
