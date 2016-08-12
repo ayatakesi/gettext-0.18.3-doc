@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-30 01:58+0900\n"
-"PO-Revision-Date: 2016-08-12 23:30+0900\n"
+"PO-Revision-Date: 2016-08-13 07:32+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -15543,7 +15543,7 @@ msgid ""
 "Free software is going international! The Translation Project is a way to "
 "get maintainers, translators and users all together, so free software will "
 "gradually become able to speak many native languages."
-msgstr "Free software is going international! The Translation Project is a way to get maintainers, translators and users all together, so free software will gradually become able to speak many native languages."
+msgstr "GNUは国際化しつつあります! 翻訳プロジェクトは保守担当者、翻訳者、そしてユーザーを全てまとめるもので、そのためGNUソフトウェアは徐々に多くの言語を喋ることが出来るようになります。"
 
 #. type: Plain text
 #: gettext.texi.orig:6904
@@ -15552,7 +15552,7 @@ msgid ""
 "for internationalizing their packages for messages.  It also contains quite "
 "useful tools for helping translators at localizing messages to their native "
 "language, once a package has already been internationalized."
-msgstr "The GNU @code{gettext} tool set contains @emph{everything} maintainers need for internationalizing their packages for messages.  It also contains quite useful tools for helping translators at localizing messages to their native language, once a package has already been internationalized."
+msgstr "GNU @code{gettext}ツールセットには、保守担当者がパッケージのメッセージを国際化するために必要となる@emph{全て}があります。また、パッケージが国際化された後で、翻訳者がメッセージの地域化を行う際の助けになるような便利なツールもあります。"
 
 #. type: Plain text
 #: gettext.texi.orig:6910
@@ -15562,7 +15562,7 @@ msgid ""
 "with other translators speaking the same language.  If you'd like to "
 "volunteer to @emph{work} at translating messages, please send mail to your "
 "translating team."
-msgstr "To achieve the Translation Project, we need many interested people who like their own language and write it well, and who are also able to synergize with other translators speaking the same language.  If you'd like to volunteer to @emph{work} at translating messages, please send mail to your translating team."
+msgstr "翻訳プロジェクトを完遂するために、我々は自分の国の言葉を愛し、良く書くことが出来、そして他の翻訳者が話しているのと同じ言語で助けることの出来る(synergize)能力を持った人間を数多く必要としています。もしあなたが翻訳チームでボランティアとして働くことを望むなら、該当する翻訳チームにメー ルを出して下さい。"
 
 #. type: Plain text
 #: gettext.texi.orig:6917
@@ -15572,7 +15572,7 @@ msgid ""
 "replacing @var{ll} by the two-letter @w{ISO 639} code for your language.  "
 "Language codes are @emph{not} the same as country codes given in @w{ISO "
 "3166}.  The following translating teams exist:"
-msgstr "Each team has its own mailing list, courtesy of Linux International.  You may reach your translating team at the address @file{@var{ll}@@li.org}, replacing @var{ll} by the two-letter @w{ISO 639} code for your language.  Language codes are @emph{not} the same as country codes given in @w{ISO 3166}.  The following translating teams exist:"
+msgstr "各チームはLinux Internationalの好意による自身のメーリングリストを持っています。@file{@var{ll}@@li.org}というアドレスの@var{ll}をあなたの注目する言語の@w{ISO 639}の二文字コードに置き換えることによって、その言語の翻訳チームに連絡できます。言語コードは@w{ISO 3166}に定められている国コードと同じではありません。現時点では以下の翻訳チームが存在します。"
 
 #. type: quotation
 #: gettext.texi.orig:6925
@@ -15583,7 +15583,7 @@ msgid ""
 "Indonesian @code{in}, Norwegian @code{no}, Polish @code{pl}, Portuguese "
 "@code{pt}, Russian @code{ru}, Spanish @code{es}, Swedish @code{sv} and "
 "Turkish @code{tr}."
-msgstr "Chinese @code{zh}, Czech @code{cs}, Danish @code{da}, Dutch @code{nl}, Esperanto @code{eo}, Finnish @code{fi}, French @code{fr}, Irish @code{ga}, German @code{de}, Greek @code{el}, Italian @code{it}, Japanese @code{ja}, Indonesian @code{in}, Norwegian @code{no}, Polish @code{pl}, Portuguese @code{pt}, Russian @code{ru}, Spanish @code{es}, Swedish @code{sv} and Turkish @code{tr}."
+msgstr "Chinese @code{zh}、Czech @code{cs}、Danish @code{da}、Dutch @code{nl}、Esperanto @code{eo}、Finnish @code{fi}、French @code{fr}、Irish @code{ga}、German @code{de}、Greek @code{el}、Italian @code{it}、Japanese @code{ja}、Indonesian @code{in}、Norwegian @code{no}、Polish @code{pl}、Portuguese @code{pt}、Russian @code{ru}、Spanish @code{es}、Swedish @code{sv}、Turkish @code{tr}。"
 
 #. type: Plain text
 #: gettext.texi.orig:6933
@@ -15593,7 +15593,7 @@ msgid ""
 "your own language, you may subscribe to its list.  For example, Swedish "
 "people can send a message to @w{@file{sv-request@@li.org}}, having this "
 "message body:"
-msgstr "For example, you may reach the Chinese translating team by writing to @file{zh@@li.org}.  When you become a member of the translating team for your own language, you may subscribe to its list.  For example, Swedish people can send a message to @w{@file{sv-request@@li.org}}, having this message body:"
+msgstr "仮に中国語翻訳チームにメールを出すとすれば、@file{zh@@li.org}となります。翻訳チームのメンバーになるには、その言語チームのメーリングリストに登録する必要があります。例えば、スウェーデン人は本文に以下の内容を記述して@w{@file{sv-request@@li.org}}にメールを出します。"
 
 #. type: example
 #: gettext.texi.orig:6936
@@ -15609,7 +15609,7 @@ msgid ""
 "lurking around.  If your team does not exist yet and you want to start one, "
 "please write to @w{@file{coordinator@@translationproject.org}}; you will "
 "then reach the coordinator for all translator teams."
-msgstr "Keep in mind that team members should be interested in @emph{working} at translations, or at solving translational difficulties, rather than merely lurking around.  If your team does not exist yet and you want to start one, please write to @w{@file{coordinator@@translationproject.org}}; you will then reach the coordinator for all translator teams."
+msgstr "チームのメンバーは翻訳@emph{作業}に興味を持つべきだということを心に留めて置いて下さい。そうでなければ翻訳を果たすことは難しいのです。もしが希望する言語のチームがまだ存在せず、その言語のチームを作りたいという場合には@w{@file{coordinator@@translationproject.org}}まで連絡して下さい。それによって全ての翻訳チームの調整者に連絡が取れます。"
 
 #. type: Plain text
 #: gettext.texi.orig:6952
@@ -15621,14 +15621,14 @@ msgid ""
 "you would like to volunteer to work at translating messages, please send "
 "mail to @file{coordinator@@translationproject.org} indicating what "
 "language(s)  you can work on."
-msgstr "A handful of GNU packages have already been adapted and provided with message translations for several languages.  Translation teams have begun to organize, using these packages as a starting point.  But there are many more packages and many languages for which we have no volunteer translators.  If you would like to volunteer to work at translating messages, please send mail to @file{coordinator@@translationproject.org} indicating what language(s)  you can work on."
+msgstr "一握りのGNUパッケージには幾つかの言語に対するメッセージの翻訳が適用・提供 されています。翻訳チームは組織化され始めており、これらのパッケージを起点として使っています。しかしまだまだ多くのパッケージがあり、多くの言語についてはボランティアの翻訳者がいません。もし翻訳チームでボランティアとして作業したいと思うのでしたら、@file{coordinator@@translationproject.org}に作業することの出来る言語を明記してメールを送って下さい。"
 
 #. type: Plain text
 #: gettext.texi.orig:6961
 msgid ""
 "This is now official, GNU is going international! Here is the announcement "
 "submitted for the January 1995 GNU Bulletin:"
-msgstr "This is now official, GNU is going international! Here is the announcement submitted for the January 1995 GNU Bulletin:"
+msgstr "現在公式に、GNUは国際化しつつあります! 以下は1995年1月のGNU Bulletinで述べられた声明です。"
 
 #. type: quotation
 #: gettext.texi.orig:6971
@@ -15640,7 +15640,7 @@ msgid ""
 "you'd like to volunteer to work at translating messages, please send mail to "
 "@samp{coordinator@@translationproject.org} indicating what language(s)  you "
 "can work on."
-msgstr "A handful of GNU packages have already been adapted and provided with message translations for several languages.  Translation teams have begun to organize, using these packages as a starting point.  But there are many more packages and many languages for which we have no volunteer translators.  If you'd like to volunteer to work at translating messages, please send mail to @samp{coordinator@@translationproject.org} indicating what language(s)  you can work on."
+msgstr "一握りのGNUパッケージには幾つかの言語に対するメッセージの翻訳が適用・提供されています。翻訳チームは組織化され始めており、これらのパッケージを起点として使っています。しかしまだまだ多くのパッケージがあり、多くの言語についてはボランティアの翻訳者がいません。もし翻訳チームでボランティアとして作業したいと思うのでしたら、@samp{coordinator@@translationproject.org}に作業することの出来る言語を明記してメールを送って下さい。"
 
 #. type: Plain text
 #: gettext.texi.orig:6977
@@ -15649,7 +15649,7 @@ msgid ""
 "the process or would like to contribute.  Please at least skim over it, "
 "hoping to cut down a little of the high volume of e-mail generated by this "
 "collective effort towards internationalization of free software."
-msgstr "This document should answer many questions for those who are curious about the process or would like to contribute.  Please at least skim over it, hoping to cut down a little of the high volume of e-mail generated by this collective effort towards internationalization of free software."
+msgstr "本ドキュメントはその過程に興味を持ったり、貢献したいと考えている人々が持つ多くの疑問に答えます。願わくばざっと目を通し、GNUの国際化に対するこの集合的努力から産み出される大量のメールの幾ばくかでもを担当して下さい。"
 
 #. type: Plain text
 #: gettext.texi.orig:6982
@@ -15658,7 +15658,7 @@ msgid ""
 "currently, English is used as the main communicating language between "
 "national communities collaborating to free software.  This very document is "
 "written in English.  This will not change in the foreseeable future."
-msgstr "Most free programming which is widely shared is done in English, and currently, English is used as the main communicating language between national communities collaborating to free software.  This very document is written in English.  This will not change in the foreseeable future."
+msgstr "広く共用される多くのフリーソフトウェアのプログラミングは英語で行われています。そして現在のところ、英語はGNUプロジェクトに協力する国家的コミュニ ティ間での主要なコミュニケーション言語として使われています。このドキュメントでさえも英語で書かれています。これは当面変わらないでしょう。"
 
 #. type: Plain text
 #: gettext.texi.orig:6989
@@ -15669,27 +15669,27 @@ msgid ""
 "able to do so.  The experiments driven so far raised an enthusiastic "
 "response from pretesters, so we believe that internationalization of free "
 "software is dedicated to succeed."
-msgstr "However, there is a strong appetite from national communities for having more software able to write using national language and habits, and there is an on-going effort to modify free software in such a way that it becomes able to do so.  The experiments driven so far raised an enthusiastic response from pretesters, so we believe that internationalization of free software is dedicated to succeed."
+msgstr "しかしながら、多くのソフトウェアで自国語や自国の習慣を用いたいという、国家的コミュニティからの強い欲求があります。また、GNUソフトウェアをそのようにするための努力が現在も行われています。この試みは今までのところプリテスタからの熱心な反応の向上によって動かされており、我々はGNUの国際化は成功すると信じています。"
 
 #. type: Plain text
 #: gettext.texi.orig:6992
 msgid ""
 "For suggestion clarifications, additions or corrections to this document, "
 "please e-mail to @file{coordinator@@translationproject.org}."
-msgstr "For suggestion clarifications, additions or corrections to this document, please e-mail to @file{coordinator@@translationproject.org}."
+msgstr "このドキュメントに対する内容の明確化、追加、訂正に関する提案については、@file{coordinator@@translationproject.org}までメールを送って下さい。"
 
 #. type: Plain text
 #: gettext.texi.orig:7001
 msgid ""
 "Facing this internationalization effort, a few users expressed their "
 "concerns.  Some of these doubts are presented and discussed, here."
-msgstr "Facing this internationalization effort, a few users expressed their concerns.  Some of these doubts are presented and discussed, here."
+msgstr "この国際化の効果を目の当たりにして、幾人かのユーザが彼らの考えを表明しています。紹介され議論されたこれらの疑問の幾つかをここに挙げてみましょう。"
 
 #. type: item
 #: gettext.texi.orig:7003
 #, no-wrap
 msgid "Smaller groups"
-msgstr "Smaller groups"
+msgstr "より小さいグループ"
 
 #. type: itemize
 #: gettext.texi.orig:7010
@@ -15699,7 +15699,7 @@ msgid ""
 "such versions of free software packages.  Moreover, many people being "
 "@emph{into computers}, in some countries, generally seem to prefer English "
 "versions of their software."
-msgstr "Some languages are not spoken by a very large number of people, so people speaking them sometimes consider that there may not be all that much demand such versions of free software packages.  Moreover, many people being @emph{into computers}, in some countries, generally seem to prefer English versions of their software."
+msgstr "幾つかの言語は多くの人々によって話されていないため、その言語を話す人々はフリーソフトウェアパッケージの当該言語版に対する必要性はあまりないと考えています。更に、幾つかの国にいるコンピュータの@emph{中にいる}多くの人々は一般的に英語版ソフトウェアのほうを好むようです。"
 
 #. type: itemize
 #: gettext.texi.orig:7016
@@ -15709,13 +15709,13 @@ msgid ""
 "free software speaking their mother tongue.  They do themselves a personal "
 "favor, and do not pay that much attention to the number of people benefiting "
 "of their work."
-msgstr "On the other end, people might enjoy their own language a lot, and be very motivated at providing to themselves the pleasure of having their beloved free software speaking their mother tongue.  They do themselves a personal favor, and do not pay that much attention to the number of people benefiting of their work."
+msgstr "一方で、人々は自分達の言語を非常に好きですし、彼らのお気に入りのフリーソフトウェアが彼らの母国語を喋ることが出来るように努力します。彼らは個人的な楽しみのためにそれを行います。そしてどのくらいの人間がその作業によって便益を得るかなどといったことは考えません。"
 
 #. type: item
 #: gettext.texi.orig:7017
 #, no-wrap
 msgid "Misinterpretation"
-msgstr "Misinterpretation"
+msgstr "解釈の誤り"
 
 #. type: itemize
 #: gettext.texi.orig:7022
@@ -15723,7 +15723,7 @@ msgid ""
 "Other users are shy to push forward their own language, seeing in this some "
 "kind of misplaced propaganda.  Someone thought there must be some users of "
 "the language over the networks pestering other people with it."
-msgstr "Other users are shy to push forward their own language, seeing in this some kind of misplaced propaganda.  Someone thought there must be some users of the language over the networks pestering other people with it."
+msgstr "ある種の誤ったプロパガンダのせいか、一部のユーザは自身の言語を押し出すことについて臆病になっています。ある人は、ネットワークの向こう側にはその言語をうるさくせがむユーザがいるに違いないと考えています。"
 
 #. type: itemize
 #: gettext.texi.orig:7026
@@ -15731,13 +15731,13 @@ msgid ""
 "But any spoken language is worth localization, because there are people "
 "behind the language for whom the language is important and dear to their "
 "hearts."
-msgstr "But any spoken language is worth localization, because there are people behind the language for whom the language is important and dear to their hearts."
+msgstr "しかしあらゆる言語には地域化される価値があります。なぜなら、その言語が大切で敬愛されるものであると考える人々がその言語の向こうにいるからです。"
 
 #. type: item
 #: gettext.texi.orig:7027
 #, no-wrap
 msgid "Odd translations"
-msgstr "Odd translations"
+msgstr "変な翻訳"
 
 #. type: itemize
 #: gettext.texi.orig:7036
@@ -15748,7 +15748,7 @@ msgid ""
 "their own language ``rather pushy, obnoxious and sometimes even hilarious.'' "
 "As a French speaking man, I have the experience of those instruction manuals "
 "for goods, so poorly translated in French in Korea or Taiwan@dots{}"
-msgstr "The biggest problem is to find the right translations so that everybody can understand the messages.  Translations are usually a little odd.  Some people get used to English, to the extent they may find translations into their own language ``rather pushy, obnoxious and sometimes even hilarious.'' As a French speaking man, I have the experience of those instruction manuals for goods, so poorly translated in French in Korea or Taiwan@dots{}"
+msgstr "誰もがメッセージを理解出来るためには、正しい翻訳を見つけ出すことがもっとも大きな問題となります。翻訳は通常、少し変なものなのです。一部の人々は、「どちらかといえば押しが強く、嫌でときどき滑稽な」彼らの言語に対する翻訳を行うことが出来る程度には英語を扱うことが出来ます。フランス語を話す人間として、私は韓国または台湾において商品の取扱説明書を貧弱なフランス語へと翻訳した経験があります。..."
 
 #. type: itemize
 #: gettext.texi.orig:7042
@@ -15758,13 +15758,13 @@ msgid ""
 "liking their mother tongue.  This is why translations are better achieved by "
 "people knowing and loving their own language, and ready to work together at "
 "improving the results they obtain."
-msgstr "The fact is that we sometimes have to create a kind of national computer culture, and this is not easy without the collaboration of many people liking their mother tongue.  This is why translations are better achieved by people knowing and loving their own language, and ready to work together at improving the results they obtain."
+msgstr "我々はときどきある種の国家的計算機文化を作り上げる必要があるというのは事実です。そして、その作業は彼らの母国語によって繋がっている多くの人間の協調作業なしに簡単に出来ることではありません。翻訳は彼ら自身の言語を知りそして愛する人々によってより良く行われ、より良い結果を得るという点において一緒に作業されるものなのです。"
 
 #. type: item
 #: gettext.texi.orig:7043
 #, no-wrap
 msgid "Dependencies over the GPL or LGPL"
-msgstr "Dependencies over the GPL or LGPL"
+msgstr "GPL(またはLGPL)への依存"
 
 #. type: itemize
 #: gettext.texi.orig:7050
@@ -15774,7 +15774,7 @@ msgid ""
 "GNU Lesser General Public License, when they do not want to make their "
 "program free, or want other kinds of freedom.  The simplest answer is "
 "``normally not''."
-msgstr "Some people wonder if using GNU @code{gettext} necessarily brings their package under the protective wing of the GNU General Public License or the GNU Lesser General Public License, when they do not want to make their program free, or want other kinds of freedom.  The simplest answer is ``normally not''."
+msgstr "何人かの人々は、彼らが彼らのプログラムをフリーにしたくない場合、又は別の種類の自由を与えたい場合に、GNU @code{gettext}を使うことによって彼らのパッケージをGNU一般公有許諾書(GNU General Public License)の保護の元で配布する必要があるのではないかと思案します。これに対する単純な答えは``通常はいいえ''です。"
 
 #. type: itemize
 #: gettext.texi.orig:7056
@@ -15783,7 +15783,7 @@ msgid ""
 "of @code{libintl}, is covered by the GNU Lesser General Public License.  The "
 "@code{gettext-tools} part of GNU @code{gettext}, i.e.@: the rest of the GNU "
 "@code{gettext} package, is covered by the GNU General Public License."
-msgstr "The @code{gettext-runtime} part of GNU @code{gettext}, i.e.@: the contents of @code{libintl}, is covered by the GNU Lesser General Public License.  The @code{gettext-tools} part of GNU @code{gettext}, i.e.@: the rest of the GNU @code{gettext} package, is covered by the GNU General Public License."
+msgstr "GNU @code{gettext}の@code{gettext-runtime}の部分(たとえば@code{libintl}のコンテンツ)は、GNU Lesser General Public Licenseにより保護されています。GNU @code{gettext}の@code{gettext-tools}の部分(たとえば、GNU @code{gettext}パッケージの残りの部分)は、GNU General Public Licenseにより保護されています。"
 
 #. type: itemize
 #: gettext.texi.orig:7067
@@ -15797,7 +15797,7 @@ msgid ""
 "library, even for non-free programs.  But it gives the right to use "
 "@code{libintl} as a static library or to incorporate @code{libintl} into "
 "another library only to free software."
-msgstr "The mere marking of localizable strings in a package, or conditional inclusion of a few lines for initialization, is not really including GPL'ed or LGPL'ed code.  However, since the localization routines in @code{libintl} are under the LGPL, the LGPL needs to be considered.  It gives the right to distribute the complete unmodified source of @code{libintl} even with non-free programs.  It also gives the right to use @code{libintl} as a shared library, even for non-free programs.  But it gives the right to use @code{libintl} as a static library or to incorporate @code{libintl} into another library only to free software."
+msgstr "パッケージ中の僅かな地域化された文字列のマーキング、又は国際化のための条件つきの数行の包含はGPLまたはLGPLのコードを含んでいません。しかしながら、@code{libintl}内の地域化ルーチンそれ自身はLGPLの元にあり、LGPLとして考慮される必要があります。これは、たとえ非フリーなプログラムでさえ、変更されていない@code{libintl}の完全なソースコードを配布する権利を与えます。これはまた、非フリーなプログラムでさえ、共有ライブラリーとして@code{libintl}を使用する権利を与えます。しかしこれは、フリーなソフトウェアーだけにたいして、静的ライブラリーとして@code{libintl}を使用、または他のライブラリー内に@code{libintl}を含める権利を与えます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7084
@@ -15810,7 +15810,7 @@ msgid ""
 "probably that Linux International has some experience in the field already, "
 "or would like to orchestrate the volunteer work, maybe.  Food for thought, "
 "in any case!"
-msgstr "On a larger scale, the true solution would be to organize some kind of fairly precise set up in which volunteers could participate.  I gave some thought to this idea lately, and realize there will be some touchy points.  I thought of writing to Richard Stallman to launch such a project, but feel it might be good to shake out the ideas between ourselves first.  Most probably that Linux International has some experience in the field already, or would like to orchestrate the volunteer work, maybe.  Food for thought, in any case!"
+msgstr "大きな尺度で見れば、真の解決方法は有志が参加できるようなある種の正しく厳密な集合を組織化することでしょう。私は、最近このアイディアについて幾つかの考察を行い、幾つかの微妙なポイントがあるであろうことを認識しています。私は、そのようなプロジェクトを開始するために、Richard Stallmanに連絡することを考えましたが、まず最初に我々の間でアイディアを揺り落とすことが良いだろうと感じました。おそらく、Linux Internationalは既にこの分野における幾らかの経験、または、有志の作業のオーケストラのようなものを持っています。あらゆる場合に、思考のための食物を!"
 
 #. type: Plain text
 #: gettext.texi.orig:7092
@@ -15821,7 +15821,7 @@ msgid ""
 "particular to their tongue (in most languages, there are many difficulties "
 "peculiar to translating technical English).  My Swedish contributor "
 "acknowledged these difficulties, and I'm well aware of them for French."
-msgstr "I guess we have to setup something early, somehow, that will help many possible contributors of the same language to interlock and avoid work duplication, and further be put in contact for solving together problems particular to their tongue (in most languages, there are many difficulties peculiar to translating technical English).  My Swedish contributor acknowledged these difficulties, and I'm well aware of them for French."
+msgstr "我々は早々に何らかの方法で何かをセットアップせねばならないと考えます。同じ言語に対する作業のインターロックと重複を避けるという点で、それは多くの言語のコントリビュータを助けるでしょう。そして、更にそれらの言語(大部分の言語では技術的な英語の翻訳について独特な多くの問題点があります)についての独特な問題を共に解決するように連絡が取れるようにします。スウェーデンのコントリビュータはこれらの問題点を認め、そして私はフランス語においてのそれらの問題点に相当に気が付いています。"
 
 #. type: Plain text
 #: gettext.texi.orig:7096
@@ -15829,7 +15829,7 @@ msgid ""
 "This is surely not a technical issue, but we should manage so the effort of "
 "locale contributors be maximally useful, despite the national team layer "
 "interface between contributors and maintainers."
-msgstr "This is surely not a technical issue, but we should manage so the effort of locale contributors be maximally useful, despite the national team layer interface between contributors and maintainers."
+msgstr "確かにこれは技術的問題ではありません、しかし我々は、コントリビュータ、及び管理者間の国家チーム層のインターフェースに関わらず、ロカールコントリビュータの努力が最大限に有益になるように管理するべきです。"
 
 #. type: Plain text
 #: gettext.texi.orig:7106
@@ -15842,7 +15842,7 @@ msgid ""
 "@file{coordinator@@translationproject.org} has been set up for receiving "
 "offers from volunteers and general e-mail on these topics.  This address "
 "reaches the Translation Project coordinator."
-msgstr "The Translation Project needs some setup for coordinating language coordinators.  Localizing evolving programs will surely become a permanent and continuous activity in the free software community, once well started.  The setup should be minimally completed and tested before GNU @code{gettext} becomes an official reality.  The e-mail address @file{coordinator@@translationproject.org} has been set up for receiving offers from volunteers and general e-mail on these topics.  This address reaches the Translation Project coordinator."
+msgstr "翻訳プロジェクトは言語コーディネータを統合するためにある準備を必要とします。一度この作業が始められたなら、発展中のプログラムのローカライズは、確かにフリーソフトウェアコミュニティにおいて永久の、そして、連続的な動きになるでしょう。GNU @code{gettext}が公式の現実になる前に、最小限の準備が完了し、そしてテストされているべきです。電子メールアドレス@file{coordinator@@translationproject.org}は、これらの話題に基づくボランティア、及び、一般的な電子メールから申し出を受けるための準備でした。このアドレスは、翻訳プロジェクトのコーディネータに届きます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7122
@@ -15852,7 +15852,7 @@ msgid ""
 "opinion is that it would be good that GNU delegates this task to a small "
 "group of collaborating volunteers, shortly.  Perhaps in @file{gnu.announce} "
 "a list of this national committee's can be published."
-msgstr "I also think GNU will need sooner than it thinks, that someone set up a way to organize and coordinate these groups.  Some kind of group of groups.  My opinion is that it would be good that GNU delegates this task to a small group of collaborating volunteers, shortly.  Perhaps in @file{gnu.announce} a list of this national committee's can be published."
+msgstr "そのことについて考えるよりも更に早く、GNUは誰かがそれらのグループを組織化し調整する方法を準備する必要があると私もまた考えます。ある種のグループのグループです。GNUは直ちに共同で働いているボランティアの小さなグループにこのタスクを委託することが良いだろうと、私は考えています。 おそらく、この国家委員会的なグループのリストは@file{gnu.announce}において公表され得ます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7132
@@ -15866,7 +15866,7 @@ msgid ""
 "coordinator per language, or country (regionalized language).  If well done, "
 "the coordination should be useful without being an overwhelming task, the "
 "time to put delegations in place."
-msgstr "My role as coordinator would simply be to refer to Ulrich any German speaking volunteer interested to localization of free software packages, and maybe helping national groups to initially organize, while maintaining national registries for until national groups are ready to take over.  In fact, the coordinator should ease volunteers to get in contact with one another for creating national teams, which should then select one coordinator per language, or country (regionalized language).  If well done, the coordination should be useful without being an overwhelming task, the time to put delegations in place."
+msgstr "コーディネータとしての私の役割は単に、Ulrichをフリーソフトウェアの地域化に興味を持っているドイツ語を話すボランティアに紹介すること、そして国家的グループの準備が出来るまでの国家的登録機関のメンテナンス中に、国家的グループの最初の組織化を助けることです。実際、コーディネータは、ボランティアが国家チーム(言語または国(局地的言語)について1人のコーディネータを選択するべきです)を作成するために相互と連絡を取りやすくせねばなりません。これが正しく行われたならば、コーディネーションは不可抗力的作業を除いて便利なものとなり、代理人に時間を任せることが出来るようになります。"
 
 #. type: Plain text
 #: gettext.texi.orig:7140
@@ -15875,7 +15875,7 @@ msgid ""
 "languages.  These people will scan contributions of translation files for "
 "various programs, for their own languages, and will ensure high and uniform "
 "standards of diction."
-msgstr "I suggest we look for volunteer coordinators/editors for individual languages.  These people will scan contributions of translation files for various programs, for their own languages, and will ensure high and uniform standards of diction."
+msgstr "私は、我々が個々の言語のための有志のコーディネータ/エディタを捜すことを提案します。これらの人々は彼ら自身の言語のために、様々なプログラムの翻訳ファイルを探し出し、そして、語法に対する高度で一定の標準を保証することになるで しょう。"
 
 #. type: Plain text
 #: gettext.texi.orig:7147
@@ -15885,7 +15885,7 @@ msgid ""
 "interested in the localization process than in the program they localize, "
 "and want to do many programs, not just one.  This seems to confirm that "
 "having a coordinator/editor for each language is a good idea."
-msgstr "From my current experience with other people in these days, those who provide localizations are very enthusiastic about the process, and are more interested in the localization process than in the program they localize, and want to do many programs, not just one.  This seems to confirm that having a coordinator/editor for each language is a good idea."
+msgstr "今までの他の人々との間の私の現在の経験によれば、地域化を実現する人々はこのプロセスに対して非常に熱心であり、彼らは自分自身が地域化するプログラムよりも地域化のプロセスにほうに興味を持ち、それだけでなく多くのプログラムを地域化したいと思うものです。この事実は、各言語のためのコーディネータ/エディタを持つことは良いアイディアであることを確信させます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7152
@@ -15894,7 +15894,7 @@ msgid ""
 "the language in question.  That is hard---we can't check it ourselves.  So "
 "we need to ask a few people to judge each others' writing and select the one "
 "who is best."
-msgstr "We need to choose someone who is good at writing clear and concise prose in the language in question.  That is hard---we can't check it ourselves.  So we need to ask a few people to judge each others' writing and select the one who is best."
+msgstr "我々は、問題となる言語において明瞭かつ簡潔な文章を書く際、適任となる人物を選択する必要があります。これは難しい作業です --- 我々は、自分自身でそれをチェックすることができません。従って、我々は数人の人間対してに互いの記述を判断するように要請し、そして最適任者を選択する必要があります。"
 
 #. type: Plain text
 #: gettext.texi.orig:7158
@@ -15904,7 +15904,7 @@ msgid ""
 "happen when this will be launched, for true, officially, world wide.  Who am "
 "I to arbitrate between two Czekolsovak users contradicting each other, for "
 "example?"
-msgstr "I announce my prerelease to a few dozen people, and you would not believe all the discussions it generated already.  I shudder to think what will happen when this will be launched, for true, officially, world wide.  Who am I to arbitrate between two Czekolsovak users contradicting each other, for example?"
+msgstr "私は私のプレリリースを20人から30人の人々に発表ましたが、そのプレリリースが既に生み出した全ての議論をあなたは信じないでしょう。私は、真に、公式に、世界中でこの作業が開始されるときに起こるであろうことを想像すると身震いがします。例えば、相互に反論しあう二人のチェコスロヴァキアのユーザーの間を仲裁するのは私なのでしょうか?"
 
 #. type: Plain text
 #: gettext.texi.orig:7168
@@ -15917,7 +15917,7 @@ msgid ""
 "consensus easily, and have anyone of the group relate to the maintainers, "
 "while others will fight to death, organize heavy administrations up to "
 "national standards, and use strict channels."
-msgstr "I assume that your German is not much better than my French so that I would not be able to judge about these formulations.  What I would suggest is that for each language there is a group for people who maintain the PO files and judge about changes.  I suspect there will be cultural differences between how such groups of people will behave.  Some will have relaxed ways, reach consensus easily, and have anyone of the group relate to the maintainers, while others will fight to death, organize heavy administrations up to national standards, and use strict channels."
+msgstr "私がこれらの公式化について判断することが出来ないように、あなたのドイツ語が私のフランス語よりはるかに良いとは限らないと推測します。私が提案するものは、各言語に対してPOファイルをメンテナンスしその変更を判定する人々のグループを置くということです。そのような人々のグループがどのように行動するかについて、グループ間には文化的な相違点があると考えます。幾つかのグループはは緩い方法を採用し、簡単にコンセンサスの一致に達し、グループ中の誰もが保守者に関わることができます。一方は死ぬまで戦い、重い管理を国家の標準にまで組織化し、厳密なチャネルを使用するでしょう。"
 
 #. type: Plain text
 #: gettext.texi.orig:7175
@@ -15928,14 +15928,14 @@ msgid ""
 "taking care of coordinating the German team.  He subscribed to all my "
 "pretest lists, so I do not even have to warn him specifically of incoming "
 "releases."
-msgstr "The German team is putting out a good example.  Right now, they are maybe half a dozen people revising translations of each other and discussing the linguistic issues.  I do not even have all the names.  Ulrich Drepper is taking care of coordinating the German team.  He subscribed to all my pretest lists, so I do not even have to warn him specifically of incoming releases."
+msgstr "ドイツのチームは良い例を出しています。直ちに、彼らはおそらくお互いの翻訳を訂正する半数の人々と言語上の論点について議論する半ダースの人々です。私は全ての名前を知っているわけではありません。Ulrich Drepperはドイツのチームのコーディネートを担当しています。彼は私のプレテストのリストの購読を申し込みました。従って、私は彼に対して、連絡されるリリースの詳細について警告する必要は特にありません。"
 
 #. type: Plain text
 #: gettext.texi.orig:7179
 msgid ""
 "I'm sure, that is a good idea to get teams for each language working on "
 "translations.  That will make the translations better and more consistent."
-msgstr "I'm sure, that is a good idea to get teams for each language working on translations.  That will make the translations better and more consistent."
+msgstr "各言語を担当する翻訳チームを得るためには、それはよいアイディアだと思います。 翻訳を更に良く首尾一貫した状態にするでしょう。"
 
 #. type: Plain text
 #: gettext.texi.orig:7193
@@ -15945,7 +15945,7 @@ msgid ""
 "without addressing this problem in an organized way, soon in the project, "
 "might produce a distasteful mix of internationalized programs, and possibly "
 "trigger endless quarrels among those who really care."
-msgstr "Taking French for example, there are a few sub-cultures around computers which developed diverging vocabularies.  Picking volunteers here and there without addressing this problem in an organized way, soon in the project, might produce a distasteful mix of internationalized programs, and possibly trigger endless quarrels among those who really care."
+msgstr "フランス語を例に取ってみましょう。コンピュータの世界では、意味が異なる語彙を持つ幾つかのサブカルチャーがあります。組織化された方法でこの問題を提起することなしにあちこちでボランティアを選んでいると、プロジェクトにはすぐに国際化されたプログラムのごちゃ混ぜ状態が発生します。そしてことによると、実際にこの問題を気にする人々の間で終りなき口論が始まるでしょう。"
 
 #. type: Plain text
 #: gettext.texi.orig:7201
@@ -15956,7 +15956,7 @@ msgid ""
 "way, we could end up nowhere, or spoil a lot of energies.  Maybe we should "
 "begin to address this problem seriously @emph{before} GNU @code{gettext} "
 "become officially published.  And I suspect that this means soon!"
-msgstr "Keeping some kind of unity in the way French localization of internationalized programs is achieved is a difficult (and delicate) job.  Knowing the latin character of French people (:-), if we take this the wrong way, we could end up nowhere, or spoil a lot of energies.  Maybe we should begin to address this problem seriously @emph{before} GNU @code{gettext} become officially published.  And I suspect that this means soon!"
+msgstr "国際化されたプログラムをフランス語へ地域化する過程において、ある種の統一を保つことは難しい(そしてデリケートな)仕事です。フランス人のラテンな人柄 (:-) を知っていても、もし我々がこのことを間違った方法で捉えれば、我々はどことも知れぬ場所で終わってしまうか、多くのエネルギーを無駄にしてしまうことでしょう。おそらく我々は、GNU @code{gettext}が公式に発表される前に真剣にこの問題に取り組まなければならないでしょう。そして、それはすぐではないかと私は推測します!"
 
 #. type: Plain text
 #: gettext.texi.orig:7209
@@ -15965,12 +15965,12 @@ msgid ""
 "I use the German translation of the short GPL message.  We need to set a few "
 "good examples before the localization goes out for true in the free software "
 "community.  Here are a few points to discuss:"
-msgstr "I expect the next big changes after the official release.  Please note that I use the German translation of the short GPL message.  We need to set a few good examples before the localization goes out for true in the free software community.  Here are a few points to discuss:"
+msgstr "私は、公式リリース後に次の大きな変更があると考えています。どうか、私が短いGPLメッセージのドイツ語翻訳を用いることに注目してください。我々は、フリーソフトウェアコミュニティにおける真の地域化が消え去ってしまう前に2、3の良い例を示す必要があります、ここでは、議論が必要ないくつかのポイントを示します。"
 
 #. type: itemize
 #: gettext.texi.orig:7213
 msgid "Each group should have one FTP server (at least one master)."
-msgstr "Each group should have one FTP server (at least one master)."
+msgstr "各グループは、一つのFTPサーバ(少なくとも一つのマスタサーバ)を持つべきです。"
 
 #. type: itemize
 #: gettext.texi.orig:7218
@@ -15978,14 +15978,14 @@ msgid ""
 "The files on the server should reflect the latest version (of course!) and "
 "it should also contain a RCS directory with the corresponding archives (I "
 "don't have this now)."
-msgstr "The files on the server should reflect the latest version (of course!) and it should also contain a RCS directory with the corresponding archives (I don't have this now)."
+msgstr "サーバ上のファイルは、最新版(もちろん!)を反映すべきであり、そしてサーバは、対応するするアーカイブと共にRCSディレクトリ(私は今、これを持っていません)をもまた含んでいるべきです。"
 
 #. type: itemize
 #: gettext.texi.orig:7223
 msgid ""
 "There should also be a ChangeLog file (this is more useful than the RCS "
 "archive but can be generated automatically from the later by Emacs)."
-msgstr "There should also be a ChangeLog file (this is more useful than the RCS archive but can be generated automatically from the later by Emacs)."
+msgstr "同じくChangeLogファイル(これはRCSアーカイブより有益ですが、しかしEmacsによって後から自動的に生成することが出来ます)を含んでいるべきです。"
 
 #. type: itemize
 #: gettext.texi.orig:7228
@@ -15993,12 +15993,12 @@ msgid ""
 "A @dfn{core group} should judge about questionable changes (for now this "
 "group consists solely by me but I ask some others occasionally; this also "
 "seems to work)."
-msgstr "A @dfn{core group} should judge about questionable changes (for now this group consists solely by me but I ask some others occasionally; this also seems to work)."
+msgstr "@dfn{コアグループ}は、疑わしい変更について判定するべきです(現在、このグループは私だけで構成されていますが、私は時折他の人間に「これもまた仕事に見える」と尋ねます)。"
 
 #. type: Plain text
 #: gettext.texi.orig:7235
 msgid "If we get any inquiries about GNU @code{gettext}, send them on to:"
-msgstr "If we get any inquiries about GNU @code{gettext}, send them on to:"
+msgstr "GNU @code{gettext}に関するあらゆる問合せについては、以下に送ってください。"
 
 #. type: example
 #: gettext.texi.orig:7238
@@ -16012,7 +16012,7 @@ msgid ""
 "The @file{*-pretest} lists are quite useful to me, maybe the idea could be "
 "generalized to many GNU, and non-GNU packages.  But each maintainer his/her "
 "way!"
-msgstr "The @file{*-pretest} lists are quite useful to me, maybe the idea could be generalized to many GNU, and non-GNU packages.  But each maintainer his/her way!"
+msgstr "@file{*-pretest}リストは、私にとって本当に有益です、アイディアはおそらく、多くのGNU、及び、非GNUパッケージへと一般化されるでしょう。しかし、保守者以外の、彼/彼女の方法!"
 
 #. type: Plain text
 #: gettext.texi.orig:7248
@@ -16021,7 +16021,7 @@ msgid ""
 "track teams, support mailing lists for them and log members.  We have a "
 "slight preference that you use it.  If this is OK with you, I can get you "
 "clued in."
-msgstr "Fran@,{c}ois, we have a mechanism in place here at @file{gnu.ai.mit.edu} to track teams, support mailing lists for them and log members.  We have a slight preference that you use it.  If this is OK with you, I can get you clued in."
+msgstr "Fran@,{c}ois、我々は、チーム、チームをサポートするメーリングリストそしてログメンバを追跡するために、@file{gnu.ai.mit.edu}に適当なメカニズムを持って います。我々は、あなたが使うわずかな優先権を持っています。これがあなたにとって問題ないならば、私はあなたに情報を与えることができます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7256
@@ -16032,7 +16032,7 @@ msgid ""
 "my pretesters, I later made a handful of mailing lists located at iro."
 "umontreal.ca and administrated by @code{majordomo}.  These lists have been "
 "@emph{very} dependable so far@dots{}"
-msgstr "Things are changing! A few years ago, when Daniel Fekete and I asked for a mailing list for GNU localization, nested at the FSF, we were politely invited to organize it anywhere else, and so did we.  For communicating with my pretesters, I later made a handful of mailing lists located at iro.umontreal.ca and administrated by @code{majordomo}.  These lists have been @emph{very} dependable so far@dots{}"
+msgstr "事物は変化しています! 2、3年前、Daniel Feketeと私がGNU地域化のメーリングリスト(FSFの中にあった)に尋ねたとき、我々は作業をどこででも組織化するように礼儀正しく勧められ、そして我々はそれを実行しました。私のプリテスタと連絡を取るために、私は@code{majordomo}で管理される少数のメーリングリストをiro.umontreal.caに作成しました。これらのリストは今までのところ非常に信頼できました..."
 
 #. type: Plain text
 #: gettext.texi.orig:7262
@@ -16042,7 +16042,7 @@ msgid ""
 "true, it could surely be useful to offer mailing lists located at the FSF to "
 "each national team.  So yes, please explain me how I should proceed to "
 "create and handle them."
-msgstr "I suspect that the German team will organize itself a mailing list located in Germany, and so forth for other countries.  But before they organize for true, it could surely be useful to offer mailing lists located at the FSF to each national team.  So yes, please explain me how I should proceed to create and handle them."
+msgstr "私は、ドイツ語のチームがドイツにあるメーリングリストを組織化し、他の国にも組織化をさせると思います。しかし組織化が行われる前に、FSFにおいて各国のチームのためのメーリングリストを提供することは確かに有益でしょう。そうです、私にどのようにメーリングリストを作成し扱えばよいかを説明して下さい。"
 
 #. type: Plain text
 #: gettext.texi.orig:7270
@@ -16054,7 +16054,7 @@ msgid ""
 "should run its own list, from within their country.  There also should be "
 "some central list to which all teams could subscribe as they see fit, as "
 "long as each team is represented in it."
-msgstr "We should create temporary mailing lists, one per country, to help people organize.  Temporary, because once regrouped and structured, it would be fair the volunteers from country bring back @emph{their} list in there and manage it as they want.  My feeling is that, in the long run, each team should run its own list, from within their country.  There also should be some central list to which all teams could subscribe as they see fit, as long as each team is represented in it."
+msgstr "我々は一時的なメーリングリストを、人々を組織化しやすいように国ごとに一つずつ作らねばなりません。なぜ一時的か、なぜなら一度再構成されたなら、各国のボ ランティアは彼らのリストへと戻ってきて、そして自分達が望むように管理するだろうからです。このことについては、個々のチームは自分達の国の中から 自分達のリストを動かすだろうと思います。全てのチームが購読することの出来る、 中央のメーリングリストも作る必要があるでしょう。"
 
 #. type: Plain text
 #: gettext.texi.orig:7282
@@ -16064,7 +16064,7 @@ msgid ""
 "messages, how do you proceed? Jim, please note that right now, as I put "
 "forward nearly a dozen of localizable programs, I receive both the "
 "translations and the coordination concerns about them."
-msgstr "There will surely be some discussion about this messages after the packages are finally released.  If people now send you some proposals for better messages, how do you proceed? Jim, please note that right now, as I put forward nearly a dozen of localizable programs, I receive both the translations and the coordination concerns about them."
+msgstr "パッケージが最終的にリリースされた後、このメッセージについての幾つかの議論があることでしょう。今、人々が更に良い幾つかのメッセージを提案したとしたら、あなたはどうしますか? Jim、私が提供する1ダース近い地域化されたプログラムと同様、どうか直ちにそれらのメッセージに注目して下さい。私は翻訳とそれらに関する調整の両方を受け取るのです。"
 
 #. type: Plain text
 #: gettext.texi.orig:7291
@@ -16077,7 +16077,7 @@ msgid ""
 "security reasons, maybe Ulrich (national coordinators, in fact) should "
 "update central registry kept at the Translation Project (Jim, me, or Len's "
 "recruits) once in a while."
-msgstr "If I put one of my things to pretest, Ulrich receives the announcement and passes it on to the German team, who make last minute revisions.  Then he submits the translation files to me @emph{as the maintainer}.  For free packages I do not maintain, I would not even hear about it.  This scheme could be made to work for the whole Translation Project, I think.  For security reasons, maybe Ulrich (national coordinators, in fact) should update central registry kept at the Translation Project (Jim, me, or Len's recruits) once in a while."
+msgstr "私が事前にテストするものを一つ置いたならば、Ulrichはその告知を受け取り、そしてそれを最後に修正するドイツ語のチームに渡します。そして彼は@emph{保守者}として私に翻訳ファイルを引き渡します。私が保守していないフリーのパッケー ジについては何も聞きません。私が思うに、全ての翻訳プロジェクトにおいてこのスキームが作られるでしょう。セキュリティに関わる理由のために、おそらく Ulrich(実際の国家的コーディネータ)は時折翻訳プロジェクト(Jim、私、又はLenの新人)によって保持される中央のレジストリをアップデートすべきです。"
 
 #. type: Plain text
 #: gettext.texi.orig:7298
@@ -16088,7 +16088,7 @@ msgid ""
 "first did all the things I'm responsible for.  I've nothing against some "
 "missionary work on other maintainers, but I'm also losing a lot of energy "
 "over it---same debates over again."
-msgstr "In December/January, I was aggressively ready to internationalize all of GNU, giving myself the duty of one small GNU package per week or so, taking many weeks or months for bigger packages.  But it does not work this way.  I first did all the things I'm responsible for.  I've nothing against some missionary work on other maintainers, but I'm also losing a lot of energy over it---same debates over again."
+msgstr "私は小さなGNUパッケージは一週間に一つずつ、より大きなパッケージは数週間か数ヵ月をかけるという責務を私自身に課し、12月か1月には私はにGNUの全パッケー ジを国際化する準備を積極的に整えていました。しかし、それはそのようには動きません。私は最初に、私が責任を持つ全てのことを行いました。私は他の保守者の幾らかの伝道作業に対して何も持っていませんでした。しかし私もまた多くのエネルギーを失いました --- 同じ議論を繰り返します。"
 
 #. type: Plain text
 #: gettext.texi.orig:7303
@@ -16097,7 +16097,7 @@ msgid ""
 "responses about ugly translations :-).  Surely, and we need to have "
 "beforehand a fairly good idea about how to handle the information flow "
 "between the national teams and the package maintainers."
-msgstr "And when the first localized packages are released we'll get a lot of responses about ugly translations :-).  Surely, and we need to have beforehand a fairly good idea about how to handle the information flow between the national teams and the package maintainers."
+msgstr "そして、最初に地域化されたパッケージがリリースされるとき、我々は、醜悪な翻訳 :-) についての多くの反応を得るでことしょう。確かに、そして我々は事前に、パッケージ保守者と国家チームの間の情報の流れを制御することに関する良いアイディアを持つ必要があります。"
 
 #. type: Plain text
 #: gettext.texi.orig:7311
@@ -16108,19 +16108,19 @@ msgid ""
 "submit comments or gripes, or otherwise contribute.  I sent a proposal for a "
 "fast and flexible format, but it is not receiving acceptance yet by the GNU "
 "deciders.  I'll tell you when I have more information about this."
-msgstr "Please start saving somewhere a quick history of each PO file.  I know for sure that the file format will change, allowing for comments.  It would be nice that each file has a kind of log, and references for those who want to submit comments or gripes, or otherwise contribute.  I sent a proposal for a fast and flexible format, but it is not receiving acceptance yet by the GNU deciders.  I'll tell you when I have more information about this."
+msgstr "どうかどこかに各POファイルの迅速なヒストリを保存し始めて下さい。コメントを認めることによってファイルフォーマットがいずれ変更されるであろうことを私は知っています。各ファイルがログのようなもの、そしてコメントや不平の申し立て、又はその他の貢献をしたいと思う人々へのリファレンスを持つほうがよいでしょう。私は高速でフレキシブルなフォーマットに関する申し立てをしましたが、しかしそれはまだGNUの意思決定者によって受け入れられていません。私がこれについてより多くの情報を得たなら、このことについてお話しすることになるでしょう。"
 
 #. type: cindex
 #: gettext.texi.orig:7315
 #, no-wrap
 msgid "plural forms, translating"
-msgstr "plural forms, 翻訳"
+msgstr "plural forms, translating"
 
 #. type: Plain text
 #: gettext.texi.orig:7317
 msgid ""
 "Suppose you are translating a PO file, and it contains an entry like this:"
-msgstr "あなたが PO ファイルを翻訳しようとしていて、それには以下のようなエントリーが含まれているとしましょう:"
+msgstr "あなたがPOファイルを翻訳しようとしていて、それには以下のようなエントリーが含まれているとしましょう:"
 
 #. type: smallexample
 #: gettext.texi.orig:7324
@@ -16151,7 +16151,7 @@ msgid ""
 "English, is the @code{msgid_plural} line.  The @code{msgid} line is the "
 "English singular form, that is, the form for when the number is equal to 1.  "
 "More details about plural forms are explained in @ref{Plural forms}."
-msgstr "このようなエントリーはメッセージにplural formがあることを示しています。plural formとは、メッセージ中の数字の値が複数形として出力しなければならない値の時に出力すべき文字列です。@code{msgid_plural}行に記述されているのは、Englishにおけるそのようなメッセージの一般的な形式です。@code{msgid}行には、Englishにおけるsingular formで、数字の値が1のときに出力するテキストが記述されています。plural formについての詳細は、@ref{Plural forms}で説明しています。"
+msgstr "このようなエントリーは、メッセージにplural formがあることを示しています。plural formとは、メッセージ中の数字の値が複数形として出力しなければならない値の時に出力すべき文字列です。@code{msgid_plural}行に記述されているのは、Englishにおけるそのようなメッセージの一般的な形式です。@code{msgid}行には、Englishにおけるsingular formで、数字の値が1のときに出力するテキストが記述されています。plural formについての詳細は、@ref{Plural forms}で説明しています。"
 
 #. type: Plain text
 #: gettext.texi.orig:7342
@@ -16289,7 +16289,7 @@ msgid ""
 "specialized translation without the number placeholder.  In our case, "
 "however, @code{msgstr[0]} also applies to the numbers 21, 31, 41, etc., and "
 "therefore you cannot omit the placeholder."
-msgstr "これは@code{msgstr[0]}を1のときだけ使うのか、他の数字のときもつかうかによります。plural formulaに当てはめて考えると、@code{msgstr[0]}が@code{n == 1}のときだけ、数字用の書式指定子を使わない特定の翻訳文を使うことができます。しかしこの例の場合、@code{msgstr[0]}は21、31、41...などのときにも使用するので、書式指定子を省くことはできません。"
+msgstr "これは@code{msgstr[0]}を1のときだけ使うのか、他の数字のときも使うかによります。plural formulaに当てはめて考えると、@code{msgstr[0]}が@code{n == 1}のときだけ、数字用の書式指定子を使わない特定の翻訳文を使うことができます。しかしこの例の場合、@code{msgstr[0]}は21、31、41...などのときにも使用するので、書式指定子を省くことはできません。"
 
 #. type: section
 #: gettext.texi.orig:7410
@@ -16328,7 +16328,7 @@ msgstr "次のステップで、彼女はPOモードを使って、それらの�
 #: gettext.texi.orig:7427
 #, no-wrap
 msgid "GETTEXT_LOG_UNTRANSLATED@r{, environment variable}"
-msgstr "GETTEXT_LOG_UNTRANSLATED@r{, 環境変数}"
+msgstr "GETTEXT_LOG_UNTRANSLATED@r{, environment variable}"
 
 #. type: Plain text
 #: gettext.texi.orig:7436
@@ -16341,7 +16341,7 @@ msgid ""
 "created as needed.  On systems with GNU @code{libc} a shared library "
 "@samp{preloadable_libintl.so} is provided that can be used with the ELF "
 "@samp{LD_PRELOAD} mechanism."
-msgstr "より詳細に見てみましょう。GNU @code{libintl}(GNU @code{libc}の対応する関数とは異なる)は、環境変数@code{GETTEXT_LOG_UNTRANSLATED}をサポートします。GNU @code{libintl}ライブラリーは、@code{gettext()} 、および関連する関数が翻訳を見つけられなかったとき、そのメッセージをログに記録します。ログファイルがない場合には、必要に応じて作成します。GNU @code{libc}によるシステムでは、ELF の@samp{LD_PRELOAD}メカニズムで使用できる、共有ライブラリー@samp{preloadable_libintl.so}が提供されます。"
+msgstr "より詳細に見てみましょう。GNU @code{libintl}(GNU @code{libc}の対応する関数とは異なる)は、環境変数@code{GETTEXT_LOG_UNTRANSLATED}をサポートします。GNU @code{libintl}ライブラリーは@code{gettext()}、および関連する関数が翻訳を見つけられなかったとき、そのメッセージをログに記録します。ログファイルがない場合には、必要に応じて作成します。GNU @code{libc}によるシステムでは、ELFの@samp{LD_PRELOAD}メカニズムで使用できる、共有ライブラリー@samp{preloadable_libintl.so}が提供されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7439
@@ -16478,7 +16478,7 @@ msgid ""
 "@code{gtranslator} also preserve obsolete messages, as they should.)  "
 "Finally she restores the not urgent messages (with their earlier "
 "translations, for those which were already translated) through this command:"
-msgstr "それから彼女はPOファイルエディターを使って@file{$domain.$lang-urgent.po}を翻訳します(@pxref{Editing})。(FIXME: KBabel と gtranslator が期待通り obsolete message を保持してくれるかどうかについては、わたしにはわかりません)"
+msgstr "それから彼女はPOファイルエディターを使って@file{$domain.$lang-urgent.po}を翻訳します(@ref{Editing}を参照してください)。(FIXME: KBabelとgtranslatorが期待通りobsolete messageを保持してくれるかどうかについては、わたしにはわかりません) そして彼女は最後に、以下のコマンドで緊急ではないメッセージ(およびすでに翻訳済みのメッセージの初期の\"翻訳\")を復元します:"
 
 #. type: smallexample
 #: gettext.texi.orig:7516
