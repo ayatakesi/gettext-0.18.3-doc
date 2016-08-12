@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-08 22:01+0900\n"
-"PO-Revision-Date: 2016-07-30 21:08+0900\n"
+"PO-Revision-Date: 2016-08-12 20:55+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "msgfmt"
 #: msgfmt.texi.orig:2
 #, no-wrap
 msgid "@code{msgfmt} program, usage"
-msgstr "@code{msgfmt} プログラム, 使い方"
+msgstr "@code{msgfmt} program, usage"
 
 #. type: example
 #: msgfmt.texi.orig:5
@@ -37,7 +37,7 @@ msgstr "msgfmt [@var{option}] @var{filename}.po @dots{}\n"
 #: msgfmt.texi.orig:7
 #, no-wrap
 msgid "generate binary message catalog from PO file"
-msgstr "POファイルからバイナリーのメッセージカタログを生成する"
+msgstr "generate binary message catalog from PO file"
 
 #. type: Plain text
 #: msgfmt.texi.orig:10
@@ -74,13 +74,13 @@ msgstr "--directory=@var{directory}"
 #: msgfmt.texi.orig:18
 #, no-wrap
 msgid "-D@r{, @code{msgfmt} option}"
-msgstr "-D@r{, @code{msgfmt} オプション}"
+msgstr "-D@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:19
 #, no-wrap
 msgid "--directory@r{, @code{msgfmt} option}"
-msgstr "--directory@r{, @code{msgfmt} オプション}"
+msgstr "--directory@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:23
@@ -88,7 +88,7 @@ msgid ""
 "Add @var{directory} to the list of directories.  Source files are searched "
 "relative to this list of directories.  The resulting binary file will be "
 "written relative to the current directory, though."
-msgstr "ディレクトリーの一覧に@var{directory}を追加します。このディレクトリーの一覧よりソースファイルを検索します。しかし、結果となるバイナリーファイルが出力されるのは、カレントディレクトリーです。"
+msgstr "ディレクトリーのリストに@var{directory}を追加します。このディレクトリーのリストよりソースファイルを検索します。しかし、結果となるバイナリーファイルが出力されるのは、カレントディレクトリーです。"
 
 #. type: Plain text
 #: msgfmt.texi.orig:27
@@ -117,19 +117,19 @@ msgstr "--java"
 #: msgfmt.texi.orig:33
 #, no-wrap
 msgid "-j@r{, @code{msgfmt} option}"
-msgstr "-j@r{, @code{msgfmt} オプション}"
+msgstr "-j@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:34
 #, no-wrap
 msgid "--java@r{, @code{msgfmt} option}"
-msgstr "--java@r{, @code{msgfmt} オプション}"
+msgstr "--java@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:35
 #, no-wrap
 msgid "Java mode, and @code{msgfmt} program"
-msgstr "Javaモード, そして @code{msgfmt} プログラム"
+msgstr "Java mode, and @code{msgfmt} program"
 
 #. type: table
 #: msgfmt.texi.orig:37
@@ -146,7 +146,7 @@ msgstr "--java2"
 #: msgfmt.texi.orig:39
 #, no-wrap
 msgid "--java2@r{, @code{msgfmt} option}"
-msgstr "--java2@r{, @code{msgfmt} オプション}"
+msgstr "--java2@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:41
@@ -163,13 +163,13 @@ msgstr "--csharp"
 #: msgfmt.texi.orig:43
 #, no-wrap
 msgid "--csharp@r{, @code{msgfmt} option}"
-msgstr "--csharp@r{, @code{msgfmt} オプション}"
+msgstr "--csharp@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:44
 #, no-wrap
 msgid "C# mode, and @code{msgfmt} program"
-msgstr "C#モード, そして @code{msgfmt} プログラム"
+msgstr "C# mode, and @code{msgfmt} program"
 
 #. type: table
 #: msgfmt.texi.orig:47
@@ -188,13 +188,13 @@ msgstr "--csharp-resources"
 #: msgfmt.texi.orig:49
 #, no-wrap
 msgid "--csharp-resources@r{, @code{msgfmt} option}"
-msgstr "--csharp-resources@r{, @code{msgfmt} オプション}"
+msgstr "--csharp-resources@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:50
 #, no-wrap
 msgid "C# resources mode, and @code{msgfmt} program"
-msgstr "C# resourcesモード, そして @code{msgfmt} プログラム"
+msgstr "C# resources mode, and @code{msgfmt} program"
 
 #. type: table
 #: msgfmt.texi.orig:52
@@ -211,13 +211,13 @@ msgstr "--tcl"
 #: msgfmt.texi.orig:54
 #, no-wrap
 msgid "--tcl@r{, @code{msgfmt} option}"
-msgstr "--tcl@r{, @code{msgfmt} オプション}"
+msgstr "--tcl@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:55
 #, no-wrap
 msgid "Tcl mode, and @code{msgfmt} program"
-msgstr "Tclモード, そして @code{msgfmt} プログラム"
+msgstr "Tcl mode, and @code{msgfmt} program"
 
 #. type: table
 #: msgfmt.texi.orig:57
@@ -234,13 +234,13 @@ msgstr "--qt"
 #: msgfmt.texi.orig:59
 #, no-wrap
 msgid "--qt@r{, @code{msgfmt} option}"
-msgstr "--qt@r{, @code{msgfmt} オプション}"
+msgstr "--qt@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:60
 #, no-wrap
 msgid "Qt mode, and @code{msgfmt} program"
-msgstr "Qtモード, そして @code{msgfmt} プログラム"
+msgstr "Qt mode, and @code{msgfmt} program"
 
 #. type: table
 #: msgfmt.texi.orig:62
@@ -269,13 +269,13 @@ msgstr "--output-file=@var{file}"
 #: msgfmt.texi.orig:70
 #, no-wrap
 msgid "-o@r{, @code{msgfmt} option}"
-msgstr "-o@r{, @code{msgfmt} オプション}"
+msgstr "-o@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:71
 #, no-wrap
 msgid "--output-file@r{, @code{msgfmt} option}"
-msgstr "--output-file@r{, @code{msgfmt} オプション}"
+msgstr "--output-file@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:73
@@ -292,7 +292,7 @@ msgstr "--strict"
 #: msgfmt.texi.orig:75
 #, no-wrap
 msgid "--strict@r{, @code{msgfmt} option}"
-msgstr "--strict@r{, @code{msgfmt} オプション}"
+msgstr "--strict@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:82
@@ -339,13 +339,13 @@ msgstr "--resource=@var{resource}"
 #: msgfmt.texi.orig:95 msgfmt.texi.orig:121
 #, no-wrap
 msgid "-r@r{, @code{msgfmt} option}"
-msgstr "-r@r{, @code{msgfmt} オプション}"
+msgstr "-r@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:96 msgfmt.texi.orig:122
 #, no-wrap
 msgid "--resource@r{, @code{msgfmt} option}"
-msgstr "--resource@r{, @code{msgfmt} オプション}"
+msgstr "--resource@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:98 msgfmt.texi.orig:124
@@ -368,13 +368,13 @@ msgstr "--locale=@var{locale}"
 #: msgfmt.texi.orig:101 msgfmt.texi.orig:127 msgfmt.texi.orig:147
 #, no-wrap
 msgid "-l@r{, @code{msgfmt} option}"
-msgstr "-l@r{, @code{msgfmt} オプション}"
+msgstr "-l@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:102 msgfmt.texi.orig:128 msgfmt.texi.orig:148
 #, no-wrap
 msgid "--locale@r{, @code{msgfmt} option}"
-msgstr "--locale@r{, @code{msgfmt} オプション}"
+msgstr "--locale@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:105 msgfmt.texi.orig:131 msgfmt.texi.orig:151
@@ -394,7 +394,7 @@ msgstr "-d @var{directory}"
 #: msgfmt.texi.orig:107 msgfmt.texi.orig:133 msgfmt.texi.orig:153
 #, no-wrap
 msgid "-d@r{, @code{msgfmt} option}"
-msgstr "-d@r{, @code{msgfmt} オプション}"
+msgstr "-d@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:109
@@ -468,13 +468,13 @@ msgstr "--properties-input"
 #: msgfmt.texi.orig:166
 #, no-wrap
 msgid "-P@r{, @code{msgfmt} option}"
-msgstr "-P@r{, @code{msgfmt} オプション}"
+msgstr "-P@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:167
 #, no-wrap
 msgid "--properties-input@r{, @code{msgfmt} option}"
-msgstr "--properties-input@r{, @code{msgfmt} オプション}"
+msgstr "--properties-input@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:170
@@ -495,7 +495,7 @@ msgstr "--stringtable-input"
 #: msgfmt.texi.orig:172
 #, no-wrap
 msgid "--stringtable-input@r{, @code{msgfmt} option}"
-msgstr "--stringtable-input@r{, @code{msgfmt} オプション}"
+msgstr "--stringtable-input@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:175
@@ -528,13 +528,13 @@ msgstr "--check"
 #: msgfmt.texi.orig:183
 #, no-wrap
 msgid "-c@r{, @code{msgfmt} option}"
-msgstr "-c@r{, @code{msgfmt} オプション}"
+msgstr "-c@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:184
 #, no-wrap
 msgid "--check@r{, @code{msgfmt} option}"
-msgstr "--check@r{, @code{msgfmt} オプション}"
+msgstr "--check@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:187
@@ -553,13 +553,13 @@ msgstr "--check-format"
 #: msgfmt.texi.orig:189
 #, no-wrap
 msgid "--check-format@r{, @code{msgfmt} option}"
-msgstr "--check-format@r{, @code{msgfmt} オプション}"
+msgstr "--check-format@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:190
 #, no-wrap
 msgid "check format strings"
-msgstr "書式文字列のチェック"
+msgstr "check format strings"
 
 #. type: table
 #: msgfmt.texi.orig:192
@@ -576,7 +576,7 @@ msgid ""
 "entry a check is performed.  For example, the check will diagnose using "
 "@samp{%.*s} against @samp{%s}, or @samp{%d} against @samp{%s}, or @samp{%d} "
 "against @samp{%x}.  It can even handle positional parameters."
-msgstr "文字列が @code{printf}のような関数で使用される書式文字列の場合、書式指定子@samp{%}と、それらに対応する型の変数の個数は一致するはずです。エントリーにたいして@key{#,}コメントで@code{c-format}や@code{possible-c-format}フラグが指定されている場合は、チェックが行われます。たとえば、@samp{%s}が期待される箇所に@samp{%.*s}や@samp{%d}が使われていたり、@samp{%x}が期待される箇所に@samp{%d}が使われている場合、チェックは診断メッセージを出力します。このチェックは位置パラメーターを処理することさえできるのです。"
+msgstr "文字列が@code{printf}のような関数で使用される書式文字列の場合、書式指定子@samp{%}と、それらに対応する型の変数の個数は一致するはずです。エントリーにたいして@key{#,}コメントで@code{c-format}や@code{possible-c-format}フラグが指定されている場合は、チェックが行われます。たとえば、@samp{%s}が期待される箇所に@samp{%.*s}や@samp{%d}が使われていたり、@samp{%x}が期待される箇所に@samp{%d}が使われている場合、チェックは診断メッセージを出力します。このチェックは位置パラメーターを処理することさえできるのです。"
 
 #. type: table
 #: msgfmt.texi.orig:207
@@ -585,7 +585,7 @@ msgid ""
 "is a format string or not.  This algorithm is not perfect, though.  It might "
 "regard a string as a format string though it is not used in a @code{printf}-"
 "like function and so @code{msgfmt} might report errors where there are none."
-msgstr "通常、@code{xgettext}プログラムは、ある文字列が書式文字列かどうかを、自動的に判定します。しかしこのアルゴリズムも完全ではありません。そのため @code{printf}のような関数で使用されていない文字列を書式文字列とみなしてしまい、エラーが存在しないにもかかわらず@code{msgfmt}がエラーを報告する場合があります。"
+msgstr "@code{xgettext}プログラムは通常、ある文字列が書式文字列かどうかを、自動的に判定します。しかしこのアルゴリズムも完全ではありません。そのため、@code{printf}のような関数で使用されていない文字列を書式文字列とみなしてしまい、エラーが存在しないにもかかわらず@code{msgfmt}がエラーを報告する場合があります。"
 
 #. type: table
 #: msgfmt.texi.orig:212
@@ -594,7 +594,7 @@ msgid ""
 "@code{xgettext} program (@pxref{c-format}).  The translator should not "
 "consider removing the flag from the @key{#,} line.  This \"fix\" would be "
 "reversed again as soon as @code{msgmerge} is called the next time."
-msgstr "プログラマーが@code{xgettext}に判定結果を指示することにより、この問題を解決することができます(@pxref{c-format})。翻訳者は@key{#,}行からフラグを削除しようと考える必要はありません。なぜならこの\"fix\"は、次に@code{msgmerge}を呼び出したときに元に戻されてしまうからです。"
+msgstr "プログラマーが@code{xgettext}に判定結果を指示することにより、この問題を解決することができます(@ref{c-format}を参照してください)。翻訳者は@key{#,}行からフラグを削除しようと考える必要はありません。なぜならこの\"fix\"は、次に@code{msgmerge}を呼び出したときに元に戻されてしまうからです。"
 
 #. type: item
 #: msgfmt.texi.orig:213
@@ -606,14 +606,14 @@ msgstr "--check-header"
 #: msgfmt.texi.orig:214
 #, no-wrap
 msgid "--check-header@r{, @code{msgfmt} option}"
-msgstr "--check-header@r{, @code{msgfmt} オプション}"
+msgstr "--check-header@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:217
 msgid ""
 "Verify presence and contents of the header entry.  @xref{Header Entry}, for "
 "a description of the various fields in the header entry."
-msgstr "ヘッダーエントリーの存在および内容をチェックします。ヘッダーエントリーのさまざまなフィールドの説明は、@xref{Header Entry}。"
+msgstr "ヘッダーエントリーの存在および内容をチェックします。ヘッダーエントリーのさまざまなフィールドの説明は、@ref{Header Entry}を参照してください。"
 
 #. type: item
 #: msgfmt.texi.orig:218
@@ -625,7 +625,7 @@ msgstr "--check-domain"
 #: msgfmt.texi.orig:219
 #, no-wrap
 msgid "--check-domain@r{, @code{msgfmt} option}"
-msgstr "--check-domain@r{, @code{msgfmt} オプション}"
+msgstr "--check-domain@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:222
@@ -650,19 +650,19 @@ msgstr "--check-compatibility"
 #: msgfmt.texi.orig:225
 #, no-wrap
 msgid "-C@r{, @code{msgfmt} option}"
-msgstr "-C@r{, @code{msgfmt} オプション}"
+msgstr "-C@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:226
 #, no-wrap
 msgid "--check-compatibility@r{, @code{msgfmt} option}"
-msgstr "--check-compatibility@r{, @code{msgfmt} オプション}"
+msgstr "--check-compatibility@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:227
 #, no-wrap
 msgid "compatibility with X/Open @code{msgfmt}"
-msgstr "X/Open @code{msgfmt}との互換性"
+msgstr "compatibility with X/Open @code{msgfmt}"
 
 #. type: table
 #: msgfmt.texi.orig:230
@@ -681,25 +681,25 @@ msgstr "--check-accelerators[=@var{char}]"
 #: msgfmt.texi.orig:232
 #, no-wrap
 msgid "--check-accelerators@r{, @code{msgfmt} option}"
-msgstr "--check-accelerators@r{, @code{msgfmt} オプション}"
+msgstr "--check-accelerators@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:233
 #, no-wrap
 msgid "keyboard accelerator checking"
-msgstr "キーボードアクセラレーターのチェック"
+msgstr "keyboard accelerator checking"
 
 #. type: cindex
 #: msgfmt.texi.orig:234
 #, no-wrap
 msgid "menu, keyboard accelerator support"
-msgstr "メニュー、キーボードアクセラレーターのサポート"
+msgstr "menu, keyboard accelerator support"
 
 #. type: cindex
 #: msgfmt.texi.orig:235
 #, no-wrap
 msgid "mnemonics of menu entries"
-msgstr "メニューエントリーのニーモニック"
+msgstr "mnemonics of menu entries"
 
 #. type: table
 #: msgfmt.texi.orig:245
@@ -713,7 +713,7 @@ msgid ""
 "option is given with a @var{char} argument, this @var{char} should be a non-"
 "alphanumeric character and is used as keyboard accelerator mark instead of "
 "@samp{&}."
-msgstr "メニューアイテムにたいしてキーボードアクセラレーターの存在をチェックします。このチェックは、いくつかの GUI においてメニューアイテム文字列内のキーボードアクセラレーターが、@samp{&}のすぐ後ろに続く文字としてデザインされていることにもとづきます。キーボードアクセラレーターが\"keyboard mnemonic\"と呼ばれることもあります。このチェックは、未翻訳文字列に@samp{&}が1つあるとき、翻訳文字列にも1つの@samp{&}があるかをチェックします。このオプションの引数に@var{char}が与えらる場合、@var{char}には非英数文字を指定します。指定した文字は@samp{&}のかわりに、キーボードアクセラレーターのマークとして使用されます。"
+msgstr "メニューアイテムにたいしてキーボードアクセラレーターの存在をチェックします。このチェックは、いくつかのGUIにおいてメニューアイテム文字列内のキーボードアクセラレーターが、@samp{&}のすぐ後ろに続く文字としてデザインされていることにもとづきます。キーボードアクセラレーターが\"keyboard mnemonic\"と呼ばれることもあります。このチェックは、未翻訳文字列に@samp{&}が1つあるとき、翻訳文字列にも1つの@samp{&}があるかをチェックします。このオプションの引数に@var{char}が与えらる場合、@var{char}には非英数文字を指定します。指定した文字は@samp{&}のかわりに、キーボードアクセラレーターのマークとして使用されます。"
 
 #. type: item
 #: msgfmt.texi.orig:246
@@ -731,19 +731,19 @@ msgstr "--use-fuzzy"
 #: msgfmt.texi.orig:248
 #, no-wrap
 msgid "-f@r{, @code{msgfmt} option}"
-msgstr "-f@r{, @code{msgfmt} オプション}"
+msgstr "-f@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:249
 #, no-wrap
 msgid "--use-fuzzy@r{, @code{msgfmt} option}"
-msgstr "--use-fuzzy@r{, @code{msgfmt} オプション}"
+msgstr "--use-fuzzy@r{, @code{msgfmt} option}"
 
 #. type: cindex
 #: msgfmt.texi.orig:250
 #, no-wrap
 msgid "force use of fuzzy entries"
-msgstr "fuzzyエントリーを強制的に使う"
+msgstr "force use of fuzzy entries"
 
 #. type: table
 #: msgfmt.texi.orig:254
@@ -775,18 +775,18 @@ msgstr "--alignment=@var{number}"
 #: msgfmt.texi.orig:262
 #, no-wrap
 msgid "-a@r{, @code{msgfmt} option}"
-msgstr "-a@r{, @code{msgfmt} オプション}"
+msgstr "-a@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:263
 #, no-wrap
 msgid "--alignment@r{, @code{msgfmt} option}"
-msgstr "--alignment@r{, @code{msgfmt} オプション}"
+msgstr "--alignment@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:267
 msgid "Align strings to @var{number} bytes (default: 1)."
-msgstr "Align strings to @var{number} bytes (default: 1)."
+msgstr "文字列を@var{number}バイトに揃えます(デフォルトは1)。"
 
 #. type: item
 #: msgfmt.texi.orig:268
@@ -798,7 +798,7 @@ msgstr "--endianness=@var{byteorder}"
 #: msgfmt.texi.orig:269
 #, no-wrap
 msgid "--endianness@r{, @code{msgfmt} option}"
-msgstr "--endianness@r{, @code{msgfmt} オプション}"
+msgstr "--endianness@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:273
@@ -821,7 +821,7 @@ msgstr "任意のインディアンをもつMOファイルは、任意のプラ�
 msgid ""
 "This option can be useful to produce MO files that are independent of the "
 "platform."
-msgstr "このオプションはプラットフォームに束縛されずMOを作成するために便利です。"
+msgstr "このオプションは、プラットフォームに束縛されずMOを作成するために便利です。"
 
 #. type: item
 #: msgfmt.texi.orig:281
@@ -833,7 +833,7 @@ msgstr "--no-hash"
 #: msgfmt.texi.orig:282
 #, no-wrap
 msgid "--no-hash@r{, @code{msgfmt} option}"
-msgstr "--no-hash@r{, @code{msgfmt} オプション}"
+msgstr "--no-hash@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:285
@@ -864,13 +864,13 @@ msgstr "--help"
 #: msgfmt.texi.orig:293
 #, no-wrap
 msgid "-h@r{, @code{msgfmt} option}"
-msgstr "-h@r{, @code{msgfmt} オプション}"
+msgstr "-h@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:294
 #, no-wrap
 msgid "--help@r{, @code{msgfmt} option}"
-msgstr "--help@r{, @code{msgfmt} オプション}"
+msgstr "--help@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:296
@@ -893,13 +893,13 @@ msgstr "--version"
 #: msgfmt.texi.orig:299
 #, no-wrap
 msgid "-V@r{, @code{msgfmt} option}"
-msgstr "-V@r{, @code{msgfmt} オプション}"
+msgstr "-V@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:300
 #, no-wrap
 msgid "--version@r{, @code{msgfmt} option}"
-msgstr "--version@r{, @code{msgfmt} オプション}"
+msgstr "--version@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:302
@@ -916,7 +916,7 @@ msgstr "--statistics"
 #: msgfmt.texi.orig:304
 #, no-wrap
 msgid "--statistics@r{, @code{msgfmt} option}"
-msgstr "--statistics@r{, @code{msgfmt} オプション}"
+msgstr "--statistics@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:308
@@ -942,13 +942,13 @@ msgstr "--verbose"
 #: msgfmt.texi.orig:311
 #, no-wrap
 msgid "-v@r{, @code{msgfmt} option}"
-msgstr "-v@r{, @code{msgfmt} オプション}"
+msgstr "-v@r{, @code{msgfmt} option}"
 
 #. type: opindex
 #: msgfmt.texi.orig:312
 #, no-wrap
 msgid "--verbose@r{, @code{msgfmt} option}"
-msgstr "--verbose@r{, @code{msgfmt} オプション}"
+msgstr "--verbose@r{, @code{msgfmt} option}"
 
 #. type: table
 #: msgfmt.texi.orig:314
