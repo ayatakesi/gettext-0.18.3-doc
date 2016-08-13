@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-17 00:03+0900\n"
-"PO-Revision-Date: 2015-09-18 23:51+0900\n"
+"PO-Revision-Date: 2016-08-13 09:22+0900\n"
 "Last-Translator: Takeshi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <takeshi.ayanokoji@gmail.com>\n"
 "Language: ja\n"
@@ -28,7 +28,7 @@ msgstr "@code{gettextize}プログラムは、GNU @code{gettext}によりイン�
 msgid ""
 "As a wizard, when a package is modified to use GNU @code{gettext} for the "
 "first time."
-msgstr "最初にGNU @code{gettext}を使ってパッケージをするときはウィザードとして使用されます。"
+msgstr "最初に、GNU @code{gettext}を使ってパッケージをするときは、ウィザードとして使用されます。"
 
 #. type: itemize
 #: gettextize.texi.orig:13
@@ -47,13 +47,13 @@ msgstr "このプログラムは以下のタスクを処理します:"
 msgid ""
 "It copies into the package some files that are consistently and identically "
 "needed in every package internationalized through GNU @code{gettext}."
-msgstr "GNU @code{gettext}によりインターナショナライズされたすべてのパッケージで必要なファイルをパッケージにコピーします。"
+msgstr "GNU @code{gettext}によりインターナショナライズされた、すべてのパッケージで必要なファイルをパッケージにコピーします。"
 
 #. type: item
 #: gettextize.texi.orig:23
 #, no-wrap
 msgid "It performs as many of the tasks mentioned in the next section"
-msgstr "次のセクション、"
+msgstr "次のセクション"
 
 #. type: itemize
 #: gettextize.texi.orig:25
@@ -71,7 +71,7 @@ msgstr "以前のバージョンのGNU "
 msgid ""
 "@code{gettext} versions to the form recommended for the current GNU "
 "@code{gettext} version."
-msgstr "@code{gettext} で使われていた時代遅れのファイルやイディオムを削除して、現在のバージョンのGNU @code{gettext}で推奨される形式にします。"
+msgstr "@code{gettext}で使われていた陳腐化したファイルやイディオムを削除して、現在のバージョンのGNU @code{gettext}で推奨される形式にします。"
 
 #. type: item
 #: gettextize.texi.orig:30
@@ -99,7 +99,7 @@ msgstr "gettextize"
 #: gettextize.texi.orig:37
 #, no-wrap
 msgid "@code{gettextize} program, usage"
-msgstr "@code{gettextize} プログラム, 使い方"
+msgstr "@code{gettextize} program, usage"
 
 #. type: example
 #: gettextize.texi.orig:40
@@ -128,13 +128,13 @@ msgstr "--force"
 #: gettextize.texi.orig:48
 #, no-wrap
 msgid "-f@r{, @code{gettextize} option}"
-msgstr "-f@r{, @code{gettextize} オプション}"
+msgstr "-f@r{, @code{gettextize} option}"
 
 #. type: opindex
 #: gettextize.texi.orig:49
 #, no-wrap
 msgid "--force@r{, @code{gettextize} option}"
-msgstr "--force@r{, @code{gettextize} オプション}"
+msgstr "--force@r{, @code{gettextize} option}"
 
 #. type: table
 #: gettextize.texi.orig:51
@@ -151,7 +151,7 @@ msgstr "--intl"
 #: gettextize.texi.orig:53
 #, no-wrap
 msgid "--intl@r{, @code{gettextize} option}"
-msgstr "--intl@r{, @code{gettextize} オプション}"
+msgstr "--intl@r{, @code{gettextize} option}"
 
 #. type: table
 #: gettextize.texi.orig:60
@@ -162,7 +162,7 @@ msgid ""
 "@code{AM_GNU_GETTEXT} in @file{configure.ac} should read: "
 "@samp{AM_GNU_GETTEXT([external])}, and internationalization will not be "
 "enabled on systems lacking GNU gettext."
-msgstr "libintlのソースを@file{intl/}というサブディレクトリーにインストールします。このlibintlは、GNU libintlがインストールされていないシステムでインターナショナリゼーションを提供するのに使用されます。このオプションが省略された場合は、@file{configure.ac}の@code{AM_GNU_GETTEXT}の呼び出しが読み込まれます。しかし@samp{AM_GNU_GETTEXT([external])}とインターナショナリゼーションは、GNU gettextのないシステムでは利用できないでしょう。"
+msgstr "libintlのソースを、@file{intl/}というサブディレクトリーにインストールします。このlibintlは、GNU libintlがインストールされていないシステムでインターナショナリゼーションを提供するのに使用されます。このオプションが省略された場合は、@file{configure.ac}の@code{AM_GNU_GETTEXT}呼び出しが読み込まれます。しかし@samp{AM_GNU_GETTEXT([external])}とインターナショナリゼーションは、GNU gettextのないシステムでは利用できないでしょう。"
 
 #. type: item
 #: gettextize.texi.orig:61
@@ -174,7 +174,7 @@ msgstr "--po-dir=@var{dir}"
 #: gettextize.texi.orig:62
 #, no-wrap
 msgid "--po-dir@r{, @code{gettextize} option}"
-msgstr "--po-dir@r{, @code{gettextize} オプション}"
+msgstr "--po-dir@r{, @code{gettextize} option}"
 
 #. type: table
 #: gettextize.texi.orig:67
@@ -195,7 +195,7 @@ msgstr "--no-changelog"
 #: gettextize.texi.orig:69
 #, no-wrap
 msgid "--no-changelog@r{, @code{gettextize} option}"
-msgstr "--no-changelog@r{, @code{gettextize} オプション}"
+msgstr "--no-changelog@r{, @code{gettextize} option}"
 
 #. type: table
 #: gettextize.texi.orig:73
@@ -215,7 +215,7 @@ msgstr "--symlink"
 #: gettextize.texi.orig:75
 #, no-wrap
 msgid "--symlink@r{, @code{gettextize} option}"
-msgstr "--symlink@r{, @code{gettextize} オプション}"
+msgstr "--symlink@r{, @code{gettextize} option}"
 
 #. type: table
 #: gettextize.texi.orig:81
@@ -225,7 +225,7 @@ msgid ""
 "create self-contained tarballs, it may disturb some mechanism the maintainer "
 "applies to the sources, and it is likely to introduce bugs when a newer "
 "version of @code{gettext} is installed on the system."
-msgstr "必要なファイルをコピーするかわりにシンボリックリンクを作成します。これはディスク容量を数キロバイト節約するのには便利ですが、自分自身を含む形式のtarballの作成には特別な配慮が必要になり、メンテナーがソースに適用できるいくつかの機能が使えなくなり、システムに新しいバージョンの@code{gettext}がインストールされたときにバグ(のような状態)を招きます。"
+msgstr "必要なファイルをコピーするかわりに、シンボリックリンクを作成します。これはディスク容量を数キロバイト節約するのには便利ですが、自分自身を含む形式のtarballの作成には特別な配慮が必要になり、メンテナーがソースに適用できるいくつかの機能が使えなくなり、システムに新しいバージョンの@code{gettext}がインストールされたときにバグ(のような状態)を招きます。"
 
 #. type: item
 #: gettextize.texi.orig:82
@@ -243,13 +243,13 @@ msgstr "--dry-run"
 #: gettextize.texi.orig:84
 #, no-wrap
 msgid "-d@r{, @code{gettextize} option}"
-msgstr "-d@r{, @code{gettextize} オプション}"
+msgstr "-d@r{, @code{gettextize} option}"
 
 #. type: opindex
 #: gettextize.texi.orig:85
 #, no-wrap
 msgid "--dry-run@r{, @code{gettextize} option}"
-msgstr "--dry-run@r{, @code{gettextize} オプション}"
+msgstr "--dry-run@r{, @code{gettextize} option}"
 
 #. type: table
 #: gettextize.texi.orig:89
@@ -257,7 +257,7 @@ msgid ""
 "Print modifications but don't perform them.  All actions that "
 "@code{gettextize} would normally execute are inhibited and instead only "
 "listed on standard output."
-msgstr "変更を出力しますが、処理は行いません。普通に@code{gettextize}を実行したときのアクションはすべて抑止され、かわりに一覧が標準出力に出力されるだけになります。"
+msgstr "変更を出力しますが、処理は行いません。普通に@code{gettextize}を実行したときのアクションはすべて抑止され、かわりにリストが標準出力に出力されるだけになります。"
 
 #. type: item
 #: gettextize.texi.orig:90
@@ -269,7 +269,7 @@ msgstr "--help"
 #: gettextize.texi.orig:91
 #, no-wrap
 msgid "--help@r{, @code{gettextize} option}"
-msgstr "--help@r{, @code{gettextize} オプション}"
+msgstr "--help@r{, @code{gettextize} option}"
 
 #. type: table
 #: gettextize.texi.orig:93
@@ -286,7 +286,7 @@ msgstr "--version"
 #: gettextize.texi.orig:95
 #, no-wrap
 msgid "--version@r{, @code{gettextize} option}"
-msgstr "--version@r{, @code{gettextize} オプション}"
+msgstr "--version@r{, @code{gettextize} option}"
 
 #. type: table
 #: gettextize.texi.orig:97
@@ -299,7 +299,7 @@ msgid ""
 "If @var{directory} is given, this is the top level directory of a package to "
 "prepare for using GNU @code{gettext}.  If not given, it is assumed that the "
 "current directory is the top level directory of such a package."
-msgstr "@var{directory}を指定した場合、そのディレクトリーはGNU @code{gettext}を使う準備をしたいパッケージのトップレベルのディレクトリーになります。"
+msgstr "@var{directory}を指定した場合、そのディレクトリーはGNU @code{gettext}を使う準備をしたいパッケージの、トップレベルのディレクトリーになります。"
 
 #. type: Plain text
 #: gettextize.texi.orig:108
@@ -319,7 +319,7 @@ msgid ""
 "file than the one provided through @code{gettextize}, if you have one "
 "handy.  You may also fetch a more recent copy of file @file{ABOUT-NLS} from "
 "Translation Project sites, and from most GNU archive sites."
-msgstr "@file{ABOUT-NLS}ファイルはパッケージのメインディレクトリー(トップレベル)にコピーされます。このファイルは、プログラムでNative Language Support機能をインストールして使う方法を示す主要なファイルです。あなたは、もし手軽に入手できるなら@code{gettextize}により提供される@file{ABOUT-NLS}よりも、新しいコピーを使いたいと思うかもしれません。より新しい@file{ABOUT-NLS}ファイルのコピーを、翻訳プロジェクトかGNU archive siteから入手することもできます。"
+msgstr "@file{ABOUT-NLS}ファイルは、パッケージのメインディレクトリー(トップレベル)にコピーされます。このファイルは、プログラムでNative Language Support機能をインストールして使う方法を示す主要なファイルです。もし手軽に入手できるなら、@code{gettextize}により提供される@file{ABOUT-NLS}よりも、新しいコピーを使いたいと思うかもしれません。より新しい@file{ABOUT-NLS}ファイルのコピーを、翻訳プロジェクト、またはGNU archive siteから入手することもできます。"
 
 #. type: enumerate
 #: gettextize.texi.orig:128
@@ -330,7 +330,7 @@ msgid ""
 "file name) and a few auxiliary files.  If the @file{po/} directory already "
 "exists, it will be preserved along with the files it contains, and only "
 "@file{Makefile.in.in} and the auxiliary files will be overwritten."
-msgstr "作成された@file{po/}ディレクトリーには、最終的にはすべての翻訳用ファイルが保持されますが、初期状態ではGNU @code{gettext}による@file{po/Makefile.in.in}(ファイル名に@samp{.in}が2つあることに注意してください)と、数個の予備ファイルしか含まれていません。すでに@file{po/}というディレクトリーがあるときは、そのディレクトリーのファイルは保持され、@file{Makefile.in.in}と予備ファイルだけが上書きされます。"
+msgstr "作成された@file{po/}ディレクトリーには、最終的にはすべての翻訳用ファイルが保持されますが、初期状態ではGNU @code{gettext}による@file{po/Makefile.in.in}(ファイル名に@samp{.in}が2つあることに注意してください)と、いくつかの予備ファイルしか含まれていません。すでに@file{po/}というディレクトリーがあるときは、そのディレクトリーのファイルは保持され、@file{Makefile.in.in}と予備ファイルだけが上書きされます。"
 
 #. type: enumerate
 #: gettextize.texi.orig:131
@@ -382,7 +382,7 @@ msgid ""
 "Furthermore, @code{gettextize} will update all @file{Makefile.am} files in "
 "each affected directory, as well as the top level @file{configure.ac} or "
 "@file{configure.in} file."
-msgstr "それだけではなく@code{gettextize}は、影響を受ける各ディレクトリーの@file{Makefile.am}をすべて更新し、同様にトップレベルの@file{configure.ac}(または@file{configure.in})も更新します。"
+msgstr "それだけではなく、@code{gettextize}は、影響を受ける各ディレクトリーの@file{Makefile.am}をすべて更新し、同様にトップレベルの@file{configure.ac}(または@file{configure.in})も更新します。"
 
 #. type: Plain text
 #: gettextize.texi.orig:170
@@ -414,7 +414,7 @@ msgid ""
 "remaining work depends on whether the package uses GNU @code{automake} or "
 "not.  But in any case, the maintainer should still read the section "
 "@ref{Adjusting Files} after invoking @code{gettextize}."
-msgstr "@code{gettextize}がGNU @code{gettext}を使うパッケージのための調整すべてを処理できる訳ではないことを理解するのも重要です。残っている作業の量は、パッケージがGNU @code{automake}を使うか否かによります。それでも大抵の場合、メンテナーは@code{gettextize}を呼び出した後、@ref{Adjusting Files}を読む必要があるでしょう。"
+msgstr "@code{gettextize}が、GNU @code{gettext}を使うパッケージのための調整すべてを処理できる訳ではないことを理解するのことも重要です。残っている作業の量は、パッケージがGNU @code{automake}を使うか否かによります。それでも大抵の場合、メンテナーは@code{gettextize}を呼び出した後、@ref{Adjusting Files}を読む必要があるでしょう。"
 
 #. type: Plain text
 #: gettextize.texi.orig:188
@@ -433,4 +433,4 @@ msgid ""
 "and not be invoked by someone who doesn't assume the responsibilities of a "
 "package maintainer.  For the latter purpose, a separate tool is provided, "
 "see @ref{autopoint Invocation}."
-msgstr "@code{gettextize}はGNU build systemの一部ではないので自動的には呼び出されず、パッケージメンテナーとしての責任を持たない人も呼び出さないことを理解しておくのも重要です。後者の目的のためには個別にツールが準備されています。詳細は@ref{autopoint Invocation}を参照してください。"
+msgstr "@code{gettextize}は、GNU build systemの一部ではないので、自動的には呼び出されず、パッケージメンテナーとしての責任を持たない人も呼び出さないことを理解しておくのも重要です。後者の目的のためには個別にツールが準備されています。詳細は@ref{autopoint Invocation}を参照してください。"
