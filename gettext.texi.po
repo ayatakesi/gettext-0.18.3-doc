@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-30 01:58+0900\n"
-"PO-Revision-Date: 2016-08-13 07:32+0900\n"
+"PO-Revision-Date: 2016-08-13 21:37+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -13144,6 +13144,53 @@ msgid ""
 "             |                                          |\n"
 "             +------------------------------------------+\n"
 msgstr ""
+"        byte\n"
+"             +------------------------------------------+\n"
+"          0  | magic number = 0x950412de                |\n"
+"             |                                          |\n"
+"          4  | file format revision = 0                 |\n"
+"             |                                          |\n"
+"          8  | number of strings                        |  == N\n"
+"             |                                          |\n"
+"         12  | offset of table with original strings    |  == O\n"
+"             |                                          |\n"
+"         16  | offset of table with translation strings |  == T\n"
+"             |                                          |\n"
+"         20  | size of hashing table                    |  == S\n"
+"             |                                          |\n"
+"         24  | offset of hashing table                  |  == H\n"
+"             |                                          |\n"
+"             .                                          .\n"
+"             .    (possibly more entries later)         .\n"
+"             .                                          .\n"
+"             |                                          |\n"
+"          O  | length & offset 0th string  ----------------.\n"
+"      O + 8  | length & offset 1st string  ------------------.\n"
+"              ...                                    ...   | |\n"
+"O + ((N-1)*8)| length & offset (N-1)th string           |  | |\n"
+"             |                                          |  | |\n"
+"          T  | length & offset 0th translation  ---------------.\n"
+"      T + 8  | length & offset 1st translation  -----------------.\n"
+"              ...                                    ...   | | | |\n"
+"T + ((N-1)*8)| length & offset (N-1)th translation      |  | | | |\n"
+"             |                                          |  | | | |\n"
+"          H  | start hash table                         |  | | | |\n"
+"              ...                                    ...   | | | |\n"
+"  H + S * 4  | end hash table                           |  | | | |\n"
+"             |                                          |  | | | |\n"
+"             | NUL terminated 0th string  <----------------' | | |\n"
+"             |                                          |    | | |\n"
+"             | NUL terminated 1st string  <------------------' | |\n"
+"             |                                          |      | |\n"
+"              ...                                    ...       | |\n"
+"             |                                          |      | |\n"
+"             | NUL terminated 0th translation  <---------------' |\n"
+"             |                                          |        |\n"
+"             | NUL terminated 1st translation  <-----------------'\n"
+"             |                                          |\n"
+"              ...                                    ...\n"
+"             |                                          |\n"
+"             +------------------------------------------+\n"
 
 #. type: Plain text
 #: gettext.texi.orig:5484
@@ -16500,7 +16547,7 @@ msgstr "@file{$domain.$lang.po}を投稿したら、彼女は次のドメイン�
 #: gettext.texi.orig:7522
 #, no-wrap
 msgid "package maintainer's view of @code{gettext}"
-msgstr "パッケージのメンテナーの視点から見た@code{gettext}"
+msgstr "package maintainer's view of @code{gettext}"
 
 #. type: Plain text
 #: gettext.texi.orig:7528
@@ -16509,7 +16556,7 @@ msgid ""
 "ensuring that the package will install easily on many platforms, and that "
 "the magic we described earlier (@pxref{Users}) will work for installers and "
 "end users."
-msgstr "パッケージのメンテナーには多くの責任があります。そのうちの1つは、たくさんのプラットフォームでパッケージを簡単にインストールできるようにすることで、わたしたちが前に説明したマジック(@pxref{Users})は、インストーラーとエンドユーザーにたいして働きます。"
+msgstr "パッケージのメンテナーには多くの責任があります。そのうちの1つは、たくさんのプラットフォームでパッケージを簡単にインストールできるようにすることで、わたしたちが前に説明したマジック(@ref{Users}を参照してください)を、インストーラーとエンドユーザーにたいして働くようにすることです。"
 
 #. type: Plain text
 #: gettext.texi.orig:7538
@@ -16523,7 +16570,7 @@ msgid ""
 "good free packages as possible.  So, the maintainer's view presented here "
 "presumes that the package already has a @file{configure.ac} file and uses "
 "GNU Autoconf."
-msgstr "GNU @code{gettext}をディストリビューションに統合できるようにする方法はたくさんありますが、この章ではそれらを総括的にカバーすることはしません。かわりに GNU 標準、さらにはGnits標準にしたがった、多くのフリーソフトウェアディストリビューションで利用可能なアプローチの詳細について議論します。なぜなら GNU @code{gettext}はGNU プロジェクト全体のインターナショナリゼーションを助けるのを目的としているので、多くの有用でフリーなパッケージが対象となるからです。そのためこの章では、すでに@file{configure.ac}があり、GNU Autoconfを使うパッケージを対象とします。"
+msgstr "GNU @code{gettext}をディストリビューションに統合できるようにする方法はたくさんありますが、このチャプターではそれらを総括的にカバーすることはしません。かわりにGNU標準、さらにはGnits標準にしたがった、多くのフリーソフトウェアディストリビューションで利用可能なアプローチの詳細について議論します。なぜならGNU @code{gettext}は、GNUプロジェクト全体のインターナショナリゼーションを助けるのを目的としているので、多くの有用でフリーなパッケージが対象となるからです。そのためこのチャプターでは、すでに@file{configure.ac}があり、GNU Autoconfを使うパッケージを対象とします。"
 
 #. type: Plain text
 #: gettext.texi.orig:7544
@@ -16533,7 +16580,7 @@ msgid ""
 "packages might have to show imagination and initiative in organizing their "
 "distributions so @code{gettext} work for them in all situations.  There are "
 "surely many, out there."
-msgstr "それにもかかわらずGNU @code{gettext}は、GNU 標準やその類にしたがっていないフリーパッケージにたいしても有用です。そのようなパッケージのメンテナーは自分の想像力と独創力によりディストリビューションを組織化する必要がありますが、@code{gettext}はすべての状況で動作するでしょう(そしてそのようなパッケージはたくさん存在します)。"
+msgstr "それにもかかわらずGNU @code{gettext}は、GNU標準やその類にしたがっていないフリーパッケージにたいしても有用です。そのようなパッケージのメンテナーは自分の想像力と独創力によりディストリビューションを組織化する必要がありますが、@code{gettext}はすべての状況で動作するでしょう(そしてそのようなパッケージはたくさん存在します)。"
 
 #. type: Plain text
 #: gettext.texi.orig:7549
@@ -16541,7 +16588,7 @@ msgid ""
 "Even if @code{gettext} methods are now stabilizing, slight adjustments might "
 "be needed between successive @code{gettext} versions, so you should ideally "
 "revise this chapter in subsequent releases, looking for changes."
-msgstr "@code{gettext}のメソッドは現在安定しているとはいえ、@code{gettext}の各バージョン間でちょっとした調整は必要になるでしょう。そのため、この章の内容は新たなリリースによる変更にしたがって読み替える必要があります。"
+msgstr "@code{gettext}のメソッドは現在安定しているとはいえ、@code{gettext}の各バージョン間でちょっとした調整は必要になるでしょう。そのため、このチャプターの内容は、新たなリリースによる変更にしたがって読み替える必要があります。"
 
 #. type: Plain text
 #: gettext.texi.orig:7571
@@ -16554,7 +16601,7 @@ msgid ""
 "complement C libraries, and a subdirectory @file{src/} for holding the "
 "proper sources for the package.  These other distributions are said to be "
 "@dfn{non-flat}."
-msgstr "フリーなソフトウェアパッケージの中には、@code{tar}により配布され、解凍すると単層のディレクトリーに展開されるものがあります。このようなパッケージを@dfn{flat}なディストリビューションと呼びます。それとは別に、Texinfoマニュアルやman pageのためのサブディレクトリー@file{doc/}や、Cライブラリーを置き換えたり保管する関数を保持する@file{lib/}とか、パッケージのソースの入った@file{src/}などの階層をもつフリーなソフトウェアパッケージも存在します。このようなディストリビューションのことを、@dfn{non-flat}であるといいます。"
+msgstr "フリーなソフトウェアパッケージの中には、@code{tar}により配布され、解凍すると単層のディレクトリーに展開されるものがあります。このようなパッケージを@dfn{flat}なディストリビューションと呼びます。それとは別に、Texinfoマニュアルやman pageのためのサブディレクトリー@file{doc/}、Cライブラリーを置き換えたり保管する関数を保持する@file{lib/}、パッケージのソースの入った@file{src/}などの階層をもつ、フリーなソフトウェアパッケージも存在します。このようなディストリビューションのことを、@dfn{non-flat}であると呼びます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7580
@@ -16566,7 +16613,7 @@ msgid ""
 "consist of C sources, shell scripts, @code{sed} scripts and complicated "
 "Makefile rules, which don't fit well into an existing flat structure.  For "
 "these reasons, we recommend to use non-flat approach in this case as well."
-msgstr "flatなディストリビューションにたいして、わたしたちはあまり多くを語ることはできません。GNU @code{gettext}を新しいバージョンにすることにより、flatなディレクトリー構造は難しさが増大するという欠点があります。たくさんのPOファイルがある場合、この単層のディレクトリーの内容は汚くなってしまうでしょう。また C ソースに含まれる GNU @code{gettext}のlibintlのソース、シェルや@code{sed}のスクリプト、そして複雑なMakefileのルールは、flatな構造には適しません。これらの理由により、non-flatを使う方法を推奨します。"
+msgstr "flatなディストリビューションにたいして、わたしたちはあまり多くを語ることはできません。GNU @code{gettext}を新しいバージョンにすることにより、flatなディレクトリー構造は難しさが増大するという欠点があります。たくさんのPOファイルがある場合、この単層のディレクトリーの内容は汚くなってしまうでしょう。またCソースに含まれる GNU @code{gettext}のlibintlのソース、シェルや@code{sed}のスクリプト、そして複雑なMakefileのルールは、flatな構造には適しません。これらの理由により、non-flatを使う方法を推奨します。"
 
 #. type: Plain text
 #: gettext.texi.orig:7585
@@ -16575,25 +16622,25 @@ msgid ""
 "more experience with this approach, and this is what will be described in "
 "the remaining of this chapter.  Some maintainers might use this as an "
 "opportunity to unflatten their package structure."
-msgstr "GNU @code{gettext}自身もnon-flatな構造をもち、わたしたちはこの方法に精通していることも、わたしたちがこの章でそれを説明しようとしている理由なのかもしれません。これを機会にパッケージの構造をnon-flatにするメンテナーもいるかもしれません。"
+msgstr "GNU @code{gettext}自身もnon-flatな構造をもち、わたしたちはこの方法に精通していることも、わたしたちがこのチャプターでそれを説明しようとしている理由なのかもしれません。これを機会に、パッケージの構造をnon-flatにするメンテナーもいるかもしれません。"
 
 #. type: cindex
 #: gettext.texi.orig:7588
 #, no-wrap
 msgid "converting a package to use @code{gettext}"
-msgstr "@code{gettext}を使うためにパッケージを変換する"
+msgstr "converting a package to use @code{gettext}"
 
 #. type: cindex
 #: gettext.texi.orig:7589
 #, no-wrap
 msgid "migration from earlier versions of @code{gettext}"
-msgstr "古いバージョンの@code{gettext}からの移行"
+msgstr "migration from earlier versions of @code{gettext}"
 
 #. type: cindex
 #: gettext.texi.orig:7590
 #, no-wrap
 msgid "upgrading to new versions of @code{gettext}"
-msgstr "@code{gettext}を新しいバージョンにアップデートする"
+msgstr "upgrading to new versions of @code{gettext}"
 
 #. type: Plain text
 #: gettext.texi.orig:7596
@@ -16602,7 +16649,7 @@ msgid ""
 "of your package.  These works have some kind of generality that escape the "
 "point by point descriptions used in the remainder of this chapter.  So, we "
 "describe them here."
-msgstr "パッケージにたいして GNU @code{gettext}を使用するためには、準備が少し必要です。これらの作業は、要点の説明だけだと肝心な部分がわからなくなってしまうある種の一般性をもっているので、この章を読んでいて後から見返せるようにここで大まかに説明しておきましょう。"
+msgstr "パッケージにたいしてGNU @code{gettext}を使用するためには、準備が少し必要です。これらの作業は、要点の説明だけだと肝心な部分がわからなくなってしまうある種の一般性をもっているので、このチャプターを読んで後から見返せるように、ここで大まかに説明しておきましょう。"
 
 #. type: itemize
 #: gettext.texi.orig:7606
@@ -16613,7 +16660,7 @@ msgid ""
 "proceed to do this first.  If you get to install these things, beware that "
 "GNU @code{m4} must be fully installed before GNU Autoconf is even "
 "@emph{configured}."
-msgstr "@code{gettextize}を使う前に、最初に他のパッケージをインストールする必要があります。最新のバージョンの GNU @code{m4}、GNU Autoconf、GNU @code{gettext}がインストールされていることを確認してください。もしインストールされていない場合、それらを最初にインストールします。GNU Autoconf をインストールする前に(たとえ@emph{configured}済みだとしても)、GNU @code{m4}が完全にインストールされていなければならないことに注意してください。"
+msgstr "@code{gettextize}を使う前に、最初に他のパッケージをインストールする必要があります。最新のバージョンのGNU @code{m4}、GNU Autoconf、GNU @code{gettext}がインストールされていることを確認してください。もしインストールされていない場合、それらを最初にインストールします。GNU Autoconfをインストールする前に(たとえ@emph{configured}済みだとしても)、GNU @code{m4}が完全にインストールされていなければならないことに注意してください。"
 
 #. type: itemize
 #: gettext.texi.orig:7612
@@ -16623,7 +16670,7 @@ msgid ""
 "@file{Makefile}s in the @file{intl/} and @file{po/} therefore know about all "
 "the goals necessary for using @code{automake} and @file{libintl} in one "
 "project."
-msgstr "パッケージ@code{automake}は、メンテナーのタスクを楽にするためにデザイン・実装されています。現在の GNU @code{gettext}もこれらのツールを使用しているので、@file{intl/}や@file{po/}にある@file{Makefile}は、1つのプロジェクトで@code{automake}と@file{libintl}を使う場合に必要なものです。"
+msgstr "パッケージ@code{automake}は、メンテナーのタスクを楽にするためにデザイン・実装されています。現在のGNU @code{gettext}もこれらのツールを使用しているので、@file{intl/}や@file{po/}にある@file{Makefile}は、1つのプロジェクトで@code{automake}と@file{libintl}を使う場合に必要なものです。"
 
 #. type: itemize
 #: gettext.texi.orig:7621
@@ -16636,7 +16683,7 @@ msgid ""
 "within your own package: GNU @code{gettext} shall then be installed at the "
 "user site if the end users want to see the translation of shell script "
 "messages."
-msgstr "これら4つのパッケージはメンテナーにとって必要なだけです。パッケージを正常にインストールして翻訳されたメッセージを正しく表示するだけなら、インストールする人やパッケージのエンドユーザーには、GNU @code{m4}、GNU Autoconf、GNU @code{gettext}、GNU @code{automake}は必要ありません。しかしパッケージにインターナショナライズされたシェルを含めて配布する場合、これは完全に真実そはいえなくなります: ユーザーがシェルスクリプトの翻訳されたメッセージを見たいときは、GNU @code{gettext}のインストールが必要になります。"
+msgstr "これら4つのパッケージはメンテナーにとって必要なだけです。パッケージを正常にインストールして翻訳されたメッセージを正しく表示するだけなら、インストールする人やパッケージのエンドユーザーには、GNU @code{m4}、GNU Autoconf、GNU @code{gettext}、GNU @code{automake}は必要ありません。しかしパッケージにインターナショナライズされたシェルを含めて配布する場合、これは完全に真実とはいえなくなります: ユーザーがシェルスクリプトの翻訳されたメッセージを見たいときは、GNU @code{gettext}のインストールが必要になります。"
 
 #. type: itemize
 #: gettext.texi.orig:7628
@@ -16645,14 +16692,14 @@ msgid ""
 "@file{configure.in} file.  If it does not, you have to learn how.  The "
 "Autoconf documentation is quite well written, it is a good idea that you "
 "print it and get familiar with it."
-msgstr "パッケージは@file{configure.ac}か@file{configure.in}をもち、Autoconfを使用する必要がありますもしそうなっていない場合は、どのようにするのか学ぶ必要があります。Autoconfのドキュメントはとてもよく書けているので、印刷して読んでみるのもよい考えでしょう。"
+msgstr "パッケージは@file{configure.ac}か@file{configure.in}をもち、Autoconfを使用する必要があります。もしそうなっていない場合は、どのようにするか学ぶ必要があります。Autoconfのドキュメントはとてもよく書けているので、印刷して読んでみるのもよい考えでしょう。"
 
 #. type: itemize
 #: gettext.texi.orig:7632
 msgid ""
 "Your C sources should have already been modified according to instructions "
 "given earlier in this manual.  @xref{Sources}."
-msgstr "このマニュアルで前述したようにCソースを変更する必要があります。詳細は@xref{Sources}."
+msgstr "このマニュアルで前述したようにCソースを変更する必要があります。詳細は@ref{Sources}を参照してください。"
 
 #. type: itemize
 #: gettext.texi.orig:7641
@@ -16664,7 +16711,7 @@ msgid ""
 "easiest for the maintainer is to start with absolutely no PO files, and wait "
 "until various translator teams get interested in your package, and submit PO "
 "files."
-msgstr "@file{po/}ディレクトリーには、翻訳チームから提出された@file{@var{ll}.po}という名前のPOファイルが、すべて保存されている必要があります。パッケージがインターナショナライズされて、それが利用可能になる前に翻訳作業を完了するのは、普通は簡単ではありません!メンテナーにとって翻訳作業のサイクルを開始するのに簡単なのは、最初はPOファイルを何も用意せず、パッケージに興味をもつ翻訳チームが現れてPOファイルが投稿されるのを待つことです。"
+msgstr "@file{po/}ディレクトリーには、翻訳チームから提出された@file{@var{ll}.po}という名前のPOファイルが、すべて保存されている必要があります。パッケージがインターナショナライズされて、それが利用可能になる前に翻訳作業を完了するのは、普通は簡単ではありません! メンテナーにとって翻訳作業のサイクルを開始するのに簡単なのは、最初はPOファイルを何も用意せず、パッケージに興味をもつ翻訳チームが現れてPOファイルが投稿されるのを待つことです。"
 
 #. type: Plain text
 #: gettext.texi.orig:7652
@@ -16703,7 +16750,7 @@ msgid ""
 "their problems themselves, if any.  If you, as a maintainer, ever think "
 "there is a real problem with a team, please never try to @emph{solve} a "
 "team's problem on your own."
-msgstr "メンテナーが翻訳チームを介さずに自分で PO ファイルに関するバグ報告を受けるのは@emph{決して行うべきではない}ことです。ある問題について翻訳者が彼女のチームと一致した見解をもつのが困難なとき、彼女が直接メンテナーと交渉するようなオプションが存在するべきではありません。どんな問題にせよ、彼らは問題をチーム自身で解決するべきです。メンテナーとしては、もしチームに本当に問題があると思えるときでも、あなた自身がチームの問題を解決しようとはしないでください。"
+msgstr "メンテナーが翻訳チームを介さずに、自分でPOファイルに関するバグ報告を受けるのは@emph{決して行うべきではない}ことです。ある問題について翻訳者が彼女のチームと一致した見解をもつのが困難なとき、彼女が直接メンテナーと交渉するようなオプションが存在するべきではありません。どんな問題にせよ、彼らは問題をチーム自身で解決するべきです。メンテナーとしては、もしチームに本当に問題があると思えるときでも、あなた自身がチームの問題を解決しようとはしないでください。"
 
 #. type: include
 #: gettext.texi.orig:7674
@@ -16715,7 +16762,7 @@ msgstr "gettextize.texi"
 #: gettext.texi.orig:7678
 #, no-wrap
 msgid "@code{gettext} files"
-msgstr "@code{gettext}のファイル"
+msgstr "@code{gettext} files"
 
 #. type: Plain text
 #: gettext.texi.orig:7686
@@ -16725,7 +16772,7 @@ msgid ""
 "@code{gettext}.  If you are closely following GNU standards for Makefile "
 "engineering and auto-configuration, the adaptations should be easier to "
 "achieve.  Here is a point by point description of the changes needed in each."
-msgstr "@code{gettextize}により自動的に追加されたファイルをのぞき、GNU @code{gettext}と正常に対話するために修正が必要なファイルがたくさんあります。あなたがMakefileの設計とauto-configuration自動設定のためのGNU標準に忠実にしたがっているなら、調整は容易でしょう。ここではそれぞれについて必要な変更を順に説明します。"
+msgstr "@code{gettextize}により自動的に追加されたファイルをのぞいて、GNU @code{gettext}と正常に対話するために修正が必要なファイルがたくさんあります。あなたがMakefileの設計とauto-configuration自動設定のためのGNU標準に忠実にしたがっているなら、調整は容易でしょう。ここではそれぞれについて必要な変更を順に説明します。"
 
 #. type: Plain text
 #: gettext.texi.orig:7695
@@ -16737,13 +16784,13 @@ msgid ""
 "or @uref{http://www.gnu.franken.de/ke/hello/})  You may indeed refer to the "
 "source code of the GNU @code{gettext} and GNU @code{hello} packages, as they "
 "are intended to be good examples for using GNU gettext functionality."
-msgstr "以下では変更が必要なファイルと、必要な変更を説明していきます。多くの例は GNU @code{gettext} @value{VERSION} ディストリビューション自体か、GNU @code{hello}ディストリビューション(@uref{http://www.franken.de/users/gnu/ke/hello}または@uref{http://www.gnu.franken.de/ke/hello/}) から引用しました。GNU @code{gettext}のソースコードと GNU @code{hello}を参照してみれば、これらのパッケージが GNU @code{gettext}の機能を使うよい例だということが納得できるでしょう。"
+msgstr "以下では変更が必要なファイルと、必要な変更を説明していきます。多くの例はGNU @code{gettext} @value{VERSION} のディストリビューション自体か、GNU @code{hello}ディストリビューション(@uref{http://www.franken.de/users/gnu/ke/hello}または@uref{http://www.gnu.franken.de/ke/hello/})から引用しました。GNU @code{gettext}のソースコードとGNU @code{hello}を参照してみれば、これらのパッケージがGNU @code{gettext}の機能を使うよい例だということが納得できるでしょう。"
 
 #. type: cindex
 #: gettext.texi.orig:7714
 #, no-wrap
 msgid "@file{POTFILES.in} file"
-msgstr "@file{POTFILES.in} ファイル"
+msgstr "@file{POTFILES.in} file"
 
 #. type: Plain text
 #: gettext.texi.orig:7720
@@ -16802,7 +16849,7 @@ msgid ""
 "those source files containing strings marked for translation (@pxref{Mark "
 "Keywords}), in a notation relative to the top level of your whole "
 "distribution, rather than the location of the @file{POTFILES.in} file itself."
-msgstr "#マークのコメントと空行は無視されます。それ以外の行は翻訳用にマークされた文字列を含むソースファイルをリストした行(@pxref{Mark Keywords})で、相対パスは@file{POTFILES.in}のあるディレクトリーではなく、ディストリビューション全体のトップレベルからの相対パスです。"
+msgstr "#マークのコメントと空行は無視されます。それ以外の行は翻訳用にマークされた文字列を含むソースファイルをリストした行(@ref{Mark Keywords}を参照してください)で、相対パスは@file{POTFILES.in}のあるディレクトリーではなく、ディストリビューション全体のトップレベルからの相対パスです。"
 
 #. type: Plain text
 #: gettext.texi.orig:7750
@@ -16812,13 +16859,13 @@ msgid ""
 "recommended to list in @file{po/POTFILES.in} the real source file (ending in "
 "@file{.l} in the case of @code{flex}, or in @file{.y} in the case of "
 "@code{bison}), not the generated C file."
-msgstr "@code{flex}や@code{bison}のような、それ自身では翻訳可能な文字列を提供しないようなツールによりCファイルが自動生成されるときは、@file{po/POTFILES.in}には自動生成されたCファイルではなく本当のソースファイル(@code{flex}のときは@file{.l}で終わるファイル、@code{bison}のときは@file{.y}というファイル)を記述することをお勧めします。"
+msgstr "@code{flex}や@code{bison}のような、それ自身では翻訳可能な文字列を提供しないようなツールによりCファイルが自動生成されるときは、@file{po/POTFILES.in}には自動生成されたCファイルではなく、本当のソースファイル(@code{flex}のときは@file{.l}で終わるファイル、@code{bison}のときは@file{.y}というファイル)を記述することをお勧めします。"
 
 #. type: cindex
 #: gettext.texi.orig:7753
 #, no-wrap
 msgid "@file{LINGUAS} file"
-msgstr "@file{LINGUAS} ファイル"
+msgstr "@file{LINGUAS} file"
 
 #. type: Plain text
 #: gettext.texi.orig:7759
@@ -16847,7 +16894,7 @@ msgid ""
 "further restrict, at installation time, the set of installed languages, this "
 "should not be done by modifying the @file{LINGUAS} file, but rather by using "
 "the @code{LINGUAS} environment variable (@pxref{Installers})."
-msgstr "この例はGermanとFrenchのPOファイルが利用可能で、パッケージでは現在それらの言語がサポートされていることを意味しています。インストール時に、インストールされる言語にさらに制限をかけたいときは、ファイル@file{LINGUAS}を変更するのではなく、環境変数@code{LINGUAS}を使用します(@pxref{Installers})。"
+msgstr "この例はGermanとFrenchのPOファイルが利用可能で、パッケージでは現在それらの言語がサポートされていることを意味しています。インストール時に、インストールされる言語にさらに制限をかけたいときは、ファイル@file{LINGUAS}を変更するのではなく、環境変数@code{LINGUAS}を使用します(@ref{Installers}を参照してください)。"
 
 #. type: Plain text
 #: gettext.texi.orig:7783
@@ -16860,7 +16907,7 @@ msgid ""
 "additionally outputs quoted pieces of text in a bold font, when used in a "
 "terminal emulator which supports the VT100 escape sequences (such as "
 "@code{xterm} or the Linux console, but not Emacs in @kbd{M-x shell} mode)."
-msgstr "@code{LINGUAS}ファイルには@samp{en@@quot}と@samp{en@@boldquot}という\"言語\"を追加することをお勧めします。@code{en@@quot}はEnglishのメッセージカタログ(@code{en})の亜種で、非対称な体裁の@samp{`}と@samp{'}によるASCIIの置き換えではなく、本当のクォーテーションマークを使います。@code{en@@boldquot}は@code{en@@quot}の亜種で、クォーテーション文字を太字のフォントで出力します。これはVT100のエスケープシーケンスをサポートする端末エミュレーター(@code{xterm}やLinuxのconsole。Emacsの@kbd{M-x shell}モードは該当しません)で使用されます。"
+msgstr "@code{LINGUAS}ファイルには、@samp{en@@quot}と@samp{en@@boldquot}という\"言語\"を追加することをお勧めします。@code{en@@quot}はEnglishのメッセージカタログ(@code{en})の亜種で、非対称な体裁の@samp{`}と@samp{'}によるASCIIの置き換えではなく、本当のクォーテーションマークを使います。@code{en@@boldquot}は@code{en@@quot}の亜種で、クォーテーション文字を太字のフォントで出力します。これはVT100のエスケープシーケンスをサポートする端末エミュレーター(@code{xterm}やLinuxのconsole。Emacsの@kbd{M-x shell}モードは該当しません)で使用されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7790
@@ -16871,13 +16918,13 @@ msgid ""
 "@file{en@@quot.header}, @file{en@@boldquot.header}, @file{insert-header.sin} "
 "in the @file{po/} directory.  You can copy them from GNU gettext's "
 "@file{po/} directory; they are also installed by running @code{gettextize}."
-msgstr "これらの追加のメッセージカタログ@samp{en@@quot}、@samp{en@@boldquot}は翻訳者が作成したのではなく、自動的に作成されたものです。これらのファイルをサポートするためには@file{po/}ディレクトリーに、@file{Rules-quot}、@file{quot.sed}、@file{boldquot.sed}、@file{en@@quot.header}、@file{en@@boldquot.header}、@file{insert-header.sin}というファイルが必要です。これらのファイルは@code{gettextize}を実行することによりインストールされます。"
+msgstr "これらの追加のメッセージカタログ@samp{en@@quot}および@samp{en@@boldquot}は、翻訳者が作成したのではなく、自動的に作成されたものです。これらのファイルをサポートするためには@file{po/}ディレクトリーに、@file{Rules-quot}、@file{quot.sed}、@file{boldquot.sed}、@file{en@@quot.header}、@file{en@@boldquot.header}、@file{insert-header.sin}というファイルが必要です。これらのファイルは、@code{gettextize}を実行することによりインストールされます。"
 
 #. type: cindex
 #: gettext.texi.orig:7793
 #, no-wrap
 msgid "@file{Makevars} file"
-msgstr "@file{Makevars} ファイル"
+msgstr "@file{Makevars} file"
 
 #. type: Plain text
 #: gettext.texi.orig:7800
@@ -16887,7 +16934,7 @@ msgid ""
 "inserted into the @file{po/Makefile} when the latter is created.  The "
 "variables thus take effect when the POT file is created or updated, and when "
 "the message catalogs get installed."
-msgstr "ディレクトリー@file{po/}には@file{Makevars}というファイルもあります。このファイルにはプロジェクトで固有の変数が含まれています。@file{po/Makevars}が作成されるときに@file{po/Makefile}が挿入されます。そのため、変数はPOTファイルが作成・更新されたときや、メッセージカタログがインストールされたときに効果を及ぼします。"
+msgstr "ディレクトリー@file{po/}には、@file{Makevars}というファイルもあります。このファイルには、プロジェクトで固有の変数が含まれています。@file{po/Makevars}が作成されるときに、@file{po/Makefile}が挿入されます。そのため、変数はPOTファイルが作成・更新されたときや、メッセージカタログがインストールされたときに効果を及ぼします。"
 
 #. type: Plain text
 #: gettext.texi.orig:7806
@@ -16904,13 +16951,13 @@ msgid ""
 "As an alternative to the @code{XGETTEXT_OPTIONS} variables, it is also "
 "possible to specify @code{xgettext} options through the "
 "@code{AM_XGETTEXT_OPTION} autoconf macro.  See @ref{AM_XGETTEXT_OPTION}."
-msgstr "@code{XGETTEXT_OPTIONS}変数のかわりに、autoconfマクロの@code{AM_XGETTEXT_OPTION}により@code{xgettext}のオプションを指定することもできます。詳細は@ref{AM_XGETTEXT_OPTION}を参照してください。"
+msgstr "@code{XGETTEXT_OPTIONS}変数のかわりに、autoconfマクロの@code{AM_XGETTEXT_OPTION}により、@code{xgettext}のオプションを指定することもできます。詳細は@ref{AM_XGETTEXT_OPTION}を参照してください。"
 
 #. type: cindex
 #: gettext.texi.orig:7813
 #, no-wrap
 msgid "@file{Makefile.in.in} extensions"
-msgstr ""
+msgstr "@file{Makefile.in.in} extensions"
 
 #. type: Plain text
 #: gettext.texi.orig:7819
@@ -16919,7 +16966,7 @@ msgid ""
 "the @file{po/Makefile} when it is created.  They present an opportunity to "
 "add rules for special PO files to the Makefile, without needing to mess with "
 "@file{po/Makefile.in.in}."
-msgstr ""
+msgstr "@file{po/}ディレクトリーの、@file{Rules-*}と呼ばれるファイルは、@file{po/Makefile}が作成されたときに追加されたファイルです。これらのファイルは、@file{po/Makefile.in.in}に干渉することなく、特定のPOファイルのMakefileにルールを追加する機会を与えてくれます。"
 
 #. type: Plain text
 #: gettext.texi.orig:7835
@@ -16936,7 +16983,7 @@ msgid ""
 "quoted text will be shown in a bold font on terminals and consoles.  This "
 "catalog is useful only for command-line programs, not GUI programs.  To "
 "enable it, similarly add @code{en@@boldquot} to the @file{po/LINGUAS} file."
-msgstr ""
+msgstr "GNU gettextには、カタログ@file{en@@quot.po}および@file{en@@boldquot.po}をビルドするルールを含む、@file{Rules-quot}ファイルが含まれます。@file{en@@quot.po}の効果は、環境変数@code{LANGUAGE}に@samp{en@@quot}をセットすると、クォーテーションを示す代替のASCII grave accentとASCII apostropheのかわりに、対称性をもつUnicodeの正しいクォーテーションマークが表示されることです。このカタログを有効にするには、単に@code{en@@quot}を@file{po/LINGUAS}に追加します。@file{en@@boldquot.po}の効果は、@code{LANGUAGE}に@samp{en@@boldquot}をセットすると、正しいクォーテーションマークが得られるだけでなく、ターミナルやコンソールで表示されるクォーテーションマークの文字に、太字フォントが使用されることです。これはGUIプログラムではなく、コマンドラインのプログラムにとってだけ便利なカタログです。@file{po/LINGUAS}ファイルに@code{en@@boldquot}を追加するだけで、このカタログを利用できます。\n"
 
 #. type: Plain text
 #: gettext.texi.orig:7840
@@ -16945,31 +16992,31 @@ msgid ""
 "@file{sr@@latin} locale -- Serbian written with the Latin alphabet -- from "
 "those for the @file{sr} locale -- Serbian written with Cyrillic letters.  "
 "See @ref{msgfilter Invocation}."
-msgstr ""
+msgstr "同様にして、@file{sr} locale -- Cyrillic文字で記述されたSerbian -- から、@file{sr@@latin} locale -- Latinアルファベットで記述されたSerbian -- のためのメッセージカタログを構築するルールを作成することができます。@ref{msgfilter Invocation}を参照してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:7846
 msgid ""
 "@file{configure.ac} or @file{configure.in} - this is the source from which "
 "@code{autoconf} generates the @file{configure} script."
-msgstr ""
+msgstr "@file{configure.ac}または@file{configure.in} -- これは@code{autoconf}が@file{configure}スクリプトを生成するときのソースになるファイルです。"
 
 #. type: item
 #: gettext.texi.orig:7848
 #, no-wrap
 msgid "Declare the package and version."
-msgstr ""
+msgstr "パッケージとバージョンを宣言します。"
 
 #. type: cindex
 #: gettext.texi.orig:7849
 #, no-wrap
 msgid "package and version declaration in @file{configure.ac}"
-msgstr ""
+msgstr "package and version declaration in @file{configure.ac}"
 
 #. type: enumerate
 #: gettext.texi.orig:7852
 msgid "This is done by a set of lines like these:"
-msgstr ""
+msgstr "これは以下のように宣言します:"
 
 #. type: example
 #: gettext.texi.orig:7860
@@ -16982,17 +17029,23 @@ msgid ""
 "AC_SUBST(PACKAGE)\n"
 "AC_SUBST(VERSION)\n"
 msgstr ""
+"PACKAGE=gettext\n"
+"VERSION=@value{VERSION}\n"
+"AC_DEFINE_UNQUOTED(PACKAGE, \"$PACKAGE\")\n"
+"AC_DEFINE_UNQUOTED(VERSION, \"$VERSION\")\n"
+"AC_SUBST(PACKAGE)\n"
+"AC_SUBST(VERSION)\n"
 
 #. type: enumerate
 #: gettext.texi.orig:7864
 msgid "or, if you are using GNU @code{automake}, by a line like this:"
-msgstr ""
+msgstr "GNU @code{automake}を使っている場合は、以下のようになるでしょう:"
 
 #. type: example
 #: gettext.texi.orig:7867
 #, no-wrap
 msgid "AM_INIT_AUTOMAKE(gettext, @value{VERSION})\n"
-msgstr ""
+msgstr "AM_INIT_AUTOMAKE(gettext, @value{VERSION})\n"
 
 #. type: enumerate
 #: gettext.texi.orig:7874
@@ -17001,59 +17054,59 @@ msgid ""
 "@samp{@value{VERSION}} by its version numbers, exactly as they should appear "
 "in the packaged @code{tar} file name of your distribution (@file{gettext-"
 "@value{VERSION}.tar.gz}, here)."
-msgstr ""
+msgstr "もちろん、パッケージ名の@samp{gettext}と、バージョン番号の@samp{@value{VERSION}}は、あなたのパッケージの名前とバージョン番号で置き換えます。これらは配布物のパッケージされた@code{tar}のファイル名(この例では@file{gettext-@value{VERSION}.tar.gz})にそのまま使用されます。"
 
 #. type: item
 #: gettext.texi.orig:7875
 #, no-wrap
 msgid "Check for internationalization support."
-msgstr ""
+msgstr "インターナショナリゼーションにたいするサポートのチェック。"
 
 #. type: enumerate
 #: gettext.texi.orig:7879
 msgid ""
 "Here is the main @code{m4} macro for triggering internationalization "
 "support.  Just add this line to @file{configure.ac}:"
-msgstr ""
+msgstr "以下のマクロは、インターナショナリゼーションにたいするサポートを発動するためにメインとなる、@code{m4}のマクロです。この行を@file{configure.ac}に追加します:"
 
 #. type: example
 #: gettext.texi.orig:7882
 #, no-wrap
 msgid "AM_GNU_GETTEXT\n"
-msgstr ""
+msgstr "AM_GNU_GETTEXT\n"
 
 #. type: enumerate
 #: gettext.texi.orig:7887
 msgid ""
 "This call is purposely simple, even if it generates a lot of configure time "
 "checking and actions."
-msgstr ""
+msgstr "マクロはconfigure時に多くのチェックと処理を行いますが、呼び出しは故意に単純にしています。"
 
 #. type: enumerate
 #: gettext.texi.orig:7890
 msgid ""
 "If you have suppressed the @file{intl/} subdirectory by calling "
 "@code{gettextize} without @samp{--intl} option, this call should read"
-msgstr ""
+msgstr "@code{gettextize}を呼び出すとき、@samp{--intl}オプションを指定せず、@file{intl/}を作成しない場合は、以下の呼び出しが読み込まれます:"
 
 #. type: example
 #: gettext.texi.orig:7893
 #, no-wrap
 msgid "AM_GNU_GETTEXT([external])\n"
-msgstr ""
+msgstr "AM_GNU_GETTEXT([external])\n"
 
 #. type: item
 #: gettext.texi.orig:7895
 #, no-wrap
 msgid "Have output files created."
-msgstr ""
+msgstr "出力ファイルの作成。"
 
 #. type: enumerate
 #: gettext.texi.orig:7899
 msgid ""
 "The @code{AC_OUTPUT} directive, at the end of your @file{configure.ac} file, "
 "needs to be modified in two ways:"
-msgstr ""
+msgstr "AC_OUTPUT命令は@file{configure.ac}ファイルの最後にあり、以下の2つの方法で変更する必要があります:"
 
 #. type: example
 #: gettext.texi.orig:7903
@@ -17062,6 +17115,8 @@ msgid ""
 "AC_OUTPUT([@var{existing configuration files} intl/Makefile po/Makefile.in],\n"
 "[@var{existing additional actions}])\n"
 msgstr ""
+"AC_OUTPUT([@var{existing configuration files} intl/Makefile po/Makefile.in],\n"
+"[@var{existing additional actions}])\n"
 
 #. type: enumerate
 #: gettext.texi.orig:7909
@@ -17070,7 +17125,7 @@ msgid ""
 "substitution in the @file{intl/} and @file{po/} directories.  Note the "
 "@samp{.in} suffix used for @file{po/} only.  This is because the distributed "
 "file is really @file{po/Makefile.in.in}."
-msgstr ""
+msgstr "@code{AC_OUTPUT}の最初の引数の変更は、@file{intl/}および@file{po/}ディレクトリーを置き換えるための変更です。接尾辞@samp{.in}は、@file{po/}だけに使用されることに注意してください。これにより配布される本当のファイルは@file{po/Makefile.in.in}であることがわかります。"
 
 #. type: enumerate
 #: gettext.texi.orig:7913
@@ -17078,7 +17133,7 @@ msgid ""
 "If you have suppressed the @file{intl/} subdirectory by calling "
 "@code{gettextize} without @samp{--intl} option, then you don't need to add "
 "@code{intl/Makefile} to the @code{AC_OUTPUT} line."
-msgstr ""
+msgstr "@code{gettextize}を呼び出すとき、@samp{--intl}オプションを指定せず、@file{intl/}を作成しない場合は、@code{AC_OUTPUT}の行に@code{intl/Makefile}を追加する必要はありません。"
 
 #. type: Plain text
 #: gettext.texi.orig:7919
@@ -17086,7 +17141,7 @@ msgid ""
 "If, after doing the recommended modifications, a command like @samp{aclocal -"
 "I m4} or @samp{autoconf} or @samp{autoreconf} fails with a trace similar to "
 "this:"
-msgstr ""
+msgstr "必要な変更をした後は、@samp{aclocal -I m4}や@samp{autoconf}(または@samp{autoreconf})などのコマンドは、以下のようなトレース情報を出力して失敗するようになります:"
 
 #. type: smallexample
 #: gettext.texi.orig:7929
@@ -17101,6 +17156,14 @@ msgid ""
 "configure.ac:44: the top level\n"
 "configure.ac:44: warning: AC_RUN_IFELSE was called before AC_GNU_SOURCE\n"
 msgstr ""
+"configure.ac:44: warning: AC_COMPILE_IFELSE was called before AC_GNU_SOURCE\n"
+"../../lib/autoconf/specific.m4:335: AC_GNU_SOURCE is expanded from...\n"
+"m4/lock.m4:224: gl_LOCK is expanded from...\n"
+"m4/gettext.m4:571: gt_INTL_SUBDIR_CORE is expanded from...\n"
+"m4/gettext.m4:472: AM_INTL_SUBDIR is expanded from...\n"
+"m4/gettext.m4:347: AM_GNU_GETTEXT is expanded from...\n"
+"configure.ac:44: the top level\n"
+"configure.ac:44: warning: AC_RUN_IFELSE was called before AC_GNU_SOURCE\n"
 
 #. type: Plain text
 #: gettext.texi.orig:7937
@@ -17110,7 +17173,7 @@ msgid ""
 "@samp{AM_GNU_GETTEXT}, most likely very close to the @samp{AC_PROG_CC} "
 "invocation.  This is necessary because of ordering restrictions imposed by "
 "GNU autoconf."
-msgstr ""
+msgstr "@file{configure.ac}ファイルの@samp{AC_PROG_CC}より後、かつ@samp{AM_GNU_GETTEXT}より前の箇所(おそらく@samp{AC_PROG_CC}呼び出しのすぐ近く)に、@samp{AC_GNU_SOURCE}の明示的な呼び出しを追加する必要があります。この順番は、GNU autoconfによる制限により必要です。"
 
 #. type: Plain text
 #: gettext.texi.orig:7946
@@ -17120,7 +17183,7 @@ msgid ""
 "They are needed because the @file{intl/} directory has platform dependent "
 "support for determining the locale's character encoding and therefore needs "
 "to identify the platform."
-msgstr ""
+msgstr "サブディレクトリー@file{intl/}の作成を省略しない場合、配布物に@file{config.guess}および@file{config.sub}という、GNUのファイルを追加する必要があります。これらのファイルが必要なのは、@file{intl/}ディレクトリーがlocaleの文字エンコーディングを決定するという、プラットフォームに依存したサポートを行うため、プラットフォームを識別しなければならないからです。"
 
 #. type: Plain text
 #: gettext.texi.orig:7950
@@ -17128,7 +17191,7 @@ msgid ""
 "You can obtain the newest version of @file{config.guess} and @file{config."
 "sub} from the @samp{config} project at @file{http://savannah.gnu.org/}. The "
 "commands to fetch them are"
-msgstr ""
+msgstr "最新バージョンの@file{config.guess}および@file{config.sub}を、@file{http://savannah.gnu.org/}の@samp{config}プロジェクトから入手できます。以下は入手するためのコマンドです"
 
 #. type: smallexample
 #: gettext.texi.orig:7953
@@ -17137,13 +17200,15 @@ msgid ""
 "$ wget -O config.guess 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD'\n"
 "$ wget -O config.sub 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD'\n"
 msgstr ""
+"$ wget -O config.guess 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD'\n"
+"$ wget -O config.sub 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD'\n"
 
 #. type: Plain text
 #: gettext.texi.orig:7957
 msgid ""
 "Less recent versions are also contained in the GNU @code{automake} and GNU "
 "@code{libtool} packages."
-msgstr ""
+msgstr "バージョンは最新ではありませんが、GNU @code{automake}とGNU @code{libtool}パッケージにも含まれています。"
 
 #. type: Plain text
 #: gettext.texi.orig:7964
@@ -17154,19 +17219,19 @@ msgid ""
 "@file{ltconfig}, @file{ltmain.sh} or @file{missing}.  All you need to do, "
 "other than moving the files, is to add the following line to your "
 "@file{configure.ac}."
-msgstr ""
+msgstr "@file{config.guess}および@file{config.sub}は通常、配布物のトップレベルに配置されます。しかし、他の設定ファイル(@file{install-sh}、@file{ltconfig}、@file{ltmain.sh}、@file{missing}など)と同様に、サブディレクトリーに配置することもできます。ファイルを移動すること以外に必要なのは、@file{configure.ac}に以下の行を追加することです。"
 
 #. type: example
 #: gettext.texi.orig:7967
 #, no-wrap
 msgid "AC_CONFIG_AUX_DIR([@var{subdir}])\n"
-msgstr ""
+msgstr "AC_CONFIG_AUX_DIR([@var{subdir}])\n"
 
 #. type: cindex
 #: gettext.texi.orig:7971
 #, no-wrap
 msgid "@file{mkinstalldirs} file"
-msgstr ""
+msgstr "@file{mkinstalldirs} file"
 
 #. type: Plain text
 #: gettext.texi.orig:7977
@@ -17175,13 +17240,13 @@ msgid ""
 "@file{mkinstalldirs} script to your distribution.  This is not needed any "
 "more.  You can remove it if you not also using an automake version older "
 "than automake 1.9."
-msgstr ""
+msgstr "初期のバージョンのGNU gettextでは、配布物にGNU @file{mkinstalldirs}スクリプトを追加する必要がありました。これは今では必要ありません。使用しているautomakeが、automake 1.9以降であれば削除することができます。"
 
 #. type: cindex
 #: gettext.texi.orig:7980
 #, no-wrap
 msgid "@file{aclocal.m4} file"
-msgstr ""
+msgstr "@file{aclocal.m4} file"
 
 #. type: Plain text
 #: gettext.texi.orig:7997
@@ -17200,7 +17265,7 @@ msgid ""
 "have suppressed the @file{intl/} directory, only @file{gettext.m4}, "
 "@file{iconv.m4}, @file{lib-ld.m4}, @file{lib-link.m4}, @file{lib-prefix.m4}, "
 "@file{nls.m4}, @file{po.m4}, @file{progtest.m4} need to be concatenated."
-msgstr ""
+msgstr "配布物に@file{aclocal.m4}ファイルがない場合、1番単純なのは、GNU @code{gettext}のサブディレクトリー@file{m4/}の@file{codeset.m4}、@file{fcntl-o.m4}、@file{gettext.m4}、@file{glibc2.m4}、@file{glibc21.m4}、@file{iconv.m4}、@file{intdiv0.m4}、@file{intl.m4}、@file{intldir.m4}、@file{intlmacosx.m4}、@file{intmax.m4}、@file{inttypes_h.m4}、@file{inttypes-pri.m4}、@file{lcmessage.m4}、@file{lib-ld.m4}、@file{lib-link.m4}、@file{lib-prefix.m4}、@file{lock.m4}、@file{longlong.m4}、@file{nls.m4}、@file{po.m4}、@file{printf-posix.m4}、@file{progtest.m4}、@file{size_max.m4}、@file{stdint_h.m4}、@file{threadlib.m4}、@file{uintmax_t.m4}、@file{visibility.m4}、@file{wchar_t.m4}、@file{wint_t.m4}、@file{xsize.m4}を1つのファイルに結合する方法です。@file{intl/}ディレクトリーを作成しなかった場合、結合する必要があるのは@file{gettext.m4}、@file{iconv.m4}、@file{lib-ld.m4}、@file{lib-link.m4}、@file{lib-prefix.m4}、@file{nls.m4}、@file{po.m4}、@file{progtest.m4}だけです。"
 
 #. type: Plain text
 #: gettext.texi.orig:8001
@@ -17208,7 +17273,7 @@ msgid ""
 "If you are not using GNU @code{automake} 1.8 or newer, you will need to add "
 "a file @file{mkdirp.m4} from a newer automake distribution to the list of "
 "files above."
-msgstr ""
+msgstr "GNU @code{automake} 1.8以降を使っていない場合は、もっと新しいautomakeの配布物から、上記のファイルに@file{mkdirp.m4}ファイルを追加する必要があります。"
 
 #. type: Plain text
 #: gettext.texi.orig:8010
@@ -17220,38 +17285,38 @@ msgid ""
 "usually change a little from one release of GNU @code{gettext} to the next.  "
 "Their contents may vary as we get more experience with strange systems out "
 "there."
-msgstr ""
+msgstr "すでに@file{aclocal.m4}ファイルがある場合は、前述のマクロファイルを既存の@file{aclocal.m4}にマージする必要があります。以前にリリースされたGNU @code{gettext}からアップグレードしたようなときは、ほとんどの場合マクロ(@code{AM_GNU_GETTEXT}、... )を@emph{置き換える}必要があることに注意してください。なぜならそれらのマクロは、GNU @code{gettext}がリリースされるときは通常、少し変更されるからです。これらの内容は、わたしたちが \"奇妙\" なシステムに出会う度に増えていくかもしれません。"
 
 #. type: Plain text
 #: gettext.texi.orig:8013
 msgid ""
 "If you are using GNU @code{automake} 1.5 or newer, it is enough to put these "
 "macro files into a subdirectory named @file{m4/} and add the line"
-msgstr ""
+msgstr "GNU @code{automake} 1.5以降を使用している場合には、マクロファイルを@file{m4/}というサブディレクトリーに配置して、以下の行を追加すれば充分です。"
 
 #. type: example
 #: gettext.texi.orig:8016
 #, no-wrap
 msgid "ACLOCAL_AMFLAGS = -I m4\n"
-msgstr ""
+msgstr "ACLOCAL_AMFLAGS = -I m4\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8020
 msgid "to your top level @file{Makefile.am}."
-msgstr ""
+msgstr "上記のような行を、トップレベルの@file{Makefile.am}に追加してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:8023
 msgid ""
 "If you are using GNU @code{automake} 1.10 or newer, it is even easier: Add "
 "the line"
-msgstr ""
+msgstr "GNU @code{automake} 1.10以降を使用している場合は、さらに簡単になります。以下の行を追加してください"
 
 #. type: example
 #: gettext.texi.orig:8026
 #, no-wrap
 msgid "ACLOCAL_AMFLAGS = --install -I m4\n"
-msgstr ""
+msgstr "ACLOCAL_AMFLAGS = --install -I m4\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8032
@@ -17259,7 +17324,7 @@ msgid ""
 "to your top level @file{Makefile.am}, and run @samp{aclocal --install -I "
 "m4}.  This will copy the needed files to the @file{m4/} subdirectory "
 "automatically, before updating @file{aclocal.m4}."
-msgstr ""
+msgstr "上記のような行を、トップレベルの@file{Makefile.am}に追加して、@samp{aclocal --install -I m4}を実行します。これは@file{aclocal.m4}を更新する前に、必要なファイルを自動的に@file{m4/}サブディレクトリーに追加します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8038
@@ -17268,13 +17333,13 @@ msgid ""
 "related informations.  Hopefully, once stabilized, these macros might be "
 "integrated in the standard Autoconf set, because this piece of @code{m4} "
 "code will be the same for all projects using GNU @code{gettext}."
-msgstr ""
+msgstr "これらのマクロはインターナショナリゼーションのサポート機能と関連情報をチェックします。1度うまく安定させられれば、多分これらのマクロを、標準のAutoconfに統合できるでしょう。なぜなら、これらの断片的な@code{m4}コードは、GNU @code{gettext}を使うプロジェクトでは同一だからです。"
 
 #. type: cindex
 #: gettext.texi.orig:8041
 #, no-wrap
 msgid "@file{acconfig.h} file"
-msgstr ""
+msgstr "@file{acconfig.h} file"
 
 #. type: Plain text
 #: gettext.texi.orig:8049
@@ -17285,13 +17350,13 @@ msgid ""
 "h} file.  This is not needed any more; you can remove them from your "
 "@file{acconfig.h} file unless your package uses them independently from the "
 "@file{intl/} directory."
-msgstr ""
+msgstr "初期のバージョンのGNU @code{gettext}では、@file{acconfig.h}ファイル内で@code{ENABLE_NLS}、@code{HAVE_GETTEXT} and @code{HAVE_LC_MESSAGES}、@code{HAVE_STPCPY}、@code{PACKAGE} and @code{VERSION}を定義することが要求されました。これは今では必要ないので、パッケージが@file{intl/}ディレクトリーから独自に使用していなければ、削除することができます。"
 
 #. type: cindex
 #: gettext.texi.orig:8052
 #, no-wrap
 msgid "@file{config.h.in} file"
-msgstr ""
+msgstr "@file{config.h.in} file"
 
 #. type: Plain text
 #: gettext.texi.orig:8057
@@ -17299,7 +17364,7 @@ msgid ""
 "The include file template that holds the C macros to be defined by "
 "@code{configure} is usually called @file{config.h.in} and may be maintained "
 "either manually or automatically."
-msgstr ""
+msgstr "@code{configure}により定義されるCマクロを保持するインクルードファイルのテンプレートを、通常は@file{config.h.in}と呼び、手動または自動で保守されるかもしれません。"
 
 #. type: Plain text
 #: gettext.texi.orig:8063
@@ -17309,7 +17374,7 @@ msgid ""
 "have suppressed the @file{intl/} directory by calling @code{gettextize} "
 "without @samp{--intl} option, then you can choose the name of this file and "
 "its location freely."
-msgstr ""
+msgstr "@code{gettextize}が@file{intl/}ディレクトリーを作成している場合、ファイル名は@file{config.h.in}で、トップレベルになければなりません。@code{gettextize}の@samp{--intl}オプションを指定しないで、@file{intl/}ディレクトリーを作成しなかったときは、ファイル名と場所は自由に選ぶことができます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8067
@@ -17317,7 +17382,7 @@ msgid ""
 "If it is maintained automatically, by use of the @samp{autoheader} program, "
 "you need to do nothing about it.  This is the case in particular if you are "
 "using GNU @code{automake}."
-msgstr ""
+msgstr "プログラム@samp{autoheader}を使って自動的に保守されている場合、なにも行う必要はありません。これは特にGNU @code{automake}を使っているケースです。"
 
 #. type: Plain text
 #: gettext.texi.orig:8073
@@ -17327,7 +17392,7 @@ msgid ""
 "list of C macros to be added for the sake of the @file{intl/} directory is "
 "just too long to be maintained manually; it also changes between different "
 "versions of GNU @code{gettext}."
-msgstr ""
+msgstr "手動で保守していて@code{gettextize}が@file{intl/}ディレクトリーを作成している場合は、@samp{autoheader}を使うように変更するべきです。@file{intl/}ディレクトリーのために追加するCマクロのリストは、手動で保守するには長すぎます。そして、このリストはGNU @code{gettext}のバージョンが異なることにより変化するのです。"
 
 #. type: Plain text
 #: gettext.texi.orig:8078
@@ -17336,7 +17401,7 @@ msgid ""
 "the @file{intl/} directory by calling @code{gettextize} without @samp{--"
 "intl} option, then you can get away by adding the following lines to "
 "@file{config.h.in}:"
-msgstr ""
+msgstr "手動で保守している場合で、@code{gettextize}を@samp{--intl}オプションなしで呼び出したために、@file{intl/}ディレクトリーが作成されていないなら、@file{config.h.in}に以下の行を追加して\"逃げる\"ことができます:"
 
 #. type: example
 #: gettext.texi.orig:8083
@@ -17346,20 +17411,23 @@ msgid ""
 "   native language is requested. */\n"
 "#undef ENABLE_NLS\n"
 msgstr ""
+"/* Define to 1 if translation of program messages to the user's\n"
+"   native language is requested. */\n"
+"#undef ENABLE_NLS\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8090
 msgid ""
 "Here are a few modifications you need to make to your main, top-level "
 "@file{Makefile.in} file."
-msgstr ""
+msgstr "以下は、トップレベルにあるメインの@file{Makefile.in}ファイルにたいして必要な変更です。"
 
 #. type: enumerate
 #: gettext.texi.orig:8095
 msgid ""
 "Add the following lines near the beginning of your @file{Makefile.in}, so "
 "the @samp{dist:} goal will work properly (as explained further down):"
-msgstr ""
+msgstr "ゴール@samp{dist:}が正常に動作(以降で説明します)するように、@file{Makefile.in}の最初の部分に、以下の行を追加します:"
 
 #. type: example
 #: gettext.texi.orig:8099 gettext.texi.orig:8175
@@ -17368,13 +17436,15 @@ msgid ""
 "PACKAGE = @@PACKAGE@@\n"
 "VERSION = @@VERSION@@\n"
 msgstr ""
+"PACKAGE = @@PACKAGE@@\n"
+"VERSION = @@VERSION@@\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8104
 msgid ""
 "Add file @file{ABOUT-NLS} to the @code{DISTFILES} definition, so the file "
 "gets distributed."
-msgstr ""
+msgstr "定義@code{DISTFILES}に、ファイル@file{ABOUT-NLS}を追加して、このファイルが配布されるように変更します。"
 
 #. type: enumerate
 #: gettext.texi.orig:8110
@@ -17383,7 +17453,7 @@ msgid ""
 "also process the subdirectories @samp{intl} and @samp{po}.  Special rules in "
 "the @file{Makefiles} take care for the case where no internationalization is "
 "wanted."
-msgstr ""
+msgstr "どのサブディレクトリーの@file{Makefile.in}を処理する場合でも、サブディレクトリー@samp{intl}および@samp{po}も処理するようにしてください。@file{Makefiles}内の特別なルールは、インターナショナリゼーションが必要ない場合を処理するためのものです。"
 
 #. type: enumerate
 #: gettext.texi.orig:8115
@@ -17392,7 +17462,7 @@ msgid ""
 "they carefully follow the GNU coding standards, the effected goals for which "
 "the new subdirectories must be handled include @samp{installdirs}, "
 "@samp{install}, @samp{uninstall}, @samp{clean}, @samp{distclean}."
-msgstr ""
+msgstr "Makefilesを使用している場合、それがautomakeにより作成されたものか、手入力されたものかにかかわらず、GNUのコーディング規約にしたがうように注意してください。新しいサブディレクトリーを処理しなければならないために影響を受けるゴールには、@samp{installdirs}、@samp{install}、@samp{uninstall}、@samp{clean}、@samp{distclean}が含まれます。"
 
 #. type: enumerate
 #: gettext.texi.orig:8119
@@ -17400,13 +17470,13 @@ msgid ""
 "Here is an example of a canonical order of processing.  In this example, we "
 "also define @code{SUBDIRS} in @code{Makefile.in} for it to be further used "
 "in the @samp{dist:} goal."
-msgstr ""
+msgstr "以下は標準的な処理順の例です。この例ではゴール@samp{dist:}のために使用される@code{SUBDIRS}を、@code{Makefile.in}の中で定義しています。"
 
 #. type: example
 #: gettext.texi.orig:8122
 #, no-wrap
 msgid "SUBDIRS = doc intl lib src po\n"
-msgstr ""
+msgstr "SUBDIRS = doc intl lib src po\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8128
@@ -17415,7 +17485,7 @@ msgid ""
 "directory before descending into other directories containing code which "
 "make use of the @code{libintl.h} header file.  For this reason, here we "
 "mention @code{intl} before @code{lib} and @code{src}."
-msgstr ""
+msgstr "@samp{make}の調整では、ヘッダーファイル@code{libintl.h}を使うコードが含まれるディレクトリーより、@code{intl}ディレクトリーが前にくるように注意してください。intl の前に @code{lib}と@code{src}の前に@code{intl}があるのは、これが理由です。"
 
 #. type: enumerate
 #: gettext.texi.orig:8134
@@ -17424,7 +17494,7 @@ msgid ""
 "@file{po/Makefile} will later assume that the proper directory has been set "
 "up from the main @file{Makefile}.  Here is an example at what the "
 "@samp{dist:} goal might look like:"
-msgstr ""
+msgstr "デリケートなポイントは、@file{intl/Makefile}と@file{po/Makefile}の両方のゴール@samp{dist:}が、メインの@file{Makefile}によって、後から正しいディレクトリーにセットアップされる点です。以下はゴール@samp{dist:}がどのようなものかという例です:"
 
 #. type: example
 #: gettext.texi.orig:8151
@@ -17446,6 +17516,21 @@ msgid ""
 "\ttar chozf $(distdir).tar.gz $(distdir)\n"
 "\trm -fr $(distdir)\n"
 msgstr ""
+"distdir = $(PACKAGE)-$(VERSION)\n"
+"dist: Makefile\n"
+"\trm -fr $(distdir)\n"
+"\tmkdir $(distdir)\n"
+"\tchmod 777 $(distdir)\n"
+"\tfor file in $(DISTFILES); do \\\n"
+"\t  ln $$file $(distdir) 2>/dev/null || cp -p $$file $(distdir); \\\n"
+"\tdone\n"
+"\tfor subdir in $(SUBDIRS); do \\\n"
+"\t  mkdir $(distdir)/$$subdir || exit 1; \\\n"
+"\t  chmod 777 $(distdir)/$$subdir; \\\n"
+"\t  (cd $$subdir && $(MAKE) $@@) || exit 1; \\\n"
+"\tdone\n"
+"\ttar chozf $(distdir).tar.gz $(distdir)\n"
+"\trm -fr $(distdir)\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8158
@@ -17453,7 +17538,7 @@ msgid ""
 "Note that if you are using GNU @code{automake}, @file{Makefile.in} is "
 "automatically generated from @file{Makefile.am}, and all needed changes to "
 "@file{Makefile.am} are already made by running @samp{gettextize}."
-msgstr ""
+msgstr "GNU @code{automake}を使っているときは、@file{Makefile.am}から@file{Makefile.in}が自動的に生成されますが、@file{Makefile.am}に必要な修正は、@samp{gettextize}の実行よって修正済みであることに注意してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:8166
@@ -17462,27 +17547,27 @@ msgid ""
 "needed in the @file{Makefile.in} from your package sources, which we assume "
 "here to be in the @file{src/} subdirectory.  Here are all the modifications "
 "needed in @file{src/Makefile.in}:"
-msgstr ""
+msgstr "メインの@file{Makefile.in}で行ったいくつかの修正は、あなたのパッケージソースの@file{Makefile.in}(ここでは@file{src/}サブディレクトリーにあると仮定します)でも必要です。以下は、@file{src/Makefile.in}内で必要な修正のすべてです:"
 
 #. type: enumerate
 #: gettext.texi.orig:8171
 msgid ""
 "In view of the @samp{dist:} goal, you should have these lines near the "
 "beginning of @file{src/Makefile.in}:"
-msgstr ""
+msgstr "ゴール@samp{dist:}を考慮して、@file{src/Makefile.in}の先頭の部分に以下の行が必要になります:"
 
 #. type: enumerate
 #: gettext.texi.orig:8181
 msgid ""
 "If not done already, you should guarantee that @code{top_srcdir} gets "
 "defined.  This will serve for @code{cpp} include files.  Just add the line:"
-msgstr ""
+msgstr "まだ定義されていなければ、@code{top_srcdir}を定義する必要があります。これは@code{cpp}のインクルードファイルのための定義で、以下の行を追加するだけです:"
 
 #. type: example
 #: gettext.texi.orig:8184
 #, no-wrap
 msgid "top_srcdir = @@top_srcdir@@\n"
-msgstr ""
+msgstr "top_srcdir = @@top_srcdir@@\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8191
@@ -17490,20 +17575,20 @@ msgid ""
 "You might also want to define @code{subdir} as @samp{src}, later allowing "
 "for almost uniform @samp{dist:} goals in all your @file{Makefile.in}.  At "
 "list, the @samp{dist:} goal below assume that you used:"
-msgstr ""
+msgstr "後ですべての@file{Makefile.in}で、一様なのゴール@samp{dist:}とするために、@code{subdir}を@samp{src}と定義したいと思うかもしれません。以下は、このゴール@samp{dist:}のために必要な定義です:"
 
 #. type: example
 #: gettext.texi.orig:8194
 #, no-wrap
 msgid "subdir = src\n"
-msgstr ""
+msgstr "subdir = src\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8199
 msgid ""
 "The @code{main} function of your program will normally call "
 "@code{bindtextdomain} (see @pxref{Triggering}), like this:"
-msgstr ""
+msgstr "以下のようにプログラムの@code{main}関数は通常、@code{bindtextdomain}(@ref{Triggering}を参照してください)を呼び出します:"
 
 #. type: example
 #: gettext.texi.orig:8203
@@ -17512,13 +17597,15 @@ msgid ""
 "bindtextdomain (@var{PACKAGE}, LOCALEDIR);\n"
 "textdomain (@var{PACKAGE});\n"
 msgstr ""
+"bindtextdomain (@var{PACKAGE}, LOCALEDIR);\n"
+"textdomain (@var{PACKAGE});\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8207
 msgid ""
 "To make LOCALEDIR known to the program, add the following lines to "
 "@file{Makefile.in} if you are using Autoconf version 2.60 or newer:"
-msgstr ""
+msgstr "プログラムにLOCALEDIRを知らせるために、以下の行を@file{Makefile.in}に追加します(Autoconfのバージョン2.60以降の場合):"
 
 #. type: example
 #: gettext.texi.orig:8213
@@ -17529,11 +17616,15 @@ msgid ""
 "localedir = @@localedir@@\n"
 "DEFS = -DLOCALEDIR=\\\"$(localedir)\\\" @@DEFS@@\n"
 msgstr ""
+"datadir = @@datadir@@\n"
+"datarootdir= @@datarootdir@@\n"
+"localedir = @@localedir@@\n"
+"DEFS = -DLOCALEDIR=\\\"$(localedir)\\\" @@DEFS@@\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8216
 msgid "or these lines if your version of Autoconf is older than 2.60:"
-msgstr ""
+msgstr "Autoconfのバージョンが2.60より古い場合は、以下の行を追加します:"
 
 #. type: example
 #: gettext.texi.orig:8221
@@ -17543,13 +17634,16 @@ msgid ""
 "localedir = $(datadir)/locale\n"
 "DEFS = -DLOCALEDIR=\\\"$(localedir)\\\" @@DEFS@@\n"
 msgstr ""
+"datadir = @@datadir@@\n"
+"localedir = $(datadir)/locale\n"
+"DEFS = -DLOCALEDIR=\\\"$(localedir)\\\" @@DEFS@@\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8225
 msgid ""
 "Note that @code{@@datadir@@} defaults to @samp{$(prefix)/share}, thus "
 "@code{$(localedir)} defaults to @samp{$(prefix)/share/locale}."
-msgstr ""
+msgstr "@code{@@datadir@@}のデフォルトは@samp{$(prefix)/share}なので、@code{$(localedir)}のデフォルトは、@samp{$(prefix)/share/locale}になることに注意してください。"
 
 #. type: enumerate
 #: gettext.texi.orig:8232
@@ -17559,13 +17653,13 @@ msgid ""
 "@code{libtool}, @code{@@LTLIBINTL@@} is for use with @code{libtool}.  An "
 "easy way to achieve this is to manage that it gets into @code{LIBS}, like "
 "this:"
-msgstr ""
+msgstr "あなたは最後のリンクで、ライブラリーとして@code{@@LIBINTL@@}または@code{@@LTLIBINTL@@}が使われることを保証する必要があります。@code{@@LIBINTL@@}は@code{libtool}なしで使用され、@code{@@LTLIBINTL@@}は@code{libtool}とともに使用されます。これを達成するには、以下のようにこれらを@code{LIBS}で管理します:"
 
 #. type: example
 #: gettext.texi.orig:8235
 #, no-wrap
 msgid "LIBS = @@LIBINTL@@ @@LIBS@@\n"
-msgstr ""
+msgstr "LIBS = @@LIBINTL@@ @@LIBS@@\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8245
@@ -17578,13 +17672,13 @@ msgid ""
 "translated, too.  Taking care of this, the support library (say "
 "@file{libsupport.a}) should be placed before @code{@@LIBINTL@@} and "
 "@code{@@LIBS@@} in the above example.  So one has to write this:"
-msgstr ""
+msgstr "GNU @code{gettext}でインターナショナライズされたパッケージには、ヘルパー関数を含むライブラリーを、ディレクトリー@file{lib/}にビルドするものがたくさんあります(少なくともGNU @code{gettext}ライブラリー自身が必要とするいくつかの関数が必要です)。しかし@file{lib/}の中の関数のいくつかは、ユーザーに翻訳が必要なメッセージをあたえる関数です。これに注意してサポートのためのライブラリー (@file{libsupport.a}としましょう)を、上記の例の@code{@@LIBINTL@@}と@code{@@LIBS@@}の前に配置します:"
 
 #. type: example
 #: gettext.texi.orig:8248
 #, no-wrap
 msgid "LIBS = ../lib/libsupport.a @@LIBINTL@@ @@LIBS@@\n"
-msgstr ""
+msgstr "LIBS = ../lib/libsupport.a @@LIBINTL@@ @@LIBS@@\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8255
@@ -17593,14 +17687,14 @@ msgid ""
 "preprocessor include files in all circumstances.  So, you have to manage so "
 "both @samp{-I../intl} and @samp{-I$(top_srcdir)/intl} will be given to the C "
 "compiler."
-msgstr ""
+msgstr "あなたは、あらゆる状況において、ディレクトリー@file{intl/}が、Cプリプロセッサーに検索されることも保証する必要があります。そのためには、@samp{-I../intl}と@samp{-I$(top_srcdir)/intl}の両方がCコンパイラーに与えられるように管理する必要があります。"
 
 #. type: enumerate
 #: gettext.texi.orig:8259
 msgid ""
 "Your @samp{dist:} goal has to conform with others.  Here is a reasonable "
 "definition for it:"
-msgstr ""
+msgstr "ゴール@samp{dist:}は、他のものと一致している必要があります。以下はそのための合理的な定義です:"
 
 #. type: example
 #: gettext.texi.orig:8266
@@ -17612,6 +17706,11 @@ msgid ""
 "\t  ln $$file $(distdir) 2>/dev/null || cp -p $$file $(distdir) || exit 1; \\\n"
 "\tdone\n"
 msgstr ""
+"distdir = ../$(PACKAGE)-$(VERSION)/$(subdir)\n"
+"dist: Makefile $(DISTFILES)\n"
+"\tfor file in $(DISTFILES); do \\\n"
+"\t  ln $$file $(distdir) 2>/dev/null || cp -p $$file $(distdir) || exit 1; \\\n"
+"\tdone\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8274
@@ -17620,31 +17719,31 @@ msgid ""
 "automatically generated from @file{Makefile.am}, and the first three changes "
 "and the last change are not necessary.  The remaining needed @file{Makefile."
 "am} modifications are the following:"
-msgstr ""
+msgstr "GNU @code{automake}を使用している場合、@file{Makefile.in}は@file{Makefile.am}から自動的に生成されるので、最初の3つと最後の変更は必要ないことに注意してください。@file{Makefile.am}に必要な変更は以下になります:"
 
 #. type: enumerate
 #: gettext.texi.orig:8279
 msgid ""
 "To make LOCALEDIR known to the program, add the following to @file{Makefile."
 "am}:"
-msgstr ""
+msgstr "プログラムにLOCALEDIRを知らせるために、特定のモジュールにたいしては以下の行を:"
 
 #. type: example
 #: gettext.texi.orig:8282
 #, no-wrap
 msgid "<module>_CPPFLAGS = -DLOCALEDIR=\\\"$(localedir)\\\"\n"
-msgstr ""
+msgstr "<module>_CPPFLAGS = -DLOCALEDIR=\\\"$(localedir)\\\"\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8286
 msgid "for each specific module or compilation unit, or"
-msgstr ""
+msgstr "またはコンパイル単位については以下のように@file{Makefile.am}に記述します。"
 
 #. type: example
 #: gettext.texi.orig:8289
 #, no-wrap
 msgid "AM_CPPFLAGS = -DLOCALEDIR=\\\"$(localedir)\\\"\n"
-msgstr ""
+msgstr "AM_CPPFLAGS = -DLOCALEDIR=\\\"$(localedir)\\\"\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8294
@@ -17652,37 +17751,37 @@ msgid ""
 "for all modules and compilation units together.  Furthermore, if you are "
 "using an Autoconf version older then 2.60, add this line to define "
 "@samp{localedir}:"
-msgstr ""
+msgstr "これはすべてのモジュール、またはコンパイル単位のためのものです。さらにAutoconfのバージョンが2.60より古いものを使用している場合、以下の行を追加して@samp{localedir}を定義します:"
 
 #. type: example
 #: gettext.texi.orig:8297
 #, no-wrap
 msgid "localedir = $(datadir)/locale\n"
-msgstr ""
+msgstr "localedir = $(datadir)/locale\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8303
 msgid ""
 "To ensure that the final linking will use @code{@@LIBINTL@@} or "
 "@code{@@LTLIBINTL@@} as a library, add the following to @file{Makefile.am}:"
-msgstr ""
+msgstr "最後のリンクが@code{@@LIBINTL@@}または@code{@@LTLIBINTL@@}を使うことを保証するために、以下を@file{Makefile.am}に追加します:"
 
 #. type: example
 #: gettext.texi.orig:8306
 #, no-wrap
 msgid "<program>_LDADD = @@LIBINTL@@\n"
-msgstr ""
+msgstr "<program>_LDADD = @@LIBINTL@@\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8310
 msgid "for each specific program, or"
-msgstr ""
+msgstr "特定のプログラムごとには上記のように記述します。"
 
 #. type: example
 #: gettext.texi.orig:8313
 #, no-wrap
 msgid "LDADD = @@LIBINTL@@\n"
-msgstr ""
+msgstr "LDADD = @@LIBINTL@@\n"
 
 #. type: enumerate
 #: gettext.texi.orig:8318
@@ -17690,7 +17789,7 @@ msgid ""
 "for all programs together.  Remember that when you use @code{libtool} to "
 "link a program, you need to use @@LTLIBINTL@@ instead of @@LIBINTL@@ for "
 "that program."
-msgstr ""
+msgstr "これはすべてのプログラムの場合です。プログラムのリンクに@code{libtool}を使うときは、プログラム用に@@LIBINTL@@ではなく、@@LTLIBINTL@@を使う必要があることを忘れないでください。"
 
 #. type: enumerate
 #: gettext.texi.orig:8324
@@ -17699,38 +17798,38 @@ msgid ""
 "@code{gettextize}, then to ensure that it will be searched for C "
 "preprocessor include files in all circumstances, add something like this to "
 "@file{Makefile.am}:"
-msgstr ""
+msgstr "@file{intl/}ディレクトリーがあり、その内容が@code{gettextize}により作成されたものである場合は、以下のような行を@file{Makefile.am}に追加して、すべての状況において、Cプリプロセッサーがインクルード ファイルをそこから検索することを保証するようにしてください:"
 
 #. type: example
 #: gettext.texi.orig:8327
 #, no-wrap
 msgid "AM_CPPFLAGS = -I../intl -I$(top_srcdir)/intl\n"
-msgstr ""
+msgstr "AM_CPPFLAGS = -I../intl -I$(top_srcdir)/intl\n"
 
 #. type: cindex
 #: gettext.texi.orig:8333
 #, no-wrap
 msgid "@file{gettext.h} file"
-msgstr ""
+msgstr "@file{gettext.h} file"
 
 #. type: cindex
 #: gettext.texi.orig:8334
 #, no-wrap
 msgid "turning off NLS support"
-msgstr ""
+msgstr "turning off NLS support"
 
 #. type: cindex
 #: gettext.texi.orig:8335
 #, no-wrap
 msgid "disabling NLS"
-msgstr ""
+msgstr "disabling NLS"
 
 #. type: Plain text
 #: gettext.texi.orig:8339
 msgid ""
 "Internationalization of packages, as provided by GNU @code{gettext}, is "
 "optional.  It can be turned off in two situations:"
-msgstr ""
+msgstr "GNU @code{gettext}により提供される、パッケージのインターナショナリゼーションはオプションであり、2つの状況でオフに切り替えることが考えられます:"
 
 #. type: itemize
 #: gettext.texi.orig:8347
@@ -17740,7 +17839,7 @@ msgid ""
 "when building utilities for boot diskettes.  It can also be useful in order "
 "to get some specific C compiler warnings about code quality with some older "
 "versions of GCC (older than 3.0)."
-msgstr ""
+msgstr "インストーラーで、@samp{./configure --disable-nls}が指定されたとき。ブートディスク用のユーティリティーをビルドするときのように、これは機能よりも小さいバイナリーを生成する方が重要な場合に有用かもしれません。これは、3.0より古いバージョンのGCCで、コード品質にたいするCコンパイラーの特定の警告を取得するためにも有用でしょう。"
 
 #. type: itemize
 #: gettext.texi.orig:8354
@@ -17750,7 +17849,7 @@ msgid ""
 "already installed on the system, it is preferable that the package builds "
 "without internationalization support, rather than to give a compilation "
 "error."
-msgstr ""
+msgstr "パッケージにサブディレクトリー@code{intl/}が含まれておらず、libintl.hヘッダー(および、それに関連付けられたlibintlライブラリー)がまだシステムにインストールされていない場合は、コンパイルエラーよりもインターナショナリゼーションのサポートなしでパッケージをビルドする方が望ましいでしょう。"
 
 #. type: Plain text
 #: gettext.texi.orig:8362
@@ -17761,7 +17860,7 @@ msgid ""
 "configuration file (usually called @file{config.h}).  In the two negative "
 "situations, however, this macro will not be defined, thus it will evaluate "
 "to 0 in C preprocessor expressions."
-msgstr ""
+msgstr "Cプリプロセッサーのマクロは、これら2つのケースを検知するのに使用できます。通常、@code{libintl.h}が見つかって、明示的に利用不可されていなければ、autoconfが設定ファイルを生成するときに、@code{ENABLE_NLS}マクロが1に定義されます。しかし上記以外の状況では、このマクロは定義されず、それゆえCでは0に評価されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8372
@@ -17773,18 +17872,18 @@ msgid ""
 "of @code{\"gettext.h\"} over direct use of @file{<libintl.h>}, so that "
 "portability to older systems is guaranteed and installers can turn off "
 "internationalization if they want to.  In the C code, you will then write"
-msgstr ""
+msgstr "@file{gettext.h}は、@code{ENABLE_NLS}マクロにもとづいて@file{<libintl.h>}を使用する、便利なヘッダーファイルです。@code{ENABLE_NLS}がセットされていると、@file{<libintl.h>}がインクルードされ、セットされていない場合はlibintl.h関数のために代用のno-op(訳注: no-op = no operation = 何もしない)が定義されます。わたしたちは直接@file{<libintl.h>}を使うのではなく、@code{\"gettext.h\"}を使うことを推奨します。そうすれば古いシステムへの可搬性が保証され、もし望むならインストーラーでインターナショナリゼーションをオフにできます。"
 
 #. type: example
 #: gettext.texi.orig:8375
 #, no-wrap
 msgid "#include \"gettext.h\"\n"
-msgstr ""
+msgstr "#include \"gettext.h\"\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8379
 msgid "instead of"
-msgstr ""
+msgstr "Cのソースコードは下記の行を、上記のように書き換えます(訳注: 下が修正前で、上が修正後です。通常とは逆の順序で説明しているので間違えないでください)。"
 
 #. type: Plain text
 #: gettext.texi.orig:8388
@@ -17793,20 +17892,20 @@ msgid ""
 "auxiliary include files.  In many GNU packages, there is a directory "
 "@file{lib/} containing helper functions; @file{gettext.h} fits there.  In "
 "other packages, it can go into the @file{src} directory."
-msgstr ""
+msgstr "@code{gettext.h}の場所は通常、補助のインクルードファイルを含んだディレクトリーです。多くのGNUパッケージには、ヘルパー関数を含む@file{lib/}ディレクトリーがあるので、@file{gettext.h}はそこに配置すればよいでしょう。他のパッケージでは、@file{src}ディレクトリーに配置することができます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8391
 msgid ""
 "Do not install the @code{gettext.h} file in public locations.  Every package "
 "that needs it should contain a copy of it on its own."
-msgstr ""
+msgstr "@code{gettext.h}をパブリックな場所にインストールしないでください。このファイルを必要とするすべてのパッケージは、パッケージ自身にそのファイルのコピーが含まれているからです。"
 
 #. type: cindex
 #: gettext.texi.orig:8394
 #, no-wrap
 msgid "autoconf macros for @code{gettext}"
-msgstr ""
+msgstr "autoconf macros for @code{gettext}"
 
 #. type: Plain text
 #: gettext.texi.orig:8400
