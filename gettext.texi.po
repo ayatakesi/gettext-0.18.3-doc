@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-30 01:58+0900\n"
-"PO-Revision-Date: 2016-08-15 06:06+0900\n"
+"PO-Revision-Date: 2016-08-15 06:50+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -21056,7 +21056,7 @@ msgstr ""
 #. type: table
 #: gettext.texi.orig:10676
 msgid "emulate partially"
-msgstr ""
+msgstr "エミュレート(部分的)"
 
 #. type: table
 #: gettext.texi.orig:10679
@@ -22478,6 +22478,8 @@ msgid ""
 "# Parentheses are only significant for the first argument.\n"
 "print dngettext 'package', (\"one cake\", \"several cakes\", $n), $discarded;\n"
 msgstr ""
+"# Parentheses are only significant for the first argument.\n"
+"print dngettext 'package', (\"one cake\", \"several cakes\", $n), $discarded;\n"
 
 #. type: cindex
 #: gettext.texi.orig:11521
@@ -22989,13 +22991,13 @@ msgid ""
 "history of the Translation Project so far.  We finally give a few pointers "
 "for those who want to do further research or readings about Native Language "
 "Support matters."
-msgstr ""
+msgstr "そして最後に、Native Language Supportに関してもっと研究したり読みたい人のために、いくつかの指標を示してGNU @code{gettext}のマニュアルを結びたいと思います。"
 
 #. type: cindex
 #: gettext.texi.orig:12082
 #, no-wrap
 msgid "history of GNU @code{gettext}"
-msgstr ""
+msgstr "history of GNU @code{gettext}"
 
 #. type: Plain text
 #: gettext.texi.orig:12089
@@ -23005,7 +23007,7 @@ msgid ""
 "around the incoming @code{Hurd}, or otherwise (nobody clearly remembers).  "
 "And even then, when the work started for real, this was somewhat "
 "independently of these previous discussions."
-msgstr ""
+msgstr "国際対応の重要性やアルゴリズムは、非公式にではありますがが毎日のように数年に渡ってGNUで論議されてきました。ときにはGNU @code{libc}に関係して、あるときは@code{Hurd}に関係して、あるいはその他のものに関係してです(誰もはっきり とは覚えていません)。そしてそれから作業は実際に始まりましたが、これは先だっての議論とは独立したものでした。"
 
 #. type: Plain text
 #: gettext.texi.orig:12100
@@ -23020,7 +23022,7 @@ msgid ""
 "standards were, and contacted Richard Stallman, who very quickly and "
 "verbally described an overall design for what was meant to become "
 "@code{glocale}, at that time."
-msgstr ""
+msgstr "全ては、Patrick D'CruzeがGNU @code{fileutils}バージョン3.9.2の国際対応についてのアイディアそして主導権を得たとき、つまり1994年の7月に始まりました。彼はそれから保守担当者であるJim Meyeringに、国際対応に関する変更をどのようにして正式リリースに含めるかについて尋ねました。最初のドラフトは@code{#ifdef}の塊で面食らうような代物でしたので、Jimはもっと良い方法を求め ていました。PatrickとJimはこの分野においての試みや経験を共有していました。 そして、結局のところこの作業はGNUに大きなインパクトを与えると感じたので、 Jimは標準がどのようなものであるかを知りたくなり、そして彼はRichard Stallmanにコンタクトを取りました。Richardはその時点で、@code{glocale}となるコード全体のデザインについて非常に手早くかつ丁寧に記述しました。"
 
 #. type: Plain text
 #: gettext.texi.orig:12110
@@ -23033,7 +23035,7 @@ msgid ""
 "releases, @code{glocale} was torn apart.  In particular, Paul Eggert -- "
 "always keeping an eye on developments in Solaris -- advocated the use of the "
 "@code{gettext} API over @code{glocale}'s @code{catgets}-based API."
-msgstr ""
+msgstr "Jimは@code{glocale}を実装し、PatrickやRichardから多くのフィードバックを受けました。もちろん、Mitchum DSouza(@code{catgets}のようなパッケージを記述した)やRoland McGrath,またDavid MacKenzieやPinard、Paul Eggertらからのフィードバックもありました。様々な方向性が入り乱れ、しかもそれら全てに互換性があるというわけではなかったため、二、三のテストリリー スの後、@code{glocale}は破棄されました。"
 
 #. type: Plain text
 #: gettext.texi.orig:12121
@@ -23047,7 +23049,7 @@ msgid ""
 "and the switch from @code{glocale} to what was first named @code{msgutils}, "
 "renamed @code{nlsutils}, and later @code{gettext}, became officially "
 "accepted by Richard in May 1995 or so."
-msgstr ""
+msgstr "Jimがある程度距離と時間をおき、そして二人目のパパになった間に、Rolandは GNU @code{libc}を国際対応させたいと望んでおり、Ulrich Drepperがそのプロジェ クトに加わりました。@code{glocale}から作業を始める代わりに、Ulrichは一からコードを書き直しましたが、それは@code{glocale}の作業で明らかになったガイドラインにより一層従う形になっていました。それからUlrichは以前のフォーラムから新しいプロジェクト用に人員を獲得し、@code{glocale}をまず@code{msgutils}と改称しました。それは後に@code{nlsutils}という名前になり、さらに@code{gettext}という名称になりました。これは1995年5月頃にRichardによって公式に受諾されました。"
 
 #. type: Plain text
 #: gettext.texi.orig:12129
@@ -23058,7 +23060,7 @@ msgid ""
 "the effort by providing a discussion forum around Ulrich, writing little "
 "pieces of code, or testing.  These are quoted in the @code{THANKS} file "
 "which comes with the GNU @code{gettext} distribution."
-msgstr ""
+msgstr "Ulrich Drepperが1995年の四月にGNU @code{gettext}で書いたことに言及してまとめとしようかと思います。POモードを含んだパッケージの最初の公式リリースは 1995年の7月に行われ、そのバージョン番号は0.7でした。その他の人々はUlrichの回りの議論フォーラムで作成された、小さなコードのかけらやテストの結 果といった諸々のものを寄贈しました。彼らの名前はGNU @code{gettext}に付随する@code{THANKS}ファイルに納められました。"
 
 #. type: Plain text
 #: gettext.texi.orig:12141
@@ -23073,7 +23075,7 @@ msgid ""
 "twenty unmoderated mailing lists for that many native languages, and two "
 "moderated lists: one for reaching all teams at once, the other for reaching "
 "all willing maintainers of internationalized free software packages."
-msgstr ""
+msgstr "この作業が進んでいた間、Fran@,{c}oisは最初に半ダースのGNUパッケージに@code{glocale}を、続いて@code{gettext}を現在のように適用してプリテストの状態にし、進化するツールを微調整するための効果的なユーザ環境を準備しました。 彼はまた、翻訳プロジェクトを組織化し統合する責任をも引き受けました。 Patrick D'Cruzeは多くのネイティブランゲージのための20の非モデレートなメーリングリスト、そして二つのモデレートされたリスト(一つは全てのチームに直ちに届くもの、もう一つは国際化されたフリーソフトウェアパッケージの全ての自発的な管理者に連絡するためのもの)を作成し管理しました。そしてほぼ一年の間に 多くの国々の人々の間で非公式な情報交換が行われ、翻訳者チームが1995年5月に 発足しました。"
 
 #. type: Plain text
 #: gettext.texi.orig:12145
@@ -23081,14 +23083,14 @@ msgid ""
 "Fran@,{c}ois also wrote PO mode in June 1995 with the collaboration of Greg "
 "McGary, as a kind of contribution to Ulrich's package.  He also gave a hand "
 "with the GNU @code{gettext} Texinfo manual."
-msgstr ""
+msgstr "Fran@,{c}oisはまたGreg McGaryの協力を受け、1995年の六月にPOモードを書きあげています。これはUlrichのパッケージに寄贈されました。彼はまたGNU @code{gettext}のTexinfoマニュアルも寄贈しています。"
 
 #. type: Plain text
 #: gettext.texi.orig:12148
 msgid ""
 "In 1997, Ulrich Drepper released the GNU libc 2.0, which included the "
 "@code{gettext}, @code{textdomain} and @code{bindtextdomain} functions."
-msgstr ""
+msgstr "1997年に、Ulrich DrepperはGNU libc 2.0をリリースし、これには関数@code{gettext}、@code{textdomain}、@code{bindtextdomain}が含まれていました。"
 
 #. type: Plain text
 #: gettext.texi.orig:12152
@@ -23096,7 +23098,7 @@ msgid ""
 "In 2000, Ulrich Drepper added plural form handling (the @code{ngettext} "
 "function) to GNU libc.  Later, in 2001, he released GNU libc 2.2.x, which is "
 "the first free C library with full internationalization support."
-msgstr ""
+msgstr "2000年に、Ulrich Drepperはplural form処理(@code{ngettext}関数)をGNU libcに追加しました。その後2001年、彼はGNU libc 2.2.xをリリースし、これには完全なインターナショナリゼーションをもつ、最初のフリーなCライブラリーでした。"
 
 #. type: Plain text
 #: gettext.texi.orig:12158
@@ -23105,19 +23107,19 @@ msgid ""
 "handed over the GNU @code{gettext} maintenance to Bruno Haible in 2000.  "
 "Bruno added the plural form handling to the tools as well, added support for "
 "UTF-8 and CJK locales, and wrote a few new tools for manipulating PO files."
-msgstr ""
+msgstr "GNU libcのGeneral Maintainerとしての役割によりUlrichは極めて多忙になったため、2000年にGNU gettextのメンテナンスをBruno Haibleに譲り渡しました。Brunoもツールにplural form処理を追加し、UTF-8とCJK localeのサポートの追加、およびPOファイルを取り扱うための新しいツールをいくつか記述しました。"
 
 #. type: cindex
 #: gettext.texi.orig:12161
 #, no-wrap
 msgid "related reading"
-msgstr ""
+msgstr "related reading"
 
 #. type: cindex
 #: gettext.texi.orig:12162
 #, no-wrap
 msgid "bibliography"
-msgstr ""
+msgstr "bibliography"
 
 #. type: Plain text
 #: gettext.texi.orig:12170
@@ -23125,13 +23127,13 @@ msgid ""
 "Eugene H. Dorr (@file{dorre@@well.com}) maintains an interesting "
 "bibliography on internationalization matters, called "
 "@cite{Internationalization Reference List}, which is available as:"
-msgstr ""
+msgstr "Eugene H. Dorr(@file{dorre@@well.com})は@cite{Internationalization Reference List}という国際化対応に関する興味深い文献の保守を行っています。 これは次の場所で入手可能です。"
 
 #. type: example
 #: gettext.texi.orig:12172
 #, no-wrap
 msgid "ftp://ftp.ora.com/pub/examples/nutshell/ujip/doc/i18n-books.txt\n"
-msgstr ""
+msgstr "ftp://ftp.ora.com/pub/examples/nutshell/ujip/doc/i18n-books.txt\n"
 
 #. type: Plain text
 #: gettext.texi.orig:12184
@@ -23145,13 +23147,13 @@ msgid ""
 "@file{comp.std.internat}, @file{comp.software.international}, @file{comp."
 "lang.c}, @file{comp.windows.x}, @file{comp.std.c}, @file{comp.answers} and "
 "@file{news.answers}.  The home location of this document is:"
-msgstr ""
+msgstr "Michael Gschwind(@file{mike@@vlsivie.tuwien.ac.at})はProgramming for Internationalisationというタイトルの「良くある質問」(Frequently Asked Questions (FAQ))のリストを保守しています。このFAQは異なる言語慣習、 キャラクタセットなどを扱うことが可能なプログラムの記述について論じています。 そしてこれは、特にUsenet: @w{ISO 8859-1}及び全てのキャラクタセットエンコーディング に対して適用できます。これは@file{comp.unix.questions}、@file{comp.std.internat}、@file{comp.software.international}、@file{comp.lang.c}、@file{comp.windows.x}、@file{comp.std.c}、@file{comp.answers}、@file{news.answers}から定期的に公布されています。この文書は以下にあります:"
 
 #. type: example
 #: gettext.texi.orig:12186
 #, no-wrap
 msgid "ftp://ftp.vlsivie.tuwien.ac.at/pub/8bit/ISO-programming\n"
-msgstr ""
+msgstr "ftp://ftp.vlsivie.tuwien.ac.at/pub/8bit/ISO-programming\n"
 
 #. type: Plain text
 #: gettext.texi.orig:12191
@@ -23159,7 +23161,7 @@ msgid ""
 "Patrick D'Cruze (@file{pdcruze@@li.org}) wrote a tutorial about NLS matters, "
 "and Jochen Hein (@file{Hein@@student.tu-clausthal.de}) took over the "
 "responsibility of maintaining it.  It may be found as:"
-msgstr ""
+msgstr "Patrick D'Cruze(@file{pdcruze@@li.org})はNLSに関するチュートリアルを書きました。そしてJochen Hein(@file{Hein@@student.tu-clausthal.de})はそれに関する保守作業を引き継ぎました。この文書は次の場所にあります。"
 
 #. type: example
 #: gettext.texi.orig:12194
@@ -23168,45 +23170,47 @@ msgid ""
 "ftp://sunsite.unc.edu/pub/Linux/utils/nls/catalogs/Incoming/...\n"
 "     ...locale-tutorial-0.8.txt.gz\n"
 msgstr ""
+"ftp://sunsite.unc.edu/pub/Linux/utils/nls/catalogs/Incoming/...\n"
+"     ...locale-tutorial-0.8.txt.gz\n"
 
 #. type: Plain text
 #: gettext.texi.orig:12197
 msgid "This site is mirrored in:"
-msgstr ""
+msgstr "このサイトは以下のサイトへミラーリングされています。"
 
 #. type: example
 #: gettext.texi.orig:12199
 #, no-wrap
 msgid "ftp://ftp.ibp.fr/pub/linux/sunsite/\n"
-msgstr ""
+msgstr "ftp://ftp.ibp.fr/pub/linux/sunsite/\n"
 
 #. type: Plain text
 #: gettext.texi.orig:12202
 msgid "A French version of the same tutorial should be findable at:"
-msgstr ""
+msgstr "同じチュートリアルのフランス語版は以下にあります。"
 
 #. type: example
 #: gettext.texi.orig:12204
 #, no-wrap
 msgid "ftp://ftp.ibp.fr/pub/linux/french/docs/\n"
-msgstr ""
+msgstr "ftp://ftp.ibp.fr/pub/linux/french/docs/\n"
 
 #. type: Plain text
 #: gettext.texi.orig:12207
 msgid "together with French translations of many Linux-related documents."
-msgstr ""
+msgstr "ここには、フランス語に訳されたLinux関係のドキュメントもあります。"
 
 #. type: cindex
 #: gettext.texi.orig:12210
 #, no-wrap
 msgid "language codes"
-msgstr ""
+msgstr "language codes"
 
 #. type: cindex
 #: gettext.texi.orig:12211
 #, no-wrap
 msgid "ISO 639"
-msgstr ""
+msgstr "ISO 639"
 
 #. type: Plain text
 #: gettext.texi.orig:12217
@@ -23214,20 +23218,20 @@ msgid ""
 "The @w{ISO 639} standard defines two-letter codes for many languages, and "
 "three-letter codes for more rarely used languages.  All abbreviations for "
 "languages used in the Translation Project should come from this standard."
-msgstr ""
+msgstr "@w{ISO 639}は多くの言語に対して2文字のコード、より珍しい言語に対して3文字のコードを規定しています。翻訳プロジェクトが言語に対して使用している省略形には、この標準が採用されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:12228
 msgid ""
 "For the commonly used languages, the @w{ISO 639-1} standard defines two-"
 "letter codes."
-msgstr ""
+msgstr "一般的に使用される言語にたいしては、@w{ISO 639-1}標準が2文字のコードを定義しています。"
 
 #. type: include
 #: gettext.texi.orig:12230
 #, no-wrap
 msgid "iso-639.texi"
-msgstr ""
+msgstr "iso-639.texi"
 
 #. type: Plain text
 #: gettext.texi.orig:12239
@@ -23235,25 +23239,25 @@ msgid ""
 "For rarely used languages, the @w{ISO 639-2} standard defines three-letter "
 "codes.  Here is the current list, reduced to only living languages with at "
 "least one million of speakers."
-msgstr ""
+msgstr "より珍しい言語にたいしては、@w{ISO 639-2}が3文字のコードを定義しています。以下は、その言語を話す人が少なくとも100万人いるおうな、生きている言語だけに絞り込んだリストです。"
 
 #. type: include
 #: gettext.texi.orig:12241
 #, no-wrap
 msgid "iso-639-2.texi"
-msgstr ""
+msgstr "iso-639-2.texi"
 
 #. type: cindex
 #: gettext.texi.orig:12246
 #, no-wrap
 msgid "country codes"
-msgstr ""
+msgstr "country codes"
 
 #. type: cindex
 #: gettext.texi.orig:12247
 #, no-wrap
 msgid "ISO 3166"
-msgstr ""
+msgstr "ISO 3166"
 
 #. type: Plain text
 #: gettext.texi.orig:12252
@@ -23261,20 +23265,20 @@ msgid ""
 "The @w{ISO 3166} standard defines two character codes for many countries and "
 "territories.  All abbreviations for countries used in the Translation "
 "Project should come from this standard."
-msgstr ""
+msgstr "@w{ISO 3166}標準は、多くの国と地域に対して、2文字のコードを定義します。Translation Project内で使用される国にたいする略記は、この標準が由来です。"
 
 #. type: include
 #: gettext.texi.orig:12254
 #, no-wrap
 msgid "iso-3166.texi"
-msgstr ""
+msgstr "iso-3166.texi"
 
 #. type: Plain text
 #: gettext.texi.orig:12263
 msgid ""
 "The files of this package are covered by the licenses indicated in each "
 "particular file or directory.  Here is a summary:"
-msgstr ""
+msgstr "このパッケージのファイルは、特定のファイルやディレクトリーに示されたライセンスにより保護されます。以下はサマリーです:"
 
 #. type: itemize
 #: gettext.texi.orig:12269
@@ -23282,7 +23286,7 @@ msgid ""
 "The @code{libintl} and @code{libasprintf} libraries are covered by the GNU "
 "Lesser General Public License (LGPL).  A copy of the license is included in "
 "@ref{GNU LGPL}."
-msgstr ""
+msgstr "@code{libintl}および@code{libasprintf}ライブラリーは、GNU Lesser General Public License(LGPL)で保護されます、このライセンスのコピーは@ref{GNU LGPL}に含まれます。"
 
 #. type: itemize
 #: gettext.texi.orig:12274
@@ -23290,7 +23294,7 @@ msgid ""
 "The executable programs of this package and the @code{libgettextpo} library "
 "are covered by the GNU General Public License (GPL).  A copy of the license "
 "is included in @ref{GNU GPL}."
-msgstr ""
+msgstr "このパッケージの実行可能ファイルおよび@code{libgettextpo}ライブラリーは、GNU General Public License(GPL)により保護されます。このライセンスのコピーは@ref{GNU GPL}に含まれます。"
 
 #. type: itemize
 #: gettext.texi.orig:12293
@@ -23308,22 +23312,22 @@ msgid ""
 "Public License (GPL), either version 2 of the License, or (at your option) "
 "any later version published by the Free Software Foundation (FSF).  A copy "
 "of the license is included in @ref{GNU GPL}."
-msgstr ""
+msgstr "This manual is free documentation.  It is dually licensed under the GNU FDL and the GNU GPL.  This means that you can redistribute this manual under either of these two licenses, at your choice.  @* This manual is covered by the GNU FDL.  Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (FDL), either version 1.2 of the License, or (at your option) any later version published by the Free Software Foundation (FSF); with no Invariant Sections, with no Front-Cover Text, and with no Back-Cover Texts.  A copy of the license is included in @ref{GNU FDL}.  @* This manual is covered by the GNU GPL.  You can redistribute it and/or modify it under the terms of the GNU General Public License (GPL), either version 2 of the License, or (at your option) any later version published by the Free Software Foundation (FSF).  A copy of the license is included in @ref{GNU GPL}."
 
 #. type: include
 #: gettext.texi.orig:12302
 #, no-wrap
 msgid "gpl.texi"
-msgstr ""
+msgstr "gpl.texi"
 
 #. type: include
 #: gettext.texi.orig:12304
 #, no-wrap
 msgid "lgpl.texi"
-msgstr ""
+msgstr "lgpl.texi"
 
 #. type: include
 #: gettext.texi.orig:12306
 #, no-wrap
 msgid "fdl.texi"
-msgstr ""
+msgstr "fdl.texi"
