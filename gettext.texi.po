@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-30 01:58+0900\n"
-"PO-Revision-Date: 2016-08-14 14:28+0900\n"
+"PO-Revision-Date: 2016-08-15 01:03+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -18526,13 +18526,13 @@ msgid ""
 "gettext} bypasses system @code{gettext} to use the included GNU "
 "@code{gettext} instead, while @samp{./configure --disable-nls} produces "
 "programs totally unable to translate messages."
-msgstr ""
+msgstr "デフォルトでは、内部的にGNU @code{gettext}をフルに使っているパッケージは、翻訳されたメッセージを使えるような方法でインストールされます。@emph{configuration}実行時には、これらのパッケージはホストシステムですでにGNU @code{gettext}の機能が提供されているかを、自動的に検出する必要があります。もし提供されていない場合、GNU @code{gettext}ライブラリーが自動的に準備・使用されます。インストーラーは、configure時のこの動作を変更するための特別なオプションを使うことができます。コマンド@samp{./configure --with-included-gettext}により、そのシステムの@code{gettext}をバイパスしてかわりに同梱された GNU @code{gettext}を使用します。また@samp{./configure --disable-nls}では、翻訳されたメッセージを利用しないプログラムを生成します。"
 
 #. type: vindex
 #: gettext.texi.orig:8815
 #, no-wrap
 msgid "LINGUAS@r{, environment variable}"
-msgstr ""
+msgstr "LINGUAS@r{, environment variable}"
 
 #. type: Plain text
 #: gettext.texi.orig:8823
@@ -18543,7 +18543,7 @@ msgid ""
 "set, prior to configuration, to limit the installed set.  @code{LINGUAS} "
 "should then contain a space separated list of two-letter codes, stating "
 "which languages are allowed."
-msgstr ""
+msgstr "インターナショナライズされたパッケージには通常、多くの@file{@var{ll}.po}ファイルがあります。翻訳が利用不可になっていなければ、パッケージのインストールによりそれらが利用可能になります。しかしconfigureに先立ち環境変数の@code{LINGUAS}がセットされていると、インストールされる対象が制限されます。@code{LINGUAS}はスペースで区切られた2文字のコードのリストで、利用できる言語を指定します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8832
@@ -18552,19 +18552,19 @@ msgid ""
 "applies to C++ as well, its scope is far broader than that: Many programming "
 "languages, scripting languages and other textual data like GUI resources or "
 "package descriptions can make use of the gettext approach."
-msgstr ""
+msgstr "@code{gettext}が提供するものの大部分はC(これは暗黙でC++にも同様に適用できます)に焦点をあてていますが、それ以外にも他の多くのプログラム言語やスクリプト言語、その他のテキストデータ、たとえばGUIリソースやパッケージの説明にも@code{gettext}の手法を用いることができます。"
 
 #. type: cindex
 #: gettext.texi.orig:8844
 #, no-wrap
 msgid "programming languages"
-msgstr ""
+msgstr "programming languages"
 
 #. type: cindex
 #: gettext.texi.orig:8845
 #, no-wrap
 msgid "scripting languages"
-msgstr ""
+msgstr "scripting languages"
 
 #. type: Plain text
 #: gettext.texi.orig:8850
@@ -18572,7 +18572,7 @@ msgid ""
 "All programming and scripting languages that have the notion of strings are "
 "eligible to supporting @code{gettext}.  Supporting @code{gettext} means the "
 "following:"
-msgstr ""
+msgstr "すべてのプログラム言語およびスクリプト言語は、@code{gettext}をサポートするのに適した文字列の表記をもっています。@code{gettext}をサポートするとは、以下のことを意味します:"
 
 #. type: enumerate
 #: gettext.texi.orig:8858
@@ -18582,14 +18582,14 @@ msgid ""
 "syntax helps keeping the legibility of internationalized programs.  For "
 "example, in C we use the syntax @code{_(\"string\")}, and in GNU awk we use "
 "the shorthand @code{_\"string\"}."
-msgstr ""
+msgstr "翻訳可能な文字列にたいする書式を言語に追加する必要があります。原則としては@code{gettext}の関数呼び出しですが、省略した書式はインターナショナライズされたプログラムの可読性を向上する助けとなります。たとえばCでは@code{_(\"string\")}、GNU awkでは@code{_\"string\"}という書式が使用されます。"
 
 #. type: enumerate
 #: gettext.texi.orig:8863
 msgid ""
 "You should arrange that evaluation of such a translatable string at runtime "
 "calls the @code{gettext} function, or performs equivalent processing."
-msgstr ""
+msgstr "実行時の@code{gettext}呼び出し(または等価な処理)により、このような翻訳可能な文字列を評価するための用意をする必要があります。"
 
 #. type: enumerate
 #: gettext.texi.orig:8875
@@ -18603,7 +18603,7 @@ msgid ""
 "these latter functions, you need to make the @code{LC_*} constants, "
 "available in the C header @code{<locale.h>}, referenceable from within the "
 "language, usually either as enumeration values or as strings."
-msgstr ""
+msgstr "同様に、その言語で@code{ngettext}、@code{dcgettext}、@code{dcngettext}の関数を利用可能にする必要があります。これらの関数が使用されることは少ないかもしれません。しかし@code{ngettext}は正しくpluralを処理するために、そして@code{dcgettext}と@code{dcngettext}は@code{LC_TIME}や@code{LC_MONETARY}などの、@code{LC_MESSAGES}以外のlocale関連の環境変数を処理する等の、特別の目的のために必要です。後者の関数についてはCのヘッダーファイル@code{<locale.h>}の定数@code{LC_*}が通常、環境変数や文字列で参照するため、その言語からも参照できるようにする必要があります。"
 
 #. type: enumerate
 #: gettext.texi.orig:8883
@@ -18613,7 +18613,7 @@ msgid ""
 "by introducing a magic variable called @code{TEXTDOMAIN}.  Similarly, you "
 "should allow the programmer to designate where to search for message "
 "catalogs, by providing access to the @code{bindtextdomain} function."
-msgstr ""
+msgstr "その言語から@code{textdomain}関数を利用可能にするか、@code{TEXTDOMAIN}のような\"魔法\"の変数を用意するなどして、プログラマーがメッセージドメインを明示できるようにする必要があります。同様に、@code{bindtextdomain}関数のように、プログラマーがメッセージカタログをどこから検索するかを、明示できるようにする機能を提供する必要があります。"
 
 #. type: enumerate
 #: gettext.texi.orig:8889
@@ -18622,7 +18622,7 @@ msgid ""
 "startup of your language runtime, or allow the programmer to do so.  "
 "Remember that gettext will act as a no-op if the @code{LC_MESSAGES} and "
 "@code{LC_CTYPE} locale categories are not both set."
-msgstr ""
+msgstr "@code{setlocale (LC_ALL, \"\")}を、言語が実行されたスタートアップ時に呼び出すか、プログラマーが呼び出して処理できるようにするべきです。localeカテゴリーの@code{LC_MESSAGES}と@code{LC_CTYPE}がどちらもセットされていないときは、gettextはno-opとして振る舞うことを思い出してください。"
 
 #. type: enumerate
 #: gettext.texi.orig:8897
@@ -18633,7 +18633,7 @@ msgid ""
 "@code{gettext} maintainers to help them doing this.  If the string extractor "
 "is best integrated into your language's parser, GNU @code{xgettext} can "
 "function as a front end to your string extractor."
-msgstr ""
+msgstr "プログラマーには、プログラムから翻訳可能な文字列をPOファイルに抽出する方法が必要です。GNU @code{xgettext}は、非常に多くの異なるプログラム言語をサポートするように拡張されています。どうすればサポートされるかについては、GNU @code{gettext}のメンテナーに連絡してください。文字列の抽出機能が、あなたの言語のパーサーに統合されれば、GNU @code{xgettext}をあなたの言語の文字列抽出機能のフロントエンドとすることができます。"
 
 #. type: enumerate
 #: gettext.texi.orig:8904
@@ -18643,7 +18643,7 @@ msgid ""
 "This is needed because for some languages and some messages with more than "
 "one substitutable argument, the translation will need to output the "
 "substituted arguments in different order.  @xref{c-format Flag}."
-msgstr ""
+msgstr "言語のライブラリーに、書式文字列と書式文字列の引数を位置番号や名前で示せるような機能をもたせる必要があります。これはいくつかの言語やメッセージでは、2つ以上の代替の引数にたいして、翻訳者はそれらの代替の引数を異なった順序で出力する必要があるからです。詳細は、@ref{c-format Flag}を参照してください。"
 
 #. type: enumerate
 #: gettext.texi.orig:8911
@@ -18653,7 +18653,7 @@ msgid ""
 "across implementations, you should provide a no-i18n emulation, that makes "
 "the other implementations accept programs written for yours, without "
 "actually translating the strings."
-msgstr ""
+msgstr "言語に2つ以上の実装があって、それらのすべてが@code{gettext}を実装している訳ではないにもかかわらず、それらの異なる実装間でプログラムに可搬性をもたせなければならないような場合には、no-i18nエミュレーションを提供する必要があります。これにより、実際に翻訳された文字列がなくても、あなたの実装向けに記述されたプログラムを他の実装で利用することができます。"
 
 #. type: enumerate
 #: gettext.texi.orig:8918
@@ -18662,14 +18662,14 @@ msgid ""
 "sometimes performed using the Emacs PO mode (@pxref{Marking}), you are "
 "welcome to contact the GNU @code{gettext} maintainers, so they can add "
 "support for your language to @file{po-mode.el}."
-msgstr ""
+msgstr "プログラマーが翻訳文字列にマークを付与するタスクを助けるために、EmacsのPOモードが使用される場合があります(@ref{Marking}を参照してください)。遠慮なくGNU @code{gettext}のメンテナーに連絡してください。そうすれば彼らが@file{po-mode.el}にあなたの言語にたいするサポートを追加することができます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8922
 msgid ""
 "On the implementation side, three approaches are possible, with different "
 "effects on portability and copyright:"
-msgstr ""
+msgstr "実装から考えると、可搬性と著作権の面において異なる効果をもつ、3つのアプローチが利用できます。"
 
 #. type: itemize
 #: gettext.texi.orig:8931
@@ -18680,7 +18680,7 @@ msgid ""
 "distribute your package, it legally falls under the GNU General Public "
 "License, and the GNU project will be glad about your contribution to the "
 "Free Software pool."
-msgstr ""
+msgstr "@ref{Maintainers}で説明している方法で、あなたのパッケージのGNU @code{gettext}用の@file{intl/}ディレクトリーを使って統合する方法があります。これにより、すべてのプラットフォームでインターナショナリゼーションが可能になります。この場合、パッケージは法的にはGNU General Public Licenseの下に配布されることに注意してください。そしてGNU projectはフリーソフトウェアの蓄積にたいするあなたの貢献を歓迎するでしょう。"
 
 #. type: itemize
 #: gettext.texi.orig:8938
@@ -18690,7 +18690,7 @@ msgid ""
 "@code{ngettext()} will detect this situation.  For the moment, this test "
 "will succeed on GNU systems and not on other platforms.  No severe copyright "
 "restrictions apply."
-msgstr ""
+msgstr "CライブラリーのGNU @code{gettext}関数にたいしてリンクする方法があります。たとえば、autoconfが@code{gettext()}を@code{ngettext()}をテストしてこの状況を検知します。当面のところ、このテストはGNUシステムでは成功しますが、他のシステムでは成功しません。また、厳密な著作権の制限はありません。"
 
 #. type: itemize
 #: gettext.texi.orig:8946
@@ -18700,7 +18700,7 @@ msgid ""
 "also the drawback that you have to reimplement the GNU @code{gettext} "
 "features (such as the @code{LANGUAGE} environment variable, the locale "
 "aliases database, the automatic charset conversion, and plural handling)."
-msgstr ""
+msgstr "GNU @code{gettext}の機能をエミュレート、もしくは再実装する方法があります。この方法には、完全な可搬性と著作権の制限がないという利点があります。しかしGNU @code{gettext}の機能(環境変数@code{LANGUAGE}、locale aliaseのデータベース、自動的な文字コード変換、pluralの処理のような機能)を再実装する必要があるという欠点もあります。"
 
 #. type: Plain text
 #: gettext.texi.orig:8957
@@ -18711,7 +18711,7 @@ msgid ""
 "file extension or a command-line option.  In some languages, "
 "@code{setlocale} is not needed because it is already performed by the "
 "underlying language runtime."
-msgstr ""
+msgstr "プログラマーにとって、一般的な手続きはC言語の場合と同じです。EmacsのPO モードによるマークづけは他の言語もサポートしており、GNU @code{xgettext}の文字列抽出も、ファイルの拡張子やコマンドラインのオプションで他の言語を識別できます。実行時の言語にしたがって実行されるために、@code{setlocale}を必要としない言語もいくつかあります。"
 
 #. type: Plain text
 #: gettext.texi.orig:8965
@@ -18719,7 +18719,7 @@ msgid ""
 "The translator works exactly as in the C language case.  The only difference "
 "is that when translating format strings, she has to be aware of the "
 "language's particular syntax for positional arguments in format strings."
-msgstr ""
+msgstr "翻訳者の作業はC言語の場合と同じです。唯一の違いは書式文字列の翻訳で、彼女は書式文字列にたいする、その言語特有の位置引数を理解する必要があります。"
 
 #. type: Plain text
 #: gettext.texi.orig:9003
@@ -18729,29 +18729,29 @@ msgid ""
 "fprintf.html}.  See also the fprintf() manual page, @uref{http://www."
 "linuxvalley.it/encyclopedia/ldp/manpage/man3/printf.3.php}, @uref{http://"
 "informatik.fh-wuerzburg.de/student/i510/man/printf.html}."
-msgstr ""
+msgstr "Cの書式文字列はPOSIX(IEEE P1003.1 2001)のセクションXSH 3 fprintf() @uref{http://www.opengroup.org/onlinepubs/007904975/functions/fprintf.html}で説明されています。また fprintf()のman @uref{http://www.linuxvalley.it/encyclopedia/ldp/manpage/man3/printf.3.php}, @uref{http://informatik.fh-wuerzburg.de/student/i510/man/printf.html}も参照してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:9005
 msgid "Although format strings with positions that reorder arguments, such as"
-msgstr ""
+msgstr "以下のような、引数の位置を再指定する書式文字列があったとします"
 
 #. type: example
 #: gettext.texi.orig:9008
 #, no-wrap
 msgid "\"Only %2$d bytes free on '%1$s'.\"\n"
-msgstr ""
+msgstr "\"Only %2$d bytes free on '%1$s'.\"\n"
 
 #. type: Plain text
 #: gettext.texi.orig:9012
 msgid "which is semantically equivalent to"
-msgstr ""
+msgstr "これは以下の文と同じ意味をあらわします"
 
 #. type: example
 #: gettext.texi.orig:9015
 #, no-wrap
 msgid "\"'%s' has only %d bytes free.\"\n"
-msgstr ""
+msgstr "\"'%s' has only %d bytes free.\"\n"
 
 #. type: Plain text
 #: gettext.texi.orig:9023
@@ -18761,19 +18761,19 @@ msgid ""
 "@code{fprintf()} etc. don't support this feature natively, @file{libintl.a} "
 "or @file{libintl.so} provides replacement functions, and GNU @code{<libintl."
 "h>} activates these replacement functions automatically."
-msgstr ""
+msgstr "これはPOSIX/XSIの機能であり、ISO C 99には明記されていませんが、翻訳者はこの再配置の機能を信頼することができます: ネイティブでは@code{printf()}や@code{fprintf()}などがこの機能をサポートしていないプラットフォームも存在しますが、@file{libintl.a}(または@file{libintl.so})が再配置の関数を提供していて、@code{<libintl.h>}がこれらの再配置のための関数を自動的に有効化するからです。"
 
 #. type: cindex
 #: gettext.texi.orig:9024
 #, no-wrap
 msgid "outdigits"
-msgstr ""
+msgstr "outdigits"
 
 #. type: cindex
 #: gettext.texi.orig:9025
 #, no-wrap
 msgid "Arabic digits"
-msgstr ""
+msgstr "Arabic digits"
 
 #. type: Plain text
 #: gettext.texi.orig:9033
@@ -18785,7 +18785,7 @@ msgid ""
 "digits are replaced with the @samp{outdigits} defined in the @code{LC_CTYPE} "
 "locale category.  On other systems, the @code{gettext} function removes this "
 "flag, so that it has no effect."
-msgstr ""
+msgstr "Farsi(Persian)そして多分Arabicのための特別な機能として、翻訳者は数値の書式指定子に@samp{I}フラグを挿入できます。この場合、たとえば@code{\"%d\"}は@code{\"%Id\"} に翻訳されます。このフラグを指定すると、GNU @code{libc}のあるシステムでは、ASCIIでの数字の出力が、localeカテゴリーの@code{LC_CTYPE}で定義された@samp{outdigits}により置き換えられます。他のシステムでは、@code{gettext}関数がフラグを取り除くため、何の影響もありません。"
 
 #. type: Plain text
 #: gettext.texi.orig:9038
@@ -18794,7 +18794,7 @@ msgid ""
 "untranslated string.  (Putting the @samp{I} format directive flag into an "
 "@var{msgid} string would lead to undefined behaviour on platforms without "
 "glibc when NLS is disabled.)"
-msgstr ""
+msgstr "プログラマーはこのフラグを未翻訳の文字列に 挿入するべきでは@emph{ない}ことに注意してください(文字列@var{msgid}の書式指定のフラグに@samp{I}を挿入すると、glibcがないシステムでNLSが無効になっているときに、未定義の動作を招きます)。"
 
 #. type: Plain text
 #: gettext.texi.orig:9045
@@ -18802,7 +18802,7 @@ msgid ""
 "Objective C format strings are like C format strings.  They support an "
 "additional format directive: \"%@@\", which when executed consumes an "
 "argument of type @code{Object *}."
-msgstr ""
+msgstr "Objective Cの書式文字列は、Cの書式文字列と似ています。Objective Cの場合は、追加の書式指定子として、実行時に引数を@code{Object *}タイプとして評価するための\"%@@\"をサポートします。"
 
 #. type: Plain text
 #: gettext.texi.orig:9064
@@ -18819,7 +18819,7 @@ msgid ""
 "scripts, are not supported.  The @var{variable} names must consist solely of "
 "alphanumeric or underscore ASCII characters, not start with a digit and be "
 "nonempty; otherwise such a variable reference is ignored."
-msgstr ""
+msgstr "Shellの書式文字列はGNU gettextと@samp{envsubst}プログラムにより、@code{$@var{variable}}または@code{$@{@var{variable}@}}という形式で参照されるシェル変数がサポートされています。@code{$@{@var{variable}-@var{default}@}}、@code{$@{@var{variable}:-@var{default}@}}、@code{$@{@var{variable}=@var{default}@}}、@code{$@{@var{variable}:=@var{default}@}}、@code{$@{@var{variable}+@var{replacement}@}}、@code{$@{@var{variable}:+@var{replacement}@}}、@code{$@{@var{variable}?@var{ignored}@}}、@code{$@{@var{variable}:?@var{ignored}@}}で参照される、シェルスクリプト内だけで有効な形式はサポートされません。@var{variable}の名前には、半角の英数字かASCII文字のアンダースコアーしか含められません。また数字で開始することはできず、空も指定できません。そのような変数にたいする参照は無視されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:9072
@@ -18827,7 +18827,7 @@ msgid ""
 "There are two kinds of format strings in Python: those acceptable to the "
 "Python built-in format operator @code{%}, labelled as @samp{python-format}, "
 "and those acceptable to the @code{format} method of the @samp{str} object."
-msgstr ""
+msgstr "Pythonには2つの書式文字列があります。@samp{python-format}としてラベルづけされたPythonのビルトイン書式オペレーター@code{%}と、@samp{str}オブジェクトの@code{format}に適用できます。"
 
 #. type: Plain text
 #: gettext.texi.orig:9080
@@ -18837,14 +18837,14 @@ msgid ""
 "in Types} / @w{2.2.6. Sequence Types} / @w{2.2.6.2. String Formatting "
 "Operations}.  @uref{http://www.python.org/doc/2.2.1/lib/typesseq-strings."
 "html}."
-msgstr ""
+msgstr "Pythonの@code{%}書式文字列については @w{Python Library reference} / @w{2. Built-in Types, Exceptions and Functions} / @w{2.2. Built-in Types} / @w{2.2.6. Sequence Types} / @w{2.2.6.2. String Formatting Operations}で説明されています。@uref{http://www.python.org/doc/2.2.1/lib/typesseq-strings.html}を参照してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:9083
 msgid ""
 "Python brace format strings are described in @w{PEP 3101 -- Advanced String "
 "Formatting}, @uref{http://www.python.org/dev/peps/pep-3101/}."
-msgstr ""
+msgstr "Pythonカッコつき書式文字列(Python brace format strings)は、@w{PEP 3101 -- Advanced String Formatting}、@uref{http://www.python.org/dev/peps/pep-3101/}で説明されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9090
@@ -18852,7 +18852,7 @@ msgid ""
 "Lisp format strings are described in the Common Lisp HyperSpec, chapter 22.3 "
 "@w{Formatted Output}, @uref{http://www.lisp.org/HyperSpec/Body/sec_22-3."
 "html}."
-msgstr ""
+msgstr "Lispの書式文字列はCommon Lisp HyperSpecのchapter 22.3 @w{Formatted Output}、@uref{http://www.lisp.org/HyperSpec/Body/sec_22-3.html}で説明されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9099
@@ -18862,7 +18862,7 @@ msgid ""
 "manual-21-2.8/html_chapter/elisp_4.html#SEC75}.  Note that as of version 21, "
 "XEmacs supports numbered argument specifications in format strings while FSF "
 "Emacs doesn't."
-msgstr ""
+msgstr "Emacs Lispの書式文字列はEmacs Lisp referenceのsection @w{Formatting Strings}、@uref{http://www.gnu.org/manual/elisp-manual-21-2.8/html_chapter/elisp_4.html#SEC75}に記述されています。バージョン21のXEmacsでは、FSF Emacsがサポートしていない書式文字列内に番号付けられた引数指定をサポートすることに注意してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:9107
@@ -18871,14 +18871,14 @@ msgid ""
 "@w{Formatted Output}, @url{http://librep.sourceforge.net/librep-manual."
 "html#Formatted%20Output}, @url{http://www.gwinnup.org/research/docs/librep."
 "html#SEC122}."
-msgstr ""
+msgstr "librepの書式文字列はlibrep manualのsection@w{Formatted Output}、@url{http://librep.sourceforge.net/librep-manual.html#Formatted%20Output}、@url{http://www.gwinnup.org/research/docs/librep.html#SEC122}に記述されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9113
 msgid ""
 "Scheme format strings are documented in the SLIB manual, section @w{Format "
 "Specification}."
-msgstr ""
+msgstr "Schemeの書式文字列はSLIB manualのsection Format Specification に記述されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9123
@@ -18888,7 +18888,7 @@ msgid ""
 "@samp{bindWithArguments:}.  @uref{http://www.gnu.org/software/smalltalk/gst-"
 "manual/gst_68.html#SEC238}.  In summary, a directive starts with @samp{%} "
 "and is followed by @samp{%} or a nonzero digit (@samp{1} to @samp{9})."
-msgstr ""
+msgstr "Smalltalkの書式文字列は、GNU Smalltalk documentationのclass @code{CharArray}、methods @samp{bindWith:}と@samp{bindWithArguments:}で説明されています。@uref{http://www.gnu.org/software/smalltalk/gst-manual/gst_68.html#SEC238}を参照してください。要約すると、指定子は@samp{%}で開始され、@samp{%}か非0の数字(@samp{1} to @samp{9})が後に続きます。"
 
 #. type: Plain text
 #: gettext.texi.orig:9132
@@ -18897,7 +18897,7 @@ msgid ""
 "@code{java.text.MessageFormat}, @uref{http://java.sun.com/j2se/1.4/docs/api/"
 "java/text/MessageFormat.html}.  See also the ICU documentation @uref{http://"
 "oss.software.ibm.com/icu/apiref/classMessageFormat.html}."
-msgstr ""
+msgstr "Javaの書式文字列はJDK documentationの class @code{java.text.MessageFormat}、@uref{http://java.sun.com/j2se/1.4/docs/api/java/text/MessageFormat.html}で説明されています。ICU documentation、@uref{http://oss.software.ibm.com/icu/apiref/classMessageFormat.html}も参照してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:9139
@@ -18905,7 +18905,7 @@ msgid ""
 "C# format strings are described in the .NET documentation for class "
 "@code{System.String} and in @uref{http://msdn.microsoft.com/library/default."
 "asp?url=/library/en-us/cpguide/html/cpConFormattingOverview.asp}."
-msgstr ""
+msgstr "C#の書式文字列は.NET documentationのclass @code{System.String}と@uref{http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpConFormattingOverview.asp}で説明されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9146
@@ -18913,7 +18913,7 @@ msgid ""
 "awk format strings are described in the gawk documentation, section "
 "@w{Printf}, @uref{http://www.gnu.org/manual/gawk/html_node/Printf."
 "html#Printf}."
-msgstr ""
+msgstr "awkの書式文字列はgawk documentationのsection @w{Printf}、@uref{http://www.gnu.org/manual/gawk/html_node/Printf.html#Printf}で説明されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9153
@@ -18921,7 +18921,7 @@ msgid ""
 "Object Pascal format strings are described in the documentation of the Free "
 "Pascal runtime library, section Format, @uref{http://www.freepascal.org/docs-"
 "html/rtl/sysutils/format.html}."
-msgstr ""
+msgstr "Object Pascalの書式文字列はdocumentation of the Free Pascal runtime libraryのsection Format、@uref{http://www.freepascal.org/docs-html/rtl/sysutils/format.html}で説明されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9161
@@ -18930,14 +18930,14 @@ msgid ""
 "usr/share/doc/packages/libycp/YCP-builtins.html}.  In summary, a directive "
 "starts with @samp{%} and is followed by @samp{%} or a nonzero digit "
 "(@samp{1} to @samp{9})."
-msgstr ""
+msgstr "YCPの書式文字列はlibycp documentation @uref{file:/usr/share/doc/packages/libycp/YCP-builtins.html}で説明されています。要約すると、指定子は@samp{%}で開始され、@samp{%}か非0の数字(@samp{1}から@samp{9})が続きます。"
 
 #. type: Plain text
 #: gettext.texi.orig:9167
 msgid ""
 "Tcl format strings are described in the @file{format.n} manual page, "
 "@uref{http://www.scriptics.com/man/tcl8.3/TclCmd/format.htm}."
-msgstr ""
+msgstr "Tclの書式文字列は@file{format.n}のman、@uref{http://www.scriptics.com/man/tcl8.3/TclCmd/format.htm}で説明されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9175
@@ -18946,14 +18946,14 @@ msgid ""
 "built-in function @code{printf}, labelled as @samp{perl-format}, and those "
 "acceptable to the @code{libintl-perl} function @code{__x}, labelled as "
 "@samp{perl-brace-format}."
-msgstr ""
+msgstr "Perlには2種類の書式文字列があります。@samp{perl-format}とラベルつけされたPerlのビルトイン関数@code{printf}と、@samp{perl-brace-format}とラベルつけされた@code{libintl-perl}関数@code{__x}で利用することができます。"
 
 #. type: Plain text
 #: gettext.texi.orig:9178
 msgid ""
 "Perl @code{printf} format strings are described in the @code{sprintf} "
 "section of @samp{man perlfunc}."
-msgstr ""
+msgstr "Perlの@code{printf}の書式文字列は、@samp{man perlfunc}の@code{sprintf}のsectionで説明されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9184
@@ -18962,7 +18962,7 @@ msgid ""
 "TextDomain(3pm)} manual page of the CPAN package libintl-perl.  In brief, "
 "Perl format uses placeholders put between braces (@samp{@{} and @samp{@}}).  "
 "The placeholder must have the syntax of simple identifiers."
-msgstr ""
+msgstr "perl braceの書式文字列はCPANのパッケージlibintl-perlの@file{Locale::TextDomain(3pm)} manpageで説明されています。要約すると、Perl format はカッコ(@samp{@{}と@samp{@}})の間に記述されたプレースホルダーを使用します。このプレースホルダーは簡単に識別できる構文でなければなりません。"
 
 #. type: Plain text
 #: gettext.texi.orig:9191
@@ -18970,7 +18970,7 @@ msgid ""
 "PHP format strings are described in the documentation of the PHP function "
 "@code{sprintf}, in @file{phpdoc/manual/function.sprintf.html} or "
 "@uref{http://www.php.net/manual/en/function.sprintf.php}."
-msgstr ""
+msgstr "PHPの書式文字列は、@file{phpdoc/manual/function.sprintf.html}、または@uref{http://www.php.net/manual/en/function.sprintf.php}で説明されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:9209
@@ -18989,7 +18989,7 @@ msgid ""
 "@samp{O} denotes a binary operator, @samp{P} denotes a function parameter, "
 "@samp{Q} denotes an assignment operator, @samp{V} denotes a const/volatile "
 "qualifier."
-msgstr ""
+msgstr "これらの書式文字列は、GCCのソース内で使用されるものです。このような書式文字列では、指定子は@samp{%}で開始され、オプションのサイズ指定子@samp{l}、オプションフラグの@samp{+}、他のオプションフラグとして@samp{#}が続きます。終端させるための指定子は、@samp{%}の場合はリテラルのパーセント記号、@samp{c}の場合は文字、@samp{s}は文字列、@samp{i}および@samp{d}は整数、@samp{o}, @samp{u}, @samp{x}は符号なし整数、@samp{.*s}は前に幅指定をともなう文字列、@samp{H}@samp{location_t *}型のポインター、@samp{D}は一般的な宣言、@samp{F}は関数宣言、@samp{T}は型、@samp{A}は関数の引数、@samp{C}はtree code、@samp{E}は式、@samp{L}はプログラム言語、@samp{O}はバイナリー演算子、@samp{P}は関数パラメーター、@samp{Q}は assignment operator、@samp{V}はconst/volatile qualifierを表します。"
 
 #. type: Plain text
 #: gettext.texi.orig:9221
@@ -19002,7 +19002,7 @@ msgid ""
 "@samp{s} denotes a string, @samp{i} and @samp{d} denote an integer, @samp{u} "
 "denotes an unsigned integer.  @samp{i}, @samp{d}, and @samp{u} may be "
 "preceded by a size specifier @samp{l}."
-msgstr ""
+msgstr "これらの書式文字列はGNU Fortran Compilerのソース内で使用されます。これはGCC ソースのFortran用フロントエンドです。このような書式文字列では、指定子は@samp{%}で開始され、終端させるための指定子は、@samp{%}はリテラルのパーセント記号、@samp{C}は現在のソース位置、@samp{L}はソースの位置、@samp{c}は文字、@samp{s}は文字列、@samp{i} and @samp{d}は整数、@samp{u}は符号なし整数で、@samp{i}、@samp{d}、@samp{u}の場合は前には、サイズ指定子@samp{l}が指定されている場合があります。"
 
 #. type: Plain text
 #: gettext.texi.orig:9229
@@ -19011,7 +19011,7 @@ msgid ""
 "@uref{file:/usr/lib/qt-4.3.0/doc/html/qstring.html}.  In summary, a "
 "directive consists of a @samp{%} followed by a digit. The same directive "
 "cannot occur more than once in a format string."
-msgstr ""
+msgstr "Qtの書式文字列はdocumentation of the QString class @uref{file:/usr/lib/qt-4.3.0/doc/html/qstring.html}で説明されています。要約すると、指定子は@samp{%}とその後ろの数字から成り立ちます。1つの書式文字列内に同じ指定子を2回以上使うことはできません。"
 
 #. type: Plain text
 #: gettext.texi.orig:9236
@@ -19019,7 +19019,7 @@ msgid ""
 "Qt format strings are described in the documentation of the QObject::tr "
 "method @uref{file:/usr/lib/qt-4.3.0/doc/html/qobject.html}.  In summary, the "
 "only allowed directive is @samp{%n}."
-msgstr ""
+msgstr "Qtの書式文字列は documentation of the QObject::tr method @uref{file:/usr/lib/qt-4.3.0/doc/html/qobject.html}で説明されています。要約すると、使用できる指定子は@samp{%n}だけです。"
 
 #. type: Plain text
 #: gettext.texi.orig:9244
@@ -19028,7 +19028,7 @@ msgid ""
 "@samp{%} followed by a non-zero decimal number.  If a @samp{%n} occurs in a "
 "format strings, all of @samp{%1}, ..., @samp{%(n-1)} must occur as well, "
 "except possibly one of them."
-msgstr ""
+msgstr "KDE 4の書式文字列は次のように定義されています: 指定子は@samp{%}とその後ろの非0の10進数からなります。書式文字列内に@samp{%n}がある場合、それ以外の@samp{%1}、...、@samp{%(n-1)}も存在しなければなりません。"
 
 #. type: Plain text
 #: gettext.texi.orig:9255
@@ -19039,7 +19039,7 @@ msgid ""
 "such as @samp{%1$+5d}, or may be surrounded by vertical bars, such as "
 "@samp{%|1$+5d|} or @samp{%|1$+5|}, or consists of just an argument number "
 "between percent signs, such as @samp{%1%}."
-msgstr ""
+msgstr "Boostの書式文字列は、@uref{http://www.boost.org/libs/format/doc/format.html}のdocumentation of the boost::format class で説明されています。要約すると、指定子は@samp{%1$+5d}のようなCの書式文字列と同じ文法、または@samp{%|1$+5d|}や@samp{%|1$+5|}のように垂直バー囲まれたものか、@samp{%1%}のように単にパーセント記号で囲まれたものです。"
 
 #. type: Plain text
 #: gettext.texi.orig:9261
@@ -19047,7 +19047,7 @@ msgid ""
 "Lua format strings are described in the Lua reference manual, section "
 "@w{String Manipulation}, @uref{http://www.lua.org/manual/5.1/manual.html#pdf-"
 "string.format}."
-msgstr ""
+msgstr "Luaの書式文字列は、Lua reference manualのsection @w{String Manipulation}で説明されています。@uref{http://www.lua.org/manual/5.1/manual.html#pdf-string.format}を参照してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:9275
@@ -19061,14 +19061,14 @@ msgid ""
 "character, @samp{s} denotes a string, @samp{b}, @samp{d}, @samp{o}, "
 "@samp{x}, @samp{X} denote an integer, @samp{f} denotes floating-point "
 "number, @samp{j} denotes a JSON object."
-msgstr ""
+msgstr "JavaScript仕様には書式文字列が定義されていないとはいえ、多くのJavaScript実装はprintf-likeな関数を提供します。@code{xgettext}は、Gjs、Seed、Node.JSを含む著名なJavaScript実装で使用される、一般的な書式文字列のセットを理解します。そのような書式文字列では、書式指定は@samp{%}で開始され、以下の指定子で終端されます: @samp{%}はリテラルのパーセント、@samp{c}は文字、@samp{s}は文字列、@samp{b}、@samp{d}、@samp{o}、@samp{x}、@samp{X}は整数、@samp{f}は浮動小数点数、@samp{j}はJSONオブジェクトを表します。"
 
 #. type: Plain text
 #: gettext.texi.orig:9282
 msgid ""
 "For the maintainer, the general procedure differs from the C language case "
 "in two ways."
-msgstr ""
+msgstr "メンテナーにとっては、一般的な手続きでC言語の場合での方法と異なるのは、以下の2つです。"
 
 #. type: itemize
 #: gettext.texi.orig:9290
@@ -19078,7 +19078,7 @@ msgid ""
 "@code{gettextize} program without the @samp{--intl} option, and that he "
 "invokes the @code{AM_GNU_GETTEXT} autoconf macro via "
 "@samp{AM_GNU_GETTEXT([external])}."
-msgstr ""
+msgstr "GNU gettextを使用しない言語では、@file{intl/}ディレクトリーは必要ないので省略できます。これはメンテナーが@code{gettextize}プログラムを@samp{--intl}オプションなしで呼び出すこと、そしてautoconfマクロ@code{AM_GNU_GETTEXT}を@samp{AM_GNU_GETTEXT([external])}と呼び出すことを意味します。"
 
 #. type: itemize
 #: gettext.texi.orig:9300
@@ -19091,13 +19091,13 @@ msgid ""
 "@file{po/Makefile.in.in}.  It is recommended to make one @code{xgettext} "
 "invocation per programming language, each with the options appropriate for "
 "that language, and to combine the resulting files using @code{msgcat}."
-msgstr ""
+msgstr "もし使用されているプログラム言語が1つだけの場合には、@file{po/Makevars}(@ref{po/Makevars}を参照してください)の変数@code{XGETTEXT_OPTIONS}は、@code{xgettext}のその言語向け特有のオプションにする必要があります。パッケージが@code{gettext}のサポートを複数のプログラム言語を使用している場合、@file{po/Makefile.in.in}内のPOTファイルの構築ルールを変更する必要があります。この場合は、1つのプログラム言語ごとに、言語に適したオプションで@code{xgettext}呼び出しを行い、@code{msgcat}により結果ファイルを結合する方法をお勧めします。"
 
 #. type: cindex
 #: gettext.texi.orig:9386
 #, no-wrap
 msgid "C and C-like languages"
-msgstr ""
+msgstr "C and C-like languages"
 
 #. type: item
 #: gettext.texi.orig:9389 gettext.texi.orig:9449 gettext.texi.orig:9738
@@ -19111,12 +19111,12 @@ msgstr ""
 #: gettext.texi.orig:12027 gettext.texi.orig:12041 gettext.texi.orig:12058
 #, no-wrap
 msgid "RPMs"
-msgstr ""
+msgstr "RPM"
 
 #. type: table
 #: gettext.texi.orig:9391
 msgid "gcc, gpp, gobjc, glibc, gettext"
-msgstr ""
+msgstr "gcc、gpp、gobjc、glibc、gettext"
 
 #. type: item
 #: gettext.texi.orig:9392 gettext.texi.orig:9452 gettext.texi.orig:9741
@@ -19130,7 +19130,7 @@ msgstr ""
 #: gettext.texi.orig:12030 gettext.texi.orig:12044 gettext.texi.orig:12060
 #, no-wrap
 msgid "File extension"
-msgstr ""
+msgstr "ファイル拡張子"
 
 #. type: table
 #: gettext.texi.orig:9396
@@ -19138,6 +19138,9 @@ msgid ""
 "For C: @code{c}, @code{h}.  @*For C++: @code{C}, @code{c++}, @code{cc}, "
 "@code{cxx}, @code{cpp}, @code{hpp}.  @*For Objective C: @code{m}."
 msgstr ""
+"C: @code{c}、@code{h}@*\n"
+"C++: @code{C}、@code{c++}、@code{cc}、@code{cxx}、@code{cpp}、@code{hpp}@*\n"
+"Objective C: @code{m}"
 
 #. type: item
 #: gettext.texi.orig:9397 gettext.texi.orig:9455 gettext.texi.orig:9744
@@ -19150,7 +19153,7 @@ msgstr ""
 #: gettext.texi.orig:11914 gettext.texi.orig:11969
 #, no-wrap
 msgid "String syntax"
-msgstr ""
+msgstr "文字列構文"
 
 #. type: code{#1}
 #: gettext.texi.orig:9399 gettext.texi.orig:9835 gettext.texi.orig:9885
@@ -19161,7 +19164,7 @@ msgstr ""
 #: gettext.texi.orig:11917
 #, no-wrap
 msgid "\"abc\""
-msgstr ""
+msgstr "\"abc\""
 
 #. type: item
 #: gettext.texi.orig:9400 gettext.texi.orig:9458 gettext.texi.orig:9750
@@ -19174,14 +19177,14 @@ msgstr ""
 #: gettext.texi.orig:11923 gettext.texi.orig:11971
 #, no-wrap
 msgid "gettext shorthand"
-msgstr ""
+msgstr "gettextの略記"
 
 #. type: code{#1}
 #: gettext.texi.orig:9402 gettext.texi.orig:10142 gettext.texi.orig:10338
 #: gettext.texi.orig:10715 gettext.texi.orig:10766 gettext.texi.orig:11710
 #: gettext.texi.orig:11809 gettext.texi.orig:11871 gettext.texi.orig:11925
 msgid "_(\"abc\")"
-msgstr ""
+msgstr "_(\"abc\")"
 
 #. type: item
 #: gettext.texi.orig:9403 gettext.texi.orig:9461 gettext.texi.orig:9753
@@ -19194,14 +19197,14 @@ msgstr ""
 #: gettext.texi.orig:11926 gettext.texi.orig:11973
 #, no-wrap
 msgid "gettext/ngettext functions"
-msgstr ""
+msgstr "gettext/ngettext関数"
 
 #. type: table
 #: gettext.texi.orig:9406 gettext.texi.orig:10910 gettext.texi.orig:11813
 msgid ""
 "@code{gettext}, @code{dgettext}, @code{dcgettext}, @code{ngettext}, "
 "@code{dngettext}, @code{dcngettext}"
-msgstr ""
+msgstr "@code{gettext}、@code{dgettext}、@code{dcgettext}、@code{ngettext}、@code{dngettext}、@code{dcngettext}"
 
 #. type: item
 #: gettext.texi.orig:9407 gettext.texi.orig:9467 gettext.texi.orig:9758
@@ -19214,14 +19217,14 @@ msgstr ""
 #: gettext.texi.orig:11876 gettext.texi.orig:11930 gettext.texi.orig:11975
 #, no-wrap
 msgid "textdomain"
-msgstr ""
+msgstr "textdomain"
 
 #. type: table
 #: gettext.texi.orig:9409 gettext.texi.orig:9992 gettext.texi.orig:10913
 #: gettext.texi.orig:11717 gettext.texi.orig:11767 gettext.texi.orig:11816
 #: gettext.texi.orig:11878 gettext.texi.orig:11932
 msgid "@code{textdomain} function"
-msgstr ""
+msgstr "@code{textdomain}関数"
 
 #. type: item
 #: gettext.texi.orig:9410 gettext.texi.orig:9471 gettext.texi.orig:9762
@@ -19234,14 +19237,14 @@ msgstr ""
 #: gettext.texi.orig:11879 gettext.texi.orig:11933 gettext.texi.orig:11977
 #, no-wrap
 msgid "bindtextdomain"
-msgstr ""
+msgstr "bindtextdomain"
 
 #. type: table
 #: gettext.texi.orig:9412 gettext.texi.orig:9995 gettext.texi.orig:10613
 #: gettext.texi.orig:10916 gettext.texi.orig:11720 gettext.texi.orig:11770
 #: gettext.texi.orig:11819 gettext.texi.orig:11881 gettext.texi.orig:11935
 msgid "@code{bindtextdomain} function"
-msgstr ""
+msgstr "@code{bindtextdomain}関数"
 
 #. type: item
 #: gettext.texi.orig:9413 gettext.texi.orig:9475 gettext.texi.orig:9766
@@ -19254,12 +19257,12 @@ msgstr ""
 #: gettext.texi.orig:11936 gettext.texi.orig:11979
 #, no-wrap
 msgid "setlocale"
-msgstr ""
+msgstr "setlocale"
 
 #. type: table
 #: gettext.texi.orig:9415 gettext.texi.orig:11723 gettext.texi.orig:11822
 msgid "Programmer must call @code{setlocale (LC_ALL, \"\")}"
-msgstr ""
+msgstr "プログラマーは、@code{setlocale (LC_ALL, \"\")}を呼び出さなければなりません。"
 
 #. type: item
 #: gettext.texi.orig:9416 gettext.texi.orig:9478 gettext.texi.orig:9769
@@ -19272,7 +19275,7 @@ msgstr ""
 #: gettext.texi.orig:11939 gettext.texi.orig:11981
 #, no-wrap
 msgid "Prerequisite"
-msgstr ""
+msgstr "必要条件"
 
 #. type: table
 #: gettext.texi.orig:9420
@@ -19280,6 +19283,9 @@ msgid ""
 "@code{#include <libintl.h>} @*@code{#include <locale.h>} @*@code{#define "
 "_(string) gettext (string)}"
 msgstr ""
+"@code{#include <libintl.h>} @*\n"
+"@code{#include <locale.h>} @*\n"
+"@code{#define _(string) gettext (string)}"
 
 #. type: item
 #: gettext.texi.orig:9421 gettext.texi.orig:9481 gettext.texi.orig:9772
@@ -19292,12 +19298,12 @@ msgstr ""
 #: gettext.texi.orig:11942 gettext.texi.orig:11983
 #, no-wrap
 msgid "Use or emulate GNU gettext"
-msgstr ""
+msgstr "GNU gettextの使用またはエミュレート"
 
 #. type: table
 #: gettext.texi.orig:9423 gettext.texi.orig:11828
 msgid "Use"
-msgstr ""
+msgstr "使用"
 
 #. type: item
 #: gettext.texi.orig:9424 gettext.texi.orig:9484 gettext.texi.orig:9775
@@ -19311,13 +19317,13 @@ msgstr ""
 #: gettext.texi.orig:12033 gettext.texi.orig:12047 gettext.texi.orig:12062
 #, no-wrap
 msgid "Extractor"
-msgstr ""
+msgstr "抽出プログラム"
 
 #. type: code{#1}
 #: gettext.texi.orig:9426 gettext.texi.orig:10058 gettext.texi.orig:10164
 #: gettext.texi.orig:10363 gettext.texi.orig:10839 gettext.texi.orig:11831
 msgid "xgettext -k_"
-msgstr ""
+msgstr "xgettext -k_"
 
 #. type: item
 #: gettext.texi.orig:9427 gettext.texi.orig:9487 gettext.texi.orig:9778
@@ -19330,7 +19336,7 @@ msgstr ""
 #: gettext.texi.orig:11948 gettext.texi.orig:11987
 #, no-wrap
 msgid "Formatting with positions"
-msgstr ""
+msgstr "位置の書式"
 
 #. type: table
 #: gettext.texi.orig:9431
@@ -19338,6 +19344,8 @@ msgid ""
 "@code{fprintf \"%2$d %1$d\"} @*In C++: @code{autosprintf \"%2$d %1$d\"} "
 "(@pxref{Top, , Introduction, autosprintf, GNU autosprintf})"
 msgstr ""
+"@code{fprintf \"%2$d %1$d\"} @*\n"
+"C++は@code{autosprintf \"%2$d %1$d\"} (@ref{Top, , Introduction, autosprintf, GNU autosprintf}を参照してください)"
 
 #. type: item
 #: gettext.texi.orig:9432 gettext.texi.orig:9490 gettext.texi.orig:9781
@@ -19350,12 +19358,12 @@ msgstr ""
 #: gettext.texi.orig:11951 gettext.texi.orig:11989
 #, no-wrap
 msgid "Portability"
-msgstr ""
+msgstr "可搬性"
 
 #. type: table
 #: gettext.texi.orig:9434
 msgid "autoconf (gettext.m4) and #if ENABLE_NLS"
-msgstr ""
+msgstr "autoconf(gettext.m4)、および#if ENABLE_NLS"
 
 #. type: item
 #: gettext.texi.orig:9435 gettext.texi.orig:9493 gettext.texi.orig:9784
@@ -19368,7 +19376,7 @@ msgstr ""
 #: gettext.texi.orig:11954 gettext.texi.orig:11991
 #, no-wrap
 msgid "po-mode marking"
-msgstr ""
+msgstr "po-modeでのマーキング"
 
 #. type: Plain text
 #: gettext.texi.orig:9443
@@ -19377,34 +19385,34 @@ msgid ""
 "@code{hello-c}, @code{hello-c-gnome}, @code{hello-c++}, @code{hello-c++-qt}, "
 "@code{hello-c++-kde}, @code{hello-c++-gnome}, @code{hello-c++-wxwidgets}, "
 "@code{hello-objc}, @code{hello-objc-gnustep}, @code{hello-objc-gnome}."
-msgstr ""
+msgstr "@file{examples}ディレクトリーの以下の例が利用できます: @code{hello-c}、@code{hello-c-gnome}、@code{hello-c++}、@code{hello-c++-qt}、@code{hello-c++-kde}、@code{hello-c++-gnome}、@code{hello-c++-wxwidgets}、@code{hello-objc}、@code{hello-objc-gnustep}、@code{hello-objc-gnome}"
 
 #. type: cindex
 #: gettext.texi.orig:9446
 #, no-wrap
 msgid "shell scripts"
-msgstr ""
+msgstr "shell scripts"
 
 #. type: table
 #: gettext.texi.orig:9451
 msgid "bash, gettext"
-msgstr ""
+msgstr "bash、gettext"
 
 #. type: table
 #: gettext.texi.orig:9457
 msgid "@code{\"abc\"}, @code{'abc'}, @code{abc}"
-msgstr ""
+msgstr "@code{\"abc\"}、@code{'abc'}、@code{abc}"
 
 #. type: code{#1}
 #: gettext.texi.orig:9460
 msgid "\"`gettext \\\"abc\\\"`\""
-msgstr ""
+msgstr "\"`gettext \\\"abc\\\"`\""
 
 #. type: pindex
 #: gettext.texi.orig:9463
 #, no-wrap
 msgid "ngettext"
-msgstr ""
+msgstr "ngettext"
 
 #. type: table
 #: gettext.texi.orig:9466
@@ -19412,40 +19420,42 @@ msgid ""
 "@code{gettext}, @code{ngettext} programs @*@code{eval_gettext}, "
 "@code{eval_ngettext} shell functions"
 msgstr ""
+"プログラム: @code{gettext}、@code{ngettext}@*\n"
+"シェル関数: @code{eval_gettext}、@code{eval_ngettext}"
 
 #. type: vindex
 #: gettext.texi.orig:9468
 #, no-wrap
 msgid "TEXTDOMAIN@r{, environment variable}"
-msgstr ""
+msgstr "TEXTDOMAIN@r{, environment variable}"
 
 #. type: table
 #: gettext.texi.orig:9470
 msgid "environment variable @code{TEXTDOMAIN}"
-msgstr ""
+msgstr "環境変数@code{TEXTDOMAIN}"
 
 #. type: vindex
 #: gettext.texi.orig:9472
 #, no-wrap
 msgid "TEXTDOMAINDIR@r{, environment variable}"
-msgstr ""
+msgstr "TEXTDOMAINDIR@r{, environment variable}"
 
 #. type: table
 #: gettext.texi.orig:9474
 msgid "environment variable @code{TEXTDOMAINDIR}"
-msgstr ""
+msgstr "環境変数@code{TEXTDOMAINDIR}"
 
 #. type: table
 #: gettext.texi.orig:9477 gettext.texi.orig:9850 gettext.texi.orig:9902
 #: gettext.texi.orig:9950 gettext.texi.orig:10155 gettext.texi.orig:10354
 #: gettext.texi.orig:10658 gettext.texi.orig:11884 gettext.texi.orig:11938
 msgid "automatic"
-msgstr ""
+msgstr "自動"
 
 #. type: code{#1}
 #: gettext.texi.orig:9480
 msgid ". gettext.sh"
-msgstr ""
+msgstr ". gettext.sh"
 
 #. type: table
 #: gettext.texi.orig:9483 gettext.texi.orig:9856 gettext.texi.orig:9908
@@ -19453,7 +19463,7 @@ msgstr ""
 #: gettext.texi.orig:10622 gettext.texi.orig:10784 gettext.texi.orig:11729
 #: gettext.texi.orig:11779 gettext.texi.orig:11890
 msgid "use"
-msgstr ""
+msgstr "使用"
 
 #. type: code{#1}
 #: gettext.texi.orig:9486 gettext.texi.orig:9777 gettext.texi.orig:9959
@@ -19461,7 +19471,7 @@ msgstr ""
 #: gettext.texi.orig:10736 gettext.texi.orig:10787 gettext.texi.orig:11732
 #: gettext.texi.orig:11893 gettext.texi.orig:11947 gettext.texi.orig:12020
 msgid "xgettext"
-msgstr ""
+msgstr "xgettext"
 
 #. type: table
 #: gettext.texi.orig:9489 gettext.texi.orig:9495 gettext.texi.orig:9786
@@ -19479,26 +19489,26 @@ msgstr ""
 #: gettext.texi.orig:11896 gettext.texi.orig:11902 gettext.texi.orig:11941
 #: gettext.texi.orig:11950 gettext.texi.orig:11956
 msgid "---"
-msgstr ""
+msgstr "---"
 
 #. type: table
 #: gettext.texi.orig:9492 gettext.texi.orig:9783 gettext.texi.orig:10118
 #: gettext.texi.orig:10170 gettext.texi.orig:10369 gettext.texi.orig:10744
 #: gettext.texi.orig:10793 gettext.texi.orig:10845
 msgid "fully portable"
-msgstr ""
+msgstr "完全な可搬性がある"
 
 #. type: Plain text
 #: gettext.texi.orig:9498
 msgid ""
 "An example is available in the @file{examples} directory: @code{hello-sh}."
-msgstr ""
+msgstr "@file{examples}ディレクトリーの例@code{hello-sh}が利用できます"
 
 #. type: cindex
 #: gettext.texi.orig:9511
 #, no-wrap
 msgid "preparing shell scripts for translation"
-msgstr ""
+msgstr "preparing shell scripts for translation"
 
 #. type: Plain text
 #: gettext.texi.orig:9516
@@ -19506,18 +19516,18 @@ msgid ""
 "Preparing a shell script for internationalization is conceptually similar to "
 "the steps described in @ref{Sources}.  The concrete steps for shell scripts "
 "are as follows."
-msgstr ""
+msgstr "インターナショナリゼーションにむけたシェルの準備は、概念的には@ref{Sources}で説明したステップと似ています。以下はシェルスクリプトのための具体的なステップです。"
 
 #. type: enumerate
 #: gettext.texi.orig:9520
 msgid "Insert the line"
-msgstr ""
+msgstr "スクリプトの冒頭付近に、以下の行を挿入します。"
 
 #. type: smallexample
 #: gettext.texi.orig:9523
 #, no-wrap
 msgid ". gettext.sh\n"
-msgstr ""
+msgstr ". gettext.sh\n"
 
 #. type: enumerate
 #: gettext.texi.orig:9530
@@ -19526,7 +19536,7 @@ msgid ""
 "that provides the functions @code{eval_gettext} (see @ref{eval_gettext "
 "Invocation}) and @code{eval_ngettext} (see @ref{eval_ngettext Invocation}).  "
 "You have to ensure that @code{gettext.sh} can be found in the @code{PATH}."
-msgstr ""
+msgstr "@code{gettext.sh}は、関数@code{eval_gettext}(@ref{eval_gettext Invocation}を参照してください)と、@code{eval_ngettext}(@ref{eval_ngettext Invocation}を参照してください)を提供するシェルの関数ライブラリーです。@code{gettext.sh}は、@code{PATH}に記述された検索パスに配置されている必要があります。"
 
 #. type: enumerate
 #: gettext.texi.orig:9536
@@ -19535,7 +19545,7 @@ msgid ""
 "variables.  Usually @code{TEXTDOMAIN} is the package or program name, and "
 "@code{TEXTDOMAINDIR} is the absolute pathname corresponding to @code{$prefix/"
 "share/locale}, where @code{$prefix} is the installation location."
-msgstr ""
+msgstr "環境変数@code{TEXTDOMAIN}および@code{TEXTDOMAINDIR}を、setしてexportします。@code{TEXTDOMAIN}は通常はパッケージ名かプログラム名、@code{TEXTDOMAINDIR}は@code{$prefix/share/locale}に対応する絶対パスです。ここで@code{$prefix}はインストールした場所です。"
 
 #. type: smallexample
 #: gettext.texi.orig:9542
@@ -19546,12 +19556,16 @@ msgid ""
 "TEXTDOMAINDIR=@@LOCALEDIR@@\n"
 "export TEXTDOMAINDIR\n"
 msgstr ""
+"TEXTDOMAIN=@@PACKAGE@@\n"
+"export TEXTDOMAIN\n"
+"TEXTDOMAINDIR=@@LOCALEDIR@@\n"
+"export TEXTDOMAINDIR\n"
 
 #. type: enumerate
 #: gettext.texi.orig:9546
 msgid ""
 "Prepare the strings for translation, as described in @ref{Preparing Strings}."
-msgstr ""
+msgstr "@ref{Preparing Strings}で説明しているように、翻訳する文字列を準備します。"
 
 #. type: enumerate
 #: gettext.texi.orig:9554
@@ -19562,18 +19576,18 @@ msgid ""
 "positional arguments (like @code{$0}, @code{$1}, ...) or highly volatile "
 "shell variables (like @code{$?}). This can always be done through simple "
 "local code restructuring.  For example,"
-msgstr ""
+msgstr "翻訳可能な文字列を単純にするため、コマンドによる文字列の置き換え((@code{\"`...`\"}または@code{\"$(...)\"}))や、デフォルト値が含まれる変数(例：@code{$@{@var{variable}-@var{default}@}})、@code{$0}, @code{$1}, ...のような引数参照、一時的なシェル変数(例: @code{$?})を含めないようにします。こうすることにより、常に単純なlocalコードを再構築することができます。たとえば、"
 
 #. type: smallexample
 #: gettext.texi.orig:9557
 #, no-wrap
 msgid "echo \"Usage: $0 [OPTION] FILE...\"\n"
-msgstr ""
+msgstr "echo \"Usage: $0 [OPTION] FILE...\"\n"
 
 #. type: enumerate
 #: gettext.texi.orig:9560 gettext.texi.orig:9573 gettext.texi.orig:9598
 msgid "becomes"
-msgstr ""
+msgstr "は以下のように書き換えます"
 
 #. type: smallexample
 #: gettext.texi.orig:9564
@@ -19582,17 +19596,19 @@ msgid ""
 "program_name=$0\n"
 "echo \"Usage: $program_name [OPTION] FILE...\"\n"
 msgstr ""
+"program_name=$0\n"
+"echo \"Usage: $program_name [OPTION] FILE...\"\n"
 
 #. type: enumerate
 #: gettext.texi.orig:9567
 msgid "Similarly,"
-msgstr ""
+msgstr "同様に、"
 
 #. type: smallexample
 #: gettext.texi.orig:9570
 #, no-wrap
 msgid "echo \"Remaining files: `ls | wc -l`\"\n"
-msgstr ""
+msgstr "echo \"Remaining files: `ls | wc -l`\"\n"
 
 #. type: smallexample
 #: gettext.texi.orig:9577
@@ -19601,6 +19617,8 @@ msgid ""
 "filecount=\"`ls | wc -l`\"\n"
 "echo \"Remaining files: $filecount\"\n"
 msgstr ""
+"filecount=\"`ls | wc -l`\"\n"
+"echo \"Remaining files: $filecount\"\n"
 
 #. type: enumerate
 #: gettext.texi.orig:9587
@@ -19612,7 +19630,7 @@ msgid ""
 "the terminating newline). Similarly, for cases with plural handling, replace "
 "a conditional @samp{echo} command with an invocation of @samp{ngettext} or "
 "@samp{eval_ngettext}, followed by a no-argument @samp{echo} command."
-msgstr ""
+msgstr "個々の翻訳可能な文字列にたいして、出力コマンド@samp{echo}や@samp{$echo}を、@samp{gettext}(文字列にシェル変数の参照が含まれない場合)や@samp{eval_gettext}(シェル変数を参照する場合)に変更して、その後ろに引数を指定しない@samp{echo}コマンドを記述します(これは行末の改行のためです)。pluralを扱う場合は同様に、@samp{echo}コマンドを@samp{ngettext}または@samp{eval_ngettext}の呼び出しに置き換えて、後に引数なしの@samp{echo}コマンドを記述します。"
 
 #. type: enumerate
 #: gettext.texi.orig:9592
@@ -19621,19 +19639,19 @@ msgid ""
 "sign in references to shell variables, so that the @samp{eval_gettext} "
 "function receives the translatable string before the variable values are "
 "substituted into it. For example,"
-msgstr ""
+msgstr "この変更を行う際には、シェル変数への参照の前にある$記号をエスケープするためのバックスラッシュを追加する必要もあります。そうすれば@samp{eval_gettext}関数が変数が置き換える前の、翻訳可能な文字列を受けとることができます。例えば以下のような文字列で考えてみましょう"
 
 #. type: smallexample
 #: gettext.texi.orig:9595
 #, no-wrap
 msgid "echo \"Remaining files: $filecount\"\n"
-msgstr ""
+msgstr "echo \"Remaining files: $filecount\"\n"
 
 #. type: smallexample
 #: gettext.texi.orig:9601
 #, no-wrap
 msgid "eval_gettext \"Remaining files: \\$filecount\"; echo\n"
-msgstr ""
+msgstr "eval_gettext \"Remaining files: \\$filecount\"; echo\n"
 
 #. type: enumerate
 #: gettext.texi.orig:9608
@@ -19643,83 +19661,83 @@ msgid ""
 "backquotes, backslashes must be doubled to be effective (because the "
 "backquoting eats one level of backslashes). For example, assuming that "
 "@samp{error} is a shell function that signals an error,"
-msgstr ""
+msgstr "出力コマンドが@samp{echo}ではないときも、バッククォートにより@samp{echo}を使うことができます。バッククォートの内側では、バックスラッシュを2重に指定しなければ効果がないことに注意しなければなりません(これはバッククォートすることにより、バックスラッシュが1階層分消費されるからです)。例として、@samp{echo}がエラーをシグナルするシェル関数だとすると、"
 
 #. type: smallexample
 #: gettext.texi.orig:9611
 #, no-wrap
 msgid "error \"file not found: $filename\"\n"
-msgstr ""
+msgstr "error \"file not found: $filename\"\n"
 
 #. type: enumerate
 #: gettext.texi.orig:9614
 msgid "is first transformed into"
-msgstr ""
+msgstr "は最初に以下へ変換され"
 
 #. type: smallexample
 #: gettext.texi.orig:9617
 #, no-wrap
 msgid "error \"`echo \\\"file not found: \\$filename\\\"`\"\n"
-msgstr ""
+msgstr "error \"`echo \\\"file not found: \\$filename\\\"`\"\n"
 
 #. type: enumerate
 #: gettext.texi.orig:9620
 msgid "which then becomes"
-msgstr ""
+msgstr "となり、その後以下のようになります"
 
 #. type: smallexample
 #: gettext.texi.orig:9623
 #, no-wrap
 msgid "error \"`eval_gettext \\\"file not found: \\\\\\$filename\\\"`\"\n"
-msgstr ""
+msgstr "error \"`eval_gettext \\\"file not found: \\\\\\$filename\\\"`\"\n"
 
 #. type: Plain text
 #: gettext.texi.orig:9631
 msgid ""
 "@code{gettext.sh}, contained in the run-time package of GNU gettext, "
 "provides the following:"
-msgstr ""
+msgstr "@code{gettext.sh}にはGNU gettextのランタイム パッケージが含まれており、以下が提供されます:"
 
 #. type: item
 #: gettext.texi.orig:9633
 #, no-wrap
 msgid "$echo"
-msgstr ""
+msgstr "$echo"
 
 #. type: itemize
 #: gettext.texi.orig:9636
 msgid ""
 "The variable @code{echo} is set to a command that outputs its first argument "
 "and a newline, without interpreting backslashes in the argument string."
-msgstr ""
+msgstr "変数@code{echo}には、最初の引数(引数文字列内のバックスラッシュの解釈されません)と、改行を出力するコマンドがセットされます。"
 
 #. type: item
 #: gettext.texi.orig:9637
 #, no-wrap
 msgid "eval_gettext"
-msgstr ""
+msgstr "eval_gettext"
 
 #. type: itemize
 #: gettext.texi.orig:9639
 msgid "See @ref{eval_gettext Invocation}."
-msgstr ""
+msgstr "@ref{eval_gettext Invocation}を参照してください。"
 
 #. type: item
 #: gettext.texi.orig:9640
 #, no-wrap
 msgid "eval_ngettext"
-msgstr ""
+msgstr "eval_ngettext"
 
 #. type: itemize
 #: gettext.texi.orig:9642
 msgid "See @ref{eval_ngettext Invocation}."
-msgstr ""
+msgstr "@ref{eval_ngettext Invocation}を参照してください。"
 
 #. type: include
 #: gettext.texi.orig:9647
 #, no-wrap
 msgid "rt-gettext.texi"
-msgstr ""
+msgstr "rt-gettext.texi"
 
 #. type: Plain text
 #: gettext.texi.orig:9652
@@ -19727,13 +19745,13 @@ msgid ""
 "Note: @code{xgettext} supports only the one-argument form of the "
 "@code{gettext} invocation, where no options are present and the "
 "@var{textdomain} is implicit, from the environment."
-msgstr ""
+msgstr "注意: @code{xgettext}は@code{gettext}呼び出しで1つだけ引数を指定した形式(オプションを指定せず、環境変数から暗黙に@var{textdomain}を取得する形式)だけをサポートします。"
 
 #. type: include
 #: gettext.texi.orig:9656
 #, no-wrap
 msgid "rt-ngettext.texi"
-msgstr ""
+msgstr "rt-ngettext.texi"
 
 #. type: Plain text
 #: gettext.texi.orig:9661
@@ -19741,31 +19759,31 @@ msgid ""
 "Note: @code{xgettext} supports only the three-arguments form of the "
 "@code{ngettext} invocation, where no options are present and the "
 "@var{textdomain} is implicit, from the environment."
-msgstr ""
+msgstr "注意: @code{xgettext}は@code{ngettext}呼び出しで3つの引数を指定した形式(オプションを指定せず、環境変数から暗黙に@var{textdomain}を取得する形式)だけをサポートします。"
 
 #. type: include
 #: gettext.texi.orig:9665
 #, no-wrap
 msgid "rt-envsubst.texi"
-msgstr ""
+msgstr "rt-envsubst.texi"
 
 #. type: cindex
 #: gettext.texi.orig:9670
 #, no-wrap
 msgid "@code{eval_gettext} function, usage"
-msgstr ""
+msgstr "@code{eval_gettext} function, usage"
 
 #. type: example
 #: gettext.texi.orig:9673
 #, no-wrap
 msgid "eval_gettext @var{msgid}\n"
-msgstr ""
+msgstr "eval_gettext @var{msgid}\n"
 
 #. type: cindex
 #: gettext.texi.orig:9675
 #, no-wrap
 msgid "lookup message translation"
-msgstr ""
+msgstr "lookup message translation"
 
 #. type: Plain text
 #: gettext.texi.orig:9679
@@ -19773,25 +19791,25 @@ msgid ""
 "This function outputs the native language translation of a textual message, "
 "performing dollar-substitution on the result.  Note that only shell "
 "variables mentioned in @var{msgid} will be dollar-substituted in the result."
-msgstr ""
+msgstr "この関数は、テキストメッセージを母国語に翻訳して、翻訳した結果文字列に含まれる$記号のついた変数にたいして置き換え処理を行ってから出力します。$変数にたいする置き換えは、@var{msgid}に含まれるシェル変数にたいしてだけ行われることに注意してください。"
 
 #. type: cindex
 #: gettext.texi.orig:9683
 #, no-wrap
 msgid "@code{eval_ngettext} function, usage"
-msgstr ""
+msgstr "@code{eval_ngettext} function, usage"
 
 #. type: example
 #: gettext.texi.orig:9686
 #, no-wrap
 msgid "eval_ngettext @var{msgid} @var{msgid-plural} @var{count}\n"
-msgstr ""
+msgstr "eval_ngettext @var{msgid} @var{msgid-plural} @var{count}\n"
 
 #. type: cindex
 #: gettext.texi.orig:9688
 #, no-wrap
 msgid "lookup plural message translation"
-msgstr ""
+msgstr "lookup plural message translation"
 
 #. type: Plain text
 #: gettext.texi.orig:9693
@@ -19800,7 +19818,7 @@ msgid ""
 "whose grammatical form depends on a number, performing dollar-substitution "
 "on the result.  Note that only shell variables mentioned in @var{msgid} or "
 "@var{msgid-plural} will be dollar-substituted in the result."
-msgstr ""
+msgstr "この関数は、数に依存した文法をもつテキストメッセージを母国語に翻訳して、翻訳した結果文字列に含まれる$記号のついた変数にたいして置き換え処理を行ってから出力します。$変数にたいする置き換えは、@var{msgid}または@var{msgid-plural}に含まれるシェル変数にたいしてだけ行われることに注意してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:9702
@@ -19809,7 +19827,7 @@ msgid ""
 "string and substituting variable values in it: @code{$\"msgid\"}.  But the "
 "use of this construct is @strong{discouraged}, due to the security holes it "
 "opens and due to its portability problems."
-msgstr ""
+msgstr "GNU @code{bash} 2.0以降には、変数の中の文字列を翻訳して置き換えるための特別な略記法@code{$\"msgid\"}があります。しかし、これによりもたらされるセキュリティーホールと可搬性の問題により、この機能の使用には 賛成できません。"
 
 #. type: Plain text
 #: gettext.texi.orig:9707
@@ -19818,7 +19836,7 @@ msgid ""
 "up the translation of the string, @code{bash} processes it like it processes "
 "any double-quoted string: dollar and backquote processing, like @samp{eval} "
 "does."
-msgstr ""
+msgstr "@code{$\"...\"}によるセキュリティーホールとは、その文字列にたいする翻訳を検索した後、@samp{eval}が2重引用符に囲まれた文字列や$ 記号、バッククォートされた文字列にたいして行うのと同様なことを@code{bash}が行う点にあります。"
 
 #. type: enumerate
 #: gettext.texi.orig:9722
@@ -19836,7 +19854,7 @@ msgid ""
 "@code{gettext()} function which will, during its conversion from the "
 "translator's encoding to the user's locale's encoding, produce the dangerous "
 "@code{\\x60} bytes."
-msgstr ""
+msgstr "エンコーディングがBIG5、BIG5-HKSCS、GBK、GB18030、SHIFT_JIS、JOHABのいずれかを使うlocaleでは、2byte文字の2byte目が@code{0x60}の文字が存在します。たとえば、これらのlocaleでは@code{\\xe0\\x60}というバイト並びは1つの文字です。@code{bash}の多くのバージョン(bash-2.05以降、およびmbsrtowcs()関数を持たないプラットフォーム向けの新しいバージョン)は、文字境界を認識しないので、特定のChinese文字をバッククォートと認識します。このため翻訳の一部がコマンドリストとして実行されてしまうことが起こり得るのです。この状況は翻訳者が気をつけていても起こり得ます。翻訳者が翻訳をUTF-8エンコーディングで提供したとしても、その翻訳は@code{gettext()}関数によって翻訳者のエンコーディングからユーザーのlocaleのエンコーディングに変換され、その変換によって\"危険な\"@code{\\x60}というバイトが生成される可能性があるからです。"
 
 #. type: enumerate
 #: gettext.texi.orig:9727
@@ -19845,7 +19863,7 @@ msgid ""
 "@code{\"`...`\"} or dollar-parentheses @code{\"$(...)\"} in her "
 "translations.  The enclosed strings would be executed as command lists by "
 "the shell."
-msgstr ""
+msgstr "故意にせよ不注意にせよ、翻訳者は翻訳の中にバッククォート@code{\"`...`\"}や、$カッコ@code{\"$(...)\"}を使用することもあり得るので、それらに囲まれた文字列はコマンドリストとしてシェルにより実行されてしまいます。"
 
 #. type: Plain text
 #: gettext.texi.orig:9732
@@ -19853,17 +19871,17 @@ msgid ""
 "The portability problem is that @code{bash} must be built with "
 "internationalization support; this is normally not the case on systems that "
 "don't have the @code{gettext()} function in libc."
-msgstr ""
+msgstr "可搬性の問題とは、@code{bash}をインターナショナリゼーションのサポート付きでビルドしなければならないことです。これはlibcに@code{gettext()}関数がないシステムでは、通常できません。"
 
 #. type: table
 #: gettext.texi.orig:9740
 msgid "python"
-msgstr ""
+msgstr "python"
 
 #. type: code{#1}
 #: gettext.texi.orig:9743
 msgid "py"
-msgstr ""
+msgstr "py"
 
 #. type: table
 #: gettext.texi.orig:9749
@@ -19873,60 +19891,60 @@ msgid ""
 "@code{u'''abc'''}, @code{r'''abc'''}, @code{ur'''abc'''}, @*@code{\"\"\"abc"
 "\"\"\"}, @code{u\"\"\"abc\"\"\"}, @code{r\"\"\"abc\"\"\"}, @code{ur\"\"\"abc"
 "\"\"\"}"
-msgstr ""
+msgstr "@code{'abc'}、@code{u'abc'}、@code{r'abc'}、@code{ur'abc'}、@*@code{\"abc\"}、@code{u\"abc\"}、@code{r\"abc\"}、@code{ur\"abc\"}、@*@code{'''abc'''}、@code{u'''abc'''}、@code{r'''abc'''}、@code{ur'''abc'''}、@*@code{\"\"\"abc\"\"\"}、@code{u\"\"\"abc\"\"\"}、@code{r\"\"\"abc\"\"\"}、@code{ur\"\"\"abc\"\"\"}"
 
 #. type: table
 #: gettext.texi.orig:9752
 msgid "@code{_('abc')} etc."
-msgstr ""
+msgstr "@code{_('abc')}など"
 
 #. type: table
 #: gettext.texi.orig:9757
 msgid ""
 "@code{gettext.gettext}, @code{gettext.dgettext}, @code{gettext.ngettext}, "
 "@code{gettext.dngettext}, also @code{ugettext}, @code{ungettext}"
-msgstr ""
+msgstr "@code{gettext.gettext}、@code{gettext.dgettext}、@code{gettext.ngettext}、@code{gettext.dngettext}、@code{ugettext}、@code{ungettext}"
 
 #. type: table
 #: gettext.texi.orig:9761
 msgid ""
 "@code{gettext.textdomain} function, or @code{gettext.install(@var{domain})} "
 "function"
-msgstr ""
+msgstr "@code{gettext.textdomain}関数、または@code{gettext.install(@var{domain})}関数"
 
 #. type: table
 #: gettext.texi.orig:9765
 msgid ""
 "@code{gettext.bindtextdomain} function, or @code{gettext."
 "install(@var{domain},@var{localedir})} function"
-msgstr ""
+msgstr "@code{gettext.bindtextdomain}関数、または@code{gettext.install(@var{domain},@var{localedir})}関数"
 
 #. type: table
 #: gettext.texi.orig:9768
 msgid "not used by the gettext emulation"
-msgstr ""
+msgstr "gettextエミュレーションでは使用されません"
 
 #. type: code{#1}
 #: gettext.texi.orig:9771
 msgid "import gettext"
-msgstr ""
+msgstr "import gettext"
 
 #. type: table
 #: gettext.texi.orig:9774 gettext.texi.orig:10109
 msgid "emulate"
-msgstr ""
+msgstr "エミュレート"
 
 #. type: code{#1}
 #: gettext.texi.orig:9780
 msgid "'...%(ident)d...' % @{ 'ident': value @}"
-msgstr ""
+msgstr "'...%(ident)d...' % @{ 'ident': value @}"
 
 #. type: Plain text
 #: gettext.texi.orig:9789
 msgid ""
 "An example is available in the @file{examples} directory: @code{hello-"
 "python}."
-msgstr ""
+msgstr "@file{examples}ディレクトリーの例@code{hello-python}を利用できます。"
 
 #. type: Plain text
 #: gettext.texi.orig:9794
@@ -19935,7 +19953,7 @@ msgid ""
 "arguments, such as @code{'...%d...'}, and format strings with named "
 "arguments, such as @code{'...%(ident)d...'}.  The latter are preferable for "
 "internationalized programs, for two reasons:"
-msgstr ""
+msgstr "書式文字列についての注意: Pythonは@code{'...%d...'}のような名前なし引数の書式文字列をサポートと、@code{'...%(ident)d...'}のような名前つき引数の書式文字列をサポートする。以下の2つの理由により、インターナショナライズされたプログラムでは後者の方が好ましい"
 
 #. type: itemize
 #: gettext.texi.orig:9800
@@ -19944,30 +19962,30 @@ msgid ""
 "provide a translation that uses the arguments in a different order, if the "
 "format string uses named arguments.  For example, the translator can "
 "reformulate"
-msgstr ""
+msgstr "書式文字列が2つ以上の引数をとるときに、書式文字列に名前付きの引数を使っていれば、翻訳者は引数を異なる順序で使用するような翻訳を提供できます。例えば以下のような書式文字列"
 
 #. type: smallexample
 #: gettext.texi.orig:9802
 #, no-wrap
 msgid "\"'%(volume)s' has only %(freespace)d bytes free.\"\n"
-msgstr ""
+msgstr "\"'%(volume)s' has only %(freespace)d bytes free.\"\n"
 
 #. type: itemize
 #: gettext.texi.orig:9805
 msgid "to"
-msgstr ""
+msgstr "から"
 
 #. type: smallexample
 #: gettext.texi.orig:9807
 #, no-wrap
 msgid "\"Only %(freespace)d bytes free on '%(volume)s'.\"\n"
-msgstr ""
+msgstr "\"Only %(freespace)d bytes free on '%(volume)s'.\"\n"
 
 #. type: itemize
 #: gettext.texi.orig:9810
 msgid ""
 "Additionally, the identifiers also provide some context to the translator."
-msgstr ""
+msgstr "に書き換えることができます。さらに識別名により翻訳者にコンテキストを提供できます。"
 
 #. type: itemize
 #: gettext.texi.orig:9818
@@ -19978,243 +19996,243 @@ msgid ""
 "individual arguments from format strings like this is only possible with the "
 "named argument syntax.  (With unnamed arguments, Python -- unlike C -- "
 "verifies that the format string uses all supplied arguments.)"
-msgstr ""
+msgstr "多くの言語のplural formのコンテキストでは、singular formのための書式文字列で、数値引数は使用されません。Englishでも、@code{\"1 hour\"}より@code{\"one hour\"}と書くのが好まれたりします。このように、書式文字列から特定の引数を除外するのは、名前付き引数の構文でのみ可能なことです(名前なし引数の場合、Python は -- C とは異なり -- 与えられたすべての引数が書式文字列で使用されているかチェックするからです)。"
 
 #. type: cindex
 #: gettext.texi.orig:9823
 #, no-wrap
 msgid "Lisp"
-msgstr ""
+msgstr "Lisp"
 
 #. type: table
 #: gettext.texi.orig:9824 gettext.texi.orig:9879
 #, no-wrap
 msgid "clisp"
-msgstr ""
+msgstr "clisp"
 
 #. type: table
 #: gettext.texi.orig:9829
 msgid "clisp 2.28 or newer"
-msgstr ""
+msgstr "clisp 2.28以降"
 
 #. type: code{#1}
 #: gettext.texi.orig:9832
 msgid "lisp"
-msgstr ""
+msgstr "lisp"
 
 #. type: table
 #: gettext.texi.orig:9838
 msgid "@code{(_ \"abc\")}, @code{(ENGLISH \"abc\")}"
-msgstr ""
+msgstr "@code{(_ \"abc\")}、@code{(ENGLISH \"abc\")}"
 
 #. type: table
 #: gettext.texi.orig:9841
 msgid "@code{i18n:gettext}, @code{i18n:ngettext}"
-msgstr ""
+msgstr "@code{i18n:gettext}、@code{i18n:ngettext}"
 
 #. type: code{#1}
 #: gettext.texi.orig:9844
 msgid "i18n:textdomain"
-msgstr ""
+msgstr "i18n:textdomain"
 
 #. type: code{#1}
 #: gettext.texi.orig:9847
 msgid "i18n:textdomaindir"
-msgstr ""
+msgstr "i18n:textdomaindir"
 
 #. type: code{#1}
 #: gettext.texi.orig:9859
 msgid "xgettext -k_ -kENGLISH"
-msgstr ""
+msgstr "xgettext -k_ -kENGLISH"
 
 #. type: code{#1}
 #: gettext.texi.orig:9862
 msgid "format \"~1@@*~D ~0@@*~D\""
-msgstr ""
+msgstr "format \"~1@@*~D ~0@@*~D\""
 
 #. type: table
 #: gettext.texi.orig:9865 gettext.texi.orig:9917 gettext.texi.orig:10013
 #: gettext.texi.orig:10066
 msgid "On platforms without gettext, no translation."
-msgstr ""
+msgstr "gettextのないプラットフォームでは、翻訳しません"
 
 #. type: Plain text
 #: gettext.texi.orig:9871
 msgid ""
 "An example is available in the @file{examples} directory: @code{hello-clisp}."
-msgstr ""
+msgstr "@file{examples}ディレクトリーの例@code{hello-clisp}が利用できます"
 
 #. type: cindex
 #: gettext.texi.orig:9874
 #, no-wrap
 msgid "clisp C sources"
-msgstr ""
+msgstr "clisp C sources"
 
 #. type: code{#1}
 #: gettext.texi.orig:9882
 msgid "d"
-msgstr ""
+msgstr "d"
 
 #. type: table
 #: gettext.texi.orig:9890
 msgid ""
 "@code{ENGLISH ? \"abc\" : \"\"} @*@code{GETTEXT(\"abc\")} "
 "@*@code{GETTEXTL(\"abc\")}"
-msgstr ""
+msgstr "@code{ENGLISH ? \"abc\" : \"\"} @*@code{GETTEXT(\"abc\")} @*@code{GETTEXTL(\"abc\")}"
 
 #. type: table
 #: gettext.texi.orig:9893
 msgid "@code{clgettext}, @code{clgettextl}"
-msgstr ""
+msgstr "@code{clgettext}、@code{clgettextl}"
 
 #. type: code{#1}
 #: gettext.texi.orig:9905
 msgid "#include \"lispbibl.c\""
-msgstr ""
+msgstr "#include \"lispbibl.c\""
 
 #. type: code{#1}
 #: gettext.texi.orig:9911
 msgid "clisp-xgettext"
-msgstr ""
+msgstr "clisp-xgettext"
 
 #. type: code{#1}
 #: gettext.texi.orig:9914
 msgid "fprintf \"%2$d %1$d\""
-msgstr ""
+msgstr "fprintf \"%2$d %1$d\""
 
 #. type: table
 #: gettext.texi.orig:9929
 msgid "emacs, xemacs"
-msgstr ""
+msgstr "emacs、xemacs"
 
 #. type: code{#1}
 #: gettext.texi.orig:9932
 msgid "el"
-msgstr ""
+msgstr "el"
 
 #. type: code{#1}
 #: gettext.texi.orig:9938 gettext.texi.orig:9986
 msgid "(_\"abc\")"
-msgstr ""
+msgstr "(_\"abc\")"
 
 #. type: table
 #: gettext.texi.orig:9941
 msgid "@code{gettext}, @code{dgettext} (xemacs only)"
-msgstr ""
+msgstr "@code{gettext}、@code{dgettext}(xemacsのみ)"
 
 #. type: table
 #: gettext.texi.orig:9944
 msgid "@code{domain} special form (xemacs only)"
-msgstr ""
+msgstr "スペシャルフォーム@code{domain}(xemacsのみ)"
 
 #. type: table
 #: gettext.texi.orig:9947
 msgid "@code{bind-text-domain} function (xemacs only)"
-msgstr ""
+msgstr "関数@code{bind-text-domain}(xemacsのみ)"
 
 #. type: code{#1}
 #: gettext.texi.orig:9962 gettext.texi.orig:10010
 msgid "format \"%2$d %1$d\""
-msgstr ""
+msgstr "format \"%2$d %1$d\""
 
 #. type: table
 #: gettext.texi.orig:9965
 msgid ""
 "Only XEmacs.  Without @code{I18N3} defined at build time, no translation."
-msgstr ""
+msgstr "XEmacsのみ。ビルド時に@code{I18N3}を定義しない場合は、翻訳しません"
 
 #. type: cindex
 #: gettext.texi.orig:9972
 #, no-wrap
 msgid "@code{librep} Lisp"
-msgstr ""
+msgstr "@code{librep} Lisp"
 
 #. type: table
 #: gettext.texi.orig:9977
 msgid "librep 0.15.3 or newer"
-msgstr ""
+msgstr "librep 0.15.3以降"
 
 #. type: code{#1}
 #: gettext.texi.orig:9980
 msgid "jl"
-msgstr ""
+msgstr "jl"
 
 #. type: code{#1}
 #: gettext.texi.orig:10001
 msgid "(require 'rep.i18n.gettext)"
-msgstr ""
+msgstr "(require 'rep.i18n.gettext)"
 
 #. type: Plain text
 #: gettext.texi.orig:10019
 msgid ""
 "An example is available in the @file{examples} directory: @code{hello-"
 "librep}."
-msgstr ""
+msgstr "@file{examples}ディレクトリーの例@code{hello-librep}が利用できます"
 
 #. type: table
 #: gettext.texi.orig:10023 gettext.texi.orig:10028
 #, no-wrap
 msgid "guile"
-msgstr ""
+msgstr "guile"
 
 #. type: code{#1}
 #: gettext.texi.orig:10031
 msgid "scm"
-msgstr ""
+msgstr "scm"
 
 #. type: code{#1}
 #: gettext.texi.orig:10037
 msgid "(_ \"abc\")"
-msgstr ""
+msgstr "(_ \"abc\")"
 
 #. type: table
 #: gettext.texi.orig:10040
 msgid "@code{gettext}, @code{ngettext}"
-msgstr ""
+msgstr "@code{gettext}、@code{ngettext}"
 
 #. type: code{#1}
 #: gettext.texi.orig:10049
 msgid "(catch #t (lambda () (setlocale LC_ALL \"\")) (lambda args #f))"
-msgstr ""
+msgstr "(catch #t (lambda () (setlocale LC_ALL \"\")) (lambda args #f))"
 
 #. type: code{#1}
 #: gettext.texi.orig:10052
 msgid "(use-modules (ice-9 format))"
-msgstr ""
+msgstr "(use-modules (ice-9 format))"
 
 #. type: Plain text
 #: gettext.texi.orig:10072
 msgid ""
 "An example is available in the @file{examples} directory: @code{hello-guile}."
-msgstr ""
+msgstr "@file{examples}ディレクトリーの例@code{hello-guile}が利用できます"
 
 #. type: table
 #: gettext.texi.orig:10080
 msgid "smalltalk"
-msgstr ""
+msgstr "smalltalk"
 
 #. type: code{#1}
 #: gettext.texi.orig:10083
 msgid "st"
-msgstr ""
+msgstr "st"
 
 #. type: code{#1}
 #: gettext.texi.orig:10086 gettext.texi.orig:10655 gettext.texi.orig:10880
 #: gettext.texi.orig:11857 gettext.texi.orig:11919
 #, no-wrap
 msgid "'abc'"
-msgstr ""
+msgstr "'abc'"
 
 #. type: code{#1}
 #: gettext.texi.orig:10089
 msgid "NLS ? 'abc'"
-msgstr ""
+msgstr "NLS ? 'abc'"
 
 #. type: table
 #: gettext.texi.orig:10092
 msgid ""
 "@code{LcMessagesDomain>>#at:}, @code{LcMessagesDomain>>#at:plural:with:}"
-msgstr ""
+msgstr "@code{LcMessagesDomain>>#at:}、@code{LcMessagesDomain>>#at:plural:with:}"
 
 #. type: table
 #: gettext.texi.orig:10097
@@ -20223,70 +20241,78 @@ msgid ""
 "@code{LcMessagesDomain} object).@* Example: @code{I18N Locale default "
 "messages domain: 'gettext' localeDirectory: /usr/local/share/locale'}"
 msgstr ""
+"@code{LcMessages>>#domain:localeDirectory:}(オブジェクト@code{LcMessagesDomain}を返します)@*\n"
+"例: @code{I18N Locale default messages domain: 'gettext' localeDirectory: /usr/local/share/locale'}"
 
 #. type: table
 #: gettext.texi.orig:10100
 msgid "@code{LcMessages>>#domain:localeDirectory:}, see above."
-msgstr ""
+msgstr "@code{LcMessages>>#domain:localeDirectory:}、上記参照"
 
 #. type: table
 #: gettext.texi.orig:10103
 msgid "Automatic if you use @code{I18N Locale default}."
-msgstr ""
+msgstr "@code{I18N Locale default}をuseする場合は自動"
 
 #. type: code{#1}
 #: gettext.texi.orig:10106
 msgid "PackageLoader fileInPackage: 'I18N'!"
-msgstr ""
+msgstr "PackageLoader fileInPackage: 'I18N'!"
 
 #. type: code{#1}
 #: gettext.texi.orig:10115
 msgid "'%1 %2' bindWith: 'Hello' with: 'world'"
-msgstr ""
+msgstr "'%1 %2' bindWith: 'Hello' with: 'world'"
 
 #. type: Plain text
 #: gettext.texi.orig:10125
 msgid ""
 "An example is available in the @file{examples} directory: @code{hello-"
 "smalltalk}."
-msgstr ""
+msgstr "@file{examples}ディレクトリーの例@code{hello-smalltalk}が利用できます"
 
 #. type: table
 #: gettext.texi.orig:10133
 msgid "java, java2"
-msgstr ""
+msgstr "java、java2"
 
 #. type: code{#1}
 #: gettext.texi.orig:10136
 msgid "java"
-msgstr ""
+msgstr "java"
 
 #. type: table
 #: gettext.texi.orig:10146
 msgid ""
 "@code{GettextResource.gettext}, @code{GettextResource.ngettext}, "
 "@code{GettextResource.pgettext}, @code{GettextResource.npgettext}"
-msgstr ""
+msgstr "@code{GettextResource.gettext}、@code{GettextResource.ngettext}、@code{GettextResource.pgettext}、@code{GettextResource.npgettext}"
 
 #. type: table
 #: gettext.texi.orig:10149
 msgid "---, use @code{ResourceBundle.getResource} instead"
 msgstr ""
+"---@*\n"
+"かわりに@code{ResourceBundle.getResource}を使用してください"
 
 #. type: table
 #: gettext.texi.orig:10152
 msgid "---, use CLASSPATH instead"
 msgstr ""
+"---@*\n"
+"かわりにCLASSPATHを使用してください"
 
 #. type: table
 #: gettext.texi.orig:10161
 msgid "---, uses a Java specific message catalog format"
 msgstr ""
+"---@*\n"
+"Java specific message catalog formatを使用してください"
 
 #. type: code{#1}
 #: gettext.texi.orig:10167
 msgid "MessageFormat.format \"@{1,number@} @{0,number@}\""
-msgstr ""
+msgstr "MessageFormat.format \"@{1,number@} @{0,number@}\""
 
 #. type: Plain text
 #: gettext.texi.orig:10180
@@ -20297,7 +20323,7 @@ msgid ""
 "@code{MessageFormat.format(\"file @{0@} not found\", new Object[] "
 "@{ filename @})}.  Only after this is done, can the strings be marked and "
 "extracted."
-msgstr ""
+msgstr "文字列をインターナショナライズ可能とマークする前に、文字列結合演算子を使って、@code{MessageFormat}アプリケーションで変換が必要な文字列を結合してください。たとえば@code{\"file \"+filename+\" not found\"}は、@code{MessageFormat.format(\"file @{0@} not found\", new Object[] @{ filename @})}となります。これを行った後のみ、文字列をマークして抽出することが可能になります。"
 
 #. type: Plain text
 #: gettext.texi.orig:10188
@@ -20309,7 +20335,7 @@ msgid ""
 "files, but which doesn't support plural forms.  Whereas the @code{.class} "
 "format is compiled from @code{.java} source code and can support plural "
 "forms (provided it is accessed through an appropriate API, see below)."
-msgstr ""
+msgstr "GNU gettextはJava 本来がもつ、@code{ResourceBundle}という名前のインターナショナリゼーションのメカニズムを使います。@code{ResourceBundle}には、@code{.properties}と@code{.class}という、2つのファイル フォーマットがあります。@code{.properties}ファイルは、POファイルのように翻訳者が直接編集できるテキスト形式ですが、plural formをサポートしません。@code{.class}は、@code{.java}のソースコードからコンパイルされた形式で、plural formをサポートします(適切なAPIを通じてのアクセスが提供されています。以下を参照してください)。"
 
 #. type: Plain text
 #: gettext.texi.orig:10196
@@ -20320,7 +20346,7 @@ msgid ""
 "with the option @code{--properties-input}.  All the tools that manipulate PO "
 "files can work with @code{.properties} files as well, if given the @code{--"
 "properties-input} and/or @code{--properties-output} option."
-msgstr ""
+msgstr "POファイルを@code{.properties}ファイルに変換するためには、@code{msgcat}プログラムの @code{--properties-output}オプションを使うことができます。逆に@code{.properties}ファイルをPOファイルに変換するには、@code{msgcat}プログラムの@code{--properties-input}オプションを使うことができます。POファイルを扱うすべてのツールは、@code{--properties-input}および/または@code{--properties-output}オプションにより、@code{.properties}も同様に取り扱うことができます。"
 
 #. type: Plain text
 #: gettext.texi.orig:10201
@@ -20329,7 +20355,7 @@ msgid ""
 "can be used with the option @code{--java} or @code{--java2}.  To convert a "
 "ResourceBundle back to a PO file, the @code{msgunfmt} program can be used "
 "with the option @code{--java}."
-msgstr ""
+msgstr "POファイルをResourceBundle classに変換するためには、@code{msgfmt}プログラムの、@code{--java}(または@code{--java2})オプションを使うことができます。逆にResourceBundleをPOファイルに変換するためには、@code{msgunfmt}の@code{--java}オプションを使うことができます。"
 
 #. type: Plain text
 #: gettext.texi.orig:10206
@@ -20337,19 +20363,19 @@ msgid ""
 "Two different programmatic APIs can be used to access ResourceBundles.  Note "
 "that both APIs work with all kinds of ResourceBundles, whether GNU gettext "
 "generated classes, or other @code{.class} or @code{.properties} files."
-msgstr ""
+msgstr "プログラムからResourceBundleにアクセスするために、異なる2つのAPIを使うことができます。これら2つのAPIは、ResourceBundleがGNU gettextにより生成されたものであるか、それともこれ以外の@code{.class}や@code{.properties}ファイルであるかによらず、すべての種類のResourceBundleを扱えることに注意してください。"
 
 #. type: enumerate
 #: gettext.texi.orig:10210
 msgid "The @code{java.util.ResourceBundle} API."
-msgstr ""
+msgstr "@code{java.util.ResourceBundle} API"
 
 #. type: enumerate
 #: gettext.texi.orig:10213
 msgid ""
 "In particular, its @code{getString} function returns a string translation.  "
 "Note that a missing translation yields a @code{MissingResourceException}."
-msgstr ""
+msgstr "特徴は、これの@code{getString}関数が、翻訳された文字列を戻すことです。翻訳がない場合には、@code{MissingResourceException}が発生することに注意してください。"
 
 #. type: enumerate
 #: gettext.texi.orig:10219
@@ -20359,26 +20385,26 @@ msgid ""
 "properties} files or the @code{msgfmt} generated @code{.class} files.  But "
 "it cannot do plural handling, even if the resource was generated by "
 "@code{msgfmt} from a PO file with plural handling."
-msgstr ""
+msgstr "これは、標準のAPIに採用されるためには有利な特徴といえます。さらに、このAPIは追加のライブラリーを必要とせず、@code{msgcat}によって生成された@code{.properties}ファイルか、@code{msgfmt}によって生成された@code{.class}ファイルだけが必要です。しかし、このAPIはpluralを処理できず、それはpluralを処理するPOファイルから@code{msgfmt}で生成されたリソースの場合も同様です。"
 
 #. type: enumerate
 #: gettext.texi.orig:10222
 msgid "The @code{gnu.gettext.GettextResource} API."
-msgstr ""
+msgstr "@code{gnu.gettext.GettextResource} API"
 
 #. type: enumerate
 #: gettext.texi.orig:10225
 msgid ""
 "Reference documentation in Javadoc 1.1 style format is in the @uref{javadoc2/"
 "index.html,javadoc2 directory}."
-msgstr ""
+msgstr "@uref{javadoc2/index.html,javadoc2 directory}に、Javadoc 1.1 style formatのReference documentation があります。"
 
 #. type: enumerate
 #: gettext.texi.orig:10228
 msgid ""
 "Its @code{gettext} function returns a string translation.  Note that when a "
 "translation is missing, the @var{msgid} argument is returned unchanged."
-msgstr ""
+msgstr "このAPIの@code{gettext}関数は、翻訳された文字列を戻します。翻訳がない場合には、@var{msgid}が変更されずに戻されることに注意してください。"
 
 #. type: enumerate
 #: gettext.texi.orig:10232
@@ -20386,20 +20412,20 @@ msgid ""
 "This has the advantage of having the @code{ngettext} function for plural "
 "handling and the @code{pgettext} and @code{npgettext} for strings constraint "
 "to a particular context."
-msgstr ""
+msgstr "このAPIの有利な点は、pluralを処理する@code{ngettext}関数があること、そして特定のcontextにたいする制約をもつ文字列を処理する@code{pgettext}と@code{npgettext}のある点です。"
 
 #. type: cindex
 #: gettext.texi.orig:10233
 #, no-wrap
 msgid "@code{libintl} for Java"
-msgstr ""
+msgstr "@code{libintl} for Java"
 
 #. type: enumerate
 #: gettext.texi.orig:10236
 msgid ""
 "To use this API, one needs the @code{libintl.jar} file which is part of the "
 "GNU gettext package and distributed under the LGPL."
-msgstr ""
+msgstr "このAPIを使うために必要なのは、GNU gettextパッケージの一部である@code{libintl.jar}だけで、これはLGPLのもとで配布されています。"
 
 #. type: Plain text
 #: gettext.texi.orig:10241
@@ -20407,14 +20433,14 @@ msgid ""
 "Four examples, using the second API, are available in the @file{examples} "
 "directory: @code{hello-java}, @code{hello-java-awt}, @code{hello-java-"
 "swing}, @code{hello-java-qtjambi}."
-msgstr ""
+msgstr "2番目のAPIを使うための例としては、@file{examples}ディレクトリーの、@code{hello-java}、@code{hello-java-awt}、@code{hello-java-swing}、@code{hello-java-qtjambi}が利用できます。"
 
 #. type: Plain text
 #: gettext.texi.orig:10244
 msgid ""
 "Now, to make use of the API and define a shorthand for @samp{getString}, "
 "there are three idioms that you can choose from:"
-msgstr ""
+msgstr "ではAPIの使い方と、@samp{getString}の略記をしてみましょう。以下の3つの用法から選択することができましょう:"
 
 #. type: itemize
 #: gettext.texi.orig:10250
@@ -20422,7 +20448,7 @@ msgid ""
 "(This one assumes Java 1.5 or newer.)  In a unique class of your project, "
 "say @samp{Util}, define a static variable holding the @code{ResourceBundle} "
 "instance and the shorthand:"
-msgstr ""
+msgstr "(Java 1.5以降の場合)あなたのプロジェクトに@samp{Util}という一意なクラスがあるとき、@code{ResourceBundle}のインスタンスを保持するstaticな変数を定義する場合、以下のような略記を定義します:"
 
 #. type: smallexample
 #: gettext.texi.orig:10257
@@ -20434,36 +20460,41 @@ msgid ""
 "  return myResources.getString(s);\n"
 "@}\n"
 msgstr ""
+"private static ResourceBundle myResources =\n"
+"  ResourceBundle.getBundle(\"domain-name\");\n"
+"public static String _(String s) @{\n"
+"  return myResources.getString(s);\n"
+"@}\n"
 
 #. type: itemize
 #: gettext.texi.orig:10260 gettext.texi.orig:10282 gettext.texi.orig:10548
 msgid "All classes containing internationalized strings then contain"
-msgstr ""
+msgstr "そして、インターナショナライズする文字列を含むすべてのクラスに、以下の宣言を含めます"
 
 #. type: smallexample
 #: gettext.texi.orig:10263
 #, no-wrap
 msgid "import static Util._;\n"
-msgstr ""
+msgstr "import static Util._;\n"
 
 #. type: itemize
 #: gettext.texi.orig:10267 gettext.texi.orig:10290 gettext.texi.orig:10311
 #: gettext.texi.orig:10556 gettext.texi.orig:10577
 msgid "and the shorthand is used like this:"
-msgstr ""
+msgstr "これで以下のようにして略記を使うことができます:"
 
 #. type: smallexample
 #: gettext.texi.orig:10270 gettext.texi.orig:10293
 #, no-wrap
 msgid "System.out.println(_(\"Operation completed.\"));\n"
-msgstr ""
+msgstr "System.out.println(_(\"Operation completed.\"));\n"
 
 #. type: itemize
 #: gettext.texi.orig:10275
 msgid ""
 "In a unique class of your project, say @samp{Util}, define a static variable "
 "holding the @code{ResourceBundle} instance:"
-msgstr ""
+msgstr "あなたのプロジェクトに@samp{Util}という一意なクラスがあるとき、@code{ResourceBundle}のインスタンスを保持するstaticな変数を定義する場合、以下のような略記を定義します:"
 
 #. type: smallexample
 #: gettext.texi.orig:10279
@@ -20472,6 +20503,8 @@ msgid ""
 "public static ResourceBundle myResources =\n"
 "  ResourceBundle.getBundle(\"domain-name\");\n"
 msgstr ""
+"public static ResourceBundle myResources =\n"
+"  ResourceBundle.getBundle(\"domain-name\");\n"
 
 #. type: smallexample
 #: gettext.texi.orig:10286
@@ -20480,13 +20513,15 @@ msgid ""
 "private static ResourceBundle res = Util.myResources;\n"
 "private static String _(String s) @{ return res.getString(s); @}\n"
 msgstr ""
+"private static ResourceBundle res = Util.myResources;\n"
+"private static String _(String s) @{ return res.getString(s); @}\n"
 
 #. type: itemize
 #: gettext.texi.orig:10298
 msgid ""
 "You add a class with a very short name, say @samp{S}, containing just the "
 "definition of the resource bundle and of the shorthand:"
-msgstr ""
+msgstr "resource bundleの定義だけを含む、とても短い名前の@samp{S}というクラスを追加して、以下のような略記を定義します:"
 
 #. type: smallexample
 #: gettext.texi.orig:10307
@@ -20500,12 +20535,19 @@ msgid ""
 "  @}\n"
 "@}\n"
 msgstr ""
+"public class S @{\n"
+"  public static ResourceBundle myResources =\n"
+"    ResourceBundle.getBundle(\"domain-name\");\n"
+"  public static String _(String s) @{\n"
+"    return myResources.getString(s);\n"
+"  @}\n"
+"@}\n"
 
 #. type: smallexample
 #: gettext.texi.orig:10314
 #, no-wrap
 msgid "System.out.println(S._(\"Operation completed.\"));\n"
-msgstr ""
+msgstr "System.out.println(S._(\"Operation completed.\"));\n"
 
 #. type: Plain text
 #: gettext.texi.orig:10321
@@ -20514,22 +20556,22 @@ msgid ""
 "requires portability to Java versions prior to Java 1.5 and, if so, whether "
 "copying two lines of codes into every class is more acceptable in your "
 "project than a class with a single-letter name."
-msgstr ""
+msgstr "3つの用法のどれを選ぶかは、あなたのプロジェクトがJava 1.5より前のバージョンにたいする互換性を必要とするかに依存します。もしその必要がある場合には、プロジェクトのすべてのクラスに1文字のクラスを追加するより、すべてのクラスに2行追加するほうがよいでしょう。"
 
 #. type: table
 #: gettext.texi.orig:10329
 msgid "pnet, pnetlib 0.6.2 or newer, or mono 0.29 or newer"
-msgstr ""
+msgstr "pnet、pnetlib 0.6.2以降、またはmono 0.29以降"
 
 #. type: code{#1}
 #: gettext.texi.orig:10332
 msgid "cs"
-msgstr ""
+msgstr "cs"
 
 #. type: table
 #: gettext.texi.orig:10335
 msgid "@code{\"abc\"}, @code{@@\"abc\"}"
-msgstr ""
+msgstr "@code{\"abc\"}, @code{@@\"abc\"}"
 
 #. type: table
 #: gettext.texi.orig:10344
@@ -20537,12 +20579,12 @@ msgid ""
 "@code{GettextResourceManager.GetString}, @code{GettextResourceManager."
 "GetPluralString} @code{GettextResourceManager.GetParticularString} "
 "@code{GettextResourceManager.GetParticularPluralString}"
-msgstr ""
+msgstr "@code{GettextResourceManager.GetString}, @code{GettextResourceManager.GetPluralString} @code{GettextResourceManager.GetParticularString} @code{GettextResourceManager.GetParticularPluralString}"
 
 #. type: code{#1}
 #: gettext.texi.orig:10347
 msgid "new GettextResourceManager(domain)"
-msgstr ""
+msgstr "new GettextResourceManager(domain)"
 
 #. type: table
 #: gettext.texi.orig:10351
@@ -20550,16 +20592,20 @@ msgid ""
 "---, compiled message catalogs are located in subdirectories of the "
 "directory containing the executable"
 msgstr ""
+"---@*\n"
+"実行可能ファイルを含むディレクトリーのサブディレクトリーにコンパイルされたmessage catalogが配置されます"
 
 #. type: table
 #: gettext.texi.orig:10360
 msgid "---, uses a C# specific message catalog format"
 msgstr ""
+"---@*\n"
+"C# specific message catalog formatを使用してください"
 
 #. type: code{#1}
 #: gettext.texi.orig:10366
 msgid "String.Format \"@{1@} @{0@}\""
-msgstr ""
+msgstr "String.Format \"@{1@} @{0@}\""
 
 #. type: Plain text
 #: gettext.texi.orig:10379
@@ -20569,7 +20615,7 @@ msgid ""
 "invocations.  For example, @code{\"file \"+filename+\" not found\"} becomes "
 "@code{String.Format(\"file @{0@} not found\", filename)}.  Only after this "
 "is done, can the strings be marked and extracted."
-msgstr ""
+msgstr "文字列をインターナショナライズ可能とマークする前に、文字列結合演算子を使って、@code{String.Format}呼び出しで変換が必要な文字列を結合してください。たとえば@code{\"file \"+filename+\" not found\"}は、@code{String.Format(\"file @{0@} not found\", filename)}となります。これを行った後のみ、文字列をマークして抽出することが可能になります。"
 
 #. type: Plain text
 #: gettext.texi.orig:10387
@@ -20581,14 +20627,14 @@ msgid ""
 "representation of a message catalog file.  The @code{ResourceManager} loads "
 "and accesses @code{ResourceSet} instances as needed to look up the "
 "translations."
-msgstr ""
+msgstr "GNU gettextは、@code{ResourceManager}および@code{ResourceSet}という名前の、C#/.NET本来のインターナショナリゼーション メカニズムを使います。アプリケーションは@code{ResourceManager}のメソッドを使って、母国語に翻訳された文字列を取得します。メッセージカタログファイルをインメモリーに展開したものが、@code{ResourceSet}のインスタンスです。@code{ResourceManager}は、翻訳を検索する必要が生じると、@code{ResourceSet}のインスタンスをロード・アクセスします。"
 
 #. type: Plain text
 #: gettext.texi.orig:10390
 msgid ""
 "There are two formats of @code{ResourceSet}s that can be directly loaded by "
 "the C# runtime: @code{.resources} files and @code{.dll} files."
-msgstr ""
+msgstr "C#のランタイムが直接ロードできる@code{ResourceSet}には、@code{.resources}ファイル、および@code{.dll}ファイルという、2つの形式があります:"
 
 #. type: itemize
 #: gettext.texi.orig:10398
@@ -20598,7 +20644,7 @@ msgid ""
 "forms.  @code{.resources} files can also be embedded in .NET @code{.exe} "
 "files.  This only affects whether a file system access is performed to load "
 "the message catalog; it doesn't affect the contents of the message catalog."
-msgstr ""
+msgstr "@code{.resources}の形式はバイナリーのファイルで、通常は@code{resgen}または@code{monoresgen}ユーティリティーにより生成され、この形式はplural formをサポートしません。@code{.resources}は、.NETの@code{.exe}ファイルに埋め込むこともできます。これは、メッセージカタログをロードするためにファイルシステムにアクセスするかどうかに影響を及ぼすだけで、メッセージカタログの内容には影響しません。"
 
 #. type: itemize
 #: gettext.texi.orig:10403
@@ -20606,7 +20652,7 @@ msgid ""
 "On the other hand, the @code{.dll} format is a binary file that is compiled "
 "from @code{.cs} source code and can support plural forms (provided it is "
 "accessed through the GNU gettext API, see below)."
-msgstr ""
+msgstr "一方@code{.dll}の形式は、ソースコードの@code{.cs}からコンパイルされたバイナリーファイルで、plural formをサポートします(これは以下で記述するように、GNU gettext APIを通じてアクセスすることにより提供されます)。"
 
 #. type: Plain text
 #: gettext.texi.orig:10408
@@ -20614,7 +20660,7 @@ msgid ""
 "Note that these .NET @code{.dll} and @code{.exe} files are not tied to a "
 "particular platform; their file format and GNU gettext for C# can be used on "
 "any platform."
-msgstr ""
+msgstr "これら .NETの@code{.dll}や@code{.exe}ファイルは、特定のプラットフォームに限定されたものではないことに注意してください。これらのファイル形式、およびC#のためのGNU gettextは、任意のプラットフォームで使用できます。"
 
 #. type: Plain text
 #: gettext.texi.orig:10419
