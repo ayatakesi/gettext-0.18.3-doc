@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2016-08-14 21:52+0900\n"
-"PO-Revision-Date: 2016-08-14 21:52+0900\n"
+"PO-Revision-Date: 2016-08-14 22:00+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -20,13 +19,13 @@ msgstr ""
 #: rt-ngettext.texi.orig:1
 #, no-wrap
 msgid "ngettext"
-msgstr ""
+msgstr "ngettext"
 
 #. type: cindex
 #: rt-ngettext.texi.orig:2
 #, no-wrap
 msgid "@code{ngettext} program, usage"
-msgstr ""
+msgstr "@code{ngettext} program, usage"
 
 #. type: example
 #: rt-ngettext.texi.orig:5
@@ -34,44 +33,44 @@ msgstr ""
 msgid ""
 "ngettext [@var{option}] [@var{textdomain}] @var{msgid} @var{msgid-plural} "
 "@var{count}\n"
-msgstr ""
+msgstr "ngettext [@var{option}] [@var{textdomain}] @var{msgid} @var{msgid-plural} @var{count}\n"
 
 #. type: cindex
 #: rt-ngettext.texi.orig:7
 #, no-wrap
 msgid "lookup plural message translation"
-msgstr ""
+msgstr "lookup plural message translation"
 
 #. type: Plain text
 #: rt-ngettext.texi.orig:10
 msgid ""
 "The @code{ngettext} program displays the native language translation of a "
 "textual message whose grammatical form depends on a number."
-msgstr ""
+msgstr "@code{ngettext}は数に依存した文法をもつテキストメッセージを母国語に翻訳して表示するプログラムです。"
 
 #. type: item
 #: rt-ngettext.texi.orig:14
 #, no-wrap
 msgid "-d @var{textdomain}"
-msgstr ""
+msgstr "-d @var{textdomain}"
 
 #. type: itemx
 #: rt-ngettext.texi.orig:15
 #, no-wrap
 msgid "--domain=@var{textdomain}"
-msgstr ""
+msgstr "--domain=@var{textdomain}"
 
 #. type: opindex
 #: rt-ngettext.texi.orig:16
 #, no-wrap
 msgid "-d@r{, @code{ngettext} option}"
-msgstr ""
+msgstr "-d@r{, @code{ngettext} option}"
 
 #. type: opindex
 #: rt-ngettext.texi.orig:17
 #, no-wrap
 msgid "--domain@r{, @code{ngettext} option}"
-msgstr ""
+msgstr "--domain@r{, @code{ngettext} option}"
 
 #. type: table
 #: rt-ngettext.texi.orig:20
@@ -79,19 +78,19 @@ msgid ""
 "Retrieve translated messages from @var{textdomain}.  Usually a "
 "@var{textdomain} corresponds to a package, a program, or a module of a "
 "program."
-msgstr ""
+msgstr "@var{textdomain}から翻訳されたメッセージを取得します。@var{textdomain}は通常、パッケージか、プログラムやプログラムのモジュールと一致します。"
 
 #. type: item
 #: rt-ngettext.texi.orig:21
 #, no-wrap
 msgid "-e"
-msgstr ""
+msgstr "-e"
 
 #. type: opindex
 #: rt-ngettext.texi.orig:22
 #, no-wrap
 msgid "-e@r{, @code{ngettext} option}"
-msgstr ""
+msgstr "-e@r{, @code{ngettext} option}"
 
 #. type: table
 #: rt-ngettext.texi.orig:28
@@ -101,119 +100,119 @@ msgid ""
 "@samp{\\b}, @samp{\\c}, @samp{\\f}, @samp{\\n}, @samp{\\r}, @samp{\\t}, "
 "@samp{\\v}, @samp{\\\\}, and @samp{\\} followed by one to three octal "
 "digits, are interpreted like the System V @samp{echo} program did."
-msgstr ""
+msgstr "いくつかのエスケープシーケンスの展開を可能にします。これは@samp{gettext}プログラムにたいする互換のためのオプションです。対象となるエスケープシーケンスは、@samp{\\a}、@samp{\\b}、@samp{\\c}、@samp{\\f}、@samp{\\n}、@samp{\\r}、@samp{\\t}、@samp{\\v}、@samp{\\\\}、および@samp{\\}と3桁以内の8進数です(System Vの@samp{echo}と同様に処理されます)。"
 
 #. type: item
 #: rt-ngettext.texi.orig:29
 #, no-wrap
 msgid "-E"
-msgstr ""
+msgstr "-E"
 
 #. type: opindex
 #: rt-ngettext.texi.orig:30
 #, no-wrap
 msgid "-E@r{, @code{ngettext} option}"
-msgstr ""
+msgstr "-E@r{, @code{ngettext} option}"
 
 #. type: table
 #: rt-ngettext.texi.orig:33
 msgid ""
 "This option is only for compatibility with the @samp{gettext} program.  It "
 "has no effect."
-msgstr ""
+msgstr "このオプションは@samp{gettext}プログラムとの互換性のためだけのもので、何の効果も及ぼしません。"
 
 #. type: item
 #: rt-ngettext.texi.orig:34
 #, no-wrap
 msgid "-h"
-msgstr ""
+msgstr "-h"
 
 #. type: itemx
 #: rt-ngettext.texi.orig:35
 #, no-wrap
 msgid "--help"
-msgstr ""
+msgstr "--help"
 
 #. type: opindex
 #: rt-ngettext.texi.orig:36
 #, no-wrap
 msgid "-h@r{, @code{ngettext} option}"
-msgstr ""
+msgstr "-h@r{, @code{ngettext} option}"
 
 #. type: opindex
 #: rt-ngettext.texi.orig:37
 #, no-wrap
 msgid "--help@r{, @code{ngettext} option}"
-msgstr ""
+msgstr "--help@r{, @code{ngettext} option}"
 
 #. type: table
 #: rt-ngettext.texi.orig:39
 msgid "Display this help and exit."
-msgstr ""
+msgstr "このヘルプを表示して終了します。"
 
 #. type: item
 #: rt-ngettext.texi.orig:40
 #, no-wrap
 msgid "-V"
-msgstr ""
+msgstr "-V"
 
 #. type: itemx
 #: rt-ngettext.texi.orig:41
 #, no-wrap
 msgid "--version"
-msgstr ""
+msgstr "--version"
 
 #. type: opindex
 #: rt-ngettext.texi.orig:42
 #, no-wrap
 msgid "-V@r{, @code{ngettext} option}"
-msgstr ""
+msgstr "-V@r{, @code{ngettext} option}"
 
 #. type: opindex
 #: rt-ngettext.texi.orig:43
 #, no-wrap
 msgid "--version@r{, @code{ngettext} option}"
-msgstr ""
+msgstr "--version@r{, @code{ngettext} option}"
 
 #. type: table
 #: rt-ngettext.texi.orig:45
 msgid "Output version information and exit."
-msgstr ""
+msgstr "バージョン情報を表示して終了します。"
 
 #. type: var{#1}
 #: rt-ngettext.texi.orig:46
 #, no-wrap
 msgid "textdomain"
-msgstr ""
+msgstr "textdomain"
 
 #. type: table
 #: rt-ngettext.texi.orig:48
 msgid "Retrieve translated message from @var{textdomain}."
-msgstr ""
+msgstr "@var{textdomain}から、翻訳されたメッセージを取得します。"
 
 #. type: item
 #: rt-ngettext.texi.orig:49
 #, no-wrap
 msgid "@var{msgid} @var{msgid-plural}"
-msgstr ""
+msgstr "@var{msgid} @var{msgid-plural}"
 
 #. type: table
 #: rt-ngettext.texi.orig:51
 msgid ""
 "Translate @var{msgid} (English singular) / @var{msgid-plural} (English "
 "plural)."
-msgstr ""
+msgstr "msgid( Englishのsingular )、およびmsgid-plural(Englishのplural)を翻訳します。"
 
 #. type: var{#1}
 #: rt-ngettext.texi.orig:52
 #, no-wrap
 msgid "count"
-msgstr ""
+msgstr "count"
 
 #. type: table
 #: rt-ngettext.texi.orig:54
 msgid "Choose singular/plural form based on this value."
-msgstr ""
+msgstr "この値にもとづいて、singularとpluralのどちらを使うか選択します。"
 
 #. type: Plain text
 #: rt-ngettext.texi.orig:60
@@ -222,4 +221,4 @@ msgid ""
 "from the environment variable @code{TEXTDOMAIN}.  If the message catalog is "
 "not found in the regular directory, another location can be specified with "
 "the environment variable @code{TEXTDOMAINDIR}."
-msgstr ""
+msgstr "パラメーター@var{textdomain}を指定しなかった場合、環境変数@code{TEXTDOMAIN}によりdomainが決定されます。メッセージカタログが標準のディレクトリーで見つからなかった場合には、環境変数@code{TEXTDOMAINDIR}で他の場所を指定できます。"
