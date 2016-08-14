@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2016-08-14 21:26+0900\n"
-"PO-Revision-Date: 2016-08-14 21:27+0900\n"
+"PO-Revision-Date: 2016-08-14 21:35+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -19,13 +19,13 @@ msgstr ""
 #: rt-gettext.texi.orig:1
 #, no-wrap
 msgid "gettext"
-msgstr ""
+msgstr "gettext"
 
 #. type: cindex
 #: rt-gettext.texi.orig:2
 #, no-wrap
 msgid "@code{gettext} program, usage"
-msgstr ""
+msgstr "@code{gettext} program, usage"
 
 #. type: example
 #: rt-gettext.texi.orig:6
@@ -34,43 +34,45 @@ msgid ""
 "gettext [@var{option}] [[@var{textdomain}] @var{msgid}]\n"
 "gettext [@var{option}] -s [@var{msgid}]...\n"
 msgstr ""
+"gettext [@var{option}] [[@var{textdomain}] @var{msgid}]\n"
+"gettext [@var{option}] -s [@var{msgid}]...\n"
 
 #. type: cindex
 #: rt-gettext.texi.orig:8
 #, no-wrap
 msgid "lookup message translation"
-msgstr ""
+msgstr "lookup message translation"
 
 #. type: Plain text
 #: rt-gettext.texi.orig:11
 msgid ""
 "The @code{gettext} program displays the native language translation of a "
 "textual message."
-msgstr ""
+msgstr "@code{gettext}は、母国語に翻訳されたテキストメッセージを表示するプログラムです。"
 
 #. type: item
 #: rt-gettext.texi.orig:15
 #, no-wrap
 msgid "-d @var{textdomain}"
-msgstr ""
+msgstr "-d @var{textdomain}"
 
 #. type: itemx
 #: rt-gettext.texi.orig:16
 #, no-wrap
 msgid "--domain=@var{textdomain}"
-msgstr ""
+msgstr "--domain=@var{textdomain}"
 
 #. type: opindex
 #: rt-gettext.texi.orig:17
 #, no-wrap
 msgid "-d@r{, @code{gettext} option}"
-msgstr ""
+msgstr "-d@r{, @code{gettext} option}"
 
 #. type: opindex
 #: rt-gettext.texi.orig:18
 #, no-wrap
 msgid "--domain@r{, @code{gettext} option}"
-msgstr ""
+msgstr "--domain@r{, @code{gettext} option}"
 
 #. type: table
 #: rt-gettext.texi.orig:21
@@ -78,19 +80,19 @@ msgid ""
 "Retrieve translated messages from @var{textdomain}.  Usually a "
 "@var{textdomain} corresponds to a package, a program, or a module of a "
 "program."
-msgstr ""
+msgstr "@var{textdomain}から、翻訳されたメッセージを取得します。@var{textdomain}は通常、パッケージか、プログラムやプログラムのモジュールと一致します。"
 
 #. type: item
 #: rt-gettext.texi.orig:22
 #, no-wrap
 msgid "-e"
-msgstr ""
+msgstr "-e"
 
 #. type: opindex
 #: rt-gettext.texi.orig:23
 #, no-wrap
 msgid "-e@r{, @code{gettext} option}"
-msgstr ""
+msgstr "-e@r{, @code{gettext} option}"
 
 #. type: table
 #: rt-gettext.texi.orig:29
@@ -100,116 +102,116 @@ msgid ""
 "@samp{\\a}, @samp{\\b}, @samp{\\c}, @samp{\\f}, @samp{\\n}, @samp{\\r}, "
 "@samp{\\t}, @samp{\\v}, @samp{\\\\}, and @samp{\\} followed by one to three "
 "octal digits, are interpreted like the System V @samp{echo} program did."
-msgstr ""
+msgstr "いくつかのエスケープシーケンスの展開を可能にします。これはechoプログラムややシェルのビルトインコマンドにたいする互換のためのオプションです。対象となるエスケープシーケンスは@samp{\\a}、@samp{\\b}、@samp{\\c}、@samp{\\f}、@samp{\\n}、@samp{\\r}、@samp{\\t}、@samp{\\v}、@samp{\\\\}、および@samp{\\}と、その後の3桁以内の8進数です(これらはSystem Vの@samp{echo}と同様に処理されます)。"
 
 #. type: item
 #: rt-gettext.texi.orig:30
 #, no-wrap
 msgid "-E"
-msgstr ""
+msgstr "-E"
 
 #. type: opindex
 #: rt-gettext.texi.orig:31
 #, no-wrap
 msgid "-E@r{, @code{gettext} option}"
-msgstr ""
+msgstr "-E@r{, @code{gettext} option}"
 
 #. type: table
 #: rt-gettext.texi.orig:34
 msgid ""
 "This option is only for compatibility with the @samp{echo} program or shell "
 "built-in.  It has no effect."
-msgstr ""
+msgstr "このオプションは@samp{echo}プログラムとシェルのビルトインコマンドとの互換性のためだけのもので、何の効果も及ぼしません。"
 
 #. type: item
 #: rt-gettext.texi.orig:35
 #, no-wrap
 msgid "-h"
-msgstr ""
+msgstr "-h"
 
 #. type: itemx
 #: rt-gettext.texi.orig:36
 #, no-wrap
 msgid "--help"
-msgstr ""
+msgstr "--help"
 
 #. type: opindex
 #: rt-gettext.texi.orig:37
 #, no-wrap
 msgid "-h@r{, @code{gettext} option}"
-msgstr ""
+msgstr "-h@r{, @code{gettext} option}"
 
 #. type: opindex
 #: rt-gettext.texi.orig:38
 #, no-wrap
 msgid "--help@r{, @code{gettext} option}"
-msgstr ""
+msgstr "--help@r{, @code{gettext} option}"
 
 #. type: table
 #: rt-gettext.texi.orig:40
 msgid "Display this help and exit."
-msgstr ""
+msgstr "このヘルプを表示して終了します。"
 
 #. type: item
 #: rt-gettext.texi.orig:41
 #, no-wrap
 msgid "-n"
-msgstr ""
+msgstr "-n"
 
 #. type: opindex
 #: rt-gettext.texi.orig:42
 #, no-wrap
 msgid "-n@r{, @code{gettext} option}"
-msgstr ""
+msgstr "-n@r{, @code{gettext} option}"
 
 #. type: table
 #: rt-gettext.texi.orig:45
 msgid ""
 "Suppress trailing newline.  By default, @code{gettext} adds a newline to the "
 "output."
-msgstr ""
+msgstr "行末の改行を抑止します。デフォルトでは、@code{gettext}は出力に改行を付与します。"
 
 #. type: item
 #: rt-gettext.texi.orig:46
 #, no-wrap
 msgid "-V"
-msgstr ""
+msgstr "-V"
 
 #. type: itemx
 #: rt-gettext.texi.orig:47
 #, no-wrap
 msgid "--version"
-msgstr ""
+msgstr "--version"
 
 #. type: opindex
 #: rt-gettext.texi.orig:48
 #, no-wrap
 msgid "-V@r{, @code{gettext} option}"
-msgstr ""
+msgstr "-V@r{, @code{gettext} option}"
 
 #. type: opindex
 #: rt-gettext.texi.orig:49
 #, no-wrap
 msgid "--version@r{, @code{gettext} option}"
-msgstr ""
+msgstr "--version@r{, @code{gettext} option}"
 
 #. type: table
 #: rt-gettext.texi.orig:51
 msgid "Output version information and exit."
-msgstr ""
+msgstr "バージョン情報を表示して終了します。"
 
 #. type: item
 #: rt-gettext.texi.orig:52
 #, no-wrap
 msgid "[@var{textdomain}] @var{msgid}"
-msgstr ""
+msgstr "[@var{textdomain}] @var{msgid}"
 
 #. type: table
 #: rt-gettext.texi.orig:54
 msgid ""
 "Retrieve translated message corresponding to @var{msgid} from "
 "@var{textdomain}."
-msgstr ""
+msgstr "@var{textdomain}から、@var{msgid}に対応する翻訳されたメッセージを取得します。"
 
 #. type: Plain text
 #: rt-gettext.texi.orig:61
@@ -218,7 +220,7 @@ msgid ""
 "from the environment variable @code{TEXTDOMAIN}.  If the message catalog is "
 "not found in the regular directory, another location can be specified with "
 "the environment variable @code{TEXTDOMAINDIR}."
-msgstr ""
+msgstr "パラメーター@var{textdomain}を指定しなかった場合、環境変数@code{TEXTDOMAIN}によりdomainが決定されます。メッセージカタログが標準のディレクトリーで見つからなかった場合には、環境変数@code{TEXTDOMAINDIR}で他の場所を指定できます。"
 
 #. type: Plain text
 #: rt-gettext.texi.orig:64
@@ -226,4 +228,4 @@ msgid ""
 "When used with the @code{-s} option the program behaves like the @samp{echo} "
 "command.  But it does not simply copy its arguments to stdout.  Instead "
 "those messages found in the selected catalog are translated."
-msgstr ""
+msgstr "@code{-s}オプションを使うと、プログラムは@samp{echo}コマンドのように振る舞います。しかし、このプログラムは引数を単に標準出力にコピーするのではなく、選択されたカタログにメッセージが見つかった場合は翻訳されたメッセージを出力します。"
