@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-30 01:58+0900\n"
-"PO-Revision-Date: 2016-08-13 21:37+0900\n"
+"PO-Revision-Date: 2016-08-14 14:28+0900\n"
 "Last-Translator: Takesi Ayanokoji <takeshi.ayanokoji@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -17913,20 +17913,20 @@ msgid ""
 "GNU @code{gettext} installs macros for use in a package's @file{configure."
 "ac} or @file{configure.in}.  @xref{Top, , Introduction, autoconf, The "
 "Autoconf Manual}.  The primary macro is, of course, @code{AM_GNU_GETTEXT}."
-msgstr ""
+msgstr "GNU @code{gettext}は、パッケージの@file{configure.ac}(または@file{configure.in})で使用されるマクロをインストールします。詳細については、@ref{Top, , Introduction, autoconf, The Autoconf Manual}を参照してください。その中でも主要なマクロは、もちろん@code{AM_GNU_GETTEXT}です。"
 
 #. type: node
 #: gettext.texi.orig:8409 gettext.texi.orig:8550 gettext.texi.orig:8566
 #: gettext.texi.orig:8569 gettext.texi.orig:8589
 #, no-wrap
 msgid "AM_XGETTEXT_OPTION"
-msgstr ""
+msgstr "AM_XGETTEXT_OPTION"
 
 #. type: subsection
 #: gettext.texi.orig:8409 gettext.texi.orig:8567
 #, no-wrap
 msgid "AM_XGETTEXT_OPTION in @file{po.m4}"
-msgstr ""
+msgstr "AM_XGETTEXT_OPTION in @file{po.m4}"
 
 #. type: Plain text
 #: gettext.texi.orig:8420
@@ -17936,20 +17936,20 @@ msgid ""
 "(shared or static libraries are both supported) or in the package's "
 "@file{intl/} directory.  It also invokes @code{AM_PO_SUBDIRS}, thus "
 "preparing the @file{po/} directories of the package for building."
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT}マクロは、Cライブラリーおよび@code{libintl}ライブラリー(どちらも共有または静的なライブラリーをサポートしています)に分割されたGNU gettextの関数ファミリー、またはパッケージの@file{intl/}ディレクトリーをテストします。このマクロは、ビルド用にパッケージの@file{po/}ディレクトリーを準備するのに、@code{AM_PO_SUBDIRS}も呼び出します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8423
 msgid ""
 "@code{AM_GNU_GETTEXT} accepts up to three optional arguments.  The general "
 "syntax is"
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT}は、オプションの引数を3つ指定でき、一般的な書式は以下のようになります"
 
 #. type: example
 #: gettext.texi.orig:8426
 #, no-wrap
 msgid "AM_GNU_GETTEXT([@var{intlsymbol}], [@var{needsymbol}], [@var{intldir}])\n"
-msgstr ""
+msgstr "AM_GNU_GETTEXT([@var{intlsymbol}], [@var{needsymbol}], [@var{intldir}])\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8441
@@ -17963,7 +17963,7 @@ msgid ""
 "elsewhere.  The two ways to specify the existence of an @file{intl/} "
 "directory are equivalent.  At build time, a static library "
 "@code{$(top_builddir)/intl/libintl.a} will then be created."
-msgstr ""
+msgstr "@var{intlsymbol}には、@samp{external}または@samp{no-libtool}が指定できます。デフォルト(指定されなかったとき、または空のとき)は、@samp{no-libtool}です。@file{intl/}ディレクトリーのないパッケージでは、intlsymbol に ‘external’ を指定する必要があります。intl/ ディレクトリーのあるパッケージでは、@var{intlsymbol}に@samp{no-libtool}を指定することもできるし、@samp{external}を指定して、他の場所でマクロ@code{AM_GNU_GETTEXT_INTL_SUBDIR}を使用することにより、それをオーバーライドすることもできます。この@file{intl/}の実体を指定する2つの方法は、同じことを行います。どちらもビルド時には、静的なライブラリー@code{$(top_builddir)/intl/libintl.a}を作成します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8453
@@ -17979,14 +17979,14 @@ msgid ""
 "one among them, or invoke the @code{AM_GNU_GETTEXT_NEED} macro several "
 "times.  The hierarchy among the various alternatives is as follows: "
 "@samp{need-formatstring-macros} implies @samp{need-ngettext}."
-msgstr ""
+msgstr "@var{needsymbol}に@samp{need-ngettext}が指定されると、@code{ngettext()}をもたない(libcまたはlibintlの)GNU gettext実装は無視されます。@var{needsymbol}に@samp{need-formatstring-macros}が指定されると、ISO C 99 @file{<inttypes.h>}書式文字列マクロをサポートしないGNU gettext実装は無視されます。@var{needsymbol}だけを指定することもできます。他の場所で@code{AM_GNU_GETTEXT_NEED}を指定することでも、これらの指定を満たすことはできます。1つ以上指定したときは、もっとも強い指定が使用されるか、@code{AM_GNU_GETTEXT_NEED}マクロを複数回呼び出します。これらの指定は、@samp{need-formatstring-macros}が@samp{need-ngettext}を含むような階層になっています。"
 
 #. type: Plain text
 #: gettext.texi.orig:8456
 msgid ""
 "@var{intldir} is used to find the intl libraries.  If empty, the value "
 "@samp{$(top_builddir)/intl/} is used."
-msgstr ""
+msgstr "@var{intldir}は、intlを探すのに使用されます。空の場合は、@samp{$(top_builddir)/intl/}という値が使用されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8467
@@ -18001,19 +18001,19 @@ msgid ""
 "In the negative case, it sets @code{USE_NLS} to @samp{no}; it sets "
 "@code{LIBINTL} and @code{LTLIBINTL} to empty and doesn't change "
 "@code{CPPFLAGS}."
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT}マクロは、GNU gettextが利用可能で、使用できるかどうかを決定するマクロです。利用できる場合は、変数@code{USE_NLS}に@samp{yes}をセットし、これはautoconfが生成する設定ファイル(通常は@file{config.h}というファイル)の@code{ENABLE_NLS}に1を定義し、Makefileで使用される変数@code{LIBINTL}と@code{LTLIBINTL}にリンカーオプションをセットし(@code{LIBINTL}はlibtoolなしのときで、@code{LTLIBINTL}はlibtoolを使用するとき)、必要なときは@code{CPPFLAGS}のオプションに@samp{-I}を追加し、利用できない場合は@code{USE_NLS}に@samp{no}をセットし、@code{LIBINTL}と@code{LTLIBINTL}を空にセットして、@code{CPPFLAGS}を変更しません。"
 
 #. type: Plain text
 #: gettext.texi.orig:8469
 msgid ""
 "The complexities that @code{AM_GNU_GETTEXT} deals with are the following:"
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT}が対処する複雑さは、以下のようなものです:"
 
 #. type: cindex
 #: gettext.texi.orig:8472
 #, no-wrap
 msgid "@code{libintl} library"
-msgstr ""
+msgstr "@code{libintl} library"
 
 #. type: itemize
 #: gettext.texi.orig:8476
@@ -18022,7 +18022,7 @@ msgid ""
 "glibc.  Some have it in a separate library @code{libintl}.  GNU "
 "@code{libintl} might have been installed as part of the GNU @code{gettext} "
 "package."
-msgstr ""
+msgstr "いくつかのオペレーティングシステムは、Cライブラリー(例: glibc)に@code{gettext}をもちます。GNU @code{libintl}は、GNU @code{gettext}の一部としてインストールされたのかもしれません。"
 
 #. type: itemize
 #: gettext.texi.orig:8481
@@ -18030,7 +18030,7 @@ msgid ""
 "GNU @code{libintl}, if installed, is not necessarily already in the search "
 "path (@code{CPPFLAGS} for the include file search path, @code{LDFLAGS} for "
 "the library search path)."
-msgstr ""
+msgstr "GNU @code{libintl}がインストールされていて、検索パス(インクルードファイルの検索パスは@code{CPPFLAGS}、ライブラリーの検索パスは@code{LDFLAGS})にあるが、必要ない場合。"
 
 #. type: itemize
 #: gettext.texi.orig:8487
@@ -18039,7 +18039,7 @@ msgid ""
 "exploit the GNU mo files, doesn't have the necessary locale dependency "
 "features, and cannot convert messages from the catalog's text encoding to "
 "the user's locale encoding."
-msgstr ""
+msgstr "glibcをのぞく、GNUのmoファイルを取り扱えないオペレーティングシステムのネイティブの@code{gettext}は、必要なlocale依存の機能をもたず、カタログのテキストのエンコーディングから、ユーザーのlocaleのエンコーディングにメッセージを変換できません。"
 
 #. type: itemize
 #: gettext.texi.orig:8495
@@ -18050,7 +18050,7 @@ msgid ""
 "path options to the @code{LIBINTL} and @code{LTLIBINTL} variables.  This "
 "works on most systems, but not on some operating systems with limited shared "
 "library support, like SCO."
-msgstr ""
+msgstr "GNU @code{libintl}がインストールされていて、実行時ライブラリーの検索パスにあるが、必要ない場合。@code{LD_LIBRARY_PATH}のような環境変数による設定を無視するために、このマクロは適切な実行時の検索パスオプションを、変数@code{LIBINTL}および@code{LTLIBINTL}に追加します。これはほとんどシステムで動作しますが、SCOのように共有ライブラリーに制限のあるいくつかのオペレーティングシステムではうまく動作しません。"
 
 #. type: itemize
 #: gettext.texi.orig:8500
@@ -18058,34 +18058,34 @@ msgid ""
 "GNU @code{libintl} relies on POSIX/XSI @code{iconv}.  The macro checks for "
 "linker options needed to use iconv and appends them to the @code{LIBINTL} "
 "and @code{LTLIBINTL} variables."
-msgstr ""
+msgstr "GNU @code{libintl}は、POSIX/XSIの@code{iconv}に依存します。このマクロはiconvを使うために必要なリンカーオプションをチェックして、変数@code{LIBINTL}および@code{LTLIBINTL}に追加します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8508
 msgid ""
 "The @code{AM_GNU_GETTEXT_VERSION} macro declares the version number of the "
 "GNU gettext infrastructure that is used by the package."
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT_VERSION}マクロは、パッケージで使用するGNU gettextインフラストラクチャーのバージョン番号を宣言します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8511
 msgid ""
 "The use of this macro is optional; only the @code{autopoint} program makes "
 "use of it (@pxref{CVS Issues})."
-msgstr ""
+msgstr "このマクロの使用はオプションで、これを使用するプログラムは@code{autopoint}だけです(@ref{CVS Issues}を参照してください)。"
 
 #. type: Plain text
 #: gettext.texi.orig:8518
 msgid ""
 "The @code{AM_GNU_GETTEXT_NEED} macro declares a constraint regarding the GNU "
 "gettext implementation.  The syntax is"
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT_NEED}マクロは、GNU gettextの実装に関する制約を宣言するもので、構文は以下のようになります"
 
 #. type: example
 #: gettext.texi.orig:8521
 #, no-wrap
 msgid "AM_GNU_GETTEXT_NEED([@var{needsymbol}])\n"
-msgstr ""
+msgstr "AM_GNU_GETTEXT_NEED([@var{needsymbol}])\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8528
@@ -18095,21 +18095,21 @@ msgid ""
 "will be ignored.  If @var{needsymbol} is @samp{need-formatstring-macros}, "
 "then GNU gettext implementations that don't support the ISO C 99 "
 "@file{<inttypes.h>} formatstring macros will be ignored."
-msgstr ""
+msgstr "@var{needsymbol}に@samp{need-ngettext}を指定した場合、@code{ngettext()}関数をもたない、(libcまたはlibintlの)GNU gettext実装は無視されます。@var{needsymbol}に@samp{need-formatstring-macros}を指定した場合、ISO C 99 @file{<inttypes.h>}の書式文字列マクロをサポートしないGNU gettext実装は無視されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8531
 msgid ""
 "The optional second argument of @code{AM_GNU_GETTEXT} is also taken into "
 "account."
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT}の2番目のオプション引数も考慮されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8534
 msgid ""
 "The @code{AM_GNU_GETTEXT_NEED} invocations can occur before or after the "
 "@code{AM_GNU_GETTEXT} invocation; the order doesn't matter."
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT_NEED}呼び出しは、@code{AM_GNU_GETTEXT}呼び出しの前後どちらでもよく、順番は関係ありません。"
 
 #. type: Plain text
 #: gettext.texi.orig:8543
@@ -18118,21 +18118,21 @@ msgid ""
 "@code{AM_GNU_GETTEXT} macro, although invoked with the first argument "
 "@samp{external}, should also prepare for building the @file{intl/} "
 "subdirectory."
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT_INTL_SUBDIR}マクロは、@code{AM_GNU_GETTEXT}の最初の引数に@samp{external}を指定して呼び出した場合でも、ビルドのために@file{intl/}サブディレクトリーも参照します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8546
 msgid ""
 "The @code{AM_GNU_GETTEXT_INTL_SUBDIR} invocation can occur before or after "
 "the @code{AM_GNU_GETTEXT} invocation; the order doesn't matter."
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT_INTL_SUBDIR}呼び出しは、@code{AM_GNU_GETTEXT}呼び出しの前後どちらでもよく、順番は関係ありません。"
 
 #. type: Plain text
 #: gettext.texi.orig:8549
 msgid ""
 "The use of this macro requires GNU automake 1.10 or newer and GNU autoconf "
 "2.61 or newer."
-msgstr ""
+msgstr "このマクロはGNU automake 1.10以降、またはGNU autoconf 2.61以降で使用できます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8560
@@ -18143,7 +18143,7 @@ msgid ""
 "for example @code{sh}, @code{Python}, @code{Lisp}.  See @ref{Programming "
 "Languages} for a list of programming languages that support localization "
 "through PO files."
-msgstr ""
+msgstr "このマクロはC、C++、Objective C以外のプログラム言語(例: @code{sh}、@code{Python}、@code{Lisp})による、インターナショナライズされたプログラムで使う必要があります。PO ファイルによるローカリゼーションをサポートするプログラム言語のリストは、@ref{Programming Languages}を参照してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:8565
@@ -18152,7 +18152,7 @@ msgid ""
 "should be used.  If so, it sets the @code{USE_NLS} variable to @samp{yes}, "
 "otherwise to @samp{no}.  It also determines the right values for Makefile "
 "variables in each @file{po/} directory."
-msgstr ""
+msgstr "@code{AM_PO_SUBDIRS}マクロは、インターナショナリゼーションを使う必要があるかを決定します。使う必要がある場合には@code{USE_NLS}変数に@samp{yes}をセットし、必要ない場合には@samp{no}をセットします。このマクロは、各@file{po/}ディレクトリーのMakefileの変数にたいする適切な値も決定します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8573
@@ -18160,20 +18160,20 @@ msgid ""
 "The @code{AM_XGETTEXT_OPTION} macro registers a command-line option to be "
 "used in the invocations of @code{xgettext} in the @file{po/} directories of "
 "the package."
-msgstr ""
+msgstr "@code{AM_XGETTEXT_OPTION}マクロは、パッケージの@file{po/}ディレクトリーでの@code{xgettext}呼び出しで使用する、コマンドラインオプションを登録するマクロです。"
 
 #. type: Plain text
 #: gettext.texi.orig:8576
 msgid ""
 "For example, if you have a source file that defines a function "
 "@samp{error_at_line} whose fifth argument is a format string, you can use"
-msgstr ""
+msgstr "たとえば、@samp{error_at_line}という関数を定義しているソースファイルがあり、その関数の5番目の引数には、書式文字列を指定する場合には、以下のように使うことができます"
 
 #. type: example
 #: gettext.texi.orig:8578
 #, no-wrap
 msgid "AM_XGETTEXT_OPTION([--flag=error_at_line:5:c-format])\n"
-msgstr ""
+msgstr "AM_XGETTEXT_OPTION([--flag=error_at_line:5:c-format])\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8582
@@ -18181,21 +18181,21 @@ msgid ""
 "to instruct @code{xgettext} to mark all translatable strings in "
 "@samp{gettext} invocations that occur as fifth argument to this function as "
 "@samp{c-format}."
-msgstr ""
+msgstr "これは、この関数の5番目の引数にたいする@samp{gettext}呼び出しにたいして、これを翻訳可能な@samp{c-format}の文字列だとマークするよう、@code{xgettext}に指示します。"
 
 #. type: Plain text
 #: gettext.texi.orig:8585
 msgid ""
 "See @ref{xgettext Invocation} for the list of options that @code{xgettext} "
 "accepts."
-msgstr ""
+msgstr "@code{xgettext}に指定できるオプションのリストは、@ref{xgettext Invocation}を参照してください。"
 
 #. type: Plain text
 #: gettext.texi.orig:8588
 msgid ""
 "The use of this macro is an alternative to the use of the "
 "@samp{XGETTEXT_OPTIONS} variable in @file{po/Makevars}."
-msgstr ""
+msgstr "このマクロの使用は、@file{po/Makevars}の中の@samp{XGETTEXT_OPTIONS}変数の代用となります。"
 
 #. type: Plain text
 #: gettext.texi.orig:8606
@@ -18213,18 +18213,18 @@ msgid ""
 "option to @code{CPPFLAGS} if necessary.  If not found, it sets "
 "@code{LIBICONV} and @code{LTLIBICONV} to empty and doesn't change "
 "@code{CPPFLAGS}."
-msgstr ""
+msgstr "@code{AM_ICONV}マクロは、Cライブラリー(または@code{iconv}ライブラリーに分離された)POSIX/XSI @code{iconv}関数が提供されているかテストするマクロです。もし見つかったときは@code{am_cv_func_iconv}変数に@samp{yes}をセットし、autoconfが生成する設定ファイル(通常は@file{config.h}というファイル)の@code{HAVE_ICONV}に1を定義し、@code{iconv()}の2番目の引数の型が@samp{const char **}または@samp{char **}で定義さされているかにより、@code{ICONV_CONST}に@samp{const}または空を定義し、Makefileの中で使用されるリンカーオプションの変数@code{LIBICONV}および@code{LTLIBICONV}をセット(@code{LIBICONV}はlibtoolなしのとき、@code{LTLIBICONV}はlibtoolありのとき)、必要なら@code{CPPFLAGS}のオプションに@samp{-I}を追加します。見つからなかったときは、@code{LIBICONV}および@code{LTLIBICONV}に空をセットして、@code{CPPFLAGS}を変更しません。"
 
 #. type: Plain text
 #: gettext.texi.orig:8608
 msgid "The complexities that @code{AM_ICONV} deals with are the following:"
-msgstr ""
+msgstr "@code{AM_ICONV}が対処する複雑さは、以下のようなものです:"
 
 #. type: cindex
 #: gettext.texi.orig:8611
 #, no-wrap
 msgid "@code{libiconv} library"
-msgstr ""
+msgstr "@code{libiconv} library"
 
 #. type: itemize
 #: gettext.texi.orig:8617
@@ -18234,7 +18234,7 @@ msgid ""
 "OSF/1 or FreeBSD.  Regardless of the operating system, GNU @code{libiconv} "
 "might have been installed.  In that case, it should be used instead of the "
 "operating system's native @code{iconv}."
-msgstr ""
+msgstr "Cライブラリーに@code{iconv}のあるオペレーティングシステムとしては、たとえばglibcがあり、ライブラリー@code{libiconv}に分割されているシステムには、たとえばOSF/1、FreeBSDがあります。種類の如何にかかわらず、GNU @code{libiconv}がインストールされたオペレーティングシステムの場合、オペレーティングシステムのネイティブの@code{iconv}のかわりに使用されます。"
 
 #. type: itemize
 #: gettext.texi.orig:8622
@@ -18242,7 +18242,7 @@ msgid ""
 "GNU @code{libiconv}, if installed, is not necessarily already in the search "
 "path (@code{CPPFLAGS} for the include file search path, @code{LDFLAGS} for "
 "the library search path)."
-msgstr ""
+msgstr "GNU @code{libiconv}がインストールされていて、検索パス(インクルードファイルの検索パス @code{CPPFLAGS}、ライブラリーの検索パス@code{LDFLAGS})にあるが、必要ない場合。"
 
 #. type: itemize
 #: gettext.texi.orig:8628
@@ -18250,7 +18250,7 @@ msgid ""
 "GNU @code{libiconv} is binary incompatible with some operating system's "
 "native @code{iconv}, for example on FreeBSD.  Use of an @file{iconv.h} and "
 "@file{libiconv.so} that don't fit together would produce program crashes."
-msgstr ""
+msgstr "GNU @code{libiconv}は、いくつかのオペレーティングシステムのネイティブの@code{iconv}にたいしてバイナリーの非互換があります(例: FreeBSD)。適合していない@file{iconv.h}および@file{libiconv.so}の使用は、プログラムのクラッシュを招きます。"
 
 #. type: itemize
 #: gettext.texi.orig:8636
@@ -18261,14 +18261,14 @@ msgid ""
 "time search path options to the @code{LIBICONV} variable.  This works on "
 "most systems, but not on some operating systems with limited shared library "
 "support, like SCO."
-msgstr ""
+msgstr "GNU @code{libiconv}がインストールされていて、実行時ライブラリーの検索パスにあるが、必要ない場合。@code{LD_LIBRARY_PATH}のような環境変数による設定を無視するために、このマクロは適切なランタイムのサーチパスオプションを、変数@code{LIBICONV}に追加します。これはほとんどシステムで動作しますが、SCOのように共有ライブラリーに制限のあるいくつかのオペレーティングシステムではうまく動作しません。"
 
 #. type: Plain text
 #: gettext.texi.orig:8640
 msgid ""
 "@file{iconv.m4} is distributed with the GNU gettext package because "
 "@file{gettext.m4} relies on it."
-msgstr ""
+msgstr "@file{gettext.m4}が依存しているので、@file{iconv.m4}はGNU gettextの一部として配布されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8647
@@ -18276,7 +18276,7 @@ msgid ""
 "Many projects use CVS for distributed development, version control and "
 "source backup.  This section gives some advice how to manage the uses of "
 "@code{cvs}, @code{gettextize}, @code{autopoint} and @code{autoconf}."
-msgstr ""
+msgstr "多くのプロジェクトでは分散開発におけるバージョンコントロールとソースのバックアップにCVSを使用しています。このセクションでは@code{cvs}、@code{gettextize}、@code{autopoint}、@code{autoconf}の使用をどのように管理するかについてのアドバイスを与えます"
 
 #. type: Plain text
 #: gettext.texi.orig:8662
@@ -18286,7 +18286,7 @@ msgid ""
 "a new @code{gettext} version - runs @code{gettextize} and performs the "
 "changes listed in @ref{Adjusting Files}, and then commits his changes to the "
 "CVS."
-msgstr ""
+msgstr "複数の開発者によるCVSを使ったプロジェクト開発では、@code{gettext}の新しいバージョンにアップグレードしたいと望む一人の開発者が、@code{gettextize}を実行して@ref{Adjusting Files}にリストした変更をほどこした後に、その変更をCVSにコミットするようなことが時折あります。"
 
 #. type: Plain text
 #: gettext.texi.orig:8668
@@ -18296,7 +18296,7 @@ msgid ""
 "developer runs @code{gettextize}, he should go the whole way, make the "
 "necessary remaining changes and commit his changes to the CVS.  Otherwise "
 "the following damages will likely occur:"
-msgstr ""
+msgstr "プロジェクトのすべての開発者が、パッケージのGNU @code{gettext}に、同じバージョンのものを使用することを強く推奨します。別の言い方をすると、@code{gettextize}を実行したら、開発者はプロジェクト全体と同じ方法で必要な変更をほどこしてCVSにコミットする必要があります。さもないと以下のような損傷が発生します:"
 
 #. type: itemize
 #: gettext.texi.orig:8676
@@ -18306,7 +18306,7 @@ msgid ""
 "@code{Makefile.am}, @code{Makefile.in} files depend on the @code{gettext} "
 "version, the use of infrastructure files belonging to different "
 "@code{gettext} versions can easily lead to build errors."
-msgstr ""
+msgstr "開発者の間での、明らかなバージョンの不一致。@file{configure.ac}および@file{configure.in}、@code{Makefile.am}および@code{Makefile.in}内の@code{gettext}に関係する特定の箇所は、@code{gettext}のバージョンに依存しており、異なるバージョンの@code{gettext}による基礎的なファイルの使用により、容易にビルドエラーが発生します。"
 
 #. type: itemize
 #: gettext.texi.orig:8682
@@ -18315,7 +18315,7 @@ msgid ""
 "malfunctioning of the package, that may be undiscovered by the developers.  "
 "The worst case of hidden version mismatch is that internationalization of "
 "the package doesn't work at all."
-msgstr ""
+msgstr "明らかでないバージョンの不一致。このようなバージョン不一致は、開発者が発見できないようなパッケージの動作不良も招きます。明らかでないバージョンの不一致による最悪のケースは、パッケージのインターナショナリゼーションが動作しないケースです。"
 
 #. type: itemize
 #: gettext.texi.orig:8691
@@ -18327,7 +18327,7 @@ msgid ""
 "tested than if all had been using the same @code{gettext} version.  For "
 "example, it is possible that a platform specific bug goes undiscovered due "
 "to this constellation."
-msgstr ""
+msgstr "リリースのリスク。すべての開発者は、パッケージにたいして一定のテストを暗黙に行います。このテストはリリースの数週間から数日前にかけて重要です。もしも誰かが他の開発者とは異なるバージョンのGNU @code{gettext}を使ってリリース用のtarファイルを作ったら、その配布物は同じバージョンの@code{gettext}を使ってテストされたものに比べてテストされていないことになり、たとえばそれがプラットフォームに固有の未知のバグにもなり得るのです。"
 
 #. type: Plain text
 #: gettext.texi.orig:8701
@@ -18336,29 +18336,29 @@ msgid ""
 "of a CVS repository, such as @file{configure} generated from @file{configure."
 "ac}, @code{@var{parser}.c} generated from @code{@var{parser}.y}, or @code{po/"
 "Makefile.in.in} autoinstalled by @code{gettextize} or @code{autopoint}."
-msgstr ""
+msgstr "CVSレポジトリーのコンテキストで作成されるファイル、たとえば@file{configure.ac}により生成される@file{configure}、@code{@var{parser}.y}から生成される@code{@var{parser}.c}、@code{gettextize}や@code{autopoint}により自動インストールされる@code{po/Makefile.in.in}のようなファイルを取り扱うには、基本的に3つの方法があります。"
 
 #. type: enumerate
 #: gettext.texi.orig:8705
 msgid "All generated files are always committed into the repository."
-msgstr ""
+msgstr "生成されるすべてのファイルを、常にレポジトリーにコミットする。"
 
 #. type: enumerate
 #: gettext.texi.orig:8709
 msgid ""
 "All generated files are committed into the repository occasionally, for "
 "example each time a release is made."
-msgstr ""
+msgstr "生成されるすべてのファイルを、時々(たとえば毎リリースごとに)レポジトリーにコミットする。"
 
 #. type: enumerate
 #: gettext.texi.orig:8712
 msgid "Generated files are never committed into the repository."
-msgstr ""
+msgstr "生成されるファイルを、レポジトリーにコミットされない。"
 
 #. type: Plain text
 #: gettext.texi.orig:8715
 msgid "Each of these three approaches has different advantages and drawbacks."
-msgstr ""
+msgstr "これら3つの方法には、それぞれ異なる利点と欠点があります。"
 
 #. type: enumerate
 #: gettext.texi.orig:8722
@@ -18367,6 +18367,9 @@ msgid ""
 "working build.  The drawbacks are: 1a. It requires some frequent \"cvs commit"
 "\" actions by the maintainers.  1b. The repository grows in size quite fast."
 msgstr ""
+"1番目の方法の利点は、誰でもCVSからその時点で動作するビルドをチェックアウトできる点です。欠点は以下のとおりです:@*\n"
+"1a メンテナーによる頻繁な\"cvs commit\"操作が必要です。@*\n"
+"1b レポジトリーサイズの増加が早くなります。"
 
 #. type: enumerate
 #: gettext.texi.orig:8732
@@ -18380,6 +18383,9 @@ msgid ""
 "after doing \"cvs update\".  Although these conflicts are easy to resolve, "
 "they are annoying."
 msgstr ""
+"2番目の方法の利点は、誰もがチェックアウトでき、通常は\"./configure; make\"は動作します。欠点は以下のとおりです:@*\n"
+"2a レポジトリーからチェックアウトした人のPATHにGNU @code{automake}、GNU @code{autoconf}、GNU @code{m4}のようなツールがインストールされている必要があり、ときには特定のバージョンが必要になる。@*\n"
+"2b リリース版が作成されて生成されるファイルもコミットされた後に他の開発者が\"cvs update\"を行うと、生成されるファイルで競合が発生する点。この競合は簡単に解決できますが、煩わしいものです。"
 
 #. type: enumerate
 #: gettext.texi.orig:8739
@@ -18389,7 +18395,7 @@ msgid ""
 "@code{autoconf}, GNU @code{m4} installed in his PATH, but also that he needs "
 "to perform a package specific pre-build step before being able to \"./"
 "configure; make\"."
-msgstr ""
+msgstr "3番目の方法の利点はメンテナーの作業負荷が軽減されることです。欠点はレポジトリーからチェックアウトした人のPATHにGNU @code{automake}, GNU @code{autoconf}, GNU @code{m4}のようなツールがインストールされている必要があるだけではなく、\"./configure; make\"をできるようになる前に、パッケージ固有のpre-build(ビルド前)ステップが必要になることです。"
 
 #. type: Plain text
 #: gettext.texi.orig:8744
@@ -18397,7 +18403,7 @@ msgid ""
 "For the first and second approach, all files modified or brought in by the "
 "occasional @code{gettextize} invocation and update should be committed into "
 "the CVS."
-msgstr ""
+msgstr "1番目と2番目の方法では、変更されたファイルや、@code{gettextize}呼び出しにより生成・更新されたファイルは、CVSにコミットする必要があります。"
 
 #. type: Plain text
 #: gettext.texi.orig:8749
@@ -18405,13 +18411,13 @@ msgid ""
 "For the third approach, the maintainer can omit from the CVS repository all "
 "the files that @code{gettextize} mentions as \"copy\".  Instead, he adds to "
 "the @file{configure.ac} or @file{configure.in} a line of the form"
-msgstr ""
+msgstr "3番目の方法では、@code{gettextize}が\"コピー\"するすべてのファイルを、CVSレポジトリーから除外できます。そのかわりに@file{configure.ac}(または@file{configure.in})を、以下のような形式で記述します"
 
 #. type: example
 #: gettext.texi.orig:8752
 #, no-wrap
 msgid "AM_GNU_GETTEXT_VERSION(@value{VERSION})\n"
-msgstr ""
+msgstr "AM_GNU_GETTEXT_VERSION(@value{VERSION})\n"
 
 #. type: Plain text
 #: gettext.texi.orig:8759
@@ -18420,7 +18426,7 @@ msgid ""
 "@samp{autopoint}.  For everyone who checks out the CVS, this "
 "@code{autopoint} invocation will copy into the right place the "
 "@code{gettext} infrastructure files that have been omitted from the CVS."
-msgstr ""
+msgstr "さらにパッケージのpre-buildスクリプトに@samp{autopoint}呼び出しを追加します。CVSからチェックアウトする人は誰でも、この@samp{autopoint}呼び出しによりCVSから除外された@code{gettext}の基礎的なファイルが適切な場所にコピーされます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8771
@@ -18436,25 +18442,25 @@ msgid ""
 "@code{AM_GNU_GETTEXT_VERSION(0.12.1)}, and all other developers that use the "
 "CVS will henceforth need to have GNU @code{gettext} 0.12.1 or newer "
 "installed."
-msgstr ""
+msgstr "@code{AM_GNU_GETTEXT_VERSION}の引数に使用されているバージョン番号は、パッケージが使いたい@code{gettext}インフラストラクチャーのバージョン番号です。これは@samp{autopoint}プログラムの最小のバージョン番号でもあります。もし@code{AM_GNU_GETTEXT_VERSION(0.11.5)}と記述した場合、開発者は0.11.5以上のバージョンを使用でき、すべての開発者のビルドがバージョン0.11.5のインフラストラクチャーで動作します。メンテナーがパッケージにたいしてバージョン0.12.1を指定してgettextizeを実行したとき、@code{AM_GNU_GETTEXT_VERSION(0.11.5)}は@code{AM_GNU_GETTEXT_VERSION(0.12.1)}に変更され、今後CVSを使う開発者はGNU @code{gettext} 0.12.1以降をインストールする必要があります。"
 
 #. type: include
 #: gettext.texi.orig:8775
 #, no-wrap
 msgid "autopoint.texi"
-msgstr ""
+msgstr "autopoint.texi"
 
 #. type: cindex
 #: gettext.texi.orig:8780
 #, no-wrap
 msgid "release"
-msgstr ""
+msgstr "release"
 
 #. type: cindex
 #: gettext.texi.orig:8781
 #, no-wrap
 msgid "distribution tarball"
-msgstr ""
+msgstr "distribution tarball"
 
 #. type: Plain text
 #: gettext.texi.orig:8785
@@ -18462,14 +18468,14 @@ msgid ""
 "In projects that use GNU @code{automake}, the usual commands for creating a "
 "distribution tarball, @samp{make dist} or @samp{make distcheck}, "
 "automatically update the PO files as needed."
-msgstr ""
+msgstr "GNU @code{automake}を使うプロジェクトでは、配布用のtarballを作成する通常のコマンドは、@samp{make dist}または@samp{make distcheck}で、これにより必要に応じて自動的にPOファイルが更新されます。"
 
 #. type: Plain text
 #: gettext.texi.orig:8788
 msgid ""
 "If GNU @code{automake} is not used, the maintainer needs to perform this "
 "update before making a release:"
-msgstr ""
+msgstr "GNU @code{automake}を使用していない場合、メンテナーはこのような更新をリリースの前に行う必要があります:"
 
 #. type: example
 #: gettext.texi.orig:8793
@@ -18479,30 +18485,33 @@ msgid ""
 "$ (cd po; make update-po)\n"
 "$ make distclean\n"
 msgstr ""
+"$ ./configure\n"
+"$ (cd po; make update-po)\n"
+"$ make distclean\n"
 
 #. type: cindex
 #: gettext.texi.orig:8797
 #, no-wrap
 msgid "package installer's view of @code{gettext}"
-msgstr ""
+msgstr "package installer's view of @code{gettext}"
 
 #. type: cindex
 #: gettext.texi.orig:8798
 #, no-wrap
 msgid "package distributor's view of @code{gettext}"
-msgstr ""
+msgstr "package distributor's view of @code{gettext}"
 
 #. type: cindex
 #: gettext.texi.orig:8799
 #, no-wrap
 msgid "package build and installation options"
-msgstr ""
+msgstr "package build and installation options"
 
 #. type: cindex
 #: gettext.texi.orig:8800
 #, no-wrap
 msgid "setting up @code{gettext} at build time"
-msgstr ""
+msgstr "setting up @code{gettext} at build time"
 
 #. type: Plain text
 #: gettext.texi.orig:8814
