@@ -70,6 +70,7 @@ version.texi \
 xgettext.texi
 
 clean:
+	rm -f *.bak
 	rm -f *.texi
 	rm -f gettext.html
 	rm -fR html/
@@ -87,20 +88,25 @@ clean:
 	fi; \
 
 gettext.html: $(TEXIS)
+	./translate_0.18.3.sh
 	texi2any --force --set-customization-variable TEXI2HTML=1 -D makeinfo gettext.texi
 
 html/index.html: $(TEXIS)
+	./translate_0.18.3.sh
 	makeinfo -o html/ --html gettext.texi
 
 gettext183-ja.info: $(TEXIS)
+	./translate_0.18.3.sh
 	makeinfo --no-split -o gettext183-ja.info gettext.texi
 
 gettext.pdf: $(TEXIS)
+	./translate_0.18.3.sh
 	TEX=ptex texi2dvi -c gettext.texi
 	dvipdfmx gettext.dvi
 	rm -f gettext.dvi
 
 gettext.texis.tar.gz: $(TEXIS)
+	./translate_0.18.3.sh
 	if [ ! -d gettext.texis ]; \
 	then \
 		mkdir gettext.texis/; \
